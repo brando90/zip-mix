@@ -6,6 +6,7 @@
 % https://chatgpt.com/g/g-p-67a3cf555c2081918746eaa9857f63a2-compel-pt-pre-training-via-compression-zip-fit/c/684f209f-3364-8001-97a9-8b1bf9b08397
 \documentclass{article}
 \usepackage{iclr2025_conference,times}
+\usepackage{amsmath,amsfonts}
 \input{math_commands.tex}
 
 \usepackage{hyperref}
@@ -13,7 +14,6 @@
 \usepackage{enumitem}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
-\usepackage{amsmath,amsfonts}
 
 \title{Compel--ZipMix:\\
 Compression-Aligned Mixtures for Efficient\\
@@ -93,8 +93,8 @@ To test and remedy these hypotheses we introduce two steps:
 
 2. \emph{Alignment prior} assigns each bucket a weight
    $\alpha^{(0)}_m\propto\sum_{d\in B_m}s(d)+\tau$ with
-   $s(d)=1-\text{NCD}_{\text{zip}}\bigl(d,\mathcal{V}\bigr)$ and
-   $\tau=10^{-3}$, where $\mathcal{V}$ is a small validation suite
+   $s(d)=1-\text{NCD}_{\text{zip}}\bigl(d,\cV\bigr)$ and
+   $\tau=10^{-3}$, where $\cV$ is a small validation suite
    (MMLU, GSM8K, MiniF2F, …).
 
 \emph{ZipMix-Static} samples directly from $\boldsymbol{\alpha}^{(0)}$
@@ -141,14 +141,14 @@ capable} foundation models on commodity hardware.
 
 \subsection{Notation}\label{sec:notation}
 Let $\cD=\{d_1,\dots,d_N\}$ be the unlabeled corpus and
-$\mathcal{V}$ a small validation suite whose tasks define the desired
+$\cV$ a small validation suite whose tasks define the desired
 prior.
 After the compression–ratio split (Sec.~\ref{sec:buckets}) we obtain a
 set of buckets
 \[
-  \mathcal{B} \;=\;\bigl\{B_1,\dots,B_{\lvert\mathcal{B}\rvert}\bigr\},
+  \cB \;=\;\bigl\{B_1,\dots,B_{\lvert\cB\rvert}\bigr\},
 \]
-where $\lvert\mathcal{B}\rvert$ denotes the number of buckets.
+where $\lvert\cB\rvert$ denotes the number of buckets.
 We write $\ell_{\theta}(x)$ for the per-token negative log-likelihood of a
 language model with parameters $\theta$ and use
 $\mathrm{NCD}_{\!\mathrm{zip}}(\cdot,\cdot)$ for the normalised
@@ -162,31 +162,31 @@ For each document $d\in\cD$ compute the compression ratio
      {\text{bytes}_{\text{raw}}(d)}.
 \end{equation}
 A sequence of thresholds
-$0=c_0<c_1<\dots<c_{\lvert\mathcal{B}\rvert}=1$ induces the
+$0=c_0<c_1<\dots<c_{\lvert\cB\rvert}=1$ induces the
 buckets $B_m=\{d\!:\!\mathrm{CR}(d)\in[c_{m-1},c_m)\}$.
 
 \subsection{Step 2: Alignment prior}\label{sec:prior}
 Define the ZIP-FIT similarity
 \[
-  s(d)=1-\mathrm{NCD}_{\!\mathrm{zip}}\bigl(d,\mathcal{V}\bigr).
+  s(d)=1-\mathrm{NCD}_{\!\mathrm{zip}}\bigl(d,\cV\bigr).
 \]
 The alignment weight for bucket $m$ is
 \begin{equation}\label{eq:alpha0-b}
 \alpha^{(0)}_m \;=\;
 \frac{\sum_{d\in B_m}s(d)+\tau}
-     {\sum_{B_j\in\mathcal{B}}\sum_{d\in B_j}s(d)
-      +\lvert\mathcal{B}\rvert\,\tau},
+     {\sum_{B_j\in\cB}\sum_{d\in B_j}s(d)
+      +\lvert\cB\rvert\,\tau},
 \qquad
 \tau=10^{-3},
 \end{equation}
-yielding $\boldsymbol{\alpha}^{(0)}\in\Delta^{\lvert\mathcal{B}\rvert-1}$.
+yielding $\boldsymbol{\alpha}^{(0)}\in\Delta^{\lvert\cB\rvert-1}$.
 
 \subsection{Idea 0: Alignment-Weighted Pre-Training (AWPT)}
 Training minimises
 \begin{equation}\label{eq:awpt-final}
 \theta^\star\;=\;
 \argmin_{\theta\in\Theta}\;
-\sum_{B_m\in\mathcal{B}}
+\sum_{B_m\in\cB}
 \alpha^{(0)}_m\;\frac{1}{\lvert B_m\rvert}
 \sum_{x\in B_m} \ell_\theta(x).
 \end{equation}
@@ -207,14 +207,14 @@ Eq.~\eqref{eq:awpt-final} with $\boldsymbol{\alpha}^{\star}$.
 \begin{algorithm}
 \caption{ZipMix-DRO: One-Shot Group-DRO Refinement}\label{alg:zipmixdro}
 \begin{algorithmic}[1]
-\Require Buckets $\mathcal{B}$, alignment prior $\boldsymbol{\alpha}^{(0)}$,
+\Require Buckets $\cB$, alignment prior $\boldsymbol{\alpha}^{(0)}$,
          proxy model $\theta_0$, step size $\eta$, steps $T$
 \Ensure Refined weights $\boldsymbol{\alpha}^{\star}$
 \State $\boldsymbol{\alpha} \leftarrow \boldsymbol{\alpha}^{(0)}$
 \For{$t = 1,\dots,T$}
   \State Sample batch $x \sim$ hierarchical sampler$(\boldsymbol{\alpha})$
   \State Update $\theta$ with gradient step on $\ell_\theta(x)$
-  \State $\hat{\ell}_m \leftarrow$ average loss on bucket $B_m$  \;\%  excess loss
+  \State $\hat{\ell}_m \leftarrow$ average loss on bucket $B_m$ \Comment{excess loss}
   \State $\alpha_m \leftarrow \alpha_m \exp(\eta\,\hat{\ell}_m)$;
          normalise $\boldsymbol{\alpha}$
 \EndFor
