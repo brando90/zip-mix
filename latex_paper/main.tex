@@ -38,7 +38,7 @@ large-language-model pre-training.
 replications report accuracy losses: its coarse, hand-defined domains
 blur signal and noise, and its worst-case objective begins from an
 uninformative uniform prior—two assumptions at odds with the
-No-Free-Lunch theorem \citep{TODO}.
+No-Free-Lunch theorem \citep{wolpert1997no}.
 We present \emph{Compel-ZipMix}, which partitions the corpus into
 compression-ratio buckets and assigns each bucket a weight derived from a
 ZIP-based similarity to a small ``AGI'' validation suite.
@@ -70,13 +70,13 @@ compute to memorising noise, and downstream performance stalls.
 optimisation (Group-DRO).
 While its original study reported speed-ups, independent attempts often
 observe that DoReMi funnels probability mass into noisy domains and can
-reduce accuracy \citep{TODO}.
+reduce accuracy \citep{fan2023doge}.
 We trace this outcome to two linked assumptions:
 
 \textbf{H\textsubscript{prior}} — \emph{No task prior.}
 DoReMi starts from a uniform weighting of coarse domains
 (\emph{Wikipedia}, \emph{Books}, …).
-By the No-Free-Lunch theorem, a learner with no prior preference is free
+By the No-Free-Lunch theorem \citep{wolpert1997no}, a learner with no prior preference is free
 to prefer entropy; the optimiser thus boosts whichever bucket maximises
 loss—often noise.
 
@@ -103,7 +103,7 @@ To test and remedy these hypotheses we introduce two steps:
 H\textsubscript{max}).
 We cap model size jumps to $10^{3}$ to avoid the empirical
 ``dark-matter'' deviation of scaling laws
-\citep{gpt4report,schaeffer2025darkmatter}.
+\citep{gpt4report,schaeffer2024predictive}.
 
 \medskip
 \textbf{Empirical preview.}
@@ -226,7 +226,7 @@ Eq.~\eqref{eq:awpt-final} with $\boldsymbol{\alpha}^{\star}$.
 We limit the target model to at most
 $10^{3}$\,$\times$ the proxy size, remaining below the empirical
 ``dark-matter'' regime where scaling laws deviate
-\citep{gpt4report,schaeffer2025darkmatter}.
+\citep{gpt4report,schaeffer2024predictive}.
 
 
 %----------------------------------------------------------------------
@@ -249,7 +249,7 @@ bucket; replacing CR buckets with hand domains reproduces DoReMi's failure.
 \section{Dark-Matter Scaling}\label{sec:darkmatter}
 Scaling laws fit a power curve up to $\approx10^{3}$ scale; beyond that the
 loss deviates unpredictably, a phenomenon termed \emph{dark matter}
-\citep{schaeffer2025darkmatter}.  All ZipMix evaluations remain below this
+\citep{schaeffer2024predictive}.  All ZipMix evaluations remain below this
 threshold.
 
 %----------------------------------------------------------------------
