@@ -32,7 +32,7 @@ Thresholds above are motivated by FineWeb-EDU quartiles (Q1=0.67, Median=0.73, Q
 For each bucket B_m, compute alignment weight:
 
 ```
-alpha^(0)_m = (sum_{d in B_m} s(d) + tau) / (sum_j sum_{d in B_j} s(d) + |B| * tau)
+alpha^(0)_m = (sum_{d in B_m} s(d) + tau) / (sum_j sum_{d in B_j} s(d) + M * tau)
 ```
 
 where `s(d) = 1 - NCD_zip(d, V)` is the ZIP-FIT similarity to validation suite V, and tau = 1e-3 is a smoothing constant.
@@ -53,7 +53,7 @@ where `s(d) = 1 - NCD_zip(d, V)` is the ZIP-FIT similarity to validation suite V
 ## Datasets and Models
 
 - **Datasets:** FineWeb-EDU, DCLM, The Pile (use at least 2 to show generality)
-- **Validation suite (V):** MMLU-dev, GSM8K-dev, MiniF2F-dev (the "AGI suite")
+- **Validation suite (V):** MMLU-val, GSM8K-dev, MiniF2F-dev (the "AGI suite") — note: "MMLU-val" refers to the MMLU validation split (~1.5K items), not the 5-shot dev split (~285 items); see Experiment 02 plan for details
 - **Proxy model:** ~150M-280M parameters (following DoReMi convention)
 - **Target models:** proxy x10 (~1.4B) and proxy x100 (~14B), staying below 10^3 dark-matter limit
 - **Training framework:** Stanford Marin (per conversation with Elyas and David Hall)
