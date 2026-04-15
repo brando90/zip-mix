@@ -93,7 +93,7 @@ To test and remedy these hypotheses we introduce two steps:
 
 2. \emph{Alignment prior} assigns each bucket a weight
    $\alpha^{(0)}_m\propto\sum_{d\in B_m}s(d)+\tau$ with
-   $s(d)=1-\text{NCD}_{\text{zip}}\bigl(d,\cV\bigr)$ and
+   $s(d)=\max_{v\in\cV}[1-\text{NCD}_{\text{zip}}(d,v)]$ and
    $\tau=10^{-3}$, where $\cV$ is a small validation suite
    (MMLU, GSM8K, MiniF2F, …).
 
@@ -166,9 +166,10 @@ $0=c_0<c_1<\dots<c_{\lvert\cB\rvert}=1$ induces the
 buckets $B_m=\{d\!:\!\mathrm{CR}(d)\in[c_{m-1},c_m)\}$.
 
 \subsection{Step 2: Alignment prior}\label{sec:prior}
-Define the ZIP-FIT similarity
+Define the ZIP-FIT similarity as the maximum similarity between document
+$d$ and any item $v$ in the validation suite:
 \[
-  s(d)=1-\mathrm{NCD}_{\!\mathrm{zip}}\bigl(d,\cV\bigr).
+  s(d)=\max_{v\in\cV}\bigl[1-\mathrm{NCD}_{\!\mathrm{zip}}(d,v)\bigr].
 \]
 The alignment weight for bucket $m$ is
 \begin{equation}\label{eq:alpha0-b}
@@ -233,8 +234,8 @@ $10^{3}$\,$\times$ the proxy size, remaining below the empirical
 \section{Experiments}\label{sec:experiments}
 \textbf{Setup.}
 Proxy size X; target sizes X$\,\times\,10$ and X$\,\times\,100$.
-Datasets: \textsc{The Pile} and \textsc{FineWeb}.
-Validation suite: MMLU-dev, GSM8K-dev, MiniF2F-dev.
+Datasets: \textsc{The Pile}, \textsc{FineWeb-EDU}, and \textsc{DCLM}.
+Validation suite: MMLU-val, GSM8K-dev, MiniF2F-dev.
 
 \textbf{Main results.}
 ZipMix-Static beats uniform by +X\,pp.

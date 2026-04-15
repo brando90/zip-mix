@@ -14,6 +14,7 @@ Compel-ZipMix: Compression-Aligned Mixtures for Efficient Task-Aware Language-Mo
 - `latex_paper/` — LaTeX source for the ICLR 2025 submission (Compel-ZipMix paper)
 - `experiments/00_related_work/` — Comprehensive literature review (30+ papers)
 - `experiments/01_compression_threshold_buckets/` — Core experiment: CR buckets + alignment prior proposal
+- `experiments/02_alignment_prior_analysis/` — CPU-only: compute CR distributions, ZIP-FIT alignment priors, bucket sensitivity analysis
 
 ## LaTeX Paper
 

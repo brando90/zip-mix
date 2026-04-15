@@ -39,6 +39,7 @@ zip-mix/
   experiments/
     00_related_work/    # Comprehensive literature review
     01_compression_threshold_buckets/  # Core experiment: CR buckets + alignment prior
+    02_alignment_prior_analysis/       # CPU-only: CR distributions, ZIP-FIT priors, bucket sensitivity
 ```
 
 ## Method Summary
@@ -53,7 +54,7 @@ Partition into buckets `B_m = {d : CR(d) in [c_{m-1}, c_m)}` using thresholds ca
 ### Step 2: Alignment Prior
 Compute ZIP-FIT similarity `s(d) = 1 - NCD_zip(d, V)` to validation suite V. Bucket weight:
 ```
-alpha^(0)_m = (sum_{d in B_m} s(d) + tau) / (sum_j sum_{d in B_j} s(d) + |B| * tau)
+alpha^(0)_m = (sum_{d in B_m} s(d) + tau) / (sum_j sum_{d in B_j} s(d) + M * tau)
 ```
 
 ### Step 3: Training
