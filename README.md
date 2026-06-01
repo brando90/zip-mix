@@ -2,6 +2,30 @@
 
 Mixture composition is a pivotal yet under-explored axis of large-language-model pre-training. **Compel-ZipMix** partitions the corpus into compression-ratio buckets and assigns each bucket a weight derived from a ZIP-based similarity to a small validation suite, enabling *practically free, domain-conditioned* foundation checkpoints.
 
+## Core Idea
+
+> **You already know what you want the model to be good at — so let that goal choose the pre-training data.**
+
+A practitioner can specify their goal *concretely*: through **examples / data**, or through a **rubric / constitution** (which can itself be generated as **synthetic data**). That specification is enough to assemble a small **validation "benchmark" set** that operationalizes the goal — a compact, machine-checkable picture of what "good" looks like.
+
+Given that benchmark and the **entire** (pre-)training corpus, Compel-ZipMix assigns **every** piece of training data a **weight according to how well it aligns with the goal**, then trains on the resulting goal-aligned mixture. The guiding principle:
+
+> **benchmark ≈ pre-train → best performance.**
+
+This turns mixture design from a fixed, hand-tuned recipe into a **goal-conditioned** one. Change the validation benchmark — e.g. swap general MMLU for Lean / MiniF2F / a synthetic rubric — re-score the corpus, and you get a *new* mixture targeted at the *new* goal, for the cost of a single CPU-only scoring pass. No human-defined domains, no uniform prior, no retraining the data pipeline.
+
+**How "alignment to the goal" is measured cheaply — the ZipMix mechanism.** Scoring a whole corpus against the goal has to be fast and model-free, so ZipMix uses **compression** as the alignment signal:
+
+1. **Compression buckets** partition the corpus by compression ratio `CR(d) = bytes_zip(d) / bytes_raw(d)`, a model-free proxy for information density.
+2. **Alignment prior** weights each bucket by its **ZIP-FIT** similarity (normalized compression distance) to the validation benchmark `V` — i.e. how "goal-like" the data in that bucket is.
+
+Two project goals motivate this (see the [idea deck & research journal](https://docs.google.com/presentation/d/1cI569bcyQpxB66MUnflvBBXJKxe26GDodLig1xQ1iEI/edit?slide=id.g372a0b56031_0_223#slide=id.g372a0b56031_0_223)):
+
+- **Goal 1 — fix DoReMi's failure modes.** Choose mixture weights for *general intelligence* + *self-improvement* + *domain-specific* skills (e.g. coding / Lean), instead of DoReMi's uniform prior over coarse, hand-defined domains. Human-labeled mixtures vs. unsupervised, information-density/compression-based ones.
+- **Goal 2 — pre-train a general + domain-specific model.** Concretely, a foundation model for Lean: translate a large Python corpus to Lean (via the VeriBench agent), filter by compilation, mix into FineWeb-Edu, and let the goal-aligned weighting do the rest.
+
+📊 **Full idea, motivation, and running research journal:** <https://docs.google.com/presentation/d/1cI569bcyQpxB66MUnflvBBXJKxe26GDodLig1xQ1iEI/edit?slide=id.g372a0b56031_0_223#slide=id.g372a0b56031_0_223>
+
 ## Overview
 
 DoReMi learns domain weights via Group-DRO, but empirical replications report accuracy losses: its coarse, hand-defined domains blur signal and noise, and its worst-case objective begins from an uninformative uniform prior. We trace this to two hypotheses:
@@ -23,7 +47,7 @@ Two variants:
 |---|---|
 | Paper (Overleaf) | https://www.overleaf.com/project/6861da6f7c236a3466d7e749 |
 | Slides | https://docs.google.com/presentation/d/1XoQ24_KofQUOeSxLE_lNVjYAw0lMtsm9spF6ertwL7s/edit |
-| Research Journal | https://docs.google.com/presentation/d/1cI569bcyQpxB66MUnflvBBXJKxe26GDodLig1xQ1iEI/edit |
+| Idea deck & Research Journal | https://docs.google.com/presentation/d/1cI569bcyQpxB66MUnflvBBXJKxe26GDodLig1xQ1iEI/edit?slide=id.g372a0b56031_0_223#slide=id.g372a0b56031_0_223 |
 | Compel (predecessor, ICLR 2026 submission) | https://openreview.net/forum?id=KFafeqE5fe |
 | ZIP-FIT (compression-based alignment) | https://arxiv.org/abs/2410.18194 |
 | Alignment Coefficient | https://arxiv.org/abs/2501.08496 |
