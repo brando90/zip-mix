@@ -2,9 +2,9 @@
 
 **Doc link:** <https://github.com/brando90/zip-mix/blob/main/experiments/CKPT_MASTER_tmuxnone_cxd_01a1081e.md>
 
-**TLDR:** All 27 pretraining models completed cleanly; the original Zip-Mix gain threshold was not met. The revised 21-cell fine-tuning run is active on a second A100, with fixed-byte scoring and a wrong-target control. Fine-tuning results remain pending; a separate nine-cell contrastive selector test was frozen and launched before inspecting those outcomes.
+**TLDR:** All 27 pretraining models completed cleanly; the original Zip-Mix gain threshold was not met. The revised 21-cell fine-tuning run is active on a second A100, with fixed-byte scoring and a wrong-target control. The separate nine-cell contrastive selector study also completed: its planned target comparison does not support an alignment benefit. The original 21-cell fine-tuning results remain pending.
 
-Updated: 10-04-2026 12:53 PDT
+Updated: 10-04-2026 13:22 PDT
 
 ## Identity and recovery
 
@@ -24,10 +24,10 @@ Preserve pre-existing staged deletions, Experiment 03 rename/edits, paper edits 
 
 Ordinary Python supervision survives coordinator disconnection, owns only its process group and emits timestamped, run-bound progress. A coordinator turn ending never stops healthy admitted work. No automatic reboot recovery is claimed. Analyze all declared cells, preserve missing/failing/recovered rows, verify the unchanged-base evaluation and resource release, and update numerical reports before calling either matrix complete.
 
-Experiment 06 is admitted and running from published source `ab85f46`, launched at 12:50:58 PDT: three selector methods × three seeds plus base; bounded at two device-hours after resource preflight. It includes a source-mass-matched control and shuffled contrast scores. Its design uses training/development diagnostics and the completed pretraining outcome, with no Experiment 05 benchmark inspection.
+Experiment 06 completed cleanly from source `ab85f46` at 13:13 PDT: three selector methods × three seeds plus base; bounded at two device-hours after resource preflight. It includes a source-mass-matched control and shuffled contrast scores. Its design uses training/development diagnostics and the completed pretraining outcome, with no Experiment 05 benchmark inspection.
 
 Three seeds provide a descriptive mechanism screen: the smallest two-sided exact sign-test p-value is 0.25. Report means, paired intervals, retained denominators and total costs. This does not establish optimal training or state-of-the-art superiority. Larger faithful reproductions and reinforcement learning remain prospective work.
 
 ## Next actions
 
-Experiment 04 is complete and its point estimates, uncertainty and structural bin-capacity diagnosis are published. Experiment 05 remains healthy and its benchmark outcomes are uninspected. Complete the separately frozen nine-cell Experiment 06 contrastive selector study, using the same pool/model/updates with checkpoint interval 64 as a documented operational difference. Keep admitted work healthy. Analyze complete artifacts, publish compact numerical receipts/figures and update the root index. No human decision is waiting.
+Experiment 04 is complete and its point estimates, uncertainty and structural bin-capacity diagnosis are published. Experiment 05 remains healthy and its benchmark outcomes are uninspected. Experiment 06 also completed and its source-matched target difference is −1.73 [−10.63, 7.16] percentage points, exact sign-test p-val=1.0. Its owned accelerator process is released. Preserve its full proof/figure and keep Experiment 05 healthy; after all 21 cells complete, audit its complete artifacts, run the exploratory cross-study report and publish the remaining results. No human decision is waiting.

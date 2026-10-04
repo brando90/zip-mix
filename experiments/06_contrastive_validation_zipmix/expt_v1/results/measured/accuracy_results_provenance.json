@@ -1,0 +1,86 @@
+{
+  "files": {
+    "accuracy_results.pdf": "f9e7d39ae2f594dd8222504806c1bb0e8de720e7c8f985071054e2d0dbd010a6",
+    "accuracy_results.png": "b422215ffc206cc90f19c65d62feacb798f614ea168ee620e65dbc189f0a0dc6"
+  },
+  "interval_definition": "95% Student-t interval across 3 training seeds; fixed evaluation items",
+  "methods": [
+    "contrastive_zipmix",
+    "source_matched",
+    "contrastive_shuffled"
+  ],
+  "run_id": "b67673d75e6d5e9ac6bf962cfe65202d095e43c02262b35063717f994aaf35a5",
+  "summary_file": "summary.json",
+  "summary_sha256": "ff6b7edc754dae7f893ec7cc90d1ea44c382a684ae1b72e0d99eb6745ccb9c6f",
+  "target_comparison_family": {
+    "adjustment": "Holm step-down; raw p-values retained",
+    "controls": [
+      "source_matched",
+      "contrastive_shuffled"
+    ],
+    "missing_policy": "Missing tests stay null and remain in the fixed family size; observed tests are conservatively adjusted.",
+    "primary": "contrastive_zipmix",
+    "scope": "descriptive only; retention and other diagnostics are outside this family",
+    "size": 2
+  },
+  "target_contrasts": {
+    "contrastive_shuffled": {
+      "baseline_mean": 0.7526666666666667,
+      "differences": [
+        0.018000000000000016,
+        -0.016000000000000014,
+        0.0
+      ],
+      "interval95": [
+        -0.04158802170585232,
+        0.042921355039185656
+      ],
+      "mean": 0.0006666666666666673,
+      "method_mean": 0.7533333333333333,
+      "multiplicity": "Holm-adjusted within the two planned target contrasts; no confirmatory claim",
+      "n": 3,
+      "p_value": 1.0,
+      "p_value_holm": 1.0,
+      "paired_seeds": [
+        0,
+        1,
+        2
+      ],
+      "sd": 0.01700980109623078,
+      "test": "exact two-sided sign test; null P(method accuracy > baseline accuracy)=0.5 among non-ties",
+      "ties": 1
+    },
+    "source_matched": {
+      "baseline_mean": 0.7706666666666667,
+      "differences": [
+        0.02200000000000002,
+        -0.04800000000000004,
+        -0.026000000000000023
+      ],
+      "interval95": [
+        -0.106254823081489,
+        0.07158815641482229
+      ],
+      "mean": -0.01733333333333335,
+      "method_mean": 0.7533333333333333,
+      "multiplicity": "Holm-adjusted within the two planned target contrasts; no confirmatory claim",
+      "n": 3,
+      "p_value": 1.0,
+      "p_value_holm": 1.0,
+      "paired_seeds": [
+        0,
+        1,
+        2
+      ],
+      "sd": 0.03579571668975683,
+      "test": "exact two-sided sign test; null P(method accuracy > baseline accuracy)=0.5 among non-ties",
+      "ties": 0
+    }
+  },
+  "training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "verified_training_cells": 9
+}

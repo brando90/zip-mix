@@ -218,7 +218,7 @@ def render(summary_path, output_dir=None, check_only=False):
                       markeredgecolor=neutral, label=f"Seed {seed}") for seed, marker in zip(SEEDS, markers)]
     handles.extend([Line2D([], [], color=neutral, marker="D", label="Mean + 95% training-seed interval"),
                     Line2D([], [], color="#777777", linestyle="--", label="Base checkpoint · evaluated once")])
-    figure.legend(handles=handles, loc="upper center", bbox_to_anchor=(.5, .855),
+    figure.legend(handles=handles, loc="upper center", bbox_to_anchor=(.5, .885),
                   ncol=5, frameon=False, fontsize=9.5, handlelength=1.7, columnspacing=1.2)
     figure.suptitle("Contrastive ZipMix: compact three-seed mechanism screen", x=.52, y=.965,
                    fontsize=17, fontweight="bold", color="#1C2933")

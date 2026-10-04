@@ -2,7 +2,7 @@
 
 **Doc link:** <https://github.com/brando90/zip-mix/blob/main/experiments/06_contrastive_validation_zipmix/README.md>
 
-**TLDR:** The nine-cell contrastive-selector study launched at 12:50 PDT on 10-04-2026 after 35 remote checks passed. The base evaluation is complete; benchmark results remain pending.
+**TLDR:** All nine models and the base evaluation completed cleanly. The paired target-accuracy difference against matching source proportions was −1.73 [−10.63, 7.16] percentage points, p-val=1.0 (exact sign test); the study does not support an alignment benefit.
 
 The pretraining [bin-capacity diagnosis](../04_validation_guided_zipmix/expt_v1/results/bin_capacity.md) found that fixed compression bins restrict target-source exposure. In the supervised pool, a positive true-minus-wrong development contrast yields 58.3210% SciQ sampling mass. This experiment asks whether that contrast helps beyond merely changing source proportions.
 
@@ -24,8 +24,10 @@ Training uses the same pinned Qwen2.5-0.5B base model, float32 master parameters
 | [Manifest](expt_v1/data_manifest.json) | Selector vectors' identity, source masses, inherited input hashes |
 | [Execution prompt](expt_v1/cc.md) | Full nine-cell execution contract |
 | [Checkpoint](CKPT_contrastive_validation.md) | Current handoff state |
-| [Results](results.md) | Canonical pending/result record |
+| [Results](results.md) | Complete outcomes, uncertainty, costs and provenance |
 
 The prospective timestamp records that the selector design used no Experiment 05 benchmark outcomes. Comparisons against its 21 cells are deferred until both complete matrices exist and remain exploratory. This experiment shares the public held-out pools with its parent and is not an independent benchmark replication.
 
 The [freeze receipt at the launch commit](https://github.com/brando90/zip-mix/blob/ab85f46074d0e479f39369cb0fe7fa0751876ef2/experiments/06_contrastive_validation_zipmix/expt_v1/freeze_receipt.json) binds the prospective source and initial documents. Live README, checkpoint and result documents subsequently evolve; training and analysis source identities stay frozen.
+
+[Complete results and figure](results.md) report every seed, the two planned comparisons and all retained limitations. Three training seeds provide descriptive uncertainty only; both controls and the primary method scored below the unchanged base in this run set.

@@ -1,0 +1,35 @@
+{
+  "cell": "contrastive_zipmix__seed0",
+  "completed_at": "2026-10-04T19:53:54.944960+00:00",
+  "evaluation_seconds": 16.503446183167398,
+  "infrastructure_resumes": [],
+  "manifest_id": "242d063db24573adc525b7fb523cc72bc0b6a01cb7b4f36248b823f93bccc1a8",
+  "mean_training_loss": 0.8601478307973593,
+  "method": "contrastive_zipmix",
+  "metrics": {
+    "retention": {
+      "accuracy": 0.494,
+      "correct": 247,
+      "count": 500,
+      "label_nll": 1.4117065636515618
+    },
+    "target": {
+      "accuracy": 0.77,
+      "correct": 385,
+      "count": 500,
+      "label_nll": 0.6419948035161942
+    }
+  },
+  "model_file": "model.pt",
+  "model_sha256": "a4f5b14c577fed3f62504a35cf9bf34ea634923aa941d89830a2c89bf4be4ae4",
+  "padded_input_tokens": 180896,
+  "peak_allocated_bytes": 12709536768,
+  "processed_input_tokens": 102707,
+  "run_id": "b67673d75e6d5e9ac6bf962cfe65202d095e43c02262b35063717f994aaf35a5",
+  "seed": 0,
+  "steps": 128,
+  "supervised_tokens": 2048,
+  "this_process_cell_seconds": 164.46026487182826,
+  "training_seconds": 142.72618327941746,
+  "unique_training_examples": 1714
+}

@@ -1,0 +1,35 @@
+{
+  "cell": "source_matched__seed1",
+  "completed_at": "2026-10-04T20:03:45.364002+00:00",
+  "evaluation_seconds": 17.187980880960822,
+  "infrastructure_resumes": [],
+  "manifest_id": "242d063db24573adc525b7fb523cc72bc0b6a01cb7b4f36248b823f93bccc1a8",
+  "mean_training_loss": 0.8799604999367148,
+  "method": "source_matched",
+  "metrics": {
+    "retention": {
+      "accuracy": 0.548,
+      "correct": 274,
+      "count": 500,
+      "label_nll": 1.2489779894072564
+    },
+    "target": {
+      "accuracy": 0.786,
+      "correct": 393,
+      "count": 500,
+      "label_nll": 0.6147428175713867
+    }
+  },
+  "model_file": "model.pt",
+  "model_sha256": "6d8bd5054d1046404e205618683ce45009092ebfef96644eac6eef0744da1805",
+  "padded_input_tokens": 181184,
+  "peak_allocated_bytes": 11453806592,
+  "processed_input_tokens": 101657,
+  "run_id": "b67673d75e6d5e9ac6bf962cfe65202d095e43c02262b35063717f994aaf35a5",
+  "seed": 1,
+  "steps": 128,
+  "supervised_tokens": 2048,
+  "this_process_cell_seconds": 138.6115647694096,
+  "training_seconds": 120.50071306061,
+  "unique_training_examples": 1774
+}

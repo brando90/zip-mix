@@ -1,0 +1,729 @@
+{
+  "all_cells_verified": true,
+  "audit_errors": [],
+  "base": {
+    "retention": {
+      "accuracy": 0.57,
+      "correct": 285,
+      "count": 500,
+      "label_nll": 1.1395306495018303
+    },
+    "target": {
+      "accuracy": 0.808,
+      "correct": 404,
+      "count": 500,
+      "label_nll": 0.5560141892088577
+    }
+  },
+  "base_ledger_status": "complete",
+  "base_status": "complete",
+  "cells": [
+    {
+      "analysis_status": "complete",
+      "availability": "available",
+      "id": "contrastive_zipmix__seed0",
+      "infrastructure_resumes": [],
+      "ledger_status": "complete",
+      "method": "contrastive_zipmix",
+      "retention_accuracy": 0.494,
+      "seed": 0,
+      "target_accuracy": 0.77
+    },
+    {
+      "analysis_status": "complete",
+      "availability": "available",
+      "id": "contrastive_zipmix__seed1",
+      "infrastructure_resumes": [],
+      "ledger_status": "complete",
+      "method": "contrastive_zipmix",
+      "retention_accuracy": 0.458,
+      "seed": 1,
+      "target_accuracy": 0.738
+    },
+    {
+      "analysis_status": "complete",
+      "availability": "available",
+      "id": "contrastive_zipmix__seed2",
+      "infrastructure_resumes": [],
+      "ledger_status": "complete",
+      "method": "contrastive_zipmix",
+      "retention_accuracy": 0.53,
+      "seed": 2,
+      "target_accuracy": 0.752
+    },
+    {
+      "analysis_status": "complete",
+      "availability": "available",
+      "id": "source_matched__seed0",
+      "infrastructure_resumes": [],
+      "ledger_status": "complete",
+      "method": "source_matched",
+      "retention_accuracy": 0.494,
+      "seed": 0,
+      "target_accuracy": 0.748
+    },
+    {
+      "analysis_status": "complete",
+      "availability": "available",
+      "id": "source_matched__seed1",
+      "infrastructure_resumes": [],
+      "ledger_status": "complete",
+      "method": "source_matched",
+      "retention_accuracy": 0.548,
+      "seed": 1,
+      "target_accuracy": 0.786
+    },
+    {
+      "analysis_status": "complete",
+      "availability": "available",
+      "id": "source_matched__seed2",
+      "infrastructure_resumes": [],
+      "ledger_status": "complete",
+      "method": "source_matched",
+      "retention_accuracy": 0.552,
+      "seed": 2,
+      "target_accuracy": 0.778
+    },
+    {
+      "analysis_status": "complete",
+      "availability": "available",
+      "id": "contrastive_shuffled__seed0",
+      "infrastructure_resumes": [],
+      "ledger_status": "complete",
+      "method": "contrastive_shuffled",
+      "retention_accuracy": 0.526,
+      "seed": 0,
+      "target_accuracy": 0.752
+    },
+    {
+      "analysis_status": "complete",
+      "availability": "available",
+      "id": "contrastive_shuffled__seed1",
+      "infrastructure_resumes": [],
+      "ledger_status": "complete",
+      "method": "contrastive_shuffled",
+      "retention_accuracy": 0.494,
+      "seed": 1,
+      "target_accuracy": 0.754
+    },
+    {
+      "analysis_status": "complete",
+      "availability": "available",
+      "id": "contrastive_shuffled__seed2",
+      "infrastructure_resumes": [],
+      "ledger_status": "complete",
+      "method": "contrastive_shuffled",
+      "retention_accuracy": 0.51,
+      "seed": 2,
+      "target_accuracy": 0.752
+    }
+  ],
+  "contrastive_minus_baseline": {
+    "contrastive_shuffled": {
+      "retention": {
+        "baseline_mean": 0.51,
+        "differences": [
+          -0.03200000000000003,
+          -0.035999999999999976,
+          0.020000000000000018
+        ],
+        "interval95": [
+          -0.09360694303242208,
+          0.061606943032422076
+        ],
+        "mean": -0.015999999999999997,
+        "method_mean": 0.494,
+        "multiplicity": "unadjusted exploratory comparisons; no confirmatory claim",
+        "n": 3,
+        "p_value": 1.0,
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "sd": 0.031240998703626628,
+        "test": "exact two-sided sign test; null P(method accuracy > baseline accuracy)=0.5 among non-ties",
+        "ties": 0
+      },
+      "target": {
+        "baseline_mean": 0.7526666666666667,
+        "differences": [
+          0.018000000000000016,
+          -0.016000000000000014,
+          0.0
+        ],
+        "interval95": [
+          -0.04158802170585232,
+          0.042921355039185656
+        ],
+        "mean": 0.0006666666666666673,
+        "method_mean": 0.7533333333333333,
+        "multiplicity": "Holm-adjusted within the two planned target contrasts; no confirmatory claim",
+        "n": 3,
+        "p_value": 1.0,
+        "p_value_holm": 1.0,
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "sd": 0.01700980109623078,
+        "test": "exact two-sided sign test; null P(method accuracy > baseline accuracy)=0.5 among non-ties",
+        "ties": 1
+      }
+    },
+    "source_matched": {
+      "retention": {
+        "baseline_mean": 0.5313333333333333,
+        "differences": [
+          0.0,
+          -0.09000000000000002,
+          -0.02200000000000002
+        ],
+        "interval95": [
+          -0.1538850227088902,
+          0.07921835604222352
+        ],
+        "mean": -0.03733333333333335,
+        "method_mean": 0.494,
+        "multiplicity": "unadjusted exploratory comparisons; no confirmatory claim",
+        "n": 3,
+        "p_value": 0.5,
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "sd": 0.04691836882643444,
+        "test": "exact two-sided sign test; null P(method accuracy > baseline accuracy)=0.5 among non-ties",
+        "ties": 1
+      },
+      "target": {
+        "baseline_mean": 0.7706666666666667,
+        "differences": [
+          0.02200000000000002,
+          -0.04800000000000004,
+          -0.026000000000000023
+        ],
+        "interval95": [
+          -0.106254823081489,
+          0.07158815641482229
+        ],
+        "mean": -0.01733333333333335,
+        "method_mean": 0.7533333333333333,
+        "multiplicity": "Holm-adjusted within the two planned target contrasts; no confirmatory claim",
+        "n": 3,
+        "p_value": 1.0,
+        "p_value_holm": 1.0,
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "sd": 0.03579571668975683,
+        "test": "exact two-sided sign test; null P(method accuracy > baseline accuracy)=0.5 among non-ties",
+        "ties": 0
+      }
+    }
+  },
+  "created_at": "2026-10-04T20:13:09.772347+00:00",
+  "expected_training_cells": 9,
+  "full_procedure_complete": true,
+  "interval_method": "95% Student-t interval across independent matched training seeds, n>=3; evaluation items held fixed",
+  "ledger_status_counts": {
+    "complete": 9
+  },
+  "methods": {
+    "contrastive_shuffled": {
+      "completed_seeds": [
+        0,
+        1,
+        2
+      ],
+      "infrastructure_resumes": {
+        "0": [],
+        "1": [],
+        "2": []
+      },
+      "missing_seeds": [],
+      "processed_input_tokens": [
+        100509,
+        98123,
+        99451
+      ],
+      "retention": {
+        "accuracy": {
+          "interval95": [
+            0.4702537966119947,
+            0.5497462033880053
+          ],
+          "mean": 0.51,
+          "n": 3,
+          "sd": 0.016000000000000014
+        },
+        "paired_difference": {
+          "baseline_mean": 0.5313333333333333,
+          "differences": [
+            0.03200000000000003,
+            -0.05400000000000005,
+            -0.04200000000000004
+          ],
+          "interval95": [
+            -0.1370347862664155,
+            0.09436811959974879
+          ],
+          "mean": -0.021333333333333353,
+          "method_mean": 0.51,
+          "multiplicity": "unadjusted exploratory comparisons; no confirmatory claim",
+          "n": 3,
+          "p_value": 1.0,
+          "paired_seeds": [
+            0,
+            1,
+            2
+          ],
+          "sd": 0.04657610259922289,
+          "test": "exact two-sided sign test; null P(method accuracy > baseline accuracy)=0.5 among non-ties",
+          "ties": 0
+        },
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "per_seed": [
+          {
+            "accuracy": 0.526,
+            "correct": 263,
+            "count": 500,
+            "label_nll": 1.1966730587929488,
+            "seed": 0
+          },
+          {
+            "accuracy": 0.494,
+            "correct": 247,
+            "count": 500,
+            "label_nll": 1.3520381993837653,
+            "seed": 1
+          },
+          {
+            "accuracy": 0.51,
+            "correct": 255,
+            "count": 500,
+            "label_nll": 1.2103024736717343,
+            "seed": 2
+          }
+        ]
+      },
+      "supervised_tokens": [
+        2048,
+        2048,
+        2048
+      ],
+      "target": {
+        "accuracy": {
+          "interval95": [
+            0.7497982315135004,
+            0.755535101819833
+          ],
+          "mean": 0.7526666666666667,
+          "n": 3,
+          "sd": 0.0011547005383792527
+        },
+        "paired_difference": {
+          "baseline_mean": 0.7706666666666667,
+          "differences": [
+            0.0040000000000000036,
+            -0.03200000000000003,
+            -0.026000000000000023
+          ],
+          "interval95": [
+            -0.0659123130686648,
+            0.029912313068664764
+          ],
+          "mean": -0.018000000000000016,
+          "method_mean": 0.7526666666666667,
+          "multiplicity": "unadjusted exploratory comparisons; no confirmatory claim",
+          "n": 3,
+          "p_value": 1.0,
+          "paired_seeds": [
+            0,
+            1,
+            2
+          ],
+          "sd": 0.019287301521985926,
+          "test": "exact two-sided sign test; null P(method accuracy > baseline accuracy)=0.5 among non-ties",
+          "ties": 0
+        },
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "per_seed": [
+          {
+            "accuracy": 0.752,
+            "correct": 376,
+            "count": 500,
+            "label_nll": 0.6939431355614215,
+            "seed": 0
+          },
+          {
+            "accuracy": 0.754,
+            "correct": 377,
+            "count": 500,
+            "label_nll": 0.7342358319163322,
+            "seed": 1
+          },
+          {
+            "accuracy": 0.752,
+            "correct": 376,
+            "count": 500,
+            "label_nll": 0.702349180244375,
+            "seed": 2
+          }
+        ]
+      },
+      "training_seconds": [
+        125.40842257067561,
+        102.92032989673316,
+        134.95044690091163
+      ]
+    },
+    "contrastive_zipmix": {
+      "completed_seeds": [
+        0,
+        1,
+        2
+      ],
+      "infrastructure_resumes": {
+        "0": [],
+        "1": [],
+        "2": []
+      },
+      "missing_seeds": [],
+      "processed_input_tokens": [
+        102707,
+        101586,
+        102158
+      ],
+      "retention": {
+        "accuracy": {
+          "interval95": [
+            0.4045710423769881,
+            0.5834289576230118
+          ],
+          "mean": 0.494,
+          "n": 3,
+          "sd": 0.036000000000000004
+        },
+        "paired_difference": {
+          "baseline_mean": 0.5313333333333333,
+          "differences": [
+            0.0,
+            -0.09000000000000002,
+            -0.02200000000000002
+          ],
+          "interval95": [
+            -0.1538850227088902,
+            0.07921835604222352
+          ],
+          "mean": -0.03733333333333335,
+          "method_mean": 0.494,
+          "multiplicity": "unadjusted exploratory comparisons; no confirmatory claim",
+          "n": 3,
+          "p_value": 0.5,
+          "paired_seeds": [
+            0,
+            1,
+            2
+          ],
+          "sd": 0.04691836882643444,
+          "test": "exact two-sided sign test; null P(method accuracy > baseline accuracy)=0.5 among non-ties",
+          "ties": 1
+        },
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "per_seed": [
+          {
+            "accuracy": 0.494,
+            "correct": 247,
+            "count": 500,
+            "label_nll": 1.4117065636515618,
+            "seed": 0
+          },
+          {
+            "accuracy": 0.458,
+            "correct": 229,
+            "count": 500,
+            "label_nll": 1.4257435791045427,
+            "seed": 1
+          },
+          {
+            "accuracy": 0.53,
+            "correct": 265,
+            "count": 500,
+            "label_nll": 1.2703196780905128,
+            "seed": 2
+          }
+        ]
+      },
+      "supervised_tokens": [
+        2048,
+        2048,
+        2048
+      ],
+      "target": {
+        "accuracy": {
+          "interval95": [
+            0.7134837586306014,
+            0.7931829080360652
+          ],
+          "mean": 0.7533333333333333,
+          "n": 3,
+          "sd": 0.016041612554021298
+        },
+        "paired_difference": {
+          "baseline_mean": 0.7706666666666667,
+          "differences": [
+            0.02200000000000002,
+            -0.04800000000000004,
+            -0.026000000000000023
+          ],
+          "interval95": [
+            -0.106254823081489,
+            0.07158815641482229
+          ],
+          "mean": -0.01733333333333335,
+          "method_mean": 0.7533333333333333,
+          "multiplicity": "unadjusted exploratory comparisons; no confirmatory claim",
+          "n": 3,
+          "p_value": 1.0,
+          "paired_seeds": [
+            0,
+            1,
+            2
+          ],
+          "sd": 0.03579571668975683,
+          "test": "exact two-sided sign test; null P(method accuracy > baseline accuracy)=0.5 among non-ties",
+          "ties": 0
+        },
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "per_seed": [
+          {
+            "accuracy": 0.77,
+            "correct": 385,
+            "count": 500,
+            "label_nll": 0.6419948035161942,
+            "seed": 0
+          },
+          {
+            "accuracy": 0.738,
+            "correct": 369,
+            "count": 500,
+            "label_nll": 0.7076282289940864,
+            "seed": 1
+          },
+          {
+            "accuracy": 0.752,
+            "correct": 376,
+            "count": 500,
+            "label_nll": 0.6794215873032808,
+            "seed": 2
+          }
+        ]
+      },
+      "training_seconds": [
+        142.72618327941746,
+        137.5046900138259,
+        132.37442588806152
+      ]
+    },
+    "source_matched": {
+      "completed_seeds": [
+        0,
+        1,
+        2
+      ],
+      "infrastructure_resumes": {
+        "0": [],
+        "1": [],
+        "2": []
+      },
+      "missing_seeds": [],
+      "processed_input_tokens": [
+        101809,
+        101657,
+        102362
+      ],
+      "retention": {
+        "accuracy": {
+          "interval95": [
+            0.45086362959724874,
+            0.611803037069418
+          ],
+          "mean": 0.5313333333333333,
+          "n": 3,
+          "sd": 0.03239341496868361
+        },
+        "paired_difference": {
+          "baseline_mean": 0.5313333333333333,
+          "differences": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interval95": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "method_mean": 0.5313333333333333,
+          "multiplicity": "unadjusted exploratory comparisons; no confirmatory claim",
+          "n": 3,
+          "p_value": 1.0,
+          "paired_seeds": [
+            0,
+            1,
+            2
+          ],
+          "sd": 0.0,
+          "test": "exact two-sided sign test; null P(method accuracy > baseline accuracy)=0.5 among non-ties",
+          "ties": 3
+        },
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "per_seed": [
+          {
+            "accuracy": 0.494,
+            "correct": 247,
+            "count": 500,
+            "label_nll": 1.3047972622327506,
+            "seed": 0
+          },
+          {
+            "accuracy": 0.548,
+            "correct": 274,
+            "count": 500,
+            "label_nll": 1.2489779894072564,
+            "seed": 1
+          },
+          {
+            "accuracy": 0.552,
+            "correct": 276,
+            "count": 500,
+            "label_nll": 1.2463163059651852,
+            "seed": 2
+          }
+        ]
+      },
+      "supervised_tokens": [
+        2048,
+        2048,
+        2048
+      ],
+      "target": {
+        "accuracy": {
+          "interval95": [
+            0.7209011767303264,
+            0.8204321566030071
+          ],
+          "mean": 0.7706666666666667,
+          "n": 3,
+          "sd": 0.020033305601755643
+        },
+        "paired_difference": {
+          "baseline_mean": 0.7706666666666667,
+          "differences": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "interval95": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "method_mean": 0.7706666666666667,
+          "multiplicity": "unadjusted exploratory comparisons; no confirmatory claim",
+          "n": 3,
+          "p_value": 1.0,
+          "paired_seeds": [
+            0,
+            1,
+            2
+          ],
+          "sd": 0.0,
+          "test": "exact two-sided sign test; null P(method accuracy > baseline accuracy)=0.5 among non-ties",
+          "ties": 3
+        },
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "per_seed": [
+          {
+            "accuracy": 0.748,
+            "correct": 374,
+            "count": 500,
+            "label_nll": 0.6499473610664718,
+            "seed": 0
+          },
+          {
+            "accuracy": 0.786,
+            "correct": 393,
+            "count": 500,
+            "label_nll": 0.6147428175713867,
+            "seed": 1
+          },
+          {
+            "accuracy": 0.778,
+            "correct": 389,
+            "count": 500,
+            "label_nll": 0.6642944511119276,
+            "seed": 2
+          }
+        ]
+      },
+      "training_seconds": [
+        118.6937582725659,
+        120.50071306061,
+        108.86953077465296
+      ]
+    }
+  },
+  "minimum_two_sided_sign_test_p_with_three_non_tied_pairs": 0.25,
+  "missing_policy": "All 9 rows retained. Unverified metrics are null; comparisons use only explicitly identified complete seed pairs.",
+  "per_method_reference": "source_matched",
+  "primary_method": "contrastive_zipmix",
+  "run_id": "b67673d75e6d5e9ac6bf962cfe65202d095e43c02262b35063717f994aaf35a5",
+  "scope": "descriptive mechanism screen; no confirmatory or state-of-the-art verdict",
+  "selector_condition": "Prospective positive target-minus-wrong-target pack alignment, with source-matched and shuffled controls; the Experiment 05 version 2 pool remains frozen.",
+  "status_counts": {
+    "complete": 9
+  },
+  "target_comparison_family": {
+    "adjustment": "Holm step-down; raw p-values retained",
+    "controls": [
+      "source_matched",
+      "contrastive_shuffled"
+    ],
+    "missing_policy": "Missing tests stay null and remain in the fixed family size; observed tests are conservatively adjusted.",
+    "primary": "contrastive_zipmix",
+    "scope": "descriptive only; retention and other diagnostics are outside this family",
+    "size": 2
+  },
+  "unavailable_policy": "An arm with no eligible training examples remains unavailable in every seed; this is not a measured failure of its hypothesis.",
+  "verified_training_cells": 9
+}

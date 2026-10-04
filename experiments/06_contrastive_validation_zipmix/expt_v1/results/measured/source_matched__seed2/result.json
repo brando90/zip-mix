@@ -1,0 +1,35 @@
+{
+  "cell": "source_matched__seed2",
+  "completed_at": "2026-10-04T20:05:56.007463+00:00",
+  "evaluation_seconds": 16.570249955169857,
+  "infrastructure_resumes": [],
+  "manifest_id": "242d063db24573adc525b7fb523cc72bc0b6a01cb7b4f36248b823f93bccc1a8",
+  "mean_training_loss": 0.9623724387492985,
+  "method": "source_matched",
+  "metrics": {
+    "retention": {
+      "accuracy": 0.552,
+      "correct": 276,
+      "count": 500,
+      "label_nll": 1.2463163059651852
+    },
+    "target": {
+      "accuracy": 0.778,
+      "correct": 389,
+      "count": 500,
+      "label_nll": 0.6642944511119276
+    }
+  },
+  "model_file": "model.pt",
+  "model_sha256": "31e5cf078c88cd144ca08a5c8372036507d6d40b49499b60a81e249b690629bc",
+  "padded_input_tokens": 181632,
+  "peak_allocated_bytes": 12689605632,
+  "processed_input_tokens": 102362,
+  "run_id": "b67673d75e6d5e9ac6bf962cfe65202d095e43c02262b35063717f994aaf35a5",
+  "seed": 2,
+  "steps": 128,
+  "supervised_tokens": 2048,
+  "this_process_cell_seconds": 126.51503389328718,
+  "training_seconds": 108.86953077465296,
+  "unique_training_examples": 1747
+}
