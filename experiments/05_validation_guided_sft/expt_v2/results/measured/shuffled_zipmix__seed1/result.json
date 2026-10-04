@@ -1,0 +1,35 @@
+{
+  "cell": "shuffled_zipmix__seed1",
+  "completed_at": "2026-10-04T20:38:42.660242+00:00",
+  "evaluation_seconds": 14.660790220834315,
+  "infrastructure_resumes": [],
+  "manifest_id": "0d6dec93e7d7ccffd87f95e7ebd19e78c84ec72a546007b122888789aba5cb44",
+  "mean_training_loss": 1.1359843867830932,
+  "method": "shuffled_zipmix",
+  "metrics": {
+    "retention": {
+      "accuracy": 0.532,
+      "correct": 266,
+      "count": 500,
+      "label_nll": 1.2219259282536805
+    },
+    "target": {
+      "accuracy": 0.768,
+      "correct": 384,
+      "count": 500,
+      "label_nll": 0.6525678122211248
+    }
+  },
+  "model_file": "model.pt",
+  "model_sha256": "a8a3c9cf326933950e41b15b8419206aa7bb9cd084261f9d18b0fb4c1a2c5502",
+  "padded_input_tokens": 162816,
+  "peak_allocated_bytes": 12462351872,
+  "processed_input_tokens": 99091,
+  "run_id": "199d165af58bd69d9c48349f28f96e7d83a73ba0aa429949bd12756470c850e9",
+  "seed": 1,
+  "steps": 128,
+  "supervised_tokens": 2048,
+  "this_process_cell_seconds": 276.2812469853088,
+  "training_seconds": 260.30282076634467,
+  "unique_training_examples": 1867
+}

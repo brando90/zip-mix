@@ -1,0 +1,756 @@
+{
+  "base_evaluations": 2,
+  "bases": {
+    "05": {
+      "retention": 0.57,
+      "target": 0.808
+    },
+    "06": {
+      "retention": 0.57,
+      "target": 0.808
+    }
+  },
+  "configuration_differences": {
+    "checkpoint_every": [
+      16,
+      64
+    ],
+    "selector_permutation_seed": [
+      null,
+      1606
+    ]
+  },
+  "contrasts": {
+    "compel_filter": {
+      "retention": {
+        "baseline_mean": 0.536,
+        "interval95": [
+          -0.1466880592203242,
+          0.0626880592203242
+        ],
+        "mean": -0.042000000000000016,
+        "n": 3,
+        "negative": 3,
+        "p_value": 0.25,
+        "per_seed": [
+          -0.038000000000000034,
+          -0.08600000000000002,
+          -0.0020000000000000018
+        ],
+        "positive": 0,
+        "primary_mean": 0.494,
+        "sd": 0.042142615011410964,
+        "ties": 0
+      },
+      "target": {
+        "baseline_mean": 0.7653333333333334,
+        "interval95": [
+          -0.05753499640259688,
+          0.033534996402596856
+        ],
+        "mean": -0.01200000000000001,
+        "n": 3,
+        "negative": 2,
+        "p_value": 1.0,
+        "p_value_holm": 1.0,
+        "per_seed": [
+          0.0040000000000000036,
+          -0.03200000000000003,
+          -0.008000000000000007
+        ],
+        "positive": 1,
+        "primary_mean": 0.7533333333333333,
+        "sd": 0.018330302779823376,
+        "ties": 0
+      }
+    },
+    "direct_zipfit": {
+      "retention": {
+        "baseline_mean": 0.45999999999999996,
+        "interval95": [
+          -0.06938311455843965,
+          0.1373831145584397
+        ],
+        "mean": 0.03400000000000003,
+        "n": 3,
+        "negative": 1,
+        "p_value": 1.0,
+        "per_seed": [
+          0.055999999999999994,
+          -0.013999999999999957,
+          0.06000000000000005
+        ],
+        "positive": 2,
+        "primary_mean": 0.494,
+        "sd": 0.04161730409336961,
+        "ties": 0
+      },
+      "target": {
+        "baseline_mean": 0.7793333333333333,
+        "interval95": [
+          -0.06350965687578987,
+          0.011509656875789823
+        ],
+        "mean": -0.026000000000000023,
+        "n": 3,
+        "negative": 3,
+        "p_value": 0.25,
+        "p_value_holm": 1.0,
+        "per_seed": [
+          -0.010000000000000009,
+          -0.040000000000000036,
+          -0.028000000000000025
+        ],
+        "positive": 0,
+        "primary_mean": 0.7533333333333333,
+        "sd": 0.015099668870541512,
+        "ties": 0
+      }
+    },
+    "sample_proportional": {
+      "retention": {
+        "baseline_mean": 0.5433333333333333,
+        "interval95": [
+          -0.08315168503255982,
+          -0.01551498163410682
+        ],
+        "mean": -0.04933333333333332,
+        "n": 3,
+        "negative": 3,
+        "p_value": 0.25,
+        "per_seed": [
+          -0.06000000000000005,
+          -0.05399999999999999,
+          -0.03399999999999992
+        ],
+        "positive": 0,
+        "primary_mean": 0.494,
+        "sd": 0.013613718571108156,
+        "ties": 0
+      },
+      "target": {
+        "baseline_mean": 0.75,
+        "interval95": [
+          -0.05206535117215094,
+          0.05873201783881761
+        ],
+        "mean": 0.003333333333333336,
+        "n": 3,
+        "negative": 1,
+        "p_value": 1.0,
+        "p_value_holm": 1.0,
+        "per_seed": [
+          0.020000000000000018,
+          0.01200000000000001,
+          -0.02200000000000002
+        ],
+        "positive": 2,
+        "primary_mean": 0.7533333333333333,
+        "sd": 0.022300971578236996,
+        "ties": 0
+      }
+    },
+    "shuffled_zipmix": {
+      "retention": {
+        "baseline_mean": 0.5366666666666667,
+        "interval95": [
+          -0.11228164360500156,
+          0.02694831027166819
+        ],
+        "mean": -0.042666666666666686,
+        "n": 3,
+        "negative": 3,
+        "p_value": 0.25,
+        "per_seed": [
+          -0.03400000000000003,
+          -0.07400000000000001,
+          -0.020000000000000018
+        ],
+        "positive": 0,
+        "primary_mean": 0.494,
+        "sd": 0.028023799409311597,
+        "ties": 0
+      },
+      "target": {
+        "baseline_mean": 0.7533333333333333,
+        "interval95": [
+          -0.08619635703223094,
+          0.08619635703223094
+        ],
+        "mean": 0.0,
+        "n": 3,
+        "negative": 2,
+        "p_value": 1.0,
+        "p_value_holm": 1.0,
+        "per_seed": [
+          0.038000000000000034,
+          -0.030000000000000027,
+          -0.008000000000000007
+        ],
+        "positive": 1,
+        "primary_mean": 0.7533333333333333,
+        "sd": 0.03469870314579498,
+        "ties": 0
+      }
+    },
+    "uniform_domain": {
+      "retention": {
+        "baseline_mean": 0.5673333333333334,
+        "interval95": [
+          -0.19915272181589638,
+          0.05248605514922977
+        ],
+        "mean": -0.0733333333333333,
+        "n": 3,
+        "negative": 3,
+        "p_value": 0.25,
+        "per_seed": [
+          -0.09199999999999997,
+          -0.11199999999999993,
+          -0.016000000000000014
+        ],
+        "positive": 0,
+        "primary_mean": 0.494,
+        "sd": 0.05064911976859351,
+        "ties": 0
+      },
+      "target": {
+        "baseline_mean": 0.7479999999999999,
+        "interval95": [
+          -0.02377810399728948,
+          0.034444770663956154
+        ],
+        "mean": 0.005333333333333338,
+        "n": 3,
+        "negative": 1,
+        "p_value": 1.0,
+        "p_value_holm": 1.0,
+        "per_seed": [
+          0.014000000000000012,
+          0.010000000000000009,
+          -0.008000000000000007
+        ],
+        "positive": 2,
+        "primary_mean": 0.7533333333333333,
+        "sd": 0.01171893055416464,
+        "ties": 0
+      }
+    },
+    "wrongtarget_zipmix": {
+      "retention": {
+        "baseline_mean": 0.5626666666666666,
+        "interval95": [
+          -0.21044398895874156,
+          0.07311065562540826
+        ],
+        "mean": -0.06866666666666664,
+        "n": 3,
+        "negative": 3,
+        "p_value": 0.25,
+        "per_seed": [
+          -0.07199999999999995,
+          -0.12399999999999994,
+          -0.010000000000000009
+        ],
+        "positive": 0,
+        "primary_mean": 0.494,
+        "sd": 0.05707305260219861,
+        "ties": 0
+      },
+      "target": {
+        "baseline_mean": 0.7406666666666667,
+        "interval95": [
+          -0.060069519007463816,
+          0.08540285234079717
+        ],
+        "mean": 0.012666666666666678,
+        "n": 3,
+        "negative": 1,
+        "p_value": 1.0,
+        "p_value_holm": 1.0,
+        "per_seed": [
+          0.04400000000000004,
+          -0.014000000000000012,
+          0.008000000000000007
+        ],
+        "positive": 2,
+        "primary_mean": 0.7533333333333333,
+        "sd": 0.029280255007997025,
+        "ties": 0
+      }
+    },
+    "zipmix_static": {
+      "retention": {
+        "baseline_mean": 0.5493333333333333,
+        "interval95": [
+          -0.16467302462095218,
+          0.05400635795428544
+        ],
+        "mean": -0.055333333333333366,
+        "n": 3,
+        "negative": 3,
+        "p_value": 0.25,
+        "per_seed": [
+          -0.05400000000000005,
+          -0.10000000000000003,
+          -0.01200000000000001
+        ],
+        "positive": 0,
+        "primary_mean": 0.494,
+        "sd": 0.04401514890731752,
+        "ties": 0
+      },
+      "target": {
+        "baseline_mean": 0.7719999999999999,
+        "interval95": [
+          -0.0947207784561325,
+          0.05738744512279914
+        ],
+        "mean": -0.018666666666666682,
+        "n": 3,
+        "negative": 2,
+        "p_value": 1.0,
+        "p_value_holm": 1.0,
+        "per_seed": [
+          0.016000000000000014,
+          -0.04200000000000004,
+          -0.030000000000000027
+        ],
+        "positive": 1,
+        "primary_mean": 0.7533333333333333,
+        "sd": 0.030615900008546783,
+        "ties": 0
+      }
+    }
+  },
+  "evaluation_identity": {
+    "retention": "286a3d39fa9ee97946548891c59c237606b9cec33867bbb2499c8f006eef2707",
+    "target": "7d1d3897f67a3db87602f186e47503fc84ab155e6135a9088f581569eb323951"
+  },
+  "family": "Seven exploratory target comparisons against every Experiment 05 method; raw and Holm-adjusted p-values. Retention is an unadjusted diagnostic.",
+  "independent_training_seeds_per_method": 3,
+  "interval": "95% Student-t across the same three paired training seeds, conditional on fixed items",
+  "methods": {
+    "05/compel_filter": {
+      "retention": {
+        "interval95": [
+          0.5187893890812154,
+          0.5532106109187847
+        ],
+        "mean": 0.536,
+        "n": 3,
+        "per_seed": [
+          0.532,
+          0.544,
+          0.532
+        ],
+        "sd": 0.0069282032302755165
+      },
+      "target": {
+        "interval95": [
+          0.7528301143747368,
+          0.77783655229193
+        ],
+        "mean": 0.7653333333333334,
+        "n": 3,
+        "per_seed": [
+          0.766,
+          0.77,
+          0.76
+        ],
+        "sd": 0.0050332229568471705
+      }
+    },
+    "05/direct_zipfit": {
+      "retention": {
+        "interval95": [
+          0.41260567310145074,
+          0.5073943268985491
+        ],
+        "mean": 0.45999999999999996,
+        "n": 3,
+        "per_seed": [
+          0.438,
+          0.472,
+          0.47
+        ],
+        "sd": 0.0190787840283389
+      },
+      "target": {
+        "interval95": [
+          0.7764648981802026,
+          0.782201768486464
+        ],
+        "mean": 0.7793333333333333,
+        "n": 3,
+        "per_seed": [
+          0.78,
+          0.778,
+          0.78
+        ],
+        "sd": 0.0011547005383792527
+      }
+    },
+    "05/sample_proportional": {
+      "retention": {
+        "interval95": [
+          0.4747903362437254,
+          0.6118763304229412
+        ],
+        "mean": 0.5433333333333333,
+        "n": 3,
+        "per_seed": [
+          0.554,
+          0.512,
+          0.564
+        ],
+        "sd": 0.027592269448766485
+      },
+      "target": {
+        "interval95": [
+          0.6903806949187309,
+          0.8096193050812691
+        ],
+        "mean": 0.75,
+        "n": 3,
+        "per_seed": [
+          0.75,
+          0.726,
+          0.774
+        ],
+        "sd": 0.02400000000000002
+      }
+    },
+    "05/shuffled_zipmix": {
+      "retention": {
+        "interval95": [
+          0.5075552293360439,
+          0.5657781039972896
+        ],
+        "mean": 0.5366666666666667,
+        "n": 3,
+        "per_seed": [
+          0.528,
+          0.532,
+          0.55
+        ],
+        "sd": 0.01171893055416464
+      },
+      "target": {
+        "interval95": [
+          0.7063750260701027,
+          0.8002916405965639
+        ],
+        "mean": 0.7533333333333333,
+        "n": 3,
+        "per_seed": [
+          0.732,
+          0.768,
+          0.76
+        ],
+        "sd": 0.01890326250501045
+      }
+    },
+    "05/uniform_domain": {
+      "retention": {
+        "interval95": [
+          0.5173204574989471,
+          0.6173462091677197
+        ],
+        "mean": 0.5673333333333334,
+        "n": 3,
+        "per_seed": [
+          0.586,
+          0.57,
+          0.546
+        ],
+        "sd": 0.020132891827388623
+      },
+      "target": {
+        "interval95": [
+          0.7046875790111043,
+          0.7913124209888954
+        ],
+        "mean": 0.7479999999999999,
+        "n": 3,
+        "per_seed": [
+          0.756,
+          0.728,
+          0.76
+        ],
+        "sd": 0.01743559577416271
+      }
+    },
+    "05/wrongtarget_zipmix": {
+      "retention": {
+        "interval95": [
+          0.5100091969521012,
+          0.6153241363812321
+        ],
+        "mean": 0.5626666666666666,
+        "n": 3,
+        "per_seed": [
+          0.566,
+          0.582,
+          0.54
+        ],
+        "sd": 0.021197484127446153
+      },
+      "target": {
+        "interval95": [
+          0.707586258714432,
+          0.7737470746189014
+        ],
+        "mean": 0.7406666666666667,
+        "n": 3,
+        "per_seed": [
+          0.726,
+          0.752,
+          0.744
+        ],
+        "sd": 0.013316656236958798
+      }
+    },
+    "05/zipmix_static": {
+      "retention": {
+        "interval95": [
+          0.529254287261418,
+          0.5694123794052487
+        ],
+        "mean": 0.5493333333333333,
+        "n": 3,
+        "per_seed": [
+          0.548,
+          0.558,
+          0.542
+        ],
+        "sd": 0.008082903768654767
+      },
+      "target": {
+        "interval95": [
+          0.7331965284842697,
+          0.8108034715157301
+        ],
+        "mean": 0.7719999999999999,
+        "n": 3,
+        "per_seed": [
+          0.754,
+          0.78,
+          0.782
+        ],
+        "sd": 0.015620499351813323
+      }
+    },
+    "06/contrastive_shuffled": {
+      "retention": {
+        "interval95": [
+          0.47025379661248723,
+          0.5497462033875128
+        ],
+        "mean": 0.51,
+        "n": 3,
+        "per_seed": [
+          0.526,
+          0.494,
+          0.51
+        ],
+        "sd": 0.016000000000000014
+      },
+      "target": {
+        "interval95": [
+          0.749798231513536,
+          0.7555351018197974
+        ],
+        "mean": 0.7526666666666667,
+        "n": 3,
+        "per_seed": [
+          0.752,
+          0.754,
+          0.752
+        ],
+        "sd": 0.0011547005383792527
+      }
+    },
+    "06/contrastive_zipmix": {
+      "retention": {
+        "interval95": [
+          0.4045710423780963,
+          0.5834289576219036
+        ],
+        "mean": 0.494,
+        "n": 3,
+        "per_seed": [
+          0.494,
+          0.458,
+          0.53
+        ],
+        "sd": 0.036000000000000004
+      },
+      "target": {
+        "interval95": [
+          0.7134837586310953,
+          0.7931829080355713
+        ],
+        "mean": 0.7533333333333333,
+        "n": 3,
+        "per_seed": [
+          0.77,
+          0.738,
+          0.752
+        ],
+        "sd": 0.016041612554021298
+      }
+    },
+    "06/source_matched": {
+      "retention": {
+        "interval95": [
+          0.45086362959824594,
+          0.6118030370684207
+        ],
+        "mean": 0.5313333333333333,
+        "n": 3,
+        "per_seed": [
+          0.494,
+          0.548,
+          0.552
+        ],
+        "sd": 0.03239341496868361
+      },
+      "target": {
+        "interval95": [
+          0.7209011767309431,
+          0.8204321566023903
+        ],
+        "mean": 0.7706666666666667,
+        "n": 3,
+        "per_seed": [
+          0.748,
+          0.786,
+          0.778
+        ],
+        "sd": 0.020033305601755643
+      }
+    }
+  },
+  "null": "Exact two-sided sign test: P(contrastive accuracy > comparator accuracy)=0.5 among non-tied seeds",
+  "provenance_sha256": {
+    "05": {
+      "expt_v2/results/measured/base/result.json": "655844f11ed3df1825851222b212951711d52648813ff8cf9b5377b0359f7414",
+      "expt_v2/results/measured/base/retention_predictions.npz": "9878ab0c80ffbba9fe709fb1262d971acf29457a6191ea429af621a872185c0a",
+      "expt_v2/results/measured/base/target_predictions.npz": "02c2afd24f15377beecb1525ddd0fc161f8605bb818962f9f847d1caca71c858",
+      "expt_v2/results/measured/compel_filter__seed0/result.json": "f909819e621df8cd8ab43b88293dc19a35081644768bf42bff81fd27db2dce2a",
+      "expt_v2/results/measured/compel_filter__seed0/retention_predictions.npz": "224fa20862555ef0e5c5acb8b7924b07440ea15f93af67f31ffb7312fbd2075e",
+      "expt_v2/results/measured/compel_filter__seed0/target_predictions.npz": "4b5b2e251c6dc4b03268a7f1dcffd8ab3909c97ad9451bdcf90389d65a554fcd",
+      "expt_v2/results/measured/compel_filter__seed1/result.json": "0210b65fbc0af0a6b58beccb10beedd58d2a37913f595e5ebb697c3973f8a87f",
+      "expt_v2/results/measured/compel_filter__seed1/retention_predictions.npz": "edd79f1b92fb9095b24a0543d48e5423318d4662a486a3fb94989b512160785b",
+      "expt_v2/results/measured/compel_filter__seed1/target_predictions.npz": "d689e2d58c52613e58145d9e7a94f4beeee99e0382802e003bd32fe475957aa9",
+      "expt_v2/results/measured/compel_filter__seed2/result.json": "8de36bacf6e6d5fdaea0cef2a16f26c47dc94f8d9b411838ea83af53034d1ed0",
+      "expt_v2/results/measured/compel_filter__seed2/retention_predictions.npz": "b4881974b4d1f7265c246172dd02c355ceca6fec3e53aa212e7580e340fbb51b",
+      "expt_v2/results/measured/compel_filter__seed2/target_predictions.npz": "05cd5c92935790d2eda391c34e85acf7e643601749c11443f3599351c7dd1e47",
+      "expt_v2/results/measured/direct_zipfit__seed0/result.json": "c0519ef18dfa428c3b73f17d63927a47b8291893ed185a3948925e06aaeac486",
+      "expt_v2/results/measured/direct_zipfit__seed0/retention_predictions.npz": "dd7639ba2fba8ee2549ca3be2c8c6559a686a3499365cfa76e4d8ae9b66ab588",
+      "expt_v2/results/measured/direct_zipfit__seed0/target_predictions.npz": "d0d5f86b0958f95435534ce1eb4ba872db815f3cf7cb17846533eae574a3a959",
+      "expt_v2/results/measured/direct_zipfit__seed1/result.json": "d217fbfc164ea54df360b92fadbbd7cc8cfe809795fe865efe57bc04ac4362ae",
+      "expt_v2/results/measured/direct_zipfit__seed1/retention_predictions.npz": "f7fcf6c498e521341e88d179bbf0179253bf9593e0fa7785116684dfcfa83490",
+      "expt_v2/results/measured/direct_zipfit__seed1/target_predictions.npz": "48f0cff19567f73cac85bfd4c52536218f21937b04c3edf093713d7464e6d951",
+      "expt_v2/results/measured/direct_zipfit__seed2/result.json": "97a722e32d5a178b6b0fcb85db83284b23aa0459064a43934d821a6f39d118ef",
+      "expt_v2/results/measured/direct_zipfit__seed2/retention_predictions.npz": "480b3b03d8ef2bfed6c74bee26d0a4c75c282db8e25323fcd7d081b5fe90fb43",
+      "expt_v2/results/measured/direct_zipfit__seed2/target_predictions.npz": "df072f394845c20a78a903d5922092852d48f8e675e46eabf986e158d10049f0",
+      "expt_v2/results/measured/sample_proportional__seed0/result.json": "4aa3caa5257065e7714153e2b62d6e2a5ec2a653b2e45e8f07c115c93a65967a",
+      "expt_v2/results/measured/sample_proportional__seed0/retention_predictions.npz": "0b0944094bc76124e5b4bc04b83d46f3e8a49eb7a5a5308f10df60ef131a4e89",
+      "expt_v2/results/measured/sample_proportional__seed0/target_predictions.npz": "7d0b95a1e1804a00f16520bc535dfaefc79fd45bf2a86a9f4e856d0a706edafe",
+      "expt_v2/results/measured/sample_proportional__seed1/result.json": "3dd17fd3a99bd0ef4502eb7300481f5d52d5398d3011919b843110cbb2941c44",
+      "expt_v2/results/measured/sample_proportional__seed1/retention_predictions.npz": "9bea667bf9ab729e407c3e09a62c50cacb76bf06b84b8646f715cedecdfc1e98",
+      "expt_v2/results/measured/sample_proportional__seed1/target_predictions.npz": "7addd2a5ecf00efd13bcc0943905d89722fa250b2b2ed95ff2a881d9a0882d58",
+      "expt_v2/results/measured/sample_proportional__seed2/result.json": "737bf0644104766a343f606936f80f6f43b10f7f3401289be675f4b739540893",
+      "expt_v2/results/measured/sample_proportional__seed2/retention_predictions.npz": "8b07db46450a6de91eabc683e06eb371765d2ec36fbda818821f859fc606c2a3",
+      "expt_v2/results/measured/sample_proportional__seed2/target_predictions.npz": "5db35d3e30082f69c0973065f0d41bd7eb679f414d0de5960125728d45597bec",
+      "expt_v2/results/measured/shuffled_zipmix__seed0/result.json": "7116eef46d975e8dac7de9799c92455e15b3fedb46bc55d63d1b948e9107bdf7",
+      "expt_v2/results/measured/shuffled_zipmix__seed0/retention_predictions.npz": "6bfaafc46a4aeaaf9acf9e0d751d3ff89c9334500d760d1938b36407f4395c24",
+      "expt_v2/results/measured/shuffled_zipmix__seed0/target_predictions.npz": "38d7ace5646be848add41d3fb05c0aee054590c80822b7df702bb93b955d1f56",
+      "expt_v2/results/measured/shuffled_zipmix__seed1/result.json": "2e2afebe5231e639fd8f20cff2658b359e722dc3c0e5fa088ec4ebea01e441b8",
+      "expt_v2/results/measured/shuffled_zipmix__seed1/retention_predictions.npz": "b7ca3f7669127339f8df7b465815200cfae0d11e4020f6ff959e0052f610eae5",
+      "expt_v2/results/measured/shuffled_zipmix__seed1/target_predictions.npz": "218163135f1df06e86fc7d007f38dae35b21224633e372cd183c4fe2149b1280",
+      "expt_v2/results/measured/shuffled_zipmix__seed2/result.json": "58a787a937191e27a9d128b58012cb240dd64115e0e9427a82e339550b42a2ad",
+      "expt_v2/results/measured/shuffled_zipmix__seed2/retention_predictions.npz": "8642690873672dba7f7e6c56c3d9003e294bce959712e83562551a20ccadcef6",
+      "expt_v2/results/measured/shuffled_zipmix__seed2/target_predictions.npz": "57cd6b4d464247553686bc191bffcb843848e13a063a4f65e10878a1e560e739",
+      "expt_v2/results/measured/uniform_domain__seed0/result.json": "47cb99536bef5b51fcd38d3e5a64bc29e38368d519c60d877e6c4bffb518fc42",
+      "expt_v2/results/measured/uniform_domain__seed0/retention_predictions.npz": "f54f5b0ea6f37621aa9c9490248d06ad6dd80b9426a51d95b123eeea26717f80",
+      "expt_v2/results/measured/uniform_domain__seed0/target_predictions.npz": "cb74bc2b96c6fe1909965676228b51a94a8dba2442c8a81d97844e5fdbbe86ec",
+      "expt_v2/results/measured/uniform_domain__seed1/result.json": "d653e6f29c42329c7e4caabaffbac602e7e7fcd28537ecf8bce8a6d641542cec",
+      "expt_v2/results/measured/uniform_domain__seed1/retention_predictions.npz": "1b409f2fa82c7ea895e85586b158dba864a15777c5c9c1786984d4448bc17019",
+      "expt_v2/results/measured/uniform_domain__seed1/target_predictions.npz": "47c052d22f4fecacf94d66865cce06d879c0b518e450b3d2d22cf7124d4cc2f6",
+      "expt_v2/results/measured/uniform_domain__seed2/result.json": "470f8f137bfd1ac24db9eab3e54699ae3e3a092df24effb513ba85fff7ecd4d9",
+      "expt_v2/results/measured/uniform_domain__seed2/retention_predictions.npz": "ced2d559d6ced351f5cc48bc6d7a3b6c85c0f0a131cc7fd69510b0813ecad1bc",
+      "expt_v2/results/measured/uniform_domain__seed2/target_predictions.npz": "b147bf34406f12e21acbce56c80180320e95371c91c7ce4b7ffc845ea7a8e684",
+      "expt_v2/results/measured/wrongtarget_zipmix__seed0/result.json": "98db817804acf3c9acd1b413f86c6933d174120e2593551dddf67f539bd2cef5",
+      "expt_v2/results/measured/wrongtarget_zipmix__seed0/retention_predictions.npz": "e354862809ffa51d77c29e8cc26504715b448d90ee6c3674b9e2065dc3f87420",
+      "expt_v2/results/measured/wrongtarget_zipmix__seed0/target_predictions.npz": "2b87d7b75d9edcf9a62831b46066651b7dc1a8d84d478b2b64c90b5fe2d3ee07",
+      "expt_v2/results/measured/wrongtarget_zipmix__seed1/result.json": "8355dc575d145c966f6439f702c955af5dfb34ff2f6aca51726062a6e5888b9c",
+      "expt_v2/results/measured/wrongtarget_zipmix__seed1/retention_predictions.npz": "0a0461f7b228c851b8faad89176961fff49d4eb46a1eecdbdf293b8f43b536cb",
+      "expt_v2/results/measured/wrongtarget_zipmix__seed1/target_predictions.npz": "d150ca5108c83d3a665633a85877fe4faa7050bbe3f6e9ecfa411cde786fa46e",
+      "expt_v2/results/measured/wrongtarget_zipmix__seed2/result.json": "c62f1acac2c7bafcdbe9acdd41935c0037370839a520351e06a18a211da92acc",
+      "expt_v2/results/measured/wrongtarget_zipmix__seed2/retention_predictions.npz": "2bd593fcc9883a78c79f2ec149b5bd31478b74059172a874d0ad9330bcf12aef",
+      "expt_v2/results/measured/wrongtarget_zipmix__seed2/target_predictions.npz": "4e31d75bbdc0368504cf6093816e167d3a2a009524ae629ba8dca26c096137de",
+      "expt_v2/results/measured/zipmix_static__seed0/result.json": "992e9e6d240ebcc5e7038b1b3e55b64d0aa3c9b99a1fb2e8afe73fa08c20f057",
+      "expt_v2/results/measured/zipmix_static__seed0/retention_predictions.npz": "901aba72c462a4d47bd0a6abf2d1a06d91b6ce6d2b0e97eef6cb27cb73e576f8",
+      "expt_v2/results/measured/zipmix_static__seed0/target_predictions.npz": "cb014b4a6a54e9764e73a44b206058f4bf7b7b93a12d44ca70ff66948c1641cf",
+      "expt_v2/results/measured/zipmix_static__seed1/result.json": "e2c6921cd266470a31a842c41749d9684677020ca37f78ffe4c42ceff0ed88bf",
+      "expt_v2/results/measured/zipmix_static__seed1/retention_predictions.npz": "e0f77feaf4aedabb8525828833f69bebcdc21b9bd0f367047cd6f6d00ef30b0d",
+      "expt_v2/results/measured/zipmix_static__seed1/target_predictions.npz": "ae792fdfff00557883eb249d2edf8a61b013504bbfc12cddac0add5843ae6809",
+      "expt_v2/results/measured/zipmix_static__seed2/result.json": "acc4b656b89497a12c442ab58a817892db6d8e08b7534aa8f24e68ec233f2320",
+      "expt_v2/results/measured/zipmix_static__seed2/retention_predictions.npz": "af151ad4ef9e0949ad2b213800a66e07d8fbaf2558c3ab978be54348e3f2c26b",
+      "expt_v2/results/measured/zipmix_static__seed2/target_predictions.npz": "87b2dab455aa3a82410e96aabed257d3ddc6f16a9a77cf78961a4f9f7468dbf4"
+    },
+    "06": {
+      "expt_v1/results/measured/base/result.json": "e70cdd6727f07aa50762f0caccf57f59f8f0f40b44c000766bdbde8a95e6073c",
+      "expt_v1/results/measured/base/retention_predictions.npz": "9878ab0c80ffbba9fe709fb1262d971acf29457a6191ea429af621a872185c0a",
+      "expt_v1/results/measured/base/target_predictions.npz": "02c2afd24f15377beecb1525ddd0fc161f8605bb818962f9f847d1caca71c858",
+      "expt_v1/results/measured/contrastive_shuffled__seed0/result.json": "8e3e6e8e199041b26379988f3e08a39c30103cc2dbd7e59357134d667b5c41fd",
+      "expt_v1/results/measured/contrastive_shuffled__seed0/retention_predictions.npz": "4d4b76d14c8663d7e84db07a03c307641ef9d6e298f034c334a57315a86a0768",
+      "expt_v1/results/measured/contrastive_shuffled__seed0/target_predictions.npz": "da9871581350be0ebb16d36829642a1213d924897a6e2af726a243ae10db6c9f",
+      "expt_v1/results/measured/contrastive_shuffled__seed1/result.json": "ae4c4c23b57bd9df4ada6e9ca788d2d82763391a56c225e839504c65587ca45f",
+      "expt_v1/results/measured/contrastive_shuffled__seed1/retention_predictions.npz": "7af8465636238f03446eb26e68b4a2d04974e4a108357e60367feb5a5826ffbf",
+      "expt_v1/results/measured/contrastive_shuffled__seed1/target_predictions.npz": "2571e08fc66ec109fe5a02bf16905544802f2008a516df7d824954770e3eb693",
+      "expt_v1/results/measured/contrastive_shuffled__seed2/result.json": "749bc167a1e10b941941bcc8fd62c84a9168a6397bbb9f3adfec18bad286f33f",
+      "expt_v1/results/measured/contrastive_shuffled__seed2/retention_predictions.npz": "c02e7151b687d81f30238c0c5d88b441ca591cc0a53f5a204553f56eddef44a1",
+      "expt_v1/results/measured/contrastive_shuffled__seed2/target_predictions.npz": "d98e5f254b303ae54b8e0a90b95ee33e6b02b1275ee9ebf4a07c749fadba615a",
+      "expt_v1/results/measured/contrastive_zipmix__seed0/result.json": "bed3ce17dcc44f67e98186c68c17b465b355d4e70180576a836f21740e569f57",
+      "expt_v1/results/measured/contrastive_zipmix__seed0/retention_predictions.npz": "332f855d3ccd2d29d578def1949d685e9e738617d141072c74176a73f5a6cc6d",
+      "expt_v1/results/measured/contrastive_zipmix__seed0/target_predictions.npz": "2e97e9f31d7462160c4391e30d3931f146c162c7fc179f3b6688dda1faaa09c4",
+      "expt_v1/results/measured/contrastive_zipmix__seed1/result.json": "4b1e90368f10f07f087fe39acd3b23343947ef1fa62d1edfc2a71151cb267301",
+      "expt_v1/results/measured/contrastive_zipmix__seed1/retention_predictions.npz": "94d6ff15655e27f13c52bfbed30be05523470b124e0e57e6929f9cbd2a667fd0",
+      "expt_v1/results/measured/contrastive_zipmix__seed1/target_predictions.npz": "3dde57f10b78479293a1ec85e424335d9da70736fbd42cb3ab06585085347ab7",
+      "expt_v1/results/measured/contrastive_zipmix__seed2/result.json": "f493d747a812032ebf18e6fbf4cf1c49a85567af5add7d89172e35a6cd844a20",
+      "expt_v1/results/measured/contrastive_zipmix__seed2/retention_predictions.npz": "ea35d0ad0726122fc8f39ddb41b05e49b4aa2a4c47677e6602429c02f97656ff",
+      "expt_v1/results/measured/contrastive_zipmix__seed2/target_predictions.npz": "850b1279ace6d0624b20d6d21156bb717fd20b3f04d5296253fde90d8281e985",
+      "expt_v1/results/measured/source_matched__seed0/result.json": "d44d806fdc836b0f6d8de7a59084645dc31f56e27562d5f1b716374c99b5cfaf",
+      "expt_v1/results/measured/source_matched__seed0/retention_predictions.npz": "d152045c1b03fe9626508fa320bc7466920a387326b215e684c29898638ca20b",
+      "expt_v1/results/measured/source_matched__seed0/target_predictions.npz": "5e2b54f69378cb9df924b51d81c602284d2e8f6df1ee34dbc96f9580848a70ed",
+      "expt_v1/results/measured/source_matched__seed1/result.json": "f36de54342d0f89937e6105cde1b99434801b5e474844207a14f570a6985737d",
+      "expt_v1/results/measured/source_matched__seed1/retention_predictions.npz": "54906dd3a0129d4752c429c5770f0ec4c3dd0bd51297fe7ff5465d0a8b524d66",
+      "expt_v1/results/measured/source_matched__seed1/target_predictions.npz": "da8e82d8ded48eac7e0177478289945c278558223ff7028a302060aef8bf08fd",
+      "expt_v1/results/measured/source_matched__seed2/result.json": "0bae43569be830d8c60226c29362091acfc0524367175a9d1fcf0822afecbe4a",
+      "expt_v1/results/measured/source_matched__seed2/retention_predictions.npz": "20fa743771082da90312566719055f6ce72e318ab1668007e677f798778d8368",
+      "expt_v1/results/measured/source_matched__seed2/target_predictions.npz": "11d352efbc619267ed243d651af5a0941568458c2339ed8ac5cf6cd44562b4b8"
+    }
+  },
+  "run_ids": {
+    "05": "199d165af58bd69d9c48349f28f96e7d83a73ba0aa429949bd12756470c850e9",
+    "06": "b67673d75e6d5e9ac6bf962cfe65202d095e43c02262b35063717f994aaf35a5"
+  },
+  "scope": "Exploratory cross-experiment comparison; shared held-out examples, not independent replication",
+  "shared_input_files": [
+    "train.npz",
+    "target.npz",
+    "retention.npz",
+    "tokenizer/added_tokens.json",
+    "tokenizer/chat_template.jinja",
+    "tokenizer/merges.txt",
+    "tokenizer/special_tokens_map.json",
+    "tokenizer/tokenizer.json",
+    "tokenizer/tokenizer_config.json",
+    "tokenizer/vocab.json"
+  ],
+  "training_cells": 30
+}

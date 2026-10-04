@@ -1,33 +1,51 @@
-# Zip-Mix coordinator: full validation-guided pretraining and fine-tuning comparisons
+# Zip-Mix: 57 completed training runs; limited fine-tuning targeting signal, competitive superiority unresolved
 
 **Doc link:** <https://github.com/brando90/zip-mix/blob/main/experiments/CKPT_MASTER_tmuxnone_cxd_01a1081e.md>
 
-**TLDR:** All 27 pretraining models completed cleanly; the original Zip-Mix gain threshold was not met. The revised 21-cell fine-tuning run is active on a second A100, with fixed-byte scoring and a wrong-target control. The separate nine-cell contrastive selector study also completed: its planned target comparison does not support an alignment benefit. The original 21-cell fine-tuning results remain pending.
+**TLDR:** All 27 pretraining, 21 main fine-tuning and nine contrastive models completed cleanly, plus nine pretraining reference/proxy stages and two base evaluations. Zip-Mix shows exploratory gains over shuffled and wrong-target fine-tuning controls, but its compact pretraining comparator DoGE and the unchanged fine-tuning backbone remain stronger in the relevant comparisons. All owned training processes have exited; complete numerical evidence is exported and independently audited.
 
-Updated: 10-04-2026 13:22 PDT
+Updated: 10-04-2026 after complete result verification.
 
 ## Identity and recovery
 
-Local Codex coordinator for Zip-Mix. Exact host, process, terminal-session and resume identities live in the private `zipmix-validation-guided/launch_context.json` receipt under the coordinator's Codex private store. Global local instruction files are nonempty and resolve to the current shared rules; remote defaults were corrected for future launches without restarting existing agents. The requested single quality assurance (QA) review actually used `claude-opus-5-5` and the explicit maximum-effort flag through existing subscription authentication.
+Local Codex coordinator for Zip-Mix. Exact host, process, terminal-session and resume identities remain in the private launch and terminal-verification receipts. Global local instruction files are nonempty and resolve to the current shared rules; remote defaults were corrected for future launches without restarting existing agents. The requested single quality assurance review actually used `claude-opus-5-5` and the explicit maximum-effort flag through existing subscription authentication. Its original report and a later coordinator disposition are preserved [here](04_validation_guided_zipmix/qa/opus55_max_review.md).
 
 ## Ownership
 
-Preserve pre-existing staged deletions, Experiment 03 rename/edits, paper edits and Experiment 02 materials. Only explicit task-owned paths are committed. Initialization commit `14c4d4f`, prospective repair commit `611423b`, live records `d96c223` and complete pretraining evidence `6212fdc` are pushed. Raw data, model weights, checkpoints and host receipts remain ignored/private.
+Preserve pre-existing staged deletions, Experiment 03 rename/edits, paper edits and Experiment 02 materials. Only explicit task-owned paths are committed. The frozen execution sources are `14c4d4f` for Experiment 04, `611423b` for Experiment 05 version 2, and `ab85f46` for Experiment 06. Raw data, model weights, checkpoints and host receipts remain ignored/private; no private host material is published.
 
-## Scientific state
+## Completed scientific state
 
-- [Experiment 04](04_validation_guided_zipmix/results.md): frozen nine-method × three-seed from-scratch screen, 27 cells. All 27 cells, six proxy stages and three reference stages completed cleanly, with no failures or recovery. The prespecified improvement criterion was not met. Compact DoGE had lower target loss than Zip-Mix. Complete small numerical evidence and the structural bin-capacity diagnosis are published; original analysis was independently reproduced from saved loss arrays.
-- [Experiment 05](05_validation_guided_sft/results.md): retain short-string v1 as **untrained calibration**. Prospective v2 uses 351 real 4,096-byte training packs, 8 matched true-target and 8 wrong-target development views, seven methods × three seeds (21 cells), and one unchanged-base evaluation. Started at 12:08 PDT on a separately verified idle A100 after 38 remote tests and all 15 data hashes passed. The unchanged-base evaluation completed. Deadline 6 hours. No settings selected from test outcomes.
-- Requested review: six implementation/documentation fixes, no critical issue, one major scientific concern. The concern motivated v2; deterministic checks verify the correction. No second review is authorized or needed under the requested one-round procedure.
+- [Experiment 04](04_validation_guided_zipmix/results.md): 27/27 final models, six proxy stages and three reference stages completed, zero failures or resumes. The prespecified improvement criterion was not met. Zip-Mix minus compact Domain Reweighting with Generalization Estimation (DoGE) has target negative-log-likelihood difference +0.41265 [0.39285, 0.43246] nats/token, exact sign-test p-val=0.25; lower is better. The full arrays, perplexity report and bin-capacity diagnosis are preserved. All 23 deterministic tests passed.
+- [Experiment 05](05_validation_guided_sft/results.md): 21/21 version 2 models plus base completed, zero failures or resumes. Zip-Mix minus shuffled alignment is +1.867 [0.432, 3.301] percentage points on science accuracy; minus wrong-target alignment is +3.133 [1.699, 4.568]; both p-val=0.25. Every trained model scored below the unchanged base on science. Version 1 remains untrained; version 2 prospectively repaired unequal-byte compression scoring. All 38 tests passed; 69 original proof files are byte-identical after export.
+- [Experiment 06](06_contrastive_validation_zipmix/results.md): 9/9 models plus base completed, zero failures or resumes. Contrastive Zip-Mix minus the source-matched control is −1.733 [−10.625, 7.159] percentage points, raw and Holm-adjusted p-val=1.0. The follow-up was designed before any Experiment 05 outcome was inspected. All 35 tests passed; 33 original proof files are byte-identical after export.
 
-## Completion contract
+Intervals are descriptive 95% Student-t intervals over three paired training seeds, conditional on fixed evaluation data. Tests are exact two-sided sign tests of equal winning probability among non-tied seeds. Three pairs cannot yield p<0.25. These screens do not establish confirmatory significance, optimality or state-of-the-art superiority. Fine-tuning comparisons reuse 500 target and 500 retention questions; they do not represent independent benchmark replications.
 
-Ordinary Python supervision survives coordinator disconnection, owns only its process group and emits timestamped, run-bound progress. A coordinator turn ending never stops healthy admitted work. No automatic reboot recovery is claimed. Analyze all declared cells, preserve missing/failing/recovered rows, verify the unchanged-base evaluation and resource release, and update numerical reports before calling either matrix complete.
+The [cross-study report](06_contrastive_validation_zipmix/cross_experiment/comparison.md) independently audits every saved prediction, shared data identity and training budget for all 30 fine-tuned models and both base evaluations. All seven cross-study target contrasts are explicitly exploratory, with raw and Holm-adjusted p-values. Its five deterministic corruption/completeness tests passed. No model was fitted or evaluated again during reanalysis.
 
-Experiment 06 completed cleanly from source `ab85f46` at 13:13 PDT: three selector methods × three seeds plus base; bounded at two device-hours after resource preflight. It includes a source-mass-matched control and shuffled contrast scores. Its design uses training/development diagnostics and the completed pretraining outcome, with no Experiment 05 benchmark inspection.
+## Execution completion and costs
 
-Three seeds provide a descriptive mechanism screen: the smallest two-sided exact sign-test p-value is 0.25. Report means, paired intervals, retained denominators and total costs. This does not establish optimal training or state-of-the-art superiority. Larger faithful reproductions and reinforcement learning remain prospective work.
+All three full frozen manifests completed under their original admitted settings, without numerical failures, infrastructure interruptions or recovery. Training and analysis exited successfully, canonical run-bound status rows matched, and independent exact-process checks found no owned remnants. Resource release does not require other users to leave a formerly used device empty.
 
-## Next actions
+Experiment 04's measured invocation was 1,321.160 seconds including its reference/proxy stages. Experiment 05's supervised allocation lasted 6,463.014 seconds; Experiment 06's lasted 1,348.092 seconds. These elapsed measurements include checkpoint writes and other waits; their boundaries differ and they do not isolate pure compute or monetary spend. Fine-tuning used 43,008 and 18,432 answer-label tokens respectively. Full stage accounting, limitations and source identities are in the individual reports. Dollar costs are unavailable.
 
-Experiment 04 is complete and its point estimates, uncertainty and structural bin-capacity diagnosis are published. Experiment 05 remains healthy and its benchmark outcomes are uninspected. Experiment 06 also completed and its source-matched target difference is −1.73 [−10.63, 7.16] percentage points, exact sign-test p-val=1.0. Its owned accelerator process is released. Preserve its full proof/figure and keep Experiment 05 healthy; after all 21 cells complete, audit its complete artifacts, run the exploratory cross-study report and publish the remaining results. No human decision is waiting.
+## Next research decision
+
+The authorized initialization and full pilot campaign are complete. The result supports a limited development-targeting signal, not the user's hoped-for broad superiority claim. The current fine-tuning recipe first needs calibration on a separate training/validation partition with an unchanged-base control. Any follow-up must preserve these results and use fresh uninspected evaluation questions rather than tune against the reported test scores.
+
+The [next-stage proposal](04_validation_guided_zipmix/NEXT_STAGE_DESIGN.md) fixes joint source-by-compression exposure to test alignment within groups; it is documented but not launched. Establishing added value from bins also requires a fair direct-score comparison. Larger faithful learned-mixture reproductions, modern competitors and reinforcement learning remain prospective work. No healthy admitted work remains running, and no human-only completion step is waiting.
+
+**TLDR-end:** [zip-mix: completed pilot campaign] All 57 planned training models and supporting stages completed and were audited. The fine-tuning targeting signal is exploratory; competitive superiority is unresolved, and training calibration precedes the next selector study.
+
+**Snapshot:**
+```text
+pretraining_final_models=27/27
+pretraining_reference_proxy_stages=9/9
+main_finetuning_models=21/21
+contrastive_finetuning_models=9/9
+unchanged_base_evaluations=2/2
+failed_missing_or_resumed_cells=0
+owned_training_process_remnants=0
+cross_study_report=complete
+```

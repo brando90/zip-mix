@@ -1,0 +1,25 @@
+{
+  "files": {
+    "accuracy_results.pdf": "13e0a5f83bb2a6ccec4642603d291a938d17bed19a66eaa245b33709be4bcafd",
+    "accuracy_results.png": "cdea7fd669e0e42b454451fb51e2f73ec554fa7e8d97c1c05f49b0c390cb433c"
+  },
+  "interval_definition": "95% Student-t interval across 3 training seeds; fixed evaluation items",
+  "methods": [
+    "sample_proportional",
+    "uniform_domain",
+    "compel_filter",
+    "zipmix_static",
+    "direct_zipfit",
+    "shuffled_zipmix",
+    "wrongtarget_zipmix"
+  ],
+  "run_id": "199d165af58bd69d9c48349f28f96e7d83a73ba0aa429949bd12756470c850e9",
+  "summary_file": "summary.json",
+  "summary_sha256": "1d658f7e09c4af7206a3308b2ea1fce113f89f0cac997926bb0c124389af4f9d",
+  "training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "verified_training_cells": 21
+}

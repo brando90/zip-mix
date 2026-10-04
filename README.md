@@ -2,7 +2,7 @@
 
 **Doc link:** <https://github.com/brando90/zip-mix/blob/main/README.md>
 
-**TLDR:** Zip-Mix groups training text by compression ratio and chooses sampling weights using similarity to a separate development set. We are testing whether this improves held-out language modeling and supervised fine-tuning; superiority over established baselines remains an open hypothesis.
+**TLDR:** All 57 planned training runs completed. Validation-guided Zip-Mix shows a limited fine-tuning targeting signal, but the pretraining comparator Domain Reweighting with Generalization Estimation (DoGE) and the unchanged fine-tuning backbone remain stronger in their respective comparisons. Broad competitive superiority is unproven.
 
 Zip-Mix builds on [Compel](https://openreview.net/forum?id=KFafeqE5fe), which filters pretraining data using compression ratios, and [ZIP-FIT](https://arxiv.org/abs/2410.18194), which estimates target alignment using compression distance. The intended benefit is inexpensive, target-aware data selection before expensive model training.
 
@@ -17,12 +17,20 @@ A small validation set describes a chosen target distribution. Success on that d
 | Experiment | Purpose | Latest status |
 |---|---|---|
 | [04: validation-guided pretraining](experiments/04_validation_guided_zipmix/README.md) | From-scratch mechanism screen: nine methods, three paired seeds, held-out target and broad loss | 27/27 complete; small sampling-control gains, below the compact DoGE comparator |
-| [05: validation-guided supervised fine-tuning](experiments/05_validation_guided_sft/README.md) | Pretrained-model benchmark accuracy with fixed labeled-token budgets | Full 21-cell fixed-byte run active; results pending |
+| [05: validation-guided supervised fine-tuning](experiments/05_validation_guided_sft/README.md) | Pretrained-model benchmark accuracy with fixed labeled-token budgets | 21/21 complete; positive shuffled/wrong-target contrasts, below unchanged base |
 | [06: contrastive validation-guided selection](experiments/06_contrastive_validation_zipmix/README.md) | True-minus-wrong development alignment with a source-matched control | 9/9 complete; no demonstrated benefit beyond matching source proportions |
 | [02: prior analysis](experiments/02_alignment_prior_analysis/README.md) | Compression distributions from public corpus pilots | Existing cached pilot reused with its limitations recorded |
 | [03: proxy-mixture proposal](https://github.com/brando90/zip-mix/blob/main/experiments/03_zipmix_doremi_fix/README.md) | Earlier larger pretraining design | Preserved proposal, not executed by the new screen |
 
-[Experiment index](experiments/README.md) · [Research plan and current literature](experiments/04_validation_guided_zipmix/research_design.md) · [Live pretraining results](experiments/04_validation_guided_zipmix/results.md)
+[Experiment index](experiments/README.md) · [Research plan and current literature](experiments/04_validation_guided_zipmix/research_design.md) · [Pretraining results](experiments/04_validation_guided_zipmix/results.md) · [Fine-tuning results](experiments/05_validation_guided_sft/results.md) · [All fine-tuning comparisons](experiments/06_contrastive_validation_zipmix/cross_experiment/comparison.md)
+
+## What the completed screen supports
+
+The strongest positive signal is development-target choice in fine-tuning: Zip-Mix improves science accuracy by **1.87 [0.43, 3.30] percentage points** over shuffled alignment and **3.13 [1.70, 4.57]** over the wrong target. Both exact two-sided sign-test p-values are **0.25**, testing equal probability of either method winning among non-tied seeds. Intervals are descriptive 95% Student-t intervals over three paired training seeds, conditional on 500 fixed science questions; these exploratory results do not establish significance or general superiority. All 21 fine-tuned models remain below the unchanged base on science accuracy.
+
+The from-scratch study does not support a competitive advantage: Zip-Mix's target negative log likelihood is **0.41265 [0.39285, 0.43246] nats/token higher** than the compact DoGE comparator (same three-seed interval convention; exact sign-test p-val=0.25). Lower is better. The nine-run contrastive follow-up likewise fails to improve on its source-matched control: target difference **−1.733 [−10.625, 7.159] percentage points**, p-val=1.0. Full tables, costs and controls are in the linked reports.
+
+The next useful step is to calibrate the fine-tuning recipe on a separate training/validation partition, then test alignment within fixed source-by-compression groups on fresh uninspected evaluation questions. The [next-stage design](experiments/04_validation_guided_zipmix/NEXT_STAGE_DESIGN.md) is prospective and has not been launched. The requested [single Opus 5.5 maximum-effort review](experiments/04_validation_guided_zipmix/qa/opus55_max_review.md) prompted six fixes and a scoring redesign; later verification is deterministic.
 
 ## Method and important distinctions
 

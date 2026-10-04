@@ -83,3 +83,9 @@ MAJOR_ISSUES: 1
 FIXES_APPLIED: 6
 STRUCTURAL: IMPROVED
 SUMMARY: Fixed a fine-tuning resume bug that turned recovered complete cells into failures, blocked retries of numerical failures, and added frozen-data, durability and exit-code guards with tests (50/50 pass). Experiment 04 is ready to launch as a declared compact screen. Experiment 05's compression scores are mostly string length, so its Zip-Mix-versus-shuffled contrast cannot test validation alignment without a prospective redesign.
+
+## Coordinator disposition after this single review
+
+Recorded 10-04-2026. The review above is the original, unchanged review record. The dispatcher separately verified the actual launch command's `--model claude-opus-5-5 --effort max` flags and the native session's model identity through authenticated Claude Code subscription access. No second model-review round was performed.
+
+The parent addressed the major design concern prospectively, before any measured fine-tuning: [Experiment 05 version 1](../../05_validation_guided_sft/expt_v1/STATUS.md) remains untrained, while [version 2](../../05_validation_guided_sft/expt_v2/PROTOCOL.md) uses exactly 4,096 real bytes per scoring view and adds a matched wrong-target control. All 367 view hashes and 351 candidate scores were independently reproduced; its deterministic suite passed 38/38 tests. This corrects the particular unequal-byte scoring confound without claiming that source composition, pack density or inherited scores are controlled. The later nine-run contrastive study and cross-study analysis were verified deterministically, not reviewed again by Opus. Experiment 04's derived [perplexity and screening report](../expt_v1/results/measured/perplexity_and_screening.md) also supplies the missing quantities noted above without altering the frozen trainer or original analysis.

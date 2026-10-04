@@ -1,0 +1,35 @@
+{
+  "cell": "uniform_domain__seed0",
+  "completed_at": "2026-10-04T19:30:53.906165+00:00",
+  "evaluation_seconds": 10.707694015465677,
+  "infrastructure_resumes": [],
+  "manifest_id": "0d6dec93e7d7ccffd87f95e7ebd19e78c84ec72a546007b122888789aba5cb44",
+  "mean_training_loss": 1.0625101558398455,
+  "method": "uniform_domain",
+  "metrics": {
+    "retention": {
+      "accuracy": 0.586,
+      "correct": 293,
+      "count": 500,
+      "label_nll": 1.1445361783839763
+    },
+    "target": {
+      "accuracy": 0.756,
+      "correct": 378,
+      "count": 500,
+      "label_nll": 0.6903020803118125
+    }
+  },
+  "model_file": "model.pt",
+  "model_sha256": "7fa7f0746cf3441bc68c406c320730b32d01c17c9d021ba09abe9dd936943442",
+  "padded_input_tokens": 189408,
+  "peak_allocated_bytes": 12187113472,
+  "processed_input_tokens": 106079,
+  "run_id": "199d165af58bd69d9c48349f28f96e7d83a73ba0aa429949bd12756470c850e9",
+  "seed": 0,
+  "steps": 128,
+  "supervised_tokens": 2048,
+  "this_process_cell_seconds": 309.98070342931896,
+  "training_seconds": 297.9465023642406,
+  "unique_training_examples": 1810
+}

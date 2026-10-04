@@ -1,0 +1,35 @@
+{
+  "cell": "uniform_domain__seed2",
+  "completed_at": "2026-10-04T19:41:24.543996+00:00",
+  "evaluation_seconds": 16.86531396303326,
+  "infrastructure_resumes": [],
+  "manifest_id": "0d6dec93e7d7ccffd87f95e7ebd19e78c84ec72a546007b122888789aba5cb44",
+  "mean_training_loss": 1.0609482452273369,
+  "method": "uniform_domain",
+  "metrics": {
+    "retention": {
+      "accuracy": 0.546,
+      "correct": 273,
+      "count": 500,
+      "label_nll": 1.2477948993165047
+    },
+    "target": {
+      "accuracy": 0.76,
+      "correct": 380,
+      "count": 500,
+      "label_nll": 0.7166540868305601
+    }
+  },
+  "model_file": "model.pt",
+  "model_sha256": "fd808bac03456debec3843e08ce58a7fbd3c08200e130e90bedda4a876a7c886",
+  "padded_input_tokens": 188720,
+  "peak_allocated_bytes": 12136382976,
+  "processed_input_tokens": 106477,
+  "run_id": "199d165af58bd69d9c48349f28f96e7d83a73ba0aa429949bd12756470c850e9",
+  "seed": 2,
+  "steps": 128,
+  "supervised_tokens": 2048,
+  "this_process_cell_seconds": 318.4530613236129,
+  "training_seconds": 300.5899245515466,
+  "unique_training_examples": 1811
+}

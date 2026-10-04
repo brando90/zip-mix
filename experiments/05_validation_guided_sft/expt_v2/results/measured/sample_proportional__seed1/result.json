@@ -1,0 +1,35 @@
+{
+  "cell": "sample_proportional__seed1",
+  "completed_at": "2026-10-04T19:20:33.917933+00:00",
+  "evaluation_seconds": 13.286609871312976,
+  "infrastructure_resumes": [],
+  "manifest_id": "0d6dec93e7d7ccffd87f95e7ebd19e78c84ec72a546007b122888789aba5cb44",
+  "mean_training_loss": 1.106634639436379,
+  "method": "sample_proportional",
+  "metrics": {
+    "retention": {
+      "accuracy": 0.512,
+      "correct": 256,
+      "count": 500,
+      "label_nll": 1.2349823528975248
+    },
+    "target": {
+      "accuracy": 0.726,
+      "correct": 363,
+      "count": 500,
+      "label_nll": 0.7183224334232509
+    }
+  },
+  "model_file": "model.pt",
+  "model_sha256": "632c23a1eb17fa6b053bede30e32c20cb8fad84251210af29744a9d50c109094",
+  "padded_input_tokens": 165760,
+  "peak_allocated_bytes": 11352313856,
+  "processed_input_tokens": 100069,
+  "run_id": "199d165af58bd69d9c48349f28f96e7d83a73ba0aa429949bd12756470c850e9",
+  "seed": 1,
+  "steps": 128,
+  "supervised_tokens": 2048,
+  "this_process_cell_seconds": 344.57533077709377,
+  "training_seconds": 329.83948033396155,
+  "unique_training_examples": 1867
+}

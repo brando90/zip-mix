@@ -1,0 +1,21 @@
+{
+  "completed_at": "2026-10-04T19:09:09.596272+00:00",
+  "elapsed_seconds": 4.255729952827096,
+  "metrics": {
+    "retention": {
+      "accuracy": 0.57,
+      "correct": 285,
+      "count": 500,
+      "label_nll": 1.1395306495018303
+    },
+    "target": {
+      "accuracy": 0.808,
+      "correct": 404,
+      "count": 500,
+      "label_nll": 0.5560141892088577
+    }
+  },
+  "model": "Qwen/Qwen2.5-0.5B",
+  "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "run_id": "199d165af58bd69d9c48349f28f96e7d83a73ba0aa429949bd12756470c850e9"
+}

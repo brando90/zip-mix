@@ -26,7 +26,7 @@ Training uses the same pinned Qwen2.5-0.5B base model, float32 master parameters
 | [Checkpoint](CKPT_contrastive_validation.md) | Current handoff state |
 | [Results](results.md) | Complete outcomes, uncertainty, costs and provenance |
 
-The prospective timestamp records that the selector design used no Experiment 05 benchmark outcomes. Comparisons against its 21 cells are deferred until both complete matrices exist and remain exploratory. This experiment shares the public held-out pools with its parent and is not an independent benchmark replication.
+The prospective timestamp records that the selector design used no Experiment 05 benchmark outcomes. Both matrices are now complete. The [cross-study analysis](cross_experiment/comparison.md) audits all 30 fine-tuned models and both base evaluations; all seven comparisons against Experiment 05 remain exploratory. This experiment shares the public held-out pools with its parent and is not an independent benchmark replication.
 
 The [freeze receipt at the launch commit](https://github.com/brando90/zip-mix/blob/ab85f46074d0e479f39369cb0fe7fa0751876ef2/experiments/06_contrastive_validation_zipmix/expt_v1/freeze_receipt.json) binds the prospective source and initial documents. Live README, checkpoint and result documents subsequently evolve; training and analysis source identities stay frozen.
 
