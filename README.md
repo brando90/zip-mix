@@ -32,14 +32,15 @@ Two variants:
 
 ```
 zip-mix/
-  latex_paper/          # ICLR 2025 submission (Compel-ZipMix paper)
-    main.tex            # Main paper source
-    math_commands.tex   # Math macros
-    zipmix_refs.bib     # Bibliography
+  paper_latex_and_notes/
+    ICLR_2025_CompelZipMix/  # ICLR 2025 submission (Compel-ZipMix paper)
+    DMLR_2026_CompelZipMix/  # DMLR 2026 submission
   experiments/
-    00_related_work/    # Comprehensive literature review
+    00_related_work/         # Comprehensive literature review
     01_compression_threshold_buckets/  # Core experiment: CR buckets + alignment prior
-    02_alignment_prior_analysis/       # CPU-only: CR distributions, ZIP-FIT priors, bucket sensitivity
+    02_alignment_prior_analysis/       # CPU-only: CR distributions, priors, bucket sensitivity
+    03_zipmix_doremi_fix/              # Core experiment: ZipMix fixing DoReMi via validation priors
+  src/                       # Source code (scripts and tools)
 ```
 
 ## Method Summary
@@ -77,7 +78,7 @@ See `experiments/00_related_work/literature_review.md` for the full review (30+ 
 
 ## Team
 
-- **Brando Miranda** (Stanford) — bmiranda@stanford.edu
+- **Brando Miranda** (Stanford) — brando9@stanford.edu
 - **Elyas Obbad** (Stanford) — eobbad@stanford.edu
 - **Sanmi Koyejo** (Stanford) — sanmi@stanford.edu
 
