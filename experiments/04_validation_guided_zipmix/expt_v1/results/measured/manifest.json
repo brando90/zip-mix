@@ -1,0 +1,261 @@
+{
+  "cells": [
+    {
+      "arm": "token_proportional",
+      "completed_at": "2026-10-04T18:59:06.024499+00:00",
+      "metrics_file": "token_proportional_seed0/metrics.json",
+      "recoveries": 0,
+      "seed": 0,
+      "started_at": "2026-10-04T18:58:27.717773+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "uniform_domain",
+      "completed_at": "2026-10-04T18:59:43.062952+00:00",
+      "metrics_file": "uniform_domain_seed0/metrics.json",
+      "recoveries": 0,
+      "seed": 0,
+      "started_at": "2026-10-04T18:59:06.034324+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "uniform_bucket",
+      "completed_at": "2026-10-04T19:00:18.952512+00:00",
+      "metrics_file": "uniform_bucket_seed0/metrics.json",
+      "recoveries": 0,
+      "seed": 0,
+      "started_at": "2026-10-04T18:59:43.069205+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "compel_filter",
+      "completed_at": "2026-10-04T19:01:00.886768+00:00",
+      "metrics_file": "compel_filter_seed0/metrics.json",
+      "recoveries": 0,
+      "seed": 0,
+      "started_at": "2026-10-04T19:00:18.959330+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "zipmix_static",
+      "completed_at": "2026-10-04T19:01:37.530257+00:00",
+      "metrics_file": "zipmix_static_seed0/metrics.json",
+      "recoveries": 0,
+      "seed": 0,
+      "started_at": "2026-10-04T19:01:00.898336+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "direct_zipfit",
+      "completed_at": "2026-10-04T19:02:19.529372+00:00",
+      "metrics_file": "direct_zipfit_seed0/metrics.json",
+      "recoveries": 0,
+      "seed": 0,
+      "started_at": "2026-10-04T19:01:37.538122+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "shuffled_zipmix",
+      "completed_at": "2026-10-04T19:02:58.684157+00:00",
+      "metrics_file": "shuffled_zipmix_seed0/metrics.json",
+      "recoveries": 0,
+      "seed": 0,
+      "started_at": "2026-10-04T19:02:19.534775+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "doremi",
+      "completed_at": "2026-10-04T19:03:55.040183+00:00",
+      "metrics_file": "doremi_seed0/metrics.json",
+      "recoveries": 0,
+      "seed": 0,
+      "started_at": "2026-10-04T19:02:58.689029+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "doge",
+      "completed_at": "2026-10-04T19:05:30.418299+00:00",
+      "metrics_file": "doge_seed0/metrics.json",
+      "recoveries": 0,
+      "seed": 0,
+      "started_at": "2026-10-04T19:03:55.041716+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "token_proportional",
+      "completed_at": "2026-10-04T19:06:05.932705+00:00",
+      "metrics_file": "token_proportional_seed1/metrics.json",
+      "recoveries": 0,
+      "seed": 1,
+      "started_at": "2026-10-04T19:05:30.422523+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "uniform_domain",
+      "completed_at": "2026-10-04T19:06:41.592044+00:00",
+      "metrics_file": "uniform_domain_seed1/metrics.json",
+      "recoveries": 0,
+      "seed": 1,
+      "started_at": "2026-10-04T19:06:05.936484+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "uniform_bucket",
+      "completed_at": "2026-10-04T19:07:20.737473+00:00",
+      "metrics_file": "uniform_bucket_seed1/metrics.json",
+      "recoveries": 0,
+      "seed": 1,
+      "started_at": "2026-10-04T19:06:41.600103+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "compel_filter",
+      "completed_at": "2026-10-04T19:08:03.565243+00:00",
+      "metrics_file": "compel_filter_seed1/metrics.json",
+      "recoveries": 0,
+      "seed": 1,
+      "started_at": "2026-10-04T19:07:20.740956+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "zipmix_static",
+      "completed_at": "2026-10-04T19:08:40.139512+00:00",
+      "metrics_file": "zipmix_static_seed1/metrics.json",
+      "recoveries": 0,
+      "seed": 1,
+      "started_at": "2026-10-04T19:08:03.567446+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "direct_zipfit",
+      "completed_at": "2026-10-04T19:09:16.325660+00:00",
+      "metrics_file": "direct_zipfit_seed1/metrics.json",
+      "recoveries": 0,
+      "seed": 1,
+      "started_at": "2026-10-04T19:08:40.155358+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "shuffled_zipmix",
+      "completed_at": "2026-10-04T19:09:56.289762+00:00",
+      "metrics_file": "shuffled_zipmix_seed1/metrics.json",
+      "recoveries": 0,
+      "seed": 1,
+      "started_at": "2026-10-04T19:09:16.332974+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "doremi",
+      "completed_at": "2026-10-04T19:11:03.291800+00:00",
+      "metrics_file": "doremi_seed1/metrics.json",
+      "recoveries": 0,
+      "seed": 1,
+      "started_at": "2026-10-04T19:09:56.308502+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "doge",
+      "completed_at": "2026-10-04T19:12:39.612742+00:00",
+      "metrics_file": "doge_seed1/metrics.json",
+      "recoveries": 0,
+      "seed": 1,
+      "started_at": "2026-10-04T19:11:03.325824+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "token_proportional",
+      "completed_at": "2026-10-04T19:13:25.154896+00:00",
+      "metrics_file": "token_proportional_seed2/metrics.json",
+      "recoveries": 0,
+      "seed": 2,
+      "started_at": "2026-10-04T19:12:39.620065+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "uniform_domain",
+      "completed_at": "2026-10-04T19:14:08.701822+00:00",
+      "metrics_file": "uniform_domain_seed2/metrics.json",
+      "recoveries": 0,
+      "seed": 2,
+      "started_at": "2026-10-04T19:13:25.159259+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "uniform_bucket",
+      "completed_at": "2026-10-04T19:14:53.178131+00:00",
+      "metrics_file": "uniform_bucket_seed2/metrics.json",
+      "recoveries": 0,
+      "seed": 2,
+      "started_at": "2026-10-04T19:14:08.741023+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "compel_filter",
+      "completed_at": "2026-10-04T19:15:37.769024+00:00",
+      "metrics_file": "compel_filter_seed2/metrics.json",
+      "recoveries": 0,
+      "seed": 2,
+      "started_at": "2026-10-04T19:14:53.200687+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "zipmix_static",
+      "completed_at": "2026-10-04T19:16:18.596864+00:00",
+      "metrics_file": "zipmix_static_seed2/metrics.json",
+      "recoveries": 0,
+      "seed": 2,
+      "started_at": "2026-10-04T19:15:37.770820+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "direct_zipfit",
+      "completed_at": "2026-10-04T19:16:59.025017+00:00",
+      "metrics_file": "direct_zipfit_seed2/metrics.json",
+      "recoveries": 0,
+      "seed": 2,
+      "started_at": "2026-10-04T19:16:18.606858+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "shuffled_zipmix",
+      "completed_at": "2026-10-04T19:17:43.120122+00:00",
+      "metrics_file": "shuffled_zipmix_seed2/metrics.json",
+      "recoveries": 0,
+      "seed": 2,
+      "started_at": "2026-10-04T19:16:59.027461+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "doremi",
+      "completed_at": "2026-10-04T19:18:53.369654+00:00",
+      "metrics_file": "doremi_seed2/metrics.json",
+      "recoveries": 0,
+      "seed": 2,
+      "started_at": "2026-10-04T19:17:43.129144+00:00",
+      "status": "complete"
+    },
+    {
+      "arm": "doge",
+      "completed_at": "2026-10-04T19:20:30.251126+00:00",
+      "metrics_file": "doge_seed2/metrics.json",
+      "recoveries": 0,
+      "seed": 2,
+      "started_at": "2026-10-04T19:18:53.387301+00:00",
+      "status": "complete"
+    }
+  ],
+  "cells_with_recovery": 0,
+  "counts": {
+    "complete": 27,
+    "failed": 0,
+    "interrupted": 0,
+    "pending": 0,
+    "running": 0
+  },
+  "expected_cells": 27,
+  "fingerprint": "f371497109359adfa0256b764fe97c55c449d5a60781cbf8db807831a246239c",
+  "full_clean_matrix": true,
+  "full_matrix_complete": true,
+  "run_id": "zipmix04-659f9b15c6f44f94b74f61269cdb950a",
+  "updated_at": "2026-10-04T19:20:30.251196+00:00"
+}

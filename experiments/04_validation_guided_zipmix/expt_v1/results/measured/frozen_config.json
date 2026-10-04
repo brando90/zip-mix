@@ -1,0 +1,76 @@
+{
+  "config": {
+    "arms": [
+      "token_proportional",
+      "uniform_domain",
+      "uniform_bucket",
+      "compel_filter",
+      "zipmix_static",
+      "direct_zipfit",
+      "shuffled_zipmix",
+      "doremi",
+      "doge"
+    ],
+    "batch_size": 32,
+    "checkpoint_every": 128,
+    "compel_max_cr": 0.8,
+    "compel_min_cr": 0.65,
+    "d_ff": 1024,
+    "d_model": 256,
+    "dev_batch_size": 16,
+    "device": "cuda",
+    "doge_mu": 0.01,
+    "doge_score_clip": 5.0,
+    "doge_smoothing": 0.0,
+    "doremi_eta": 1.0,
+    "dropout": 0.0,
+    "eval_batch_size": 64,
+    "final_steps": 2048,
+    "grad_clip": 1.0,
+    "learning_rate": 0.0005,
+    "log_every": 128,
+    "max_recoveries": 1,
+    "metadata": {
+      "baseline_scope": "compact adaptations, not paper-scale reproductions",
+      "condition": "compact_mechanism_screen_v1",
+      "experiment": "04_validation_guided_zipmix",
+      "final_tokens_per_cell": 8388608,
+      "interpretation": "three-seed descriptive screening; total compute differs by method"
+    },
+    "min_lr_ratio": 0.1,
+    "n_heads": 4,
+    "n_layers": 4,
+    "num_threads": 4,
+    "precision": "bf16",
+    "proxy_per_domain_batch": 2,
+    "proxy_steps": 512,
+    "reference_steps": 512,
+    "sampling_seed_offset": 10000,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "seq_len": 128,
+    "smoothing": 0.001,
+    "tau": 0.001,
+    "vocab_size": 8192,
+    "warmup_steps": 100,
+    "weight_decay": 0.1
+  },
+  "data_sha256": {
+    "dev.npz": "fa1c72ba24ffde01c3996699d2cb05d8059bdc58e661ee9f355ff6f3986bbd39",
+    "eval.npz": "5f335a2be09d0b7bfa6262f1c0cdac2ed7c80c7ab36b528bc96e449978103f96",
+    "train.npz": "df2e5044cc01e825c351c4432f44c89a27477e867f7c531923be776fd43e6ddd"
+  },
+  "fingerprint": "f371497109359adfa0256b764fe97c55c449d5a60781cbf8db807831a246239c",
+  "frozen_at": "2026-10-04T18:58:25.914886+00:00",
+  "runtime": {
+    "cuda": "12.8",
+    "device": "NVIDIA A100-SXM4-80GB",
+    "numpy": "2.5.3",
+    "python": "3.12.3",
+    "torch": "2.10.0+cu128"
+  },
+  "train_source_sha256": "747243ea0009a8ec3a2aacf34f97b92b8b1a4393424049a9cf42b10e0307bf52"
+}

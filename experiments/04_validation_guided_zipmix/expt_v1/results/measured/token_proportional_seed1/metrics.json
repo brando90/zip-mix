@@ -1,0 +1,83 @@
+{
+  "arm": "token_proportional",
+  "completed_at": "2026-10-04T19:06:05.918235+00:00",
+  "fingerprint": "f371497109359adfa0256b764fe97c55c449d5a60781cbf8db807831a246239c",
+  "heldout_nll_sha256": "159cb8d50e7005a76a77629a10d2b2e4ea3476fb1531afc052ed031240a1c443",
+  "invocation_wall_seconds": 35.49279705621302,
+  "metrics": {
+    "broad": {
+      "domain_macro_nll": 4.818144922144711,
+      "domain_nll": {
+        "0": 5.163403689861298,
+        "1": 3.1239668242633343,
+        "2": 4.686524115502834,
+        "3": 4.852239336818457,
+        "4": 5.3879485204815865,
+        "7": 5.035138964653015,
+        "8": 5.030863359570503,
+        "9": 5.2650745660066605
+      },
+      "examples": 512,
+      "loss_tokens": 65536,
+      "nll": 4.818144922144711,
+      "perplexity": 123.73533905464548,
+      "worst_domain_nll": 5.3879485204815865
+    },
+    "eval_wall_seconds": 0.052670955657958984,
+    "target": {
+      "domain_macro_nll": 5.165169507265091,
+      "domain_nll": {
+        "5": 5.349526263773441,
+        "6": 4.980812750756741
+      },
+      "examples": 128,
+      "loss_tokens": 16384,
+      "nll": 5.165169507265091,
+      "perplexity": 175.06713120748122,
+      "worst_domain_nll": 5.349526263773441
+    }
+  },
+  "seed": 1,
+  "stages": {
+    "final": {
+      "chunks_sampled": 65536,
+      "flops_definition": "6*P*gradient_tokens + 2*P*forward_only_tokens; excludes attention quadratic, optimizer and preprocessing costs",
+      "flops_proxy": 266227842809856,
+      "forward_only_tokens": 0,
+      "gradient_probe_tokens": 0,
+      "optimizer_tokens": 8388608,
+      "parameters": 5289472,
+      "peak_gpu_allocated_bytes": 652584448,
+      "peak_gpu_reserved_bytes": 1272971264,
+      "peak_memory_scope": "this stage invocation, including resident reference model; earlier recovery invocations not reconstructed",
+      "seen_by_bucket": {
+        "0": 7529,
+        "1": 11509,
+        "2": 17287,
+        "3": 16311,
+        "4": 10260,
+        "5": 2589,
+        "6": 51
+      },
+      "seen_by_domain": {
+        "0": 1984,
+        "1": 1584,
+        "2": 3064,
+        "3": 5524,
+        "4": 22215,
+        "5": 4455,
+        "6": 5389,
+        "7": 10399,
+        "8": 4908,
+        "9": 6014
+      },
+      "stage": "final",
+      "steps": 2048,
+      "unique_chunks_seen": 48441,
+      "wall_seconds": 35.3025989998132
+    }
+  },
+  "status": "complete",
+  "total_stage_wall_seconds": 35.3025989998132,
+  "total_training_flops_proxy": 266227842809856
+}

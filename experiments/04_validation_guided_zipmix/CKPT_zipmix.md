@@ -2,9 +2,9 @@
 
 **Doc link:** <https://github.com/brando90/zip-mix/blob/main/experiments/04_validation_guided_zipmix/CKPT_zipmix.md>
 
-**TLDR:** The reviewed, frozen 27-cell pretraining run started on an A100 at 11:58 PDT on 10-04-2026. Training is active; the scientific outcome remains pending.
+**TLDR:** All 27 pretraining cells completed without failures or recoveries. Zip-Mix has small gains over population/shuffled sampling, misses the prespecified gain threshold, and trails the compact DoGE comparison.
 
-Updated 10-04-2026 12:00 PDT.
+Updated 10-04-2026 12:35 PDT.
 
 ## Ownership and evidence
 
@@ -16,10 +16,9 @@ The source pilot hash and prepared artifact hashes are frozen in data_manifest.j
 
 ## Next actions
 
-1. Keep the healthy full 27-cell run active through all methods and seeds; do not stop it at a coordinator boundary.
-2. Inspect fresh bound process/progress receipts and preserve any failure in the full denominator.
-3. Analyze every cell from saved per-example losses after completion; publish numerical evidence and verify resource release.
-4. Execute the revised Experiment 05 on a separately verified idle A100 without changing either scientific configuration.
+1. Preserve the completed source/data/run identity and all 27 outcomes. No more training is needed to complete this frozen matrix.
+2. Use the published results and numerical proof bundle; do not lower the screening threshold after seeing results.
+3. Continue the independently frozen Experiment 05 and prepare the separate prospective Experiment 06 contrastive-selector test. No Experiment 05 benchmark scores informed its design.
 
 ## Engineering verification
 
@@ -30,3 +29,9 @@ Review update 10-04-2026: the requested review applied fixes to `train.py` (nume
 ## Actual launch
 
 Reviewed source revision `14c4d4f`; five transferred data-file hashes matched the frozen preparation manifest. The remote deterministic suite passed 23 tests. A real persistent terminal session runs the task-owned Python supervisor, which checks the exact 27-cell denominator and records bound progress/process/device receipts. The first cell passed step 896/2,048 with zero failed cells at the initial observation. Exact process/host/session identities are private. The requested review finished as Claude Opus 5.5 with maximum effort; no further model review was started.
+
+## Verified completion
+
+All 27/27 cells completed with zero recoveries; all frozen final budgets match. Whitelisted metrics, mixtures and numeric loss arrays are in `expt_v1/results/measured/`, with export hashes and documented manifest-path sanitization. Unchanged local analysis passed; point estimates match exactly, with interval-only roundoff below 9e-13 across library versions. The scalar threshold rule is retained as not met. See `results.md` for the complete quantitative interpretation.
+
+A separate training/development-only analysis in `expt_v1/results/bin_capacity.md` shows that the fixed compression bins can assign at most 23.5496% of mass to biomedical training blocks, below all three learned DoGE mixtures. This is a source-exposure constraint, not a proof of what causes the performance gap.

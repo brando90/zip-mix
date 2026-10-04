@@ -1,0 +1,181 @@
+{
+  "arm": "doremi",
+  "completed_at": "2026-10-04T19:03:55.035573+00:00",
+  "fingerprint": "f371497109359adfa0256b764fe97c55c449d5a60781cbf8db807831a246239c",
+  "heldout_nll_sha256": "6fedfee5ebeb0d5ec78840968452ec7db536af6f38460482735ad0c1558bf67e",
+  "invocation_wall_seconds": 56.34380262810737,
+  "metrics": {
+    "broad": {
+      "domain_macro_nll": 4.820274171186611,
+      "domain_nll": {
+        "0": 5.359667636454105,
+        "1": 2.3538051079958677,
+        "2": 5.008481688797474,
+        "3": 4.673856750130653,
+        "4": 5.518911436200142,
+        "7": 5.008847683668137,
+        "8": 5.223062381148338,
+        "9": 5.415560685098171
+      },
+      "examples": 512,
+      "loss_tokens": 65536,
+      "nll": 4.820274171186611,
+      "perplexity": 123.99908309550518,
+      "worst_domain_nll": 5.518911436200142
+    },
+    "eval_wall_seconds": 0.03977338131517172,
+    "target": {
+      "domain_macro_nll": 5.252869214862585,
+      "domain_nll": {
+        "5": 5.530785493552685,
+        "6": 4.974952936172485
+      },
+      "examples": 128,
+      "loss_tokens": 16384,
+      "nll": 5.252869214862585,
+      "perplexity": 191.11382918744494,
+      "worst_domain_nll": 5.530785493552685
+    }
+  },
+  "seed": 0,
+  "stages": {
+    "final": {
+      "chunks_sampled": 65536,
+      "flops_definition": "6*P*gradient_tokens + 2*P*forward_only_tokens; excludes attention quadratic, optimizer and preprocessing costs",
+      "flops_proxy": 266227842809856,
+      "forward_only_tokens": 0,
+      "gradient_probe_tokens": 0,
+      "optimizer_tokens": 8388608,
+      "parameters": 5289472,
+      "peak_gpu_allocated_bytes": 652584448,
+      "peak_gpu_reserved_bytes": 736100352,
+      "peak_memory_scope": "this stage invocation, including resident reference model; earlier recovery invocations not reconstructed",
+      "seen_by_bucket": {
+        "0": 11468,
+        "1": 14754,
+        "2": 18950,
+        "3": 11441,
+        "4": 7065,
+        "5": 1803,
+        "6": 55
+      },
+      "seen_by_domain": {
+        "0": 940,
+        "1": 8179,
+        "2": 1462,
+        "3": 10104,
+        "4": 16170,
+        "5": 596,
+        "6": 10003,
+        "7": 11793,
+        "8": 3113,
+        "9": 3176
+      },
+      "stage": "final",
+      "steps": 2048,
+      "unique_chunks_seen": 43382,
+      "wall_seconds": 36.95837379805744
+    },
+    "proxy": {
+      "average_domain_weights": [
+        0.01448317256677263,
+        0.12479860969516192,
+        0.02103907405909498,
+        0.15633886432188426,
+        0.24018469286929878,
+        0.0093634832901171,
+        0.15522299591636107,
+        0.17955407269338625,
+        0.04903771573673642,
+        0.049977318851186725
+      ],
+      "chunks_sampled": 10240,
+      "domain_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "flops_definition": "6*P*gradient_tokens + 2*P*forward_only_tokens; excludes attention quadratic, optimizer and preprocessing costs",
+      "flops_proxy": 55464133918720,
+      "forward_only_tokens": 1310720,
+      "gradient_probe_tokens": 0,
+      "optimizer_tokens": 1310720,
+      "parameters": 5289472,
+      "peak_gpu_allocated_bytes": 530033664,
+      "peak_gpu_reserved_bytes": 1423966208,
+      "peak_memory_scope": "this stage invocation, including resident reference model; earlier recovery invocations not reconstructed",
+      "seen_by_bucket": {
+        "0": 1246,
+        "1": 2541,
+        "2": 3545,
+        "3": 1687,
+        "4": 1005,
+        "5": 206,
+        "6": 10
+      },
+      "seen_by_domain": {
+        "0": 1024,
+        "1": 1024,
+        "2": 1024,
+        "3": 1024,
+        "4": 1024,
+        "5": 1024,
+        "6": 1024,
+        "7": 1024,
+        "8": 1024,
+        "9": 1024
+      },
+      "stage": "proxy",
+      "steps": 512,
+      "unique_chunks_seen": 9443,
+      "wall_seconds": 9.534839482977986
+    },
+    "reference": {
+      "chunks_sampled": 16384,
+      "flops_definition": "6*P*gradient_tokens + 2*P*forward_only_tokens; excludes attention quadratic, optimizer and preprocessing costs",
+      "flops_proxy": 66556960702464,
+      "forward_only_tokens": 0,
+      "gradient_probe_tokens": 0,
+      "optimizer_tokens": 2097152,
+      "parameters": 5289472,
+      "peak_gpu_allocated_bytes": 652584448,
+      "peak_gpu_reserved_bytes": 1398800384,
+      "peak_memory_scope": "this stage invocation, including resident reference model; earlier recovery invocations not reconstructed",
+      "seen_by_bucket": {
+        "0": 1895,
+        "1": 2889,
+        "2": 4390,
+        "3": 3999,
+        "4": 2548,
+        "5": 648,
+        "6": 15
+      },
+      "seen_by_domain": {
+        "0": 456,
+        "1": 400,
+        "2": 794,
+        "3": 1447,
+        "4": 5544,
+        "5": 1110,
+        "6": 1357,
+        "7": 2504,
+        "8": 1239,
+        "9": 1533
+      },
+      "stage": "reference",
+      "steps": 512,
+      "unique_chunks_seen": 15155,
+      "wall_seconds": 9.404724810272455
+    }
+  },
+  "status": "complete",
+  "total_stage_wall_seconds": 55.89793809130788,
+  "total_training_flops_proxy": 388248937431040
+}

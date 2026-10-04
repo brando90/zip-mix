@@ -1,0 +1,1253 @@
+{
+  "analysis_kind": "exact finite-pool selector diagnostics; no inferred performance estimates",
+  "created_at": "2026-10-04T19:31:18.147232+00:00",
+  "date_display": "10-04-2026",
+  "experiment04": {
+    "actual_mixtures": {
+      "compel_filter": [
+        {
+          "bucket_mass": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 0.15663917192301474,
+            "3": 0.5128174025553938,
+            "4": 0.3303412582888565,
+            "5": 0.0002021672327349183,
+            "6": 0.0
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 0,
+          "source_mass": {
+            "ArXiv": 0.007156720038816108,
+            "DM Mathematics": 0.004205078440886301,
+            "FreeLaw": 0.01368672165615397,
+            "Github": 0.01423257318453825,
+            "Pile-CC": 0.5305272521429727,
+            "PubMed Abstracts": 0.11614507520621059,
+            "PubMed Central": 0.02292576419213974,
+            "StackExchange": 0.1282751091703057,
+            "USPTO Backgrounds": 0.033054342552159145,
+            "Wikipedia (en)": 0.12979136341581757
+          },
+          "target_mass": 0.13907083939835033
+        },
+        {
+          "bucket_mass": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 0.15663917192301474,
+            "3": 0.5128174025553938,
+            "4": 0.3303412582888565,
+            "5": 0.0002021672327349183,
+            "6": 0.0
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 1,
+          "source_mass": {
+            "ArXiv": 0.007156720038816108,
+            "DM Mathematics": 0.004205078440886301,
+            "FreeLaw": 0.01368672165615397,
+            "Github": 0.01423257318453825,
+            "Pile-CC": 0.5305272521429727,
+            "PubMed Abstracts": 0.11614507520621059,
+            "PubMed Central": 0.02292576419213974,
+            "StackExchange": 0.1282751091703057,
+            "USPTO Backgrounds": 0.033054342552159145,
+            "Wikipedia (en)": 0.12979136341581757
+          },
+          "target_mass": 0.13907083939835033
+        },
+        {
+          "bucket_mass": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 0.15663917192301474,
+            "3": 0.5128174025553938,
+            "4": 0.3303412582888565,
+            "5": 0.0002021672327349183,
+            "6": 0.0
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 2,
+          "source_mass": {
+            "ArXiv": 0.007156720038816108,
+            "DM Mathematics": 0.004205078440886301,
+            "FreeLaw": 0.01368672165615397,
+            "Github": 0.01423257318453825,
+            "Pile-CC": 0.5305272521429727,
+            "PubMed Abstracts": 0.11614507520621059,
+            "PubMed Central": 0.02292576419213974,
+            "StackExchange": 0.1282751091703057,
+            "USPTO Backgrounds": 0.033054342552159145,
+            "Wikipedia (en)": 0.12979136341581757
+          },
+          "target_mass": 0.13907083939835033
+        }
+      ],
+      "direct_zipfit": [
+        {
+          "bucket_mass": {
+            "0": 0.09308453664691496,
+            "1": 0.16971603715334346,
+            "2": 0.2785811992335674,
+            "3": 0.2559266975175162,
+            "4": 0.1633057872904798,
+            "5": 0.03891887592825792,
+            "6": 0.0004668662299203691
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 0,
+          "source_mass": {
+            "ArXiv": 0.03376567974614972,
+            "DM Mathematics": 0.009373548920813896,
+            "FreeLaw": 0.04030650590620449,
+            "Github": 0.06335690429934462,
+            "Pile-CC": 0.3470729833741163,
+            "PubMed Abstracts": 0.0809347507657229,
+            "PubMed Central": 0.10076792063588952,
+            "StackExchange": 0.14505799095001154,
+            "USPTO Backgrounds": 0.08319145035923789,
+            "Wikipedia (en)": 0.09617226504250914
+          },
+          "target_mass": 0.18170267140161242
+        },
+        {
+          "bucket_mass": {
+            "0": 0.09308453664691496,
+            "1": 0.16971603715334346,
+            "2": 0.2785811992335674,
+            "3": 0.2559266975175162,
+            "4": 0.1633057872904798,
+            "5": 0.03891887592825792,
+            "6": 0.0004668662299203691
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 1,
+          "source_mass": {
+            "ArXiv": 0.03376567974614972,
+            "DM Mathematics": 0.009373548920813896,
+            "FreeLaw": 0.04030650590620449,
+            "Github": 0.06335690429934462,
+            "Pile-CC": 0.3470729833741163,
+            "PubMed Abstracts": 0.0809347507657229,
+            "PubMed Central": 0.10076792063588952,
+            "StackExchange": 0.14505799095001154,
+            "USPTO Backgrounds": 0.08319145035923789,
+            "Wikipedia (en)": 0.09617226504250914
+          },
+          "target_mass": 0.18170267140161242
+        },
+        {
+          "bucket_mass": {
+            "0": 0.09308453664691496,
+            "1": 0.16971603715334346,
+            "2": 0.2785811992335674,
+            "3": 0.2559266975175162,
+            "4": 0.1633057872904798,
+            "5": 0.03891887592825792,
+            "6": 0.0004668662299203691
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 2,
+          "source_mass": {
+            "ArXiv": 0.03376567974614972,
+            "DM Mathematics": 0.009373548920813896,
+            "FreeLaw": 0.04030650590620449,
+            "Github": 0.06335690429934462,
+            "Pile-CC": 0.3470729833741163,
+            "PubMed Abstracts": 0.0809347507657229,
+            "PubMed Central": 0.10076792063588952,
+            "StackExchange": 0.14505799095001154,
+            "USPTO Backgrounds": 0.08319145035923789,
+            "Wikipedia (en)": 0.09617226504250914
+          },
+          "target_mass": 0.18170267140161242
+        }
+      ],
+      "doge": [
+        {
+          "bucket_mass": {
+            "0": 0.07515501904083075,
+            "1": 0.2269752636702945,
+            "2": 0.35774834024912,
+            "3": 0.1962931783345735,
+            "4": 0.12147870991801127,
+            "5": 0.022035256827186746,
+            "6": 0.0003142319599831674
+          },
+          "exceeds_uniform_within_bin_capacity": true,
+          "seed": 0,
+          "source_mass": {
+            "ArXiv": 0.09110788974557592,
+            "DM Mathematics": 0.05614227592731487,
+            "FreeLaw": 0.07640333282614498,
+            "Github": 0.047497588686795114,
+            "Pile-CC": 0.0785485892821206,
+            "PubMed Abstracts": 0.21956406829272868,
+            "PubMed Central": 0.1800541898744617,
+            "StackExchange": 0.04991115936271095,
+            "USPTO Backgrounds": 0.11074033740103606,
+            "Wikipedia (en)": 0.09003056860111115
+          },
+          "target_mass": 0.3996182581671904
+        },
+        {
+          "bucket_mass": {
+            "0": 0.07454231985471144,
+            "1": 0.22997340529422933,
+            "2": 0.35938064466206177,
+            "3": 0.19393644285791892,
+            "4": 0.11994363137236122,
+            "5": 0.021914920210240926,
+            "6": 0.00030863574847636956
+          },
+          "exceeds_uniform_within_bin_capacity": true,
+          "seed": 1,
+          "source_mass": {
+            "ArXiv": 0.10175483668913304,
+            "DM Mathematics": 0.05777210331021028,
+            "FreeLaw": 0.07445309003522557,
+            "Github": 0.045076986564757504,
+            "Pile-CC": 0.08175956330405099,
+            "PubMed Abstracts": 0.21370310969668865,
+            "PubMed Central": 0.17616008023194277,
+            "StackExchange": 0.050862653401460754,
+            "USPTO Backgrounds": 0.11271737620833686,
+            "Wikipedia (en)": 0.08574020055819363
+          },
+          "target_mass": 0.38986318992863145
+        },
+        {
+          "bucket_mass": {
+            "0": 0.0720605183037307,
+            "1": 0.22412947171985584,
+            "2": 0.3555665510957734,
+            "3": 0.20031502528917444,
+            "4": 0.12504387284033058,
+            "5": 0.02258135101773469,
+            "6": 0.0003032097334002385
+          },
+          "exceeds_uniform_within_bin_capacity": true,
+          "seed": 2,
+          "source_mass": {
+            "ArXiv": 0.09553966310115672,
+            "DM Mathematics": 0.051801140416900364,
+            "FreeLaw": 0.07225900829591378,
+            "Github": 0.04369196177705866,
+            "Pile-CC": 0.08071596628122306,
+            "PubMed Abstracts": 0.22990888807343823,
+            "PubMed Central": 0.17637775009985113,
+            "StackExchange": 0.049409059090804994,
+            "USPTO Backgrounds": 0.11230342729606822,
+            "Wikipedia (en)": 0.08799313556758478
+          },
+          "target_mass": 0.40628663817328936
+        }
+      ],
+      "doremi": [
+        {
+          "bucket_mass": {
+            "0": 0.1763060982355719,
+            "1": 0.22634785905211674,
+            "2": 0.28857873482732377,
+            "3": 0.17269792078408047,
+            "4": 0.10757109776079012,
+            "5": 0.027590216547661854,
+            "6": 0.0009080727924554357
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 0,
+          "source_mass": {
+            "ArXiv": 0.014483172566772626,
+            "DM Mathematics": 0.12479860969516192,
+            "FreeLaw": 0.021039074059094984,
+            "Github": 0.15633886432188426,
+            "Pile-CC": 0.24018469286929883,
+            "PubMed Abstracts": 0.009363483290117103,
+            "PubMed Central": 0.15522299591636107,
+            "StackExchange": 0.1795540726933863,
+            "USPTO Backgrounds": 0.04903771573673642,
+            "Wikipedia (en)": 0.049977318851186725
+          },
+          "target_mass": 0.16458647920647818
+        },
+        {
+          "bucket_mass": {
+            "0": 0.16710060632149257,
+            "1": 0.2256922603319213,
+            "2": 0.29350312822751934,
+            "3": 0.17456631128422445,
+            "4": 0.110022020940193,
+            "5": 0.028250617311693097,
+            "6": 0.0008650555829562863
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 1,
+          "source_mass": {
+            "ArXiv": 0.02237141544028906,
+            "DM Mathematics": 0.12872030282443037,
+            "FreeLaw": 0.02778290632494247,
+            "Github": 0.14128018860757183,
+            "Pile-CC": 0.2482692466635275,
+            "PubMed Abstracts": 0.014525534296285409,
+            "PubMed Central": 0.15595033957963197,
+            "StackExchange": 0.18247452695490515,
+            "USPTO Backgrounds": 0.03586798684408132,
+            "Wikipedia (en)": 0.04275755246433504
+          },
+          "target_mass": 0.1704758738759174
+        },
+        {
+          "bucket_mass": {
+            "0": 0.16859848229712657,
+            "1": 0.21643834234079812,
+            "2": 0.27747226559952104,
+            "3": 0.1879190487936103,
+            "4": 0.11848085574788206,
+            "5": 0.030187566365894647,
+            "6": 0.0009034388551672802
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 2,
+          "source_mass": {
+            "ArXiv": 0.024088889390210068,
+            "DM Mathematics": 0.1224890125145987,
+            "FreeLaw": 0.020676218898624733,
+            "Github": 0.14434730998472528,
+            "Pile-CC": 0.2638648203377188,
+            "PubMed Abstracts": 0.018129027460936968,
+            "PubMed Central": 0.12060236327992298,
+            "StackExchange": 0.18058733114719983,
+            "USPTO Backgrounds": 0.04497603488624003,
+            "Wikipedia (en)": 0.06023899209982267
+          },
+          "target_mass": 0.13873139074085994
+        }
+      ],
+      "shuffled_zipmix": [
+        {
+          "bucket_mass": {
+            "0": 0.11451601918519656,
+            "1": 0.17532085132374253,
+            "2": 0.266245305813417,
+            "3": 0.2457850833247639,
+            "4": 0.15803201395428956,
+            "5": 0.03928553548888049,
+            "6": 0.000815190909709926
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 0,
+          "source_mass": {
+            "ArXiv": 0.030921229145275217,
+            "DM Mathematics": 0.024375972379491455,
+            "FreeLaw": 0.0473560194696951,
+            "Github": 0.08545672569104337,
+            "Pile-CC": 0.34048797172915063,
+            "PubMed Abstracts": 0.06729168834663057,
+            "PubMed Central": 0.08098594259942493,
+            "StackExchange": 0.1590253852835161,
+            "USPTO Backgrounds": 0.07264312551991928,
+            "Wikipedia (en)": 0.0914559398358534
+          },
+          "target_mass": 0.1482776309460555
+        },
+        {
+          "bucket_mass": {
+            "0": 0.11473487522088152,
+            "1": 0.17491835511823695,
+            "2": 0.2658494080284453,
+            "3": 0.24630858361467525,
+            "4": 0.15821921751167392,
+            "5": 0.039143499758553975,
+            "6": 0.0008260607475331854
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 1,
+          "source_mass": {
+            "ArXiv": 0.0308714960359235,
+            "DM Mathematics": 0.024350012935117637,
+            "FreeLaw": 0.04728325058268745,
+            "Github": 0.08551165809085755,
+            "Pile-CC": 0.34069655680794086,
+            "PubMed Abstracts": 0.06734397801476505,
+            "PubMed Central": 0.08086221825545054,
+            "StackExchange": 0.1590211382834385,
+            "USPTO Backgrounds": 0.07257952543320545,
+            "Wikipedia (en)": 0.0914801655606135
+          },
+          "target_mass": 0.14820619627021558
+        },
+        {
+          "bucket_mass": {
+            "0": 0.11432695736033896,
+            "1": 0.17532991075134866,
+            "2": 0.26604675078243434,
+            "3": 0.24610680582695524,
+            "4": 0.1585943241412449,
+            "5": 0.03881757818471397,
+            "6": 0.0007776729529637901
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 2,
+          "source_mass": {
+            "ArXiv": 0.030910306312619477,
+            "DM Mathematics": 0.024362420363186855,
+            "FreeLaw": 0.047338409096681223,
+            "Github": 0.08536036985495218,
+            "Pile-CC": 0.3405985271464324,
+            "PubMed Abstracts": 0.0673607647597689,
+            "PubMed Central": 0.08095084324935131,
+            "StackExchange": 0.15899854239036365,
+            "USPTO Backgrounds": 0.07262620518603177,
+            "Wikipedia (en)": 0.09149361164061212
+          },
+          "target_mass": 0.14831160800912022
+        }
+      ],
+      "token_proportional": [
+        {
+          "bucket_mass": {
+            "0": 0.11437797581528852,
+            "1": 0.17521794362072476,
+            "2": 0.26609000901835667,
+            "3": 0.24597810381777094,
+            "4": 0.15845155784839457,
+            "5": 0.0390698486273673,
+            "6": 0.0008145612520970105
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 0,
+          "source_mass": {
+            "ArXiv": 0.030904841790871086,
+            "DM Mathematics": 0.024359260300805832,
+            "FreeLaw": 0.047331827041494134,
+            "Github": 0.0853834741037402,
+            "Pile-CC": 0.34064175790075935,
+            "PubMed Abstracts": 0.06734676066444922,
+            "PubMed Central": 0.08094217584825886,
+            "StackExchange": 0.15899459868312593,
+            "USPTO Backgrounds": 0.07261231732979062,
+            "Wikipedia (en)": 0.09148298633670471
+          },
+          "target_mass": 0.14828893651270808
+        },
+        {
+          "bucket_mass": {
+            "0": 0.11437797581528852,
+            "1": 0.17521794362072476,
+            "2": 0.26609000901835667,
+            "3": 0.24597810381777094,
+            "4": 0.15845155784839457,
+            "5": 0.0390698486273673,
+            "6": 0.0008145612520970105
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 1,
+          "source_mass": {
+            "ArXiv": 0.030904841790871086,
+            "DM Mathematics": 0.024359260300805832,
+            "FreeLaw": 0.047331827041494134,
+            "Github": 0.0853834741037402,
+            "Pile-CC": 0.34064175790075935,
+            "PubMed Abstracts": 0.06734676066444922,
+            "PubMed Central": 0.08094217584825886,
+            "StackExchange": 0.15899459868312593,
+            "USPTO Backgrounds": 0.07261231732979062,
+            "Wikipedia (en)": 0.09148298633670471
+          },
+          "target_mass": 0.14828893651270808
+        },
+        {
+          "bucket_mass": {
+            "0": 0.11437797581528852,
+            "1": 0.17521794362072476,
+            "2": 0.26609000901835667,
+            "3": 0.24597810381777094,
+            "4": 0.15845155784839457,
+            "5": 0.0390698486273673,
+            "6": 0.0008145612520970105
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 2,
+          "source_mass": {
+            "ArXiv": 0.030904841790871086,
+            "DM Mathematics": 0.024359260300805832,
+            "FreeLaw": 0.047331827041494134,
+            "Github": 0.0853834741037402,
+            "Pile-CC": 0.34064175790075935,
+            "PubMed Abstracts": 0.06734676066444922,
+            "PubMed Central": 0.08094217584825886,
+            "StackExchange": 0.15899459868312593,
+            "USPTO Backgrounds": 0.07261231732979062,
+            "Wikipedia (en)": 0.09148298633670471
+          },
+          "target_mass": 0.14828893651270808
+        }
+      ],
+      "uniform_bucket": [
+        {
+          "bucket_mass": {
+            "0": 0.14285714285714285,
+            "1": 0.1428571428571428,
+            "2": 0.14285714285714282,
+            "3": 0.14285714285714285,
+            "4": 0.1428571428571429,
+            "5": 0.14285714285714282,
+            "6": 0.14285714285714285
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 0,
+          "source_mass": {
+            "ArXiv": 0.0204905984911163,
+            "DM Mathematics": 0.019485174054744096,
+            "FreeLaw": 0.031176203162199736,
+            "Github": 0.14069472909254588,
+            "Pile-CC": 0.40095391950720755,
+            "PubMed Abstracts": 0.05565110547843766,
+            "PubMed Central": 0.05204735027088944,
+            "StackExchange": 0.1474996445613874,
+            "USPTO Backgrounds": 0.056218155193659025,
+            "Wikipedia (en)": 0.07578312018781283
+          },
+          "target_mass": 0.1076984557493271
+        },
+        {
+          "bucket_mass": {
+            "0": 0.14285714285714285,
+            "1": 0.1428571428571428,
+            "2": 0.14285714285714282,
+            "3": 0.14285714285714285,
+            "4": 0.1428571428571429,
+            "5": 0.14285714285714282,
+            "6": 0.14285714285714285
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 1,
+          "source_mass": {
+            "ArXiv": 0.0204905984911163,
+            "DM Mathematics": 0.019485174054744096,
+            "FreeLaw": 0.031176203162199736,
+            "Github": 0.14069472909254588,
+            "Pile-CC": 0.40095391950720755,
+            "PubMed Abstracts": 0.05565110547843766,
+            "PubMed Central": 0.05204735027088944,
+            "StackExchange": 0.1474996445613874,
+            "USPTO Backgrounds": 0.056218155193659025,
+            "Wikipedia (en)": 0.07578312018781283
+          },
+          "target_mass": 0.1076984557493271
+        },
+        {
+          "bucket_mass": {
+            "0": 0.14285714285714285,
+            "1": 0.1428571428571428,
+            "2": 0.14285714285714282,
+            "3": 0.14285714285714285,
+            "4": 0.1428571428571429,
+            "5": 0.14285714285714282,
+            "6": 0.14285714285714285
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 2,
+          "source_mass": {
+            "ArXiv": 0.0204905984911163,
+            "DM Mathematics": 0.019485174054744096,
+            "FreeLaw": 0.031176203162199736,
+            "Github": 0.14069472909254588,
+            "Pile-CC": 0.40095391950720755,
+            "PubMed Abstracts": 0.05565110547843766,
+            "PubMed Central": 0.05204735027088944,
+            "StackExchange": 0.1474996445613874,
+            "USPTO Backgrounds": 0.056218155193659025,
+            "Wikipedia (en)": 0.07578312018781283
+          },
+          "target_mass": 0.1076984557493271
+        }
+      ],
+      "uniform_domain": [
+        {
+          "bucket_mass": {
+            "0": 0.12434771380484128,
+            "1": 0.2498591544315144,
+            "2": 0.3395087562318762,
+            "3": 0.1683270789596794,
+            "4": 0.0971575058922147,
+            "5": 0.020264581799541943,
+            "6": 0.0005352088803321374
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 0,
+          "source_mass": {
+            "ArXiv": 0.1,
+            "DM Mathematics": 0.09999999999999999,
+            "FreeLaw": 0.10000000000000003,
+            "Github": 0.10000000000000002,
+            "Pile-CC": 0.09999999999999998,
+            "PubMed Abstracts": 0.09999999999999998,
+            "PubMed Central": 0.10000000000000002,
+            "StackExchange": 0.10000000000000003,
+            "USPTO Backgrounds": 0.10000000000000003,
+            "Wikipedia (en)": 0.09999999999999999
+          },
+          "target_mass": 0.2
+        },
+        {
+          "bucket_mass": {
+            "0": 0.12434771380484128,
+            "1": 0.2498591544315144,
+            "2": 0.3395087562318762,
+            "3": 0.1683270789596794,
+            "4": 0.0971575058922147,
+            "5": 0.020264581799541943,
+            "6": 0.0005352088803321374
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 1,
+          "source_mass": {
+            "ArXiv": 0.1,
+            "DM Mathematics": 0.09999999999999999,
+            "FreeLaw": 0.10000000000000003,
+            "Github": 0.10000000000000002,
+            "Pile-CC": 0.09999999999999998,
+            "PubMed Abstracts": 0.09999999999999998,
+            "PubMed Central": 0.10000000000000002,
+            "StackExchange": 0.10000000000000003,
+            "USPTO Backgrounds": 0.10000000000000003,
+            "Wikipedia (en)": 0.09999999999999999
+          },
+          "target_mass": 0.2
+        },
+        {
+          "bucket_mass": {
+            "0": 0.12434771380484128,
+            "1": 0.2498591544315144,
+            "2": 0.3395087562318762,
+            "3": 0.1683270789596794,
+            "4": 0.0971575058922147,
+            "5": 0.020264581799541943,
+            "6": 0.0005352088803321374
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 2,
+          "source_mass": {
+            "ArXiv": 0.1,
+            "DM Mathematics": 0.09999999999999999,
+            "FreeLaw": 0.10000000000000003,
+            "Github": 0.10000000000000002,
+            "Pile-CC": 0.09999999999999998,
+            "PubMed Abstracts": 0.09999999999999998,
+            "PubMed Central": 0.10000000000000002,
+            "StackExchange": 0.10000000000000003,
+            "USPTO Backgrounds": 0.10000000000000003,
+            "Wikipedia (en)": 0.09999999999999999
+          },
+          "target_mass": 0.2
+        }
+      ],
+      "zipmix_static": [
+        {
+          "bucket_mass": {
+            "0": 0.0964988824543169,
+            "1": 0.17401458070955494,
+            "2": 0.28142001096167846,
+            "3": 0.2501453621008595,
+            "4": 0.15966135080493163,
+            "5": 0.03781094013130472,
+            "6": 0.0004488728373536369
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 0,
+          "source_mass": {
+            "ArXiv": 0.03174211292415638,
+            "DM Mathematics": 0.02402129009459906,
+            "FreeLaw": 0.048759687579902025,
+            "Github": 0.07746726527119843,
+            "Pile-CC": 0.3438525841815848,
+            "PubMed Abstracts": 0.06854907913405522,
+            "PubMed Central": 0.08348341639312351,
+            "StackExchange": 0.1562568983974849,
+            "USPTO Backgrounds": 0.07245952217337653,
+            "Wikipedia (en)": 0.09340814385051913
+          },
+          "target_mass": 0.15203249552717873
+        },
+        {
+          "bucket_mass": {
+            "0": 0.0964988824543169,
+            "1": 0.17401458070955494,
+            "2": 0.28142001096167846,
+            "3": 0.2501453621008595,
+            "4": 0.15966135080493163,
+            "5": 0.03781094013130472,
+            "6": 0.0004488728373536369
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 1,
+          "source_mass": {
+            "ArXiv": 0.03174211292415638,
+            "DM Mathematics": 0.02402129009459906,
+            "FreeLaw": 0.048759687579902025,
+            "Github": 0.07746726527119843,
+            "Pile-CC": 0.3438525841815848,
+            "PubMed Abstracts": 0.06854907913405522,
+            "PubMed Central": 0.08348341639312351,
+            "StackExchange": 0.1562568983974849,
+            "USPTO Backgrounds": 0.07245952217337653,
+            "Wikipedia (en)": 0.09340814385051913
+          },
+          "target_mass": 0.15203249552717873
+        },
+        {
+          "bucket_mass": {
+            "0": 0.0964988824543169,
+            "1": 0.17401458070955494,
+            "2": 0.28142001096167846,
+            "3": 0.2501453621008595,
+            "4": 0.15966135080493163,
+            "5": 0.03781094013130472,
+            "6": 0.0004488728373536369
+          },
+          "exceeds_uniform_within_bin_capacity": false,
+          "seed": 2,
+          "source_mass": {
+            "ArXiv": 0.03174211292415638,
+            "DM Mathematics": 0.02402129009459906,
+            "FreeLaw": 0.048759687579902025,
+            "Github": 0.07746726527119843,
+            "Pile-CC": 0.3438525841815848,
+            "PubMed Abstracts": 0.06854907913405522,
+            "PubMed Central": 0.08348341639312351,
+            "StackExchange": 0.1562568983974849,
+            "USPTO Backgrounds": 0.07245952217337653,
+            "Wikipedia (en)": 0.09340814385051913
+          },
+          "target_mass": 0.15203249552717873
+        }
+      ]
+    },
+    "bins": [
+      {
+        "bucket": 0,
+        "examples": 11795,
+        "source_counts": {
+          "ArXiv": 48,
+          "DM Mathematics": 512,
+          "FreeLaw": 37,
+          "Github": 5400,
+          "Pile-CC": 1181,
+          "PubMed Abstracts": 15,
+          "PubMed Central": 167,
+          "StackExchange": 3308,
+          "USPTO Backgrounds": 970,
+          "Wikipedia (en)": 157
+        },
+        "target_examples": 182,
+        "target_fraction": 0.01543026706231454
+      },
+      {
+        "bucket": 1,
+        "examples": 18069,
+        "source_counts": {
+          "ArXiv": 1259,
+          "DM Mathematics": 1056,
+          "FreeLaw": 1729,
+          "Github": 2014,
+          "Pile-CC": 1659,
+          "PubMed Abstracts": 207,
+          "PubMed Central": 2613,
+          "StackExchange": 3747,
+          "USPTO Backgrounds": 2918,
+          "Wikipedia (en)": 867
+        },
+        "target_examples": 2820,
+        "target_fraction": 0.15606840444960982
+      },
+      {
+        "bucket": 2,
+        "examples": 27440,
+        "source_counts": {
+          "ArXiv": 1743,
+          "DM Mathematics": 896,
+          "FreeLaw": 2789,
+          "Github": 849,
+          "Pile-CC": 5707,
+          "PubMed Abstracts": 1243,
+          "PubMed Central": 5219,
+          "StackExchange": 3641,
+          "USPTO Backgrounds": 2450,
+          "Wikipedia (en)": 2903
+        },
+        "target_examples": 6462,
+        "target_fraction": 0.23549562682215744
+      },
+      {
+        "bucket": 3,
+        "examples": 25366,
+        "source_counts": {
+          "ArXiv": 119,
+          "DM Mathematics": 48,
+          "FreeLaw": 272,
+          "Github": 305,
+          "Pile-CC": 13813,
+          "PubMed Abstracts": 2890,
+          "PubMed Central": 324,
+          "StackExchange": 3103,
+          "USPTO Backgrounds": 831,
+          "Wikipedia (en)": 3661
+        },
+        "target_examples": 3214,
+        "target_fraction": 0.126705038240164
+      },
+      {
+        "bucket": 4,
+        "examples": 16340,
+        "source_counts": {
+          "ArXiv": 16,
+          "DM Mathematics": 0,
+          "FreeLaw": 34,
+          "Github": 192,
+          "Pile-CC": 9918,
+          "PubMed Abstracts": 2274,
+          "PubMed Central": 18,
+          "StackExchange": 2085,
+          "USPTO Backgrounds": 275,
+          "Wikipedia (en)": 1528
+        },
+        "target_examples": 2292,
+        "target_fraction": 0.14026927784577722
+      },
+      {
+        "bucket": 5,
+        "examples": 4029,
+        "source_counts": {
+          "ArXiv": 2,
+          "DM Mathematics": 0,
+          "FreeLaw": 20,
+          "Github": 15,
+          "Pile-CC": 2803,
+          "PubMed Abstracts": 316,
+          "PubMed Central": 6,
+          "StackExchange": 509,
+          "USPTO Backgrounds": 44,
+          "Wikipedia (en)": 314
+        },
+        "target_examples": 322,
+        "target_fraction": 0.07992057582526682
+      },
+      {
+        "bucket": 6,
+        "examples": 84,
+        "source_counts": {
+          "ArXiv": 0,
+          "DM Mathematics": 0,
+          "FreeLaw": 0,
+          "Github": 30,
+          "Pile-CC": 47,
+          "PubMed Abstracts": 0,
+          "PubMed Central": 0,
+          "StackExchange": 3,
+          "USPTO Backgrounds": 0,
+          "Wikipedia (en)": 4
+        },
+        "target_examples": 0,
+        "target_fraction": 0.0
+      }
+    ],
+    "compression_ratio_boundaries": [
+      0.5,
+      0.6,
+      0.67,
+      0.73,
+      0.8,
+      0.9
+    ],
+    "maximizing_bins": [
+      2
+    ],
+    "maximum_target_mass": 0.23549562682215744,
+    "minimum_target_mass": 0.0,
+    "population_target_mass": 0.14828893651270814,
+    "sampling_unit": "one fixed 128-token training block; therefore mass equals expected training-token mass",
+    "sampling_units": 103123,
+    "target_sources": [
+      "PubMed Abstracts",
+      "PubMed Central"
+    ],
+    "target_units": 15292
+  },
+  "experiment05_v2": {
+    "bins": [
+      {
+        "bucket": 0,
+        "examples": 1230,
+        "source_counts": {
+          "arc_challenge": 991,
+          "commonsense_qa": 0,
+          "openbookqa": 0,
+          "sciq": 239
+        },
+        "target_examples": 239,
+        "target_fraction": 0.1943089430894309
+      },
+      {
+        "bucket": 1,
+        "examples": 2066,
+        "source_counts": {
+          "arc_challenge": 109,
+          "commonsense_qa": 0,
+          "openbookqa": 149,
+          "sciq": 1808
+        },
+        "target_examples": 1808,
+        "target_fraction": 0.8751210067763795
+      },
+      {
+        "bucket": 2,
+        "examples": 2170,
+        "source_counts": {
+          "arc_challenge": 0,
+          "commonsense_qa": 396,
+          "openbookqa": 892,
+          "sciq": 882
+        },
+        "target_examples": 882,
+        "target_fraction": 0.4064516129032258
+      },
+      {
+        "bucket": 3,
+        "examples": 2085,
+        "source_counts": {
+          "arc_challenge": 0,
+          "commonsense_qa": 964,
+          "openbookqa": 1059,
+          "sciq": 62
+        },
+        "target_examples": 62,
+        "target_fraction": 0.02973621103117506
+      },
+      {
+        "bucket": 4,
+        "examples": 2246,
+        "source_counts": {
+          "arc_challenge": 0,
+          "commonsense_qa": 1359,
+          "openbookqa": 887,
+          "sciq": 0
+        },
+        "target_examples": 0,
+        "target_fraction": 0.0
+      }
+    ],
+    "compression_ratio_boundaries": [
+      0.73095703125,
+      0.75537109375,
+      0.772705078125,
+      0.78369140625
+    ],
+    "controls": {
+      "compel_filter": {
+        "bucket_mass": {
+          "0": 0.12497428512651715,
+          "1": 0.2125077144620448,
+          "2": 0.22320510183089895,
+          "3": 0.21446204484673928,
+          "4": 0.2248508537337996
+        },
+        "effective_examples": 9721.999999999978,
+        "expected_input_tokens_over_2048_examples": 99439.015840362,
+        "expected_input_tokens_per_example": 48.55420695330176,
+        "nonzero_examples": 9722,
+        "source_mass": {
+          "arc_challenge": 0.11160255091544947,
+          "commonsense_qa": 0.27669203867516967,
+          "openbookqa": 0.3040526640608927,
+          "sciq": 0.30765274634848794
+        }
+      },
+      "direct_zipfit": {
+        "bucket_mass": {
+          "0": 0.07877551020408163,
+          "1": 0.6612244897959183,
+          "2": 0.26,
+          "3": 0.0,
+          "4": 0.0
+        },
+        "effective_examples": 2450.0000000000123,
+        "expected_input_tokens_over_2048_examples": 90942.90285714295,
+        "expected_input_tokens_per_example": 44.40571428571433,
+        "nonzero_examples": 2450,
+        "source_mass": {
+          "arc_challenge": 0.0,
+          "commonsense_qa": 0.0,
+          "openbookqa": 0.0,
+          "sciq": 1.0
+        }
+      },
+      "sample_proportional": {
+        "bucket_mass": {
+          "0": 0.12554863733796062,
+          "1": 0.21088088190262322,
+          "2": 0.22149637644176795,
+          "3": 0.21282025109727465,
+          "4": 0.22925385322037362
+        },
+        "effective_examples": 9796.999999999865,
+        "expected_input_tokens_over_2048_examples": 99501.40165356752,
+        "expected_input_tokens_per_example": 48.584668776156015,
+        "nonzero_examples": 9797,
+        "source_mass": {
+          "arc_challenge": 0.11227926916402983,
+          "commonsense_qa": 0.2775339389609064,
+          "openbookqa": 0.30488925181177906,
+          "sciq": 0.30529754006328463
+        }
+      },
+      "shuffled_zipmix": {
+        "bucket_mass": {
+          "0": 0.12685457565523486,
+          "1": 0.21704818235496515,
+          "2": 0.22502477996354092,
+          "3": 0.20784865034263844,
+          "4": 0.22322381168362077
+        },
+        "effective_examples": 9791.860219354667,
+        "expected_input_tokens_over_2048_examples": 99529.62229318719,
+        "expected_input_tokens_per_example": 48.59844838534531,
+        "nonzero_examples": 9797,
+        "source_mass": {
+          "arc_challenge": 0.11365683231109641,
+          "commonsense_qa": 0.2722305802045212,
+          "openbookqa": 0.30187786901278707,
+          "sciq": 0.31223471847159556
+        }
+      },
+      "uniform_domain": {
+        "bucket_mass": {
+          "0": 0.2452038691833075,
+          "1": 0.18836346041401028,
+          "2": 0.1847884548411361,
+          "3": 0.18245182209189156,
+          "4": 0.1991923934696545
+        },
+        "effective_examples": 8222.02092212976,
+        "expected_input_tokens_over_2048_examples": 105929.83658819013,
+        "expected_input_tokens_per_example": 51.72355302157721,
+        "nonzero_examples": 9797,
+        "source_mass": {
+          "arc_challenge": 0.24999999999999997,
+          "commonsense_qa": 0.24999999999999997,
+          "openbookqa": 0.24999999999999997,
+          "sciq": 0.24999999999999997
+        }
+      },
+      "wrongtarget_zipmix": {
+        "bucket_mass": {
+          "0": 0.10140799814671184,
+          "1": 0.17649875976060794,
+          "2": 0.21657593981366022,
+          "3": 0.24015777208336633,
+          "4": 0.2653595301956536
+        },
+        "effective_examples": 9609.096655491066,
+        "expected_input_tokens_over_2048_examples": 98713.8519195873,
+        "expected_input_tokens_per_example": 48.20012300761098,
+        "nonzero_examples": 9797,
+        "source_mass": {
+          "arc_challenge": 0.09101540724178193,
+          "commonsense_qa": 0.3111221894820487,
+          "openbookqa": 0.32853112775423926,
+          "sciq": 0.2693312755219301
+        }
+      },
+      "zipmix_static": {
+        "bucket_mass": {
+          "0": 0.13803352840780148,
+          "1": 0.26643509943191573,
+          "2": 0.2295458870082966,
+          "3": 0.18137510309979565,
+          "4": 0.18461038205219055
+        },
+        "effective_examples": 9516.18725352252,
+        "expected_input_tokens_over_2048_examples": 99821.6417232357,
+        "expected_input_tokens_per_example": 48.741035997673684,
+        "nonzero_examples": 9797,
+        "source_mass": {
+          "arc_challenge": 0.12526921668049495,
+          "commonsense_qa": 0.2374515348297137,
+          "openbookqa": 0.2786024426671432,
+          "sciq": 0.3586768058226481
+        }
+      }
+    },
+    "maximizing_bins": [
+      1
+    ],
+    "maximum_target_mass": 0.8751210067763795,
+    "minimum_target_mass": 0.0,
+    "population_target_mass": 0.3052975400632847,
+    "prospective_contrastive": {
+      "bucket_mass": {
+        "0": 0.21387335534999546,
+        "1": 0.5073238121457591,
+        "2": 0.2382385110201509,
+        "3": 0.02859160557582831,
+        "4": 0.011972715908266205
+      },
+      "bucket_mass_total_variation_vs_controls": {
+        "compel_filter": 0.3987485770964444,
+        "direct_zipfit": 0.17566216663000833,
+        "sample_proportional": 0.4015097828335537,
+        "shuffled_zipmix": 0.39050814054216454,
+        "uniform_domain": 0.37241040791076363,
+        "wrongtarget_zipmix": 0.4649529807949254,
+        "zipmix_static": 0.32542116366789164
+      },
+      "clipping_order": "clip each inherited example score difference before bucket summation; not max of bucket-average differences",
+      "effective_examples": 5308.48685443811,
+      "expected_input_tokens_over_2048_examples": 102046.6714150004,
+      "expected_input_tokens_per_example": 49.82747627685566,
+      "formula": "a_i=max(true_max_score_i-wrong_max_score_i,0); W_b=sum_{i in b} a_i; p_i=W_b/(sum_c W_c*n_b)",
+      "mass_on_examples_with_nonpositive_contrast": 0.1393206900191719,
+      "name": "prospective_contrastive_bucket_prior",
+      "nonzero_examples": 9797,
+      "positive_contrast_examples": 5512,
+      "source_mass": {
+        "arc_challenge": 0.19908172363944887,
+        "commonsense_qa": 0.06393951518485927,
+        "openbookqa": 0.1537688972190902,
+        "sciq": 0.5832098639566017
+      },
+      "source_mass_matched_control": {
+        "bucket_mass": {
+          "0": 0.2259567270663906,
+          "1": 0.3799363770187704,
+          "2": 0.22721150745070112,
+          "3": 0.08927518194106522,
+          "4": 0.07762020652307268
+        },
+        "effective_examples": 6282.627502845954,
+        "expected_input_tokens_over_2048_examples": 101827.15911631889,
+        "expected_input_tokens_per_example": 49.72029253726508,
+        "nonzero_examples": 9797,
+        "source_mass": {
+          "arc_challenge": 0.19908172363944884,
+          "commonsense_qa": 0.06393951518485927,
+          "openbookqa": 0.1537688972190902,
+          "sciq": 0.5832098639566018
+        }
+      },
+      "source_mass_total_variation_vs_controls": {
+        "compel_filter": 0.36303629033211304,
+        "direct_zipfit": 0.4167901360433983,
+        "sample_proportional": 0.364714778368736,
+        "shuffled_zipmix": 0.3564000368133587,
+        "uniform_domain": 0.3332098639566016,
+        "wrongtarget_zipmix": 0.4219449048323385,
+        "zipmix_static": 0.29834556509290744
+      },
+      "total_positive_score": 187.23252806963626,
+      "total_variation_vs_controls": {
+        "compel_filter": 0.3990684181269413,
+        "direct_zipfit": 0.49870174774896464,
+        "sample_proportional": 0.40150978283355365,
+        "shuffled_zipmix": 0.3905081405421646,
+        "uniform_domain": 0.39399131708777685,
+        "wrongtarget_zipmix": 0.4649529807949254,
+        "zipmix_static": 0.32542116366789164
+      },
+      "total_variation_vs_source_mass_matched_control": 0.21356165055663617,
+      "unnormalized_positive_score_by_bucket": [
+        40.04404900891522,
+        94.98751989797552,
+        44.605998701848655,
+        5.353278593532233,
+        2.241681867364228
+      ],
+      "zero_support_policy": "record unavailable if every W_b is zero; no substitution or tuned offset"
+    },
+    "sampling_unit": "one supervised one-token answer per complete question; input-token compute differs across mixtures",
+    "sampling_units": 9797,
+    "target_sources": [
+      "sciq"
+    ],
+    "target_units": 2991
+  },
+  "input_provenance": {
+    "experiment04_fingerprint": "f371497109359adfa0256b764fe97c55c449d5a60781cbf8db807831a246239c",
+    "experiment04_mixture_sha256": {
+      "results/measured/compel_filter_seed0/mixture.json": "8b7a9f8ce8c11b9f5a01e9969c73893ec49286d148b3d363c293ebf992f11da3",
+      "results/measured/compel_filter_seed1/mixture.json": "1aa3edee0a228a2a0bafbf31ed7d61ea43ce8e2ec28bb446edf6a898964fbf82",
+      "results/measured/compel_filter_seed2/mixture.json": "87650853156caee198df5b9aacb7c87dd692c6fe2e73ef18e8c3bbb346ef1279",
+      "results/measured/direct_zipfit_seed0/mixture.json": "8e7b7df7e1519b3c85864b5a94de1df61f4c5d153799be5f75307fb5f1ec5458",
+      "results/measured/direct_zipfit_seed1/mixture.json": "96f426dec96a7c09d4ec99546bd1df887f10db5a0212b3763a7f93003c6b8f23",
+      "results/measured/direct_zipfit_seed2/mixture.json": "92bd9ab412897ca18c92694e74654efe184c2945d597f11428c29216e6ac65b9",
+      "results/measured/doge_seed0/mixture.json": "72d1edc8585a9fe20cd11faa2ceee32ceea2db501ba8fd96db112936981baf46",
+      "results/measured/doge_seed1/mixture.json": "f0f139988db13f01e1dbae2f55e6e383eb99f99d419646dde9e8d105850c16a6",
+      "results/measured/doge_seed2/mixture.json": "299569f8430be922ec8441ce5f36320f99410e2bf1515832c88ce0777f6ed5ec",
+      "results/measured/doremi_seed0/mixture.json": "cb2d697d9f28f95661ea16e157125ef7a74bf80587e325c359963e19c4504020",
+      "results/measured/doremi_seed1/mixture.json": "30915df9dd12dec9baa418e64235d033ebca0926af1d4a3c28ce541e83a7f6d6",
+      "results/measured/doremi_seed2/mixture.json": "8a3083f1fa92d98a2fa31812948f84edfd289ebb7096896ede33a4d0caa5dae6",
+      "results/measured/shuffled_zipmix_seed0/mixture.json": "32db9d3b8ad92ecb7b3f5afecb4bb7f09db6c3b5c5566610f9d4b2a8bbde770e",
+      "results/measured/shuffled_zipmix_seed1/mixture.json": "24b30f5a293d83c1d4da52fe9f61b14dd12714bf1edb3d64ee64230ccae948c6",
+      "results/measured/shuffled_zipmix_seed2/mixture.json": "283584af1b709b9bd998e9c6fd4d49ec841394d2cefab7e4aac7f7ea52d4ba7f",
+      "results/measured/token_proportional_seed0/mixture.json": "6cb08dffee38d4e7c86cded3619d2bf11e1752abe3891a777c0ba60b322999bd",
+      "results/measured/token_proportional_seed1/mixture.json": "95b5651e357e92d5b142d9dc9d19ac97afe82e44a7c8546589510dcd57a1b067",
+      "results/measured/token_proportional_seed2/mixture.json": "67d6196e6c9846f9d6ddd7b4971a076fa104e5d0e2afd0fc6cd85556ad4bedde",
+      "results/measured/uniform_bucket_seed0/mixture.json": "51dc0bd1b362d9044f577c5ffb86f8c0d1a0f9b530e6abe6b1e846428e979526",
+      "results/measured/uniform_bucket_seed1/mixture.json": "d67c1117af0e58aceae656dafb47163cbd5bf72faae0bc65bd138b1606b7a6be",
+      "results/measured/uniform_bucket_seed2/mixture.json": "2ba5df8457d23e21d503a4564729c6fa4455c2721799dd45f480075d476f92cf",
+      "results/measured/uniform_domain_seed0/mixture.json": "7e6b67fd27ccc98847e99f0debf472f765fb8a21a46a170afe5d84e335d5951b",
+      "results/measured/uniform_domain_seed1/mixture.json": "c1b237ab14c72d8dd5e4aea28eeaddfe87c6dc2449431cd5105bcf55db83f519",
+      "results/measured/uniform_domain_seed2/mixture.json": "e32fcf00d0fb64b73f60ddab528a71f2f54945b1a83f69618414b601e41e84a3",
+      "results/measured/zipmix_static_seed0/mixture.json": "2112c38de84c822cd48671e5c9f0e48521deed9389515209e4780864970b2aba",
+      "results/measured/zipmix_static_seed1/mixture.json": "319c14e3c3f1350b6143f2bad1aeaa7e66a43d9e62dafc7eb6fe3f64607e5151",
+      "results/measured/zipmix_static_seed2/mixture.json": "c911fedfd33753f15e14dd30d5db7ede0a56250b3b8205b98630726678eb39b1"
+    },
+    "experiment04_train_sha256": "df2e5044cc01e825c351c4432f44c89a27477e867f7c531923be776fd43e6ddd",
+    "experiment05_data_sha256": {
+      "pack_scores.npz": "336a255ee06e6e8692ad19de6aa39c973605589cc99ca3b92572ebfe209b4893",
+      "selection.npz": "d5e5a2f83702dd1f862d7c035a851a775c0d57f4659293da10deba1e17d71dc4",
+      "train.npz": "e1aef754847620f3554bb501b6b506fa364919a6f6ea9ea08a0af67913d4da18"
+    },
+    "experiment05_manifest_id": "0d6dec93e7d7ccffd87f95e7ebd19e78c84ec72a546007b122888789aba5cb44",
+    "script_sha256": "f79437541b5255d2a3e31eca54687089a6daa281f664e8c4e4b213d1f3dd2647"
+  },
+  "mathematical_bound": {
+    "assumptions": "nonempty fixed bins; arbitrary nonnegative bin weights summing to one; uniform sampling inside each bin",
+    "attainment": "put all mass on a maximizing bin; mandatory positive floors would lower the reachable maximum",
+    "formula": "q_b=n_target,b/n_b; P(target)=sum_b w_b*q_b <= max_b q_b",
+    "limitations": "upper bound on source exposure, not on generalization or attainable test loss; domain-level and within-bin selectors may exceed it"
+  },
+  "prospective_recommendation": {
+    "decision": "informative mechanistic follow-up if separately frozen; not a duplicate of a current prior",
+    "frozen_training_budget": "same 128 steps x16 one-label examples =2048 supervised label tokens; record actual processed input tokens and time",
+    "interpretation": "descriptive follow-up; no optimality/SOTA claim; no choice or hyperparameter tuning based on Experiment05 held-out results",
+    "minimal_new_comparison": [
+      "contrastive bucket prior",
+      "uniform-within-source prior with exactly matched source masses"
+    ],
+    "optional_existing_anchor": "original ZipMix true-target prior under the same model/data/seed/training budget",
+    "paired_seeds": [
+      0,
+      1,
+      2
+    ],
+    "purpose": "Distinguish increased SciQ exposure from additional selection within each source. Existing true/wrong/shuffle controls alone do not isolate that difference.",
+    "remaining_confounds": [
+      "source/content redundancy",
+      "questions per fixed-byte pack",
+      "inherited score for overflow members",
+      "choice of wrong-target source",
+      "input-token compute variation",
+      "reused public benchmarks and pretrained-model contamination not excluded"
+    ]
+  },
+  "scope": {
+    "experiment04_completed_mixture_receipts_used": true,
+    "experiment05_benchmark_metrics_read": false,
+    "experiment05_target_or_retention_arrays_read": false,
+    "frozen_source_or_config_changed": false,
+    "training_launched": false
+  },
+  "uncertainty": "Counts, probabilities, bounds and distances are deterministic for these frozen finite pools; confidence intervals and p-values are not applicable. They do not estimate population generalization."
+}

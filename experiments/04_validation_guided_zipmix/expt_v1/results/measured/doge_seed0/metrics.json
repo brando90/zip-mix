@@ -1,0 +1,144 @@
+{
+  "arm": "doge",
+  "completed_at": "2026-10-04T19:05:30.412383+00:00",
+  "fingerprint": "f371497109359adfa0256b764fe97c55c449d5a60781cbf8db807831a246239c",
+  "heldout_nll_sha256": "b0a6972745736f0719958ee2b91cdba7fc75a1ca10e783a22c2f70f394829210",
+  "invocation_wall_seconds": 95.36896338779479,
+  "metrics": {
+    "broad": {
+      "domain_macro_nll": 4.7832961266394705,
+      "domain_nll": {
+        "0": 4.730790324509144,
+        "1": 2.640590975061059,
+        "2": 4.442876972258091,
+        "3": 5.289938874542713,
+        "4": 5.655430383980274,
+        "7": 5.356995135545731,
+        "8": 4.831985305994749,
+        "9": 5.317761041224003
+      },
+      "examples": 512,
+      "loss_tokens": 65536,
+      "nll": 4.7832961266394705,
+      "perplexity": 119.49758077900299,
+      "worst_domain_nll": 5.655430383980274
+    },
+    "eval_wall_seconds": 0.09113375563174486,
+    "target": {
+      "domain_macro_nll": 4.74111170694232,
+      "domain_nll": {
+        "5": 4.876777045428753,
+        "6": 4.605446368455887
+      },
+      "examples": 128,
+      "loss_tokens": 16384,
+      "nll": 4.74111170694232,
+      "perplexity": 114.56148971699292,
+      "worst_domain_nll": 4.876777045428753
+    }
+  },
+  "seed": 0,
+  "stages": {
+    "final": {
+      "chunks_sampled": 65536,
+      "flops_definition": "6*P*gradient_tokens + 2*P*forward_only_tokens; excludes attention quadratic, optimizer and preprocessing costs",
+      "flops_proxy": 266227842809856,
+      "forward_only_tokens": 0,
+      "gradient_probe_tokens": 0,
+      "optimizer_tokens": 8388608,
+      "parameters": 5289472,
+      "peak_gpu_allocated_bytes": 652584448,
+      "peak_gpu_reserved_bytes": 736100352,
+      "peak_memory_scope": "this stage invocation, including resident reference model; earlier recovery invocations not reconstructed",
+      "seen_by_bucket": {
+        "0": 4898,
+        "1": 14935,
+        "2": 23204,
+        "3": 12762,
+        "4": 8203,
+        "5": 1515,
+        "6": 19
+      },
+      "seen_by_domain": {
+        "0": 5932,
+        "1": 3764,
+        "2": 4959,
+        "3": 3042,
+        "4": 5251,
+        "5": 14717,
+        "6": 11667,
+        "7": 3305,
+        "8": 7177,
+        "9": 5722
+      },
+      "stage": "final",
+      "steps": 2048,
+      "unique_chunks_seen": 39498,
+      "wall_seconds": 36.76395473815501
+    },
+    "proxy": {
+      "average_domain_weights": [
+        0.09110788974557595,
+        0.05614227592731489,
+        0.07640333282614498,
+        0.04749758868679513,
+        0.0785485892821206,
+        0.21956406829272865,
+        0.18005418987446173,
+        0.049911159362710955,
+        0.11074033740103606,
+        0.09003056860111117
+      ],
+      "chunks_sampled": 10240,
+      "domain_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "flops_definition": "6*P*gradient_tokens + 2*P*forward_only_tokens; excludes attention quadratic, optimizer and preprocessing costs",
+      "flops_proxy": 74876580790272,
+      "forward_only_tokens": 0,
+      "gradient_probe_tokens": 1048576,
+      "optimizer_tokens": 1310720,
+      "parameters": 5289472,
+      "peak_gpu_allocated_bytes": 630097408,
+      "peak_gpu_reserved_bytes": 1285554176,
+      "peak_memory_scope": "this stage invocation, including resident reference model; earlier recovery invocations not reconstructed",
+      "seen_by_bucket": {
+        "0": 1280,
+        "1": 2552,
+        "2": 3525,
+        "3": 1690,
+        "4": 989,
+        "5": 199,
+        "6": 5
+      },
+      "seen_by_domain": {
+        "0": 1024,
+        "1": 1024,
+        "2": 1024,
+        "3": 1024,
+        "4": 1024,
+        "5": 1024,
+        "6": 1024,
+        "7": 1024,
+        "8": 1024,
+        "9": 1024
+      },
+      "stage": "proxy",
+      "steps": 512,
+      "unique_chunks_seen": 9413,
+      "wall_seconds": 57.81397474370897
+    }
+  },
+  "status": "complete",
+  "total_stage_wall_seconds": 94.57792948186398,
+  "total_training_flops_proxy": 341104423600128
+}

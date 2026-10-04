@@ -1,0 +1,9 @@
+# Verified result export
+
+This directory contains the complete, frozen 27-cell Experiment04 result matrix: 85 whitelisted source files, plus this note and the generated verification receipt. All 27 cells completed and the ordinary supervisor verified completion before export. No checkpoints, model weights, training text, input token arrays, remote command logs, or private host packets were copied.
+
+The only source-file edit replaces the 27 absolute `cells[*].metrics_file` paths in `manifest.json` with relative `<arm>_seed<seed>/metrics.json` paths. Other manifest fields are unchanged; the manifest is reserialized. The receipt records both the original and sanitized manifest SHA-256 digests. The other 84 files are byte-identical to their sources, including the original remote analysis outputs.
+
+The unchanged local `analyze.py` was run against these exported receipts. It revalidated the frozen matrix, per-cell identity, training-token budgets, held-out receipt hashes, and held-out loss aggregates. The Markdown is byte-identical. The JSON differs only in 140 confidence-interval endpoints, with maximum absolute difference 8.899547765395255e-13; all other values are exactly equal. This is below the analyzer's existing 1e-10 aggregate-verification tolerance. Remote NumPy/SciPy versions are 2.5.3/1.18.1 and local versions are 2.2.6/1.16.3. The receipt records both runtime versions and recomputed output hashes. The original remote outputs are retained here. `metrics_file` values are not used by that analyzer. Numeric held-out vectors contain losses and domain identifiers only.
+
+`EXPORT_RECEIPT.json` records every source/export digest and measured time, token, and operation-count totals. No dollar cost is inferred. These receipts establish completed procedures and reproducible measurements; they do not themselves establish generalization superiority.

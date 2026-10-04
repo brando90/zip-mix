@@ -1,0 +1,937 @@
+{
+  "arms": {
+    "compel_filter": {
+      "broad_domain_macro_nll": {
+        "ci95": [
+          5.154545377058074,
+          5.211684659384405
+        ],
+        "mean": 5.1831150182212395,
+        "n": 3,
+        "sd": 0.011500828246367818
+      },
+      "broad_nll": {
+        "ci95": [
+          5.154545377058074,
+          5.211684659384405
+        ],
+        "mean": 5.1831150182212395,
+        "n": 3,
+        "sd": 0.011500828246367818
+      },
+      "broad_worst_domain_nll": {
+        "ci95": [
+          5.533234401405136,
+          5.622028123477816
+        ],
+        "mean": 5.577631262441476,
+        "n": 3,
+        "sd": 0.01787214163946563
+      },
+      "target_domain_macro_nll": {
+        "ci95": [
+          5.200555932677749,
+          5.272667020900088
+        ],
+        "mean": 5.2366114767889185,
+        "n": 3,
+        "sd": 0.014514309710215384
+      },
+      "target_nll": {
+        "ci95": [
+          5.200555932677749,
+          5.272667020900088
+        ],
+        "mean": 5.2366114767889185,
+        "n": 3,
+        "sd": 0.014514309710215384
+      },
+      "target_worst_domain_nll": {
+        "ci95": [
+          5.224199845377112,
+          5.269589365538454
+        ],
+        "mean": 5.246894605457783,
+        "n": 3,
+        "sd": 0.009135870355866766
+      }
+    },
+    "direct_zipfit": {
+      "broad_domain_macro_nll": {
+        "ci95": [
+          4.89998045321086,
+          4.904833260866216
+        ],
+        "mean": 4.902406857038538,
+        "n": 3,
+        "sd": 0.0009767589840933941
+      },
+      "broad_nll": {
+        "ci95": [
+          4.89998045321086,
+          4.904833260866216
+        ],
+        "mean": 4.902406857038538,
+        "n": 3,
+        "sd": 0.0009767589840933941
+      },
+      "broad_worst_domain_nll": {
+        "ci95": [
+          5.341561060286193,
+          5.4208964992199045
+        ],
+        "mean": 5.381228779753049,
+        "n": 3,
+        "sd": 0.01596840597009652
+      },
+      "target_domain_macro_nll": {
+        "ci95": [
+          5.0654707054870824,
+          5.103821804068734
+        ],
+        "mean": 5.084646254777908,
+        "n": 3,
+        "sd": 0.007719197369824773
+      },
+      "target_nll": {
+        "ci95": [
+          5.0654707054870824,
+          5.103821804068734
+        ],
+        "mean": 5.084646254777908,
+        "n": 3,
+        "sd": 0.007719197369824773
+      },
+      "target_worst_domain_nll": {
+        "ci95": [
+          5.2305212069402955,
+          5.277495111142514
+        ],
+        "mean": 5.254008159041405,
+        "n": 3,
+        "sd": 0.009454770558819037
+      }
+    },
+    "doge": {
+      "broad_domain_macro_nll": {
+        "ci95": [
+          4.773380741112956,
+          4.803366711261591
+        ],
+        "mean": 4.788373726187274,
+        "n": 3,
+        "sd": 0.00603548869428553
+      },
+      "broad_nll": {
+        "ci95": [
+          4.773380741112956,
+          4.803366711261591
+        ],
+        "mean": 4.788373726187274,
+        "n": 3,
+        "sd": 0.00603548869428553
+      },
+      "broad_worst_domain_nll": {
+        "ci95": [
+          5.637288051244369,
+          5.674125649137546
+        ],
+        "mean": 5.655706850190957,
+        "n": 3,
+        "sd": 0.007414564361494665
+      },
+      "target_domain_macro_nll": {
+        "ci95": [
+          4.729101500792303,
+          4.768712064243359
+        ],
+        "mean": 4.748906782517831,
+        "n": 3,
+        "sd": 0.007972698788736982
+      },
+      "target_nll": {
+        "ci95": [
+          4.729101500792303,
+          4.768712064243359
+        ],
+        "mean": 4.748906782517831,
+        "n": 3,
+        "sd": 0.007972698788736982
+      },
+      "target_worst_domain_nll": {
+        "ci95": [
+          4.856936154730558,
+          4.897526122165283
+        ],
+        "mean": 4.877231138447921,
+        "n": 3,
+        "sd": 0.008169830368648366
+      }
+    },
+    "doremi": {
+      "broad_domain_macro_nll": {
+        "ci95": [
+          4.811316517474802,
+          4.824288839181213
+        ],
+        "mean": 4.8178026783280075,
+        "n": 3,
+        "sd": 0.002611031112536541
+      },
+      "broad_nll": {
+        "ci95": [
+          4.811316517474802,
+          4.824288839181213
+        ],
+        "mean": 4.8178026783280075,
+        "n": 3,
+        "sd": 0.002611031112536541
+      },
+      "broad_worst_domain_nll": {
+        "ci95": [
+          5.491342871770236,
+          5.546372419213283
+        ],
+        "mean": 5.518857645491759,
+        "n": 3,
+        "sd": 0.011076186956695147
+      },
+      "target_domain_macro_nll": {
+        "ci95": [
+          5.1866767630520405,
+          5.3303048287289405
+        ],
+        "mean": 5.2584907958904905,
+        "n": 3,
+        "sd": 0.028909038536293268
+      },
+      "target_nll": {
+        "ci95": [
+          5.1866767630520405,
+          5.3303048287289405
+        ],
+        "mean": 5.2584907958904905,
+        "n": 3,
+        "sd": 0.028909038536293268
+      },
+      "target_worst_domain_nll": {
+        "ci95": [
+          5.483938603137646,
+          5.569597643082624
+        ],
+        "mean": 5.526768123110135,
+        "n": 3,
+        "sd": 0.01724120195506872
+      }
+    },
+    "shuffled_zipmix": {
+      "broad_domain_macro_nll": {
+        "ci95": [
+          4.814043154829154,
+          4.8407235764454715
+        ],
+        "mean": 4.827383365637313,
+        "n": 3,
+        "sd": 0.005370157517861283
+      },
+      "broad_nll": {
+        "ci95": [
+          4.814043154829154,
+          4.8407235764454715
+        ],
+        "mean": 4.827383365637313,
+        "n": 3,
+        "sd": 0.005370157517861283
+      },
+      "broad_worst_domain_nll": {
+        "ci95": [
+          5.383111023737931,
+          5.416186646785394
+        ],
+        "mean": 5.3996488352616625,
+        "n": 3,
+        "sd": 0.00665736502670717
+      },
+      "target_domain_macro_nll": {
+        "ci95": [
+          5.153648005466326,
+          5.2020820984833795
+        ],
+        "mean": 5.177865051974853,
+        "n": 3,
+        "sd": 0.009748673108570836
+      },
+      "target_nll": {
+        "ci95": [
+          5.153648005466326,
+          5.2020820984833795
+        ],
+        "mean": 5.177865051974853,
+        "n": 3,
+        "sd": 0.009748673108570836
+      },
+      "target_worst_domain_nll": {
+        "ci95": [
+          5.3324487344937515,
+          5.386152402905922
+        ],
+        "mean": 5.359300568699837,
+        "n": 3,
+        "sd": 0.010809317888888299
+      }
+    },
+    "token_proportional": {
+      "broad_domain_macro_nll": {
+        "ci95": [
+          4.804415446702859,
+          4.8325833749679505
+        ],
+        "mean": 4.818499410835405,
+        "n": 3,
+        "sd": 0.005669558521625716
+      },
+      "broad_nll": {
+        "ci95": [
+          4.804415446702859,
+          4.8325833749679505
+        ],
+        "mean": 4.818499410835405,
+        "n": 3,
+        "sd": 0.005669558521625716
+      },
+      "broad_worst_domain_nll": {
+        "ci95": [
+          5.372327099541124,
+          5.426048338115914
+        ],
+        "mean": 5.399187718828519,
+        "n": 3,
+        "sd": 0.010812854360022228
+      },
+      "target_domain_macro_nll": {
+        "ci95": [
+          5.141154147629384,
+          5.211845119849401
+        ],
+        "mean": 5.176499633739392,
+        "n": 3,
+        "sd": 0.014228472899396553
+      },
+      "target_nll": {
+        "ci95": [
+          5.141154147629384,
+          5.211845119849401
+        ],
+        "mean": 5.176499633739392,
+        "n": 3,
+        "sd": 0.014228472899396553
+      },
+      "target_worst_domain_nll": {
+        "ci95": [
+          5.314514281801712,
+          5.4092193966584095
+        ],
+        "mean": 5.361866839230061,
+        "n": 3,
+        "sd": 0.019061969553605774
+      }
+    },
+    "uniform_bucket": {
+      "broad_domain_macro_nll": {
+        "ci95": [
+          4.898805645957687,
+          4.951764105155966
+        ],
+        "mean": 4.925284875556827,
+        "n": 3,
+        "sd": 0.010659324349809323
+      },
+      "broad_nll": {
+        "ci95": [
+          4.898805645957687,
+          4.951764105155966
+        ],
+        "mean": 4.925284875556827,
+        "n": 3,
+        "sd": 0.010659324349809323
+      },
+      "broad_worst_domain_nll": {
+        "ci95": [
+          5.438943879658164,
+          5.459492964690743
+        ],
+        "mean": 5.449218422174454,
+        "n": 3,
+        "sd": 0.004136059956615902
+      },
+      "target_domain_macro_nll": {
+        "ci95": [
+          5.3279226167015885,
+          5.364395157196855
+        ],
+        "mean": 5.346158886949222,
+        "n": 3,
+        "sd": 0.007341086672197377
+      },
+      "target_nll": {
+        "ci95": [
+          5.3279226167015885,
+          5.364395157196855
+        ],
+        "mean": 5.346158886949222,
+        "n": 3,
+        "sd": 0.007341086672197377
+      },
+      "target_worst_domain_nll": {
+        "ci95": [
+          5.498607002965418,
+          5.547578401096853
+        ],
+        "mean": 5.523092702031136,
+        "n": 3,
+        "sd": 0.009856820316320025
+      }
+    },
+    "uniform_domain": {
+      "broad_domain_macro_nll": {
+        "ci95": [
+          4.675786934223918,
+          4.68855599696845
+        ],
+        "mean": 4.682171465596184,
+        "n": 3,
+        "sd": 0.00257011974097337
+      },
+      "broad_nll": {
+        "ci95": [
+          4.675786934223918,
+          4.68855599696845
+        ],
+        "mean": 4.682171465596184,
+        "n": 3,
+        "sd": 0.00257011974097337
+      },
+      "broad_worst_domain_nll": {
+        "ci95": [
+          5.61930368441672,
+          5.638322416957906
+        ],
+        "mean": 5.628813050687313,
+        "n": 3,
+        "sd": 0.003828035066499218
+      },
+      "target_domain_macro_nll": {
+        "ci95": [
+          5.038969196187594,
+          5.083535845272602
+        ],
+        "mean": 5.061252520730098,
+        "n": 3,
+        "sd": 0.008970245263416797
+      },
+      "target_nll": {
+        "ci95": [
+          5.038969196187594,
+          5.083535845272602
+        ],
+        "mean": 5.061252520730098,
+        "n": 3,
+        "sd": 0.008970245263416797
+      },
+      "target_worst_domain_nll": {
+        "ci95": [
+          5.213696069004099,
+          5.246642766910831
+        ],
+        "mean": 5.230169417957465,
+        "n": 3,
+        "sd": 0.00663141535006087
+      }
+    },
+    "zipmix_static": {
+      "broad_domain_macro_nll": {
+        "ci95": [
+          4.800117504515052,
+          4.8511870406763755
+        ],
+        "mean": 4.825652272595714,
+        "n": 3,
+        "sd": 0.010279127425133872
+      },
+      "broad_nll": {
+        "ci95": [
+          4.800117504515052,
+          4.8511870406763755
+        ],
+        "mean": 4.825652272595714,
+        "n": 3,
+        "sd": 0.010279127425133872
+      },
+      "broad_worst_domain_nll": {
+        "ci95": [
+          5.3711583762736845,
+          5.410206288161702
+        ],
+        "mean": 5.390682332217693,
+        "n": 3,
+        "sd": 0.007859449921660105
+      },
+      "target_domain_macro_nll": {
+        "ci95": [
+          5.146948321009529,
+          5.1761729535014895
+        ],
+        "mean": 5.161560637255509,
+        "n": 3,
+        "sd": 0.005882248869240152
+      },
+      "target_nll": {
+        "ci95": [
+          5.146948321009529,
+          5.1761729535014895
+        ],
+        "mean": 5.161560637255509,
+        "n": 3,
+        "sd": 0.005882248869240152
+      },
+      "target_worst_domain_nll": {
+        "ci95": [
+          5.334105164003596,
+          5.351758325902397
+        ],
+        "mean": 5.342931744952996,
+        "n": 3,
+        "sd": 0.0035531769867866987
+      }
+    }
+  },
+  "cells_with_recovery": 0,
+  "claim_limit": "Compact mechanism test; no evidence by itself of broad benchmark or state-of-the-art superiority",
+  "counts": {
+    "complete": 27
+  },
+  "expected_cells": 27,
+  "fingerprint": "f371497109359adfa0256b764fe97c55c449d5a60781cbf8db807831a246239c",
+  "full_clean_matrix": true,
+  "full_matrix_complete": true,
+  "missing_policy": "No imputation; complete paired subsets explicitly labelled; full denominator retained",
+  "unit": "nats per next-token prediction",
+  "zipmix_minus_baseline": {
+    "compel_filter": {
+      "broad": {
+        "baseline_mean": 5.1831150182212395,
+        "ci95": [
+          -0.3869534348441284,
+          -0.327972056406923
+        ],
+        "differences": [
+          -0.3534666858613491,
+          -0.3708167658187449,
+          -0.34810478519648314
+        ],
+        "inference": "descriptive paired-seed Student-t interval; no multiplicity adjustment",
+        "mean": -0.3574627456255257,
+        "n": 3,
+        "p_value": 0.25,
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "sd": 0.011871599983812285,
+        "test": "exact two-sided sign test; null P(delta<0)=0.5 among non-ties",
+        "ties": 0,
+        "zipmix_mean": 4.825652272595714
+      },
+      "target": {
+        "baseline_mean": 5.2366114767889185,
+        "ci95": [
+          -0.11375550290411846,
+          -0.03634617616269851
+        ],
+        "differences": [
+          -0.09023167565464973,
+          -0.05909886583685875,
+          -0.07582197710871696
+        ],
+        "inference": "descriptive paired-seed Student-t interval; no multiplicity adjustment",
+        "mean": -0.07505083953340848,
+        "n": 3,
+        "p_value": 0.25,
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "sd": 0.01558072372060185,
+        "test": "exact two-sided sign test; null P(delta<0)=0.5 among non-ties",
+        "ties": 0,
+        "zipmix_mean": 5.161560637255509
+      }
+    },
+    "direct_zipfit": {
+      "broad": {
+        "baseline_mean": 4.902406857038538,
+        "ci95": [
+          -0.0999040182224917,
+          -0.05360515066315655
+        ],
+        "differences": [
+          -0.08423909125849605,
+          -0.0797077426686883,
+          -0.06631691940128803
+        ],
+        "inference": "descriptive paired-seed Student-t interval; no multiplicity adjustment",
+        "mean": -0.07675458444282413,
+        "n": 3,
+        "p_value": 0.25,
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "sd": 0.00931890115035387,
+        "test": "exact two-sided sign test; null P(delta<0)=0.5 among non-ties",
+        "ties": 0,
+        "zipmix_mean": 4.825652272595714
+      },
+      "target": {
+        "baseline_mean": 5.084646254777908,
+        "ci95": [
+          0.04437549754670804,
+          0.10945326740849469
+        ],
+        "differences": [
+          0.06254979595541954,
+          0.07999558001756668,
+          0.08819777145981789
+        ],
+        "inference": "descriptive paired-seed Student-t interval; no multiplicity adjustment",
+        "mean": 0.07691438247760136,
+        "n": 3,
+        "p_value": 0.25,
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "sd": 0.013098663885250685,
+        "test": "exact two-sided sign test; null P(delta<0)=0.5 among non-ties",
+        "ties": 0,
+        "zipmix_mean": 5.161560637255509
+      }
+    },
+    "doge": {
+      "broad": {
+        "baseline_mean": 4.788373726187274,
+        "ci95": [
+          0.026721741246594974,
+          0.04783535157028437
+        ],
+        "differences": [
+          0.03394589270465076,
+          0.03582559525966644,
+          0.042064151261001825
+        ],
+        "inference": "descriptive paired-seed Student-t interval; no multiplicity adjustment",
+        "mean": 0.037278546408439674,
+        "n": 3,
+        "p_value": 0.25,
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "sd": 0.004249685962219199,
+        "test": "exact two-sided sign test; null P(delta<0)=0.5 among non-ties",
+        "ties": 0,
+        "zipmix_mean": 4.825652272595714
+      },
+      "target": {
+        "baseline_mean": 4.748906782517831,
+        "ci95": [
+          0.392849504605582,
+          0.4324582048697764
+        ],
+        "differences": [
+          0.4149683006107807,
+          0.40378038585186005,
+          0.41921287775039673
+        ],
+        "inference": "descriptive paired-seed Student-t interval; no multiplicity adjustment",
+        "mean": 0.4126538547376792,
+        "n": 3,
+        "p_value": 0.25,
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "sd": 0.00797232377191479,
+        "test": "exact two-sided sign test; null P(delta<0)=0.5 among non-ties",
+        "ties": 0,
+        "zipmix_mean": 5.161560637255509
+      }
+    },
+    "doremi": {
+      "broad": {
+        "baseline_mean": 4.8178026783280075,
+        "ci95": [
+          -0.02409359352359526,
+          0.03979278205900741
+        ],
+        "differences": [
+          -0.0030321518424898386,
+          0.004541691858321428,
+          0.02203924278728664
+        ],
+        "inference": "descriptive paired-seed Student-t interval; no multiplicity adjustment",
+        "mean": 0.007849594267706076,
+        "n": 3,
+        "p_value": 1.0,
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "sd": 0.012858863516384555,
+        "test": "exact two-sided sign test; null P(delta<0)=0.5 among non-ties",
+        "ties": 0,
+        "zipmix_mean": 4.825652272595714
+      },
+      "target": {
+        "baseline_mean": 5.2584907958904905,
+        "ci95": [
+          -0.15908787717375072,
+          -0.03477244009621032
+        ],
+        "differences": [
+          -0.09678920730948448,
+          -0.0719790831208229,
+          -0.12202218547463417
+        ],
+        "inference": "descriptive paired-seed Student-t interval; no multiplicity adjustment",
+        "mean": -0.09693015863498051,
+        "n": 3,
+        "p_value": 0.25,
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "sd": 0.02502184892759979,
+        "test": "exact two-sided sign test; null P(delta<0)=0.5 among non-ties",
+        "ties": 0,
+        "zipmix_mean": 5.161560637255509
+      }
+    },
+    "shuffled_zipmix": {
+      "broad": {
+        "baseline_mean": 4.827383365637313,
+        "ci95": [
+          -0.036869440293549445,
+          0.03340725421035185
+        ],
+        "differences": [
+          -0.009231661446392536,
+          -0.010546222794800997,
+          0.014584605116397142
+        ],
+        "inference": "descriptive paired-seed Student-t interval; no multiplicity adjustment",
+        "mean": -0.0017310930415987968,
+        "n": 3,
+        "p_value": 1.0,
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "sd": 0.014145088287875987,
+        "test": "exact two-sided sign test; null P(delta<0)=0.5 among non-ties",
+        "ties": 0,
+        "zipmix_mean": 4.825652272595714
+      },
+      "target": {
+        "baseline_mean": 5.177865051974853,
+        "ci95": [
+          -0.027456196031901497,
+          -0.005152633406784875
+        ],
+        "differences": [
+          -0.011133920401334763,
+          -0.019209619611501694,
+          -0.0185697041451931
+        ],
+        "inference": "descriptive paired-seed Student-t interval; no multiplicity adjustment",
+        "mean": -0.016304414719343185,
+        "n": 3,
+        "p_value": 0.25,
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "sd": 0.004489196094004279,
+        "test": "exact two-sided sign test; null P(delta<0)=0.5 among non-ties",
+        "ties": 0,
+        "zipmix_mean": 5.161560637255509
+      }
+    },
+    "token_proportional": {
+      "broad": {
+        "baseline_mean": 4.818499410835405,
+        "ci95": [
+          -0.03201980931572718,
+          0.04632553283634387
+        ],
+        "differences": [
+          -0.00709587661549449,
+          0.004459119867533445,
+          0.02409534202888608
+        ],
+        "inference": "descriptive paired-seed Student-t interval; no multiplicity adjustment",
+        "mean": 0.007152861760308345,
+        "n": 3,
+        "p_value": 1.0,
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "sd": 0.015769122174967648,
+        "test": "exact two-sided sign test; null P(delta<0)=0.5 among non-ties",
+        "ties": 0,
+        "zipmix_mean": 4.825652272595714
+      },
+      "target": {
+        "baseline_mean": 5.176499633739392,
+        "ci95": [
+          -0.06108521066829448,
+          0.031207217700529942
+        ],
+        "differences": [
+          -0.03638860210776329,
+          -0.00434315949678421,
+          -0.004085227847099304
+        ],
+        "inference": "descriptive paired-seed Student-t interval; no multiplicity adjustment",
+        "mean": -0.014938996483882269,
+        "n": 3,
+        "p_value": 0.25,
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "sd": 0.018576351047743432,
+        "test": "exact two-sided sign test; null P(delta<0)=0.5 among non-ties",
+        "ties": 0,
+        "zipmix_mean": 5.161560637255509
+      }
+    },
+    "uniform_bucket": {
+      "broad": {
+        "baseline_mean": 4.925284875556827,
+        "ci95": [
+          -0.13025322030427094,
+          -0.06901198561795516
+        ],
+        "differences": [
+          -0.09709782712161541,
+          -0.11302940687164664,
+          -0.08877057489007711
+        ],
+        "inference": "descriptive paired-seed Student-t interval; no multiplicity adjustment",
+        "mean": -0.09963260296111305,
+        "n": 3,
+        "p_value": 0.25,
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "sd": 0.012326457264554195,
+        "test": "exact two-sided sign test; null P(delta<0)=0.5 among non-ties",
+        "ties": 0,
+        "zipmix_mean": 4.825652272595714
+      },
+      "target": {
+        "baseline_mean": 5.346158886949222,
+        "ci95": [
+          -0.2104730067296594,
+          -0.1587234926577638
+        ],
+        "differences": [
+          -0.1965339183807373,
+          -0.17734677344560623,
+          -0.17991405725479126
+        ],
+        "inference": "descriptive paired-seed Student-t interval; no multiplicity adjustment",
+        "mean": -0.1845982496937116,
+        "n": 3,
+        "p_value": 0.25,
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "sd": 0.01041599139756079,
+        "test": "exact two-sided sign test; null P(delta<0)=0.5 among non-ties",
+        "ties": 0,
+        "zipmix_mean": 5.161560637255509
+      }
+    },
+    "uniform_domain": {
+      "broad": {
+        "baseline_mean": 4.682171465596184,
+        "ci95": [
+          0.11751491592105345,
+          0.16944669807800533
+        ],
+        "differences": [
+          0.1330995038151741,
+          0.14333949075080454,
+          0.15400342643260956
+        ],
+        "inference": "descriptive paired-seed Student-t interval; no multiplicity adjustment",
+        "mean": 0.1434808069995294,
+        "n": 3,
+        "p_value": 0.25,
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "sd": 0.010452677786603184,
+        "test": "exact two-sided sign test; null P(delta<0)=0.5 among non-ties",
+        "ties": 0,
+        "zipmix_mean": 4.825652272595714
+      },
+      "target": {
+        "baseline_mean": 5.061252520730098,
+        "ci95": [
+          0.06896581188707702,
+          0.1316504211637462
+        ],
+        "differences": [
+          0.08577518165111542,
+          0.10845969617366791,
+          0.10668947175145149
+        ],
+        "inference": "descriptive paired-seed Student-t interval; no multiplicity adjustment",
+        "mean": 0.1003081165254116,
+        "n": 3,
+        "p_value": 0.25,
+        "paired_seeds": [
+          0,
+          1,
+          2
+        ],
+        "sd": 0.012616975496197717,
+        "test": "exact two-sided sign test; null P(delta<0)=0.5 among non-ties",
+        "ties": 0,
+        "zipmix_mean": 5.161560637255509
+      }
+    }
+  }
+}

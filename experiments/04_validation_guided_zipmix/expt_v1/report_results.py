@@ -68,14 +68,14 @@ def main():
              "All 27 frozen training cells have audited outcomes. Three paired seeds per method; intervals condition on the fixed corpus and evaluation items.", "",
              "Negative log likelihood (NLL) is in nats per predicted token. Perplexity is exp(mean seed NLL), with endpoints transformed from its 95% Student-t interval; it is not the arithmetic mean of seed perplexities. Absolute means have p-val=n/a: no arbitrary level null was tested.", "",
              "Domain Reweighting with Minimax Optimization (DoReMi) and Domain Reweighting with Generalization Estimation (DoGE) are compact adaptations using the same-size proxy and final models. Their extra reference/proxy costs are included in the measured stage time.", "",
-             "| Method | Target NLL [95% interval] | Target perplexity [95% interval] | Seed NLL standard deviation | Broad perplexity [95% interval] | Mean training-stage seconds |",
+             "| Method | Target NLL [95% interval] | Target perplexity [95% interval] | Seed NLL standard deviation | Broad perplexity [95% interval] | Total training-stage seconds (3 runs) |",
              "|---|---|---|---:|---|---:|"]
     for name, label in LABELS.items():
         row = arms[name]
         lines.append(f"| {label} | {interval_text(row['target_nll'])} | {interval_text(row['target_nll'], math.exp)} | "
-                     f"{row['target_nll']['sd']:.5f} | {interval_text(row['broad_nll'], math.exp)} | {np.mean(costs[name]):.2f} |")
+                     f"{row['target_nll']['sd']:.5f} | {interval_text(row['broad_nll'], math.exp)} | {np.sum(costs[name]):.2f} |")
     lines += ["", "The prespecified descriptive screening heuristic is " + ("met" if passed else "not met") +
-              ". It requires at least 0.02 lower mean target NLL than population and shuffled controls, a lower target loss in every paired seed, and no more than 0.02 broad-loss increase relative to either control. See screening_decision.json for each component and analysis.md for every paired interval and exact sign-test p-value.", "",
+              ". It requires at least 0.02 lower mean target NLL than population and shuffled controls, a lower target loss in every paired seed, and no more than 0.02 broad-loss increase relative to either control. The threshold rule is evaluated descriptively, p-val=n/a: no inferential test against the 0.02 threshold was run. See screening_decision.json for each component and analysis.md for every paired interval and exact sign-test p-value.", "",
               "All comparisons are exploratory and unadjusted for multiple comparisons. At three non-tied pairs the minimum two-sided sign-test p-value is 0.25. Equal final predicted-token budgets do not imply equal total compute.", "",
               "![Paired seed loss differences](paired_effects.png)", "",
               ("**Zip-Mix " + ("met" if passed else "did not meet") + " the prespecified descriptive screening criterion.** Points are individual seed differences; bars are 95% paired-seed Student-t intervals. Negative values favor Zip-Mix; intervals are conditional on the fixed data and do not establish broad superiority."), ""]

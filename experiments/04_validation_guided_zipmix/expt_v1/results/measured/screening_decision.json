@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "token_proportional": {
+      "mean_target_reduction_at_least_0.02": false,
+      "target_direction_consistent_all_seeds": true,
+      "broad_increase_at_most_0.02": true,
+      "target_difference": -0.014938996483882269,
+      "broad_difference": 0.007152861760308345
+    },
+    "shuffled_zipmix": {
+      "mean_target_reduction_at_least_0.02": false,
+      "target_direction_consistent_all_seeds": true,
+      "broad_increase_at_most_0.02": true,
+      "target_difference": -0.016304414719343185,
+      "broad_difference": -0.0017310930415987968
+    }
+  },
+  "screening_heuristic_met": false,
+  "threshold_source": "expt_v1/PROTOCOL.md; agent-suggested screening heuristic, not a significance test",
+  "broad_interpretation": "Apply the broad-loss tolerance relative to both primary sampling controls",
+  "inference": "No optimality, confirmatory significance, or state-of-the-art verdict"
+}
