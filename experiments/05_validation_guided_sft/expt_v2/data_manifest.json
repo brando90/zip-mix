@@ -1,0 +1,297 @@
+{
+  "available_training_cells": 21,
+  "bucket_boundaries": [
+    0.73095703125,
+    0.75537109375,
+    0.772705078125,
+    0.78369140625
+  ],
+  "compression_ratio_above_one_count": 0,
+  "compression_ratio_range": [
+    0.64892578125,
+    0.8037109375
+  ],
+  "config": {
+    "alignment_views": 8,
+    "batch_size": 16,
+    "checkpoint_every": 16,
+    "compression_bins": 5,
+    "direct_selection_fraction": 0.25,
+    "evaluation_cap_per_split": 500,
+    "gradient_clip": 1.0,
+    "gzip_level": 6,
+    "learning_rate": 2e-05,
+    "max_infrastructure_resumes_per_cell": 1,
+    "max_input_length": 256,
+    "minimum_matched_target_views": 2,
+    "score_byte_window": 4096,
+    "steps": 128,
+    "training_cap_per_domain": 3000,
+    "warmup_steps": 8,
+    "weight_decay": 0.01,
+    "wrongtarget_reserved_records": 256
+  },
+  "counts": {
+    "retention": 500,
+    "target": 500,
+    "trailing_training_examples_discarded": 63,
+    "train": 9797,
+    "training_packs": 351,
+    "true_views": 8,
+    "wrong_target_reserved": 256,
+    "wrong_views": 8
+  },
+  "created_at": "2026-10-04T18:55:02.788606+00:00",
+  "domains": [
+    "arc_challenge",
+    "commonsense_qa",
+    "openbookqa",
+    "sciq"
+  ],
+  "elapsed_seconds": 3.535139124986017,
+  "expected_training_cells": 21,
+  "files": {
+    "identities.json": "6e727c7668086f401cf8e543c77f7d63805597230026ffec05e7d6c41fa6e398",
+    "pack_scores.npz": "336a255ee06e6e8692ad19de6aa39c973605589cc99ca3b92572ebfe209b4893",
+    "packs.json": "45cf53fcaabe16c4ff6c0604f59747984fb4799eab9738a007b32d6313dd2a4d",
+    "records.jsonl": "ec4279c31691d96671be62e027e927838cbbca8156645b7fe918e45b8a40fb44",
+    "retention.npz": "ad6adaa593b0cf99301d439c60aa2fa6b3a97dd37b96f48c0c4e4eb846db75e3",
+    "selection.npz": "d5e5a2f83702dd1f862d7c035a851a775c0d57f4659293da10deba1e17d71dc4",
+    "target.npz": "f6d40bb392c5ad0e93d2de26a82ef95be99043f7caf9b10d9af3a1f81dd2cf77",
+    "tokenizer/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+    "tokenizer/chat_template.jinja": "44d5f08f3f72b837eaad09f13a54c1f9f4eb58d75240334548b7fd52a5437fa5",
+    "tokenizer/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+    "tokenizer/special_tokens_map.json": "6676f091c8bc4d1b50146427cfde92073402866b87b6e39223227931b70083e9",
+    "tokenizer/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+    "tokenizer/tokenizer_config.json": "60f6e7bc948cedd377a20f01d022ef664d026fbc93d72e0a9bdac233f8632181",
+    "tokenizer/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "train.npz": "e1aef754847620f3554bb501b6b506fa364919a6f6ea9ea08a0af67913d4da18"
+  },
+  "label_tokens": [
+    362,
+    425,
+    356,
+    422,
+    468
+  ],
+  "limitations": [
+    "Pack scores inherited by all member questions; final member may extend past scored prefix",
+    "Packing removes scoring-byte-length variation but source, repetition, and content density remain confounded",
+    "Wrong target is related multiple-choice content, not semantically orthogonal noise",
+    "No ground-truth test result used for selection; same finite test arrays retained from untrained v1",
+    "Small selector shifts may leave a three-seed screen underpowered"
+  ],
+  "manifest_id": "0d6dec93e7d7ccffd87f95e7ebd19e78c84ec72a546007b122888789aba5cb44",
+  "method_status": {
+    "compel_filter": "available",
+    "direct_zipfit": "available",
+    "sample_proportional": "available",
+    "shuffled_zipmix": "available",
+    "uniform_domain": "available",
+    "wrongtarget_zipmix": "available",
+    "zipmix_static": "available"
+  },
+  "methods": [
+    "sample_proportional",
+    "uniform_domain",
+    "compel_filter",
+    "zipmix_static",
+    "direct_zipfit",
+    "shuffled_zipmix",
+    "wrongtarget_zipmix"
+  ],
+  "mixtures": {
+    "compel_filter": {
+      "bucket_mass": [
+        0.12497428512652001,
+        0.21250771446205244,
+        0.22320510183090717,
+        0.21446204484674705,
+        0.2248508537338079
+      ],
+      "domain_mass": {
+        "arc_challenge": 0.11160255091544947,
+        "commonsense_qa": 0.27669203867516967,
+        "openbookqa": 0.3040526640608927,
+        "sciq": 0.30765274634848794
+      },
+      "effective_examples": 9721.999999999998,
+      "positive_examples": 9722,
+      "status": "available"
+    },
+    "direct_zipfit": {
+      "bucket_mass": [
+        0.07877551020408172,
+        0.6612244897959254,
+        0.26000000000000223,
+        0.0,
+        0.0
+      ],
+      "domain_mass": {
+        "arc_challenge": 0.0,
+        "commonsense_qa": 0.0,
+        "openbookqa": 0.0,
+        "sciq": 1.0
+      },
+      "effective_examples": 2450.0000000000005,
+      "positive_examples": 2450,
+      "status": "available"
+    },
+    "sample_proportional": {
+      "bucket_mass": [
+        0.12554863733796276,
+        0.21088088190261592,
+        0.22149637644175937,
+        0.21282025109726713,
+        0.2292538532203642
+      ],
+      "domain_mass": {
+        "arc_challenge": 0.11227926916402983,
+        "commonsense_qa": 0.2775339389609064,
+        "openbookqa": 0.30488925181177906,
+        "sciq": 0.30529754006328463
+      },
+      "effective_examples": 9797.000000000002,
+      "positive_examples": 9797,
+      "status": "available"
+    },
+    "shuffled_zipmix": {
+      "bucket_mass": [
+        0.12685457565523303,
+        0.21704818235497592,
+        0.22502477996353742,
+        0.2078486503426291,
+        0.22322381168362382
+      ],
+      "domain_mass": {
+        "arc_challenge": 0.11365683231109641,
+        "commonsense_qa": 0.2722305802045212,
+        "openbookqa": 0.30187786901278707,
+        "sciq": 0.31223471847159556
+      },
+      "effective_examples": 9791.86021935467,
+      "positive_examples": 9797,
+      "status": "available"
+    },
+    "uniform_domain": {
+      "bucket_mass": [
+        0.24520386918330567,
+        0.18836346041401802,
+        0.18478845484114642,
+        0.1824518220918981,
+        0.19919239346966158
+      ],
+      "domain_mass": {
+        "arc_challenge": 0.24999999999999997,
+        "commonsense_qa": 0.24999999999999997,
+        "openbookqa": 0.24999999999999997,
+        "sciq": 0.24999999999999997
+      },
+      "effective_examples": 8222.020922130041,
+      "positive_examples": 9797,
+      "status": "available"
+    },
+    "wrongtarget_zipmix": {
+      "bucket_mass": [
+        0.10140799814671012,
+        0.17649875976061452,
+        0.21657593981367226,
+        0.24015777208336025,
+        0.2653595301956509
+      ],
+      "domain_mass": {
+        "arc_challenge": 0.09101540724178193,
+        "commonsense_qa": 0.3111221894820487,
+        "openbookqa": 0.32853112775423926,
+        "sciq": 0.2693312755219301
+      },
+      "effective_examples": 9609.09665549102,
+      "positive_examples": 9797,
+      "status": "available"
+    },
+    "zipmix_static": {
+      "bucket_mass": [
+        0.13803352840780403,
+        0.26643509943190385,
+        0.22954588700830922,
+        0.18137510309980354,
+        0.1846103820521869
+      ],
+      "domain_mass": {
+        "arc_challenge": 0.12526921668049495,
+        "commonsense_qa": 0.2374515348297137,
+        "openbookqa": 0.2786024426671432,
+        "sciq": 0.3586768058226481
+      },
+      "effective_examples": 9516.187253522601,
+      "positive_examples": 9797,
+      "status": "available"
+    }
+  },
+  "model": "Qwen/Qwen2.5-0.5B",
+  "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "negative_max_scores": 0,
+  "pack_member_counts": {
+    "max": 37,
+    "min": 12
+  },
+  "pad_token_id": 151643,
+  "parent_manifest_id": "d133f1242f8edb9827ddcd1c3ad404bac8b56f688943c0d943ff3063ce5e097a",
+  "postfilter_train_protected_13gram_hits": 0,
+  "postfilter_train_protected_exact_hits": 0,
+  "preparation_code": {
+    "common.py": "67fdf317e014bc227b61411c0737dd9defbe5f66597629b441b01d4989877fd9",
+    "prepare_sft.py": "e71ef77111f79b5a79c1c986fd81c022cd486237c64fba95c937621cd9864ce4"
+  },
+  "prior_diagnostics": {
+    "inherited_max_score_vs_document_byte_length_spearman": 0.03641257106102179,
+    "pack_cr_vs_member_count_spearman": 0.48981116782050926,
+    "zipmix_vs_sample_total_variation": 0.07608861916566208,
+    "zipmix_vs_shuffled_total_variation": 0.06508697687427294,
+    "zipmix_vs_wrongtarget_total_variation": 0.13953181712703383
+  },
+  "schema": 2,
+  "score_definition": "historical max for ZipMix; published mean aggregation adapted to equal-byte packs for direct selector; candidate_then_development; gzip6; clip negative only for bucket mass",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "source_revisions": {
+    "arc_challenge": {
+      "config": "ARC-Challenge",
+      "repository": "allenai/ai2_arc",
+      "revision": "210d026faf9955653af8916fad021475a3f00453"
+    },
+    "commonsense_qa": {
+      "config": null,
+      "repository": "tau/commonsense_qa",
+      "revision": "94630fe30dad47192a8546eb75f094926d47e155"
+    },
+    "openbookqa": {
+      "config": "main",
+      "repository": "allenai/openbookqa",
+      "revision": "388097ea7776314e93a529163e0fea805b8a6454"
+    },
+    "sciq": {
+      "config": null,
+      "repository": "allenai/sciq",
+      "revision": "2c94ad3e1aafab77146f384e23536f97a4849815"
+    }
+  },
+  "training_domain_counts": {
+    "arc_challenge": 1100,
+    "commonsense_qa": 2719,
+    "openbookqa": 2987,
+    "sciq": 2991
+  },
+  "true_validation_conversion_rejections": {
+    "Duplicate answer options": 3
+  },
+  "version": "expt_v2",
+  "view_bytes": {
+    "max": 4096,
+    "min": 4096,
+    "padding_or_repetition": false
+  }
+}

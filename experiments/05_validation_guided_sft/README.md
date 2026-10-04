@@ -1,59 +1,67 @@
-# Experiment 05: validation-guided supervised fine-tuning screen
+# Experiment 05: validation-guided supervised fine-tuning
 
-Status on 10-04-2026: implemented and data frozen; deterministic checks passed; training has not been launched by the implementation agent. This is a small mechanism screen, not a claim of optimal training or superiority over current methods.
+**Doc link:** <https://github.com/brando90/zip-mix/blob/main/experiments/05_validation_guided_sft/README.md>
 
-The experiment asks whether compression-selected mixtures improve a pretrained model's multiple-choice science accuracy compared with equal-budget sampling controls. It adapts the pinned Qwen2.5-0.5B base checkpoint using 2,048 supervised answer-label tokens per training cell. Six methods and three sampling seeds produce 18 cells, plus one base-checkpoint evaluation. All model computation uses local pretrained weights; no paid model-service calls are used.
+Version 2 is the active prospective experiment. Updated 10-04-2026: its inputs are frozen and deterministic validation is complete; measured training and benchmark outcomes are pending.
 
-| Item | Frozen choice |
+The user-requested single Opus 5.5 maximum-effort quality-assurance review found that version 1's short-string compression scores mostly tracked length. [Version 1 remains an untrained calibration](expt_v1/STATUS.md). Version 2 repairs the scoring unit before training: every candidate and development view contains exactly 4,096 real bytes, with a matched wrong-target control. No artificial padding or repetition fills views.
+
+The scientific question is whether changing the development-target compression prior improves held-out science accuracy at a fixed supervision budget. The current evidence establishes that the prior changes; it does not establish that training with it improves generalization.
+
+| Item | Frozen version 2 choice |
 |---|---|
-| Training pool | At most 3,000 eligible examples from each of SciQ, OpenBookQA, AI2 Reasoning Challenge (ARC-Challenge), and CommonsenseQA training splits |
-| Alignment | 64 hash-ranked eligible SciQ validation questions with answer choices, without answer labels |
-| Target evaluation | 500 hash-ranked eligible SciQ test examples |
-| Retention evaluation | 500 hash-ranked eligible CommonsenseQA validation examples |
-| Methods | Sample-proportional, source-uniform, Compel, historical maximum-score ZipMix, direct mean-score ZIP-FIT, shuffled-score ZipMix |
-| Training | Full fine-tuning with float32 master parameters and bfloat16 forward autocasting, 128 steps × 16 examples, one graphics processing unit (GPU), seeds 0/1/2 |
-| Primary outcome | Multiple-choice accuracy on SciQ; answer-label negative log likelihood is secondary |
-| Decision rule | Complete and report the full screen; use direction, uncertainty, source exposure, and selection cost to design a separate confirmation experiment |
+| Backbone | Pinned Qwen2.5-0.5B base checkpoint |
+| Training pool | 9,797 examples from SciQ, OpenBookQA, ARC-Challenge, and CommonsenseQA, arranged into 351 disjoint source-specific packs |
+| True development target | Eight 4,096-byte SciQ validation packs |
+| Wrong development target | Eight matched-byte CommonsenseQA packs from 256 reserved training records excluded from every arm |
+| Target evaluation | 500 fixed SciQ test examples |
+| Retention evaluation | 500 fixed CommonsenseQA validation examples |
+| Mixtures | Sample-proportional, source-uniform, Compel, historical maximum-score ZipMix, mean-score direct ZIP-FIT adaptation, shuffled-score ZipMix, wrong-target ZipMix |
+| Training | Seven methods × three seeds = 21 cells; 128 steps × 16 examples = 2,048 supervised answer-label tokens per cell |
+| Precision | Full fine-tuning with float32 master parameters/optimizer states and bfloat16 forward autocasting |
+| Outcome | Multiple-choice accuracy; answer-label negative log likelihood is secondary |
 
-The CommonsenseQA training split is in the candidate pool, so its validation accuracy measures untargeted-task retention or transfer, not a task family excluded from training. The backbone may have prior exposure to either benchmark. The three-seed screen is descriptive: the smallest attainable exact two-sided paired sign-flip p-value is 0.25. Final superiority remains unresolved until larger, prospectively frozen comparisons include faithful relevant competitors.
+![Development-target mixture diagnostics](expt_v2/results/mixture_diagnostics.png)
 
-All examples use a fixed multiple-choice prompt and a single answer-letter continuation. Prompt tokens are excluded from the loss. Every candidate answer is asserted to be exactly one tokenizer token, including the prompt boundary. Equal training-example counts therefore equal supervised-token counts. Input-token exposure and total computation vary with selected question length and are reported separately.
+**Changing the development target changes the frozen training mixture.** All scoring views contain 4,096 real bytes; values are exact finite-pool probabilities, not performance estimates. Source and pack-density confounds remain.
 
-The Compel interval `[0.65, 0.80]` originated for longer pretraining documents. Applying it to short question-and-choice strings is an explicit transfer baseline with potentially sparse support. The pipeline refuses an empty band before freezing data and never silently relaxes it. Maximum similarity is the repository's historical ZipMix variant; the published ZIP-FIT algorithm uses the mean and that mean is used for direct selection. This screen does not isolate aggregation choice from bucket versus direct selection.
+The true-target ZipMix mixture places 35.87% mass on SciQ, versus 26.93% for the wrong target and 30.53% for sample-proportional sampling. True-versus-wrong mixture total variation is 0.13953; true-versus-shuffled total variation is 0.06509. These describe the complete frozen pool exactly, not sampled performance estimates (p-val=n/a). All seven methods have support; Compel retains 9,722 of 9,797 examples. Its near-natural mixture is reported rather than made artificially selective.
 
-Preparation produced 10,116 training candidates, 64 alignment views, and 500 items per evaluation set. Compel retains 150 candidates (1.48%); repeated exposure is therefore expected. Historical ZipMix assigns 29.6563% mass to SciQ, compared with 29.6560% under sample-proportional sampling and 29.6599% under the source-and-length permutation control. These are exact descriptive properties of the frozen finite pool, not performance estimates (p-val=n/a); the weak target-mass change is a reason to test the hypothesis carefully, not to assume a win. See [data manifest](expt_v1/data_manifest.json).
-
-Review measurement on this frozen pool: the LZ4 ratio and maximum alignment are dominated by string length (Spearman correlation with byte length -0.92 and -0.88; 87.4% of candidates have an LZ4 ratio above 1 because framing overhead exceeds savings). The five compression bins are therefore close to length quintiles, and ZipMix upweights shorter questions. The source-by-length permutation control differs from ZipMix by total variation 0.0025, whereas ZipMix differs from sample-proportional by 0.0431. A ZipMix-versus-shuffled difference in this version therefore cannot separate validation alignment from length. Length-controlled scoring or a length-matched mismatched-target control needs a separate prospective version. Details: [review report](../04_validation_guided_zipmix/qa/opus55_max_review.md).
+The full [protocol](expt_v2/PROTOCOL.md), [public input manifest](expt_v2/data_manifest.json), [execution prompt](expt_v2/cc.md), [live results](results.md), and [checkpoint](CKPT_validation_guided_sft.md) are canonical. Raw public datasets, token arrays, model weights, and run directories remain ignored. Preserve them on execution-host scratch storage with private paths recorded by the coordinator.
 
 ```text
 05_validation_guided_sft/
   README.md
   results.md
   CKPT_validation_guided_sft.md
-  expt_v1/
+  expt_v1/                 # preserved untrained calibration and original protocol
+  expt_v2/
     PROTOCOL.md
     cc.md
+    data_manifest.json
     common.py
     prepare_sft.py
     train_sft.py
     analyze_sft.py
     test_sft.py
     test_analysis.py
-    data/              # ignored pinned data, tokenizer, manifest, selection weights
-    runs/              # ignored model checkpoints, predictions, durable ledgers
+    test_packs.py
+    results/mixture_diagnostics.png
+    data/                  # ignored prepared input artifacts
+    runs/                  # ignored weights, predictions, durable ledgers
 ```
 
-Dependencies are NumPy, SciPy, PyTorch, Transformers, Datasets, Hugging Face Hub, LZ4, and pytest for deterministic tests. The verified Stanford Network Analysis Project (SNAP) runtime is described in [Experiment 04 preflight](../04_validation_guided_zipmix/preflight.md). Large caches and checkpoints belong on the execution machine's local scratch storage, with exact private paths recorded by the coordinator rather than published here.
+Use the verified Stanford Network Analysis Project (SNAP) runtime described in [Experiment 04 preflight](../04_validation_guided_zipmix/preflight.md). Run each version's tests in a separate process because the versioned scripts intentionally have the same module names.
 
 ```bash
-python experiments/05_validation_guided_sft/expt_v1/prepare_sft.py --workers 4
-python -m pytest experiments/05_validation_guided_sft/expt_v1/test_sft.py experiments/05_validation_guided_sft/expt_v1/test_analysis.py
-CUDA_VISIBLE_DEVICES=0 python experiments/05_validation_guided_sft/expt_v1/train_sft.py --data experiments/05_validation_guided_sft/expt_v1/data --output experiments/05_validation_guided_sft/expt_v1/runs/screen
-python experiments/05_validation_guided_sft/expt_v1/analyze_sft.py --run experiments/05_validation_guided_sft/expt_v1/runs/screen
+python experiments/05_validation_guided_sft/expt_v2/prepare_sft.py
+python -m pytest experiments/05_validation_guided_sft/expt_v2/ -q
+CUDA_VISIBLE_DEVICES=0 python experiments/05_validation_guided_sft/expt_v2/train_sft.py --data experiments/05_validation_guided_sft/expt_v2/data --output experiments/05_validation_guided_sft/expt_v2/runs/screen
+python experiments/05_validation_guided_sft/expt_v2/analyze_sft.py --run experiments/05_validation_guided_sft/expt_v2/runs/screen
 ```
 
-Device `0` is an example; the coordinator must verify availability and bind exactly one suitable device. Dataset and model revisions are pinned in `common.py`. Preparation refuses to overwrite an existing output directory, and training refuses a changed manifest/code fingerprint for an existing run. Restarts resume the same logical cell within its fixed bounds, record replayed work, and preserve failed rows.
+The device index is an example; the coordinator must recheck availability and bind exactly one suitable graphics processing unit. Preparation refuses to overwrite frozen inputs. The trainer checks input/code identities, saves recoverable state every 16 steps, and preserves every failed row. A durable external supervisor must cover the full manifest and require successful base evaluation as well as all training cells.
 
-The user-requested Opus 5.5 maximum-effort review of Experiments 04 and 05 is recorded in [its report](../04_validation_guided_zipmix/qa/opus55_max_review.md).
+Three seeds permit descriptive paired-seed intervals, with weak small-sample precision; an exact two-sided sign test cannot attain p<0.25 at three non-tied pairs. No confirmatory significance or optimality claim follows from this screen. CommonsenseQA training data remain in the pool, so its evaluation is untargeted retention/transfer rather than an unseen family. The pretrained backbone may have benchmark exposure. Direct ZIP-FIT uses inherited pack scores here, and Compel is applied to packs of benchmark questions; neither is a faithful reproduction of its original setting. Comparisons against faithful DoReMi, DoGE, LESS, and current mixing competitors remain separate research stages.
 
 Sources: [Qwen model](https://huggingface.co/Qwen/Qwen2.5-0.5B), [SciQ](https://huggingface.co/datasets/allenai/sciq), [OpenBookQA](https://huggingface.co/datasets/allenai/openbookqa), [ARC](https://huggingface.co/datasets/allenai/ai2_arc), [CommonsenseQA](https://huggingface.co/datasets/tau/commonsense_qa), [ZIP-FIT algorithm](https://arxiv.org/html/2410.18194v2#S2), [Compel](https://github.com/stair-lab/compel).

@@ -2,6 +2,8 @@
 
 # Experiment 05 execution prompt
 
+**Doc link:** <https://github.com/brando90/zip-mix/blob/main/experiments/05_validation_guided_sft/expt_v1/cc.md>
+
 Brando pre-approves all task work here. Run with full access and never stop to ask permission.
 
 Refresh and read `~/agents-config/INDEX_RULES.md` and applicable experiment/host rules. Read this version's `PROTOCOL.md`, `common.py`, preparation manifest, and parent checkpoint. Use the already verified isolated runtime and scratch cache. Keep public model training local; no direct provider-model application programming interface calls, new paid resources, or external dashboard publication.
@@ -15,4 +17,3 @@ Solve the entire assigned task, including every required file, question and subt
 Update experiment-root `results.md` and its resumable checkpoint with live run identity and links. Publish only compact authorized source/manifest summaries, not raw datasets, model weights, tokens, private paths, or credentials. After all admitted work reaches terminal states, reconcile the complete denominator, inspect saved artifacts, report measured uncertainty and limitations, and verify the owned GPU process has exited. Do not kill another job.
 
 **TLDR-end:** [zip-mix: SFT screen] Execute and reconcile the fixed six-method, three-seed screen, reporting to Experiment 05's results and checkpoint; stop when all bounded cells and required evaluation stages are finalized or explicitly accounted for as failures.
-

@@ -1,23 +1,29 @@
 # Experiment 05 resumable checkpoint
 
-Created 10-04-2026; updated after implementation and preparation. This file is a work checkpoint, not evidence of completed training.
+**Doc link:** <https://github.com/brando90/zip-mix/blob/main/experiments/05_validation_guided_sft/CKPT_validation_guided_sft.md>
 
-The parent coordinator authorized the public-data Qwen2.5-0.5B multiple-choice screen with six methods, three seeds, 128 steps × 16 examples per cell, and one base evaluation. The implementation worker owns only Experiment 05 and must not launch measured training. The parent owns deployment and the single requested Opus 5.5 maximum-effort review across Experiments 04 and 05.
+Created 10-04-2026; updated after prospective version 2 preparation and deterministic validation. This checkpoint is not evidence of completed model training.
 
-Source revisions and the exact configuration are fixed in `expt_v1/common.py`. Local preparation is invoked with `python3 experiments/05_validation_guided_sft/expt_v1/prepare_sft.py --workers 4`; output is ignored under `expt_v1/data/`. Tokenizer verification found distinct one-token answer continuations: `[362, 425, 356, 422, 468]` for space-prefixed A–E. Preparation asserts the full prompt boundary for every item.
+The parent coordinator authorized the initial public-data Qwen2.5-0.5B multiple-choice screen. One requested Opus 5.5 maximum-effort review identified a major short-string length confound before any training/evaluation. Version 1 remains preserved and untrained. The parent then authorized version 2's fixed-byte pack design and true/wrong-target control, with no additional model-review round.
 
-Prepared data identity: `d133f1242f8edb9827ddcd1c3ad404bac8b56f688943c0d943ff3063ce5e097a`; 10,116 training examples, 64 alignment views, 500 target and 500 retention examples. Preparation completed in 34.46 seconds, with no residual exact-question or declared 13-word overlap hits. The public manifest is `expt_v1/data_manifest.json`; raw data remain ignored. Twelve trainer/selection tests and twelve analysis tests passed independently. A final precision-load assertion is being checked with the combined suite.
+Active version: `expt_v2/`. Seven methods × seeds 0, 1, 2 = 21 cells plus one base evaluation. Each cell uses 128 optimizer steps × 16 examples, one answer token per example, float32 master parameters, and bfloat16 forward autocasting. Model/tokenizer/data revisions and the old evaluation arrays remain pinned. The implementation worker must not launch measured training; the parent owns deployment and durable execution.
 
-The trainer uses float32 master parameters and optimizer states, with bfloat16 forward autocasting. The remote preflight worker verified a disposable synthetic optimizer step: finite loss/gradient norm and all 1,024 sampled weights changed; no benchmark evaluation or training checkpoint was created. This is engineering verification only.
+Prepared-data identity: `0d6dec93e7d7ccffd87f95e7ebd19e78c84ec72a546007b122888789aba5cb44`. Output is ignored under `expt_v2/data/`; the compact public copy is `expt_v2/data_manifest.json`. There are 9,797 training examples in 351 packs, eight true SciQ and eight reserved CommonsenseQA development views, and 500 examples in each evaluation split. All scoring views contain exactly 4,096 real bytes without padding/repetition. The 256 wrong-target source records and 63 trailing underfilled-pack records are excluded from training.
 
-Next resume steps: obtain the parent's recorded review outcome; synchronize all final hashes and prepared data; launch only through the coordinator's durable remote owner; update live records. Record exact runtime timestamps and private run paths at launch. No measured model result currently exists.
+Independent deterministic checks reproduced all 367 view hashes and all 351 candidate compression/alignment scores, verified the parent/file manifests and both preparation-source hashes, and confirmed all seven methods have support. The final test suite includes training-resume/precision checks, analysis auditing, and new pack/target-control invariants. Final deterministic suite: 38/38 tests passed in 4.60 seconds; compilation and whitespace checks passed. Source is frozen for commit/launch.
 
-**TLDR-end:** [zip-mix: SFT checkpoint] Implement and verify the frozen screen, then hand its complete source and prepared inputs to the parent for review and launch; training and benchmark gains remain pending.
+Exact finite-pool prior diagnostics: true-vs-wrong total variation 0.1395318171, true-vs-shuffled 0.0650869769; true-target SciQ mass 0.3586768058 versus wrong-target 0.2693312755. These demonstrate a changed training intervention, not improved accuracy. Source and pack-density effects remain.
+
+Next resume steps: synchronize all final code and input hashes to the execution host; compute the trainer's stable run identity and pass it to the external supervisor; verify one available device and complete timeout/resource coverage; run every admitted cell and base evaluation; analyze actual saved receipts/predictions; update root results and this checkpoint. Record private runtime paths and exact timestamps at launch outside public source. Do not silently resume version 1's obsolete training plan.
+
+**TLDR-end:** [zip-mix: SFT v2 checkpoint] Version 2 repairs the identified scoring-length confound and provides distinct true/wrong-target mixtures; the coordinator now owns complete 21-cell execution and measured result reporting.
 
 **Snapshot:**
 ```text
-expected_training_cells=18
-base_evaluation_required=true
-training_launched_by_implementation_agent=false
-answer_label_tokens=362,425,356,422,468
+active_version=expt_v2
+model=Qwen/Qwen2.5-0.5B
+train_examples=9797
+scoring_bytes=4096
+available_training_cells=21
+training_launched_by_implementation_worker=false
 ```

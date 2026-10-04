@@ -52,4 +52,3 @@ Large data, models and checkpoints live in an isolated node-local runtime, with 
 ## Relation to earlier proposals
 
 Experiment 03 remains unchanged. Its proposed mid-compression concentration gate is replaced **for this new experiment only** by a leakage audit and actual held-out training test: a peaked prior alone does not validate utility. DoReMi's reference/excess-loss correction is implemented explicitly rather than interpreting raw difficult-domain loss as its method. Stronger pretrained benchmark tests and contemporary baselines are required before any superiority claim.
-

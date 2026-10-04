@@ -16,8 +16,8 @@ A small validation set describes a chosen target distribution. Success on that d
 
 | Experiment | Purpose | Latest status |
 |---|---|---|
-| [04: validation-guided pretraining](experiments/04_validation_guided_zipmix/README.md) | From-scratch mechanism screen: nine methods, three paired seeds, held-out target and broad loss | Implementation and preflight; no training conclusion yet |
-| [05: validation-guided supervised fine-tuning](experiments/05_validation_guided_sft/README.md) | Pretrained-model benchmark accuracy with fixed labeled-token budgets | Implementation; no accuracy conclusion yet |
+| [04: validation-guided pretraining](experiments/04_validation_guided_zipmix/README.md) | From-scratch mechanism screen: nine methods, three paired seeds, held-out target and broad loss | Full 27-cell run active; results pending |
+| [05: validation-guided supervised fine-tuning](experiments/05_validation_guided_sft/README.md) | Pretrained-model benchmark accuracy with fixed labeled-token budgets | Revised 21-cell fixed-byte experiment prepared; results pending |
 | [02: prior analysis](experiments/02_alignment_prior_analysis/README.md) | Compression distributions from public corpus pilots | Existing cached pilot reused with its limitations recorded |
 | [03: proxy-mixture proposal](https://github.com/brando90/zip-mix/blob/main/experiments/03_zipmix_doremi_fix/README.md) | Earlier larger pretraining design | Preserved proposal, not executed by the new screen |
 

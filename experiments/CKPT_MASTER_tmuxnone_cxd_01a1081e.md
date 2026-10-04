@@ -1,39 +1,31 @@
-# Zip-Mix coordinator: initialized pretraining and supervised fine-tuning
+# Zip-Mix coordinator: full validation-guided pretraining and fine-tuning comparisons
 
 **Doc link:** <https://github.com/brando90/zip-mix/blob/main/experiments/CKPT_MASTER_tmuxnone_cxd_01a1081e.md>
 
-**TLDR:** Both executable experiments and their frozen data are prepared. The requested Claude Opus 5.5 maximum-effort review finished: 50 tests pass, no critical issue, one fine-tuning length confound. Pretraining is ready; fine-tuning is being redesigned prospectively before admission.
+**TLDR:** The reviewed 27-cell pretraining experiment is running. A prospective 21-cell fine-tuning version fixes the short-string scoring problem and adds a wrong-target control; its results remain pending.
 
-Created: 10-04-2026 11:44 PDT
-Last updated: 10-04-2026 11:50 PDT
+Updated: 10-04-2026 12:00 PDT
 
 ## Identity and recovery
 
-Local Codex coordinator for Zip-Mix; full thread/profile/host identities and exact private resume/deployment commands are in the private `zipmix-validation-guided/launch_context.json` receipt under the coordinator's Codex private store. No private host packet or credential belongs in this public repository. The local configured default is GPT-6 Astra with ultra effort and full access/no routine approvals; remote defaults were verified and corrected for future launches, without restarting existing work.
+Local Codex coordinator for Zip-Mix. Exact host, process, terminal-session and resume identities live in the private `zipmix-validation-guided/launch_context.json` receipt under the coordinator's Codex private store. Global local instruction files are nonempty and resolve to the current shared rules; remote defaults were corrected for future launches without restarting existing agents. The requested single quality assurance (QA) review actually used `claude-opus-5-5` and the explicit maximum-effort flag through existing subscription authentication.
 
-## Hazards
+## Ownership
 
-- Shared working tree has pre-existing staged deletions, Experiment03 rename/edits and paper-introduction edits. Preserve them; commit only explicitly named task-owned files.
-- Source has two earlier commits ahead of origin/main. They were inspected for potential secrets; this work has not rewritten them.
-- Three training seeds are a descriptive screen: an exact two-sided sign test cannot reach p<0.25. No claim of optimal training or state-of-the-art superiority.
-- Raw data/models/checkpoints and host receipts remain private/ignored. Shared remote storage is tight; use the verified node-local runtime.
+Preserve pre-existing staged deletions, Experiment 03 rename/edits, paper edits and Experiment 02 materials. Only explicit task-owned paths are committed. Initialization commit `14c4d4f` is pushed. Raw data, model weights, checkpoints and host receipts remain ignored/private.
 
-## Owned work
+## Scientific state
 
-- [Experiment04](04_validation_guided_zipmix/README.md): 27 from-scratch cells; [checkpoint](04_validation_guided_zipmix/CKPT_zipmix.md), [live results](04_validation_guided_zipmix/results.md). Training harness/data ready, 20 tests passed; engineering GPU timing complete.
-- [Experiment05](05_validation_guided_sft/README.md): 18 fine-tuning cells plus one unchanged-base evaluation; [checkpoint](05_validation_guided_sft/CKPT_validation_guided_sft.md), [live results](05_validation_guided_sft/results.md). Data ready, 25 tests passed; disposable full-precision-master GPU optimizer check complete.
-- Implementation/research/compute helper agents finished and froze source. The requested reviewer has authority for minimal scoped corrections and deterministic verification; no second review is authorized.
+- [Experiment 04](04_validation_guided_zipmix/results.md): frozen nine-method × three-seed from-scratch screen, 27 cells. Started 10-04-2026 11:58 PDT on one A100. Bound live process and monitor verified; first cell passed 896/2,048 steps with no failure. Deadline 12 hours, ample relative to measured pace. Five transferred data hashes and 23 remote tests passed.
+- [Experiment 05](05_validation_guided_sft/results.md): retain short-string v1 as **untrained calibration**. Prospective v2 uses 351 real 4,096-byte training packs, 8 matched true-target and 8 wrong-target development views, seven methods × three seeds (21 cells), and one unchanged-base evaluation. A separate idle A100 may run this concurrently after final source/data checks. Deadline 6 hours. No settings selected from test outcomes.
+- Requested review: six implementation/documentation fixes, no critical issue, one major scientific concern. The concern motivated v2; deterministic checks verify the correction. No second review is authorized or needed under the requested one-round procedure.
 
-## Watches and completion
+## Completion contract
 
-The ordinary Python supervisor survives coordinator disconnection, owns one process group and emits fresh process/progress/device receipts. It admits 27 or18 expected training cells respectively and checks the separate fine-tuning baseline. Run sequentially on one device. Deadline ceilings:12hours pretraining,6hours fine-tuning; reboot recovery is not implemented. No measured job has been launched yet, so no running-job monitoring is claimed.
+Ordinary Python supervision survives coordinator disconnection, owns only its process group and emits timestamped, run-bound progress. A coordinator turn ending never stops healthy admitted work. No automatic reboot recovery is claimed. Analyze all declared cells, preserve missing/failing/recovered rows, verify the unchanged-base evaluation and resource release, and update numerical reports before calling either matrix complete.
 
-## Decisions and next actions
+Three seeds provide a descriptive mechanism screen: the smallest two-sided exact sign-test p-value is 0.25. Report means, paired intervals, retained denominators and total costs. This does not establish optimal training or state-of-the-art superiority. Larger faithful reproductions and reinforcement learning remain prospective work.
 
-No user decision is waiting. Finish the exact requested review, apply its findings, run deterministic checks, inspect staged diffs and publish only owned files. Synchronize the verified revision and19 transferred input-file hashes. Launch and supervise the complete frozen manifests, analyze all cells, preserve failures, update live numerical reports, and verify resource release. Modern larger-scale comparisons and reinforcement learning remain a research roadmap, not completed results.
+## Next actions
 
-## Landing
-
-Initial base c672ee7; task commit/publication pending the requested review. Private runtime launch identities must be added to the private receipt after actual launch, and public status updated here.
-
-Reviewer decision: keep Experiment05 v1 as untrained calibration. The prospective v2 packs scoring text to exactly4,096 bytes and adds wrong-target development controls. Do not launch the old short-string v1 fine-tuning run. Execute reviewed Experiment04 independently; completion of the underlying scientific goal remains unresolved.
+Finish fine-tuning source checks, commit only owned changes, transfer verified v2 data and launch its full 21 cells. Keep pretraining healthy. Analyze complete artifacts, publish compact numerical receipts/figures and update the root index. No human decision is waiting.
