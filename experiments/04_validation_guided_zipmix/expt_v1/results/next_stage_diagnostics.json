@@ -1,0 +1,346 @@
+{
+  "counts": {
+    "constant_positive_clipped_strata": 3,
+    "constant_signed_strata": 0,
+    "minimum_packs_per_stratum": 2,
+    "nonempty_strata": 13,
+    "packs": 351,
+    "questions": 9797
+  },
+  "frozen_pool_probability_checks": {
+    "all_passed": true,
+    "assertion_checks": 111,
+    "counting_unit": "one assertion per vector or stratum as named; tested element counts are separate",
+    "counts": {
+      "bounded_within_stratum_weight_ratio": 26,
+      "bucket_mass": 15,
+      "joint_mass": 39,
+      "normalization": 3,
+      "pack_permutation_multiset": 13,
+      "source_mass": 12,
+      "strict_positivity": 3
+    },
+    "finite_probability_entries_checked": 29391,
+    "pack_rank_permutation_entries_checked": 351,
+    "strictly_positive_probability_entries_checked": 29391,
+    "tolerance": 1e-12
+  },
+  "information_boundary": {
+    "experiment05_or_06_outcomes_read": false,
+    "frozen_inputs_modified": false,
+    "heldout_arrays_read": false,
+    "model_calls": 0,
+    "raw_arrays_exported": false
+  },
+  "input_fields_read": {
+    "pack_scores.npz": [
+      "maximum",
+      "wrong_maximum",
+      "bucket",
+      "width"
+    ],
+    "selection.npz": [
+      "domain",
+      "bucket",
+      "pack_index"
+    ],
+    "train.npz": [
+      "lengths",
+      "domain"
+    ]
+  },
+  "input_sha256": {
+    "pack_scores.npz": "336a255ee06e6e8692ad19de6aa39c973605589cc99ca3b92572ebfe209b4893",
+    "selection.npz": "d5e5a2f83702dd1f862d7c035a851a775c0d57f4659293da10deba1e17d71dc4",
+    "train.npz": "e1aef754847620f3554bb501b6b506fa364919a6f6ea9ea08a0af67913d4da18"
+  },
+  "interpretation": "Exact finite-pool diagnostics. No performance estimate, confidence interval or p-value applies.",
+  "kind": "deterministic proposed-design diagnostics; not an executed training condition",
+  "maximum_joint_mass_absolute_error": 5.551115123125783e-17,
+  "metrics": {
+    "aligned": {
+      "effective_sample_fraction": 0.8664348377039346,
+      "effective_sample_size": 8488.462104985447,
+      "expected_input_tokens_per_question": 48.52353345733582,
+      "nonzero_questions": 9797,
+      "source_mass": {
+        "arc_challenge": 0.1122792691640298,
+        "commonsense_qa": 0.27753393896090633,
+        "openbookqa": 0.3048892518117791,
+        "sciq": 0.3052975400632847
+      }
+    },
+    "shuffled": {
+      "effective_sample_fraction": 0.8656638733330199,
+      "effective_sample_size": 8480.908967043595,
+      "expected_input_tokens_per_question": 48.59090074495851,
+      "nonzero_questions": 9797,
+      "source_mass": {
+        "arc_challenge": 0.1122792691640298,
+        "commonsense_qa": 0.2775339389609064,
+        "openbookqa": 0.3048892518117791,
+        "sciq": 0.3052975400632847
+      }
+    },
+    "uniform": {
+      "effective_sample_fraction": 0.9999999999999862,
+      "effective_sample_size": 9796.999999999865,
+      "expected_input_tokens_per_question": 48.584668776156015,
+      "nonzero_questions": 9797,
+      "source_mass": {
+        "arc_challenge": 0.11227926916402983,
+        "commonsense_qa": 0.2775339389609064,
+        "openbookqa": 0.30488925181177906,
+        "sciq": 0.30529754006328463
+      }
+    }
+  },
+  "parent_manifest_id": "0d6dec93e7d7ccffd87f95e7ebd19e78c84ec72a546007b122888789aba5cb44",
+  "recipe": {
+    "constant_or_singleton_stratum": "zero centered ranks, therefore uniform",
+    "contrast": "signed maximum(true development alignment)-maximum(wrong development alignment); no clipping",
+    "normalization": "p_i=(n_source,bin/N)*w_i/sum_{j in source,bin}(w_j)",
+    "permutation_caveat": "pack-rank multiset preserved; question-weight multiset need not be preserved with unequal pack sizes",
+    "permutation_seed": 1707,
+    "rank": "average rank R within each source x compression stratum over its m packs; z=(R-0.5)/m-0.5",
+    "shuffle": "permute centered pack ranks within each source x bin stratum; sorted source/bin order, frozen pack-index order",
+    "weight": "exp(log(4)*z), inherited to all pack members"
+  },
+  "runtime": {
+    "numpy": "2.2.6",
+    "python": "3.11.6",
+    "scipy": "1.16.3"
+  },
+  "schema": 1,
+  "script_sha256": "aba5a1a5e8bf40c7d140e77f070a98c6dc9159bca2fbea882fd0c22137ace3e2",
+  "strata": [
+    {
+      "actual_joint_mass": {
+        "aligned": 0.10115341431050322,
+        "shuffled": 0.10115341431050323,
+        "uniform": 0.1011534143105032
+      },
+      "bin": 0,
+      "distinct_positive_clipped_scores": 61,
+      "distinct_signed_scores": 61,
+      "fixed_joint_mass": 0.10115341431050322,
+      "pack_size_max": 20,
+      "pack_size_min": 12,
+      "packs": 61,
+      "questions": 991,
+      "source": "arc_challenge"
+    },
+    {
+      "actual_joint_mass": {
+        "aligned": 0.011125854853526589,
+        "shuffled": 0.011125854853526589,
+        "uniform": 0.011125854853526592
+      },
+      "bin": 1,
+      "distinct_positive_clipped_scores": 6,
+      "distinct_signed_scores": 6,
+      "fixed_joint_mass": 0.011125854853526589,
+      "pack_size_max": 20,
+      "pack_size_min": 15,
+      "packs": 6,
+      "questions": 109,
+      "source": "arc_challenge"
+    },
+    {
+      "actual_joint_mass": {
+        "aligned": 0.04042053689905074,
+        "shuffled": 0.04042053689905073,
+        "uniform": 0.04042053689905073
+      },
+      "bin": 2,
+      "distinct_positive_clipped_scores": 1,
+      "distinct_signed_scores": 13,
+      "fixed_joint_mass": 0.04042053689905073,
+      "pack_size_max": 32,
+      "pack_size_min": 28,
+      "packs": 13,
+      "questions": 396,
+      "source": "commonsense_qa"
+    },
+    {
+      "actual_joint_mass": {
+        "aligned": 0.09839746861284064,
+        "shuffled": 0.09839746861284068,
+        "uniform": 0.09839746861284066
+      },
+      "bin": 3,
+      "distinct_positive_clipped_scores": 1,
+      "distinct_signed_scores": 32,
+      "fixed_joint_mass": 0.09839746861284067,
+      "pack_size_max": 33,
+      "pack_size_min": 27,
+      "packs": 32,
+      "questions": 964,
+      "source": "commonsense_qa"
+    },
+    {
+      "actual_joint_mass": {
+        "aligned": 0.13871593344901498,
+        "shuffled": 0.138715933449015,
+        "uniform": 0.138715933449015
+      },
+      "bin": 4,
+      "distinct_positive_clipped_scores": 1,
+      "distinct_signed_scores": 45,
+      "fixed_joint_mass": 0.138715933449015,
+      "pack_size_max": 33,
+      "pack_size_min": 28,
+      "packs": 45,
+      "questions": 1359,
+      "source": "commonsense_qa"
+    },
+    {
+      "actual_joint_mass": {
+        "aligned": 0.01520873736858222,
+        "shuffled": 0.015208737368582213,
+        "uniform": 0.015208737368582222
+      },
+      "bin": 1,
+      "distinct_positive_clipped_scores": 5,
+      "distinct_signed_scores": 5,
+      "fixed_joint_mass": 0.015208737368582219,
+      "pack_size_max": 31,
+      "pack_size_min": 28,
+      "packs": 5,
+      "questions": 149,
+      "source": "openbookqa"
+    },
+    {
+      "actual_joint_mass": {
+        "aligned": 0.09104828008574053,
+        "shuffled": 0.09104828008574053,
+        "uniform": 0.09104828008574052
+      },
+      "bin": 2,
+      "distinct_positive_clipped_scores": 13,
+      "distinct_signed_scores": 30,
+      "fixed_joint_mass": 0.09104828008574053,
+      "pack_size_max": 33,
+      "pack_size_min": 25,
+      "packs": 30,
+      "questions": 892,
+      "source": "openbookqa"
+    },
+    {
+      "actual_joint_mass": {
+        "aligned": 0.10809431458609778,
+        "shuffled": 0.10809431458609779,
+        "uniform": 0.10809431458609778
+      },
+      "bin": 3,
+      "distinct_positive_clipped_scores": 17,
+      "distinct_signed_scores": 34,
+      "fixed_joint_mass": 0.10809431458609778,
+      "pack_size_max": 37,
+      "pack_size_min": 28,
+      "packs": 34,
+      "questions": 1059,
+      "source": "openbookqa"
+    },
+    {
+      "actual_joint_mass": {
+        "aligned": 0.0905379197713586,
+        "shuffled": 0.09053791977135858,
+        "uniform": 0.09053791977135857
+      },
+      "bin": 4,
+      "distinct_positive_clipped_scores": 15,
+      "distinct_signed_scores": 27,
+      "fixed_joint_mass": 0.09053791977135858,
+      "pack_size_max": 34,
+      "pack_size_min": 29,
+      "packs": 28,
+      "questions": 887,
+      "source": "openbookqa"
+    },
+    {
+      "actual_joint_mass": {
+        "aligned": 0.024395223027457377,
+        "shuffled": 0.02439522302745737,
+        "uniform": 0.024395223027457384
+      },
+      "bin": 0,
+      "distinct_positive_clipped_scores": 8,
+      "distinct_signed_scores": 8,
+      "fixed_joint_mass": 0.024395223027457384,
+      "pack_size_max": 32,
+      "pack_size_min": 28,
+      "packs": 8,
+      "questions": 239,
+      "source": "sciq"
+    },
+    {
+      "actual_joint_mass": {
+        "aligned": 0.18454628968051445,
+        "shuffled": 0.18454628968051445,
+        "uniform": 0.1845462896805144
+      },
+      "bin": 1,
+      "distinct_positive_clipped_scores": 59,
+      "distinct_signed_scores": 59,
+      "fixed_joint_mass": 0.18454628968051445,
+      "pack_size_max": 33,
+      "pack_size_min": 27,
+      "packs": 59,
+      "questions": 1808,
+      "source": "sciq"
+    },
+    {
+      "actual_joint_mass": {
+        "aligned": 0.09002755945697663,
+        "shuffled": 0.09002755945697663,
+        "uniform": 0.0900275594569766
+      },
+      "bin": 2,
+      "distinct_positive_clipped_scores": 28,
+      "distinct_signed_scores": 28,
+      "fixed_joint_mass": 0.09002755945697663,
+      "pack_size_max": 35,
+      "pack_size_min": 28,
+      "packs": 28,
+      "questions": 882,
+      "source": "sciq"
+    },
+    {
+      "actual_joint_mass": {
+        "aligned": 0.0063284678983362265,
+        "shuffled": 0.0063284678983362265,
+        "uniform": 0.006328467898336226
+      },
+      "bin": 3,
+      "distinct_positive_clipped_scores": 2,
+      "distinct_signed_scores": 2,
+      "fixed_joint_mass": 0.006328467898336226,
+      "pack_size_max": 32,
+      "pack_size_min": 30,
+      "packs": 2,
+      "questions": 62,
+      "source": "sciq"
+    }
+  ],
+  "synthetic_probability_checks": {
+    "all_passed": true,
+    "bins_per_draw": 4,
+    "counts": {
+      "bin_convex_bound": 100,
+      "draws": 100,
+      "fixed_joint_mass": 1200,
+      "fourfold_tilt_envelope": 100,
+      "scalar_identity_checks": 1400
+    },
+    "seed": 7,
+    "sources_per_draw": 3,
+    "tolerance": 1e-12,
+    "units_per_draw": 20
+  },
+  "total_variation": {
+    "aligned_vs_shuffled": 0.2249422190686888,
+    "aligned_vs_uniform": 0.1685217943127122,
+    "uniform_vs_shuffled": 0.16909182183047944
+  }
+}
