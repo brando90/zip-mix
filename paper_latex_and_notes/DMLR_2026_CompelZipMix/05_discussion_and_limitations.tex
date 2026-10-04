@@ -1,0 +1,20 @@
+% !TEX root = 00_dmlr_compel_zipmix.tex
+\section{Discussion and Limitations}\label{sec:discussion}
+Our method depends on the relevance of the chosen validation suite and on the language neutrality of compression ratio.
+Multilingual corpora and radically different downstream tasks may require re-scoring.
+Group-DRO adds X\,\% extra proxy compute; ZipMix-Static offers a cheaper fallback.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Broader Impact Statement (required for DMLR)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\impact{%
+Compel-ZipMix reweights pre-training data using a cheap, model-free compression signal aligned to a chosen validation suite.
+By making mixture design transparent and inspectable (bucket assignments and per-document scores are released), the method can reduce the compute and energy cost of targeting a data mixture to a task.
+A potential concern is that any validation-suite-conditioned prior can encode the biases of that suite into the resulting checkpoint; practitioners should audit the chosen suite and the induced bucket weights before deployment.
+All datasets used are publicly available. }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Note: the bibliography style (plainnat) is set by dmlr2e.sty — do not
+% re-issue \bibliographystyle here or bibtex errors with a duplicate \bibstyle.

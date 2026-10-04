@@ -1,0 +1,42 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compel–ZipMix : ICLR 2025 submission draft with improved introduction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% https://docs.google.com/presentation/d/1XoQ24_KofQUOeSxLE_lNVjYAw0lMtsm9spF6ertwL7s/edit?slide=id.g2dc59faafd3_0_323#slide=id.g2dc59faafd3_0_323
+
+% https://chatgpt.com/g/g-p-67a3cf555c2081918746eaa9857f63a2-compel-pt-pre-training-via-compression-zip-fit/c/684f209f-3364-8001-97a9-8b1bf9b08397
+\documentclass{article}
+\usepackage{iclr2025_conference,times}
+\usepackage{amsmath,amsfonts}
+\input{math_commands.tex}
+
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{enumitem}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\title{Compel--ZipMix:\\
+Compression-Aligned Mixtures for Efficient\\
+Task-Aware Language-Model Pre-training}
+
+\author{Brando Miranda$^{1}$\thanks{Equal contribution.}\;
+        Elyas Obbad$^{1}$\footnotemark[1]\;
+        Sanmi Koyejo$^{1}$\\
+        $^{1}$Stanford University \\
+      \texttt{\{bmiranda,eobbad,sanmi\}@stanford.edu}
+}
+
+%\iclrfinalcopy  % <-- uncomment for camera-ready
+\begin{document}
+\maketitle
+
+%=========================  Abstract  ==============================%
+\input{00_abstract.tex}
+\input{01_introduction.tex}
+\input{02_method.tex}
+\input{03_experiments.tex}
+\input{04_dark_matter_scaling.tex}
+\input{05_discussion_and_limitations.tex}
+\bibliography{zipmix_refs}
+\bibliographystyle{iclr2025_conference}
+\end{document}

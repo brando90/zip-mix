@@ -1,0 +1,9 @@
+% !TEX root = main.tex
+\begin{abstract}
+Mixture composition is a pivotal yet under-explored axis of large-language-model pre-training.
+\textsc{DoReMi} learns domain weights via Group-DRO, but empirical replications report accuracy losses: its coarse, hand-defined domains blur signal and noise, and its worst-case objective begins from an uninformative uniform prior—two assumptions at odds with the No-Free-Lunch theorem \citep{wolpert1997no}.
+We present \emph{Compel-ZipMix}, which partitions the corpus into compression-ratio buckets and assigns each bucket a weight derived from a ZIP-based similarity to a small ``AGI'' validation suite.
+ZipMix includes a zero-cost \emph{Static} variant that samples directly from this alignment prior and a \emph{DRO} variant that refines the prior with a single Group-DRO pass.
+Using an X-parameter proxy on \textsc{The Pile}, ZipMix-Static outperforms a uniform mix by \textbf{Y\,pp}, while ZipMix-DRO reaches the same score \textbf{X$\times$ faster}; both mixtures transfer unchanged to $\times10$ and $\times100$ models, remaining below the three-order ``dark-matter'' scaling limit in the GPT-4 report.
+Because the prior depends solely on the chosen validation set, a single CPU-only ZIP-FIT pass is enough to retarget the mixture toward any new task suite, enabling \emph{practically free, domain-conditioned} foundation checkpoints such as \textsc{MMLU+MiniF2F} or \textsc{MMLU+FineWeb+ProofNet+MATH}.
+\end{abstract}

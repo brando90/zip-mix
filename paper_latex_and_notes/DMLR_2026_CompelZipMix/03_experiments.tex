@@ -1,0 +1,12 @@
+% !TEX root = 00_dmlr_compel_zipmix.tex
+\section{Experiments}\label{sec:experiments}
+\textbf{Setup.} Proxy size X; target sizes X$\,\times\,10$ and X$\,\times\,100$.
+Datasets: \textsc{The Pile}, \textsc{FineWeb-EDU}, and \textsc{DCLM}.
+Validation suite: MMLU-val, GSM8K-dev, MiniF2F-dev.
+
+\textbf{Main results.} ZipMix-Static beats uniform by +X\,pp.
+ZipMix-DRO gains an extra +Y\,pp and reaches baseline accuracy X$\times$ sooner.
+
+\textbf{Ablations.} Without the alignment prior, optimisation collapses into the noisiest bucket; replacing CR buckets with hand domains reproduces DoReMi's failure.
+
+%----------------------------------------------------------------------

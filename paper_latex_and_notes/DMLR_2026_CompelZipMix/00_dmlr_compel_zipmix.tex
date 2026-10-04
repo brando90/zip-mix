@@ -1,0 +1,60 @@
+% !TEX root = 00_dmlr_compel_zipmix.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Compel-ZipMix: Compression-Aligned Mixtures for Efficient Task-Aware
+%  Language-Model Pre-training
+%  DMLR (Data-centric Machine Learning Research) submission
+%
+%  Converted from the ICLR 2025 draft at ../../latex_paper/main.tex
+%  Style:   dmlr2e.sty  (from https://github.com/JmlrOrg/dmlr-style-file)
+%  Bib:     zipmix_refs.bib
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[twoside,11pt]{article}
+\usepackage{dmlr2e}
+
+\usepackage{amsmath,amsfonts,amssymb}
+
+% Math commands used throughout the paper (needs amsmath/amsfonts above)
+\input{math_commands.tex}
+
+\usepackage{url}
+\usepackage{enumitem}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+% Required by dmlr2e.sty — fill in before camera-ready submission
+\def\openreview{\url{https://openreview.net/forum?id=XXXX}}
+
+% Journal heading metadata — fill in before camera-ready submission
+% \dmlrheading{Volume}{Year}{pages}{submitted}{published}{id}{authors}
+
+% Running headers
+\ShortHeadings{Compel-ZipMix: Compression-Aligned Mixtures}{Miranda, Obbad \& Koyejo}
+
+\firstpageno{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\title{Compel--ZipMix: Compression-Aligned Mixtures for Efficient Task-Aware Language-Model Pre-training}
+
+\author{%
+  \name Brando Miranda\thanks{Equal contribution by Brando Miranda and Elyas Obbad.} \AND \name Elyas Obbad \AND
+  \name Sanmi Koyejo \\
+  \addr Department of Computer Science, Stanford University, Stanford, CA 94305, USA \\
+  \texttt{\{bmiranda, eobbad, sanmi\}@stanford.edu} }
+
+\editor{Handling Editor: TBD}
+
+\maketitle
+
+%=========================  Abstract  ==============================%
+\input{00_abstract.tex}
+\input{01_introduction.tex}
+\input{02_method.tex}
+\input{03_experiments.tex}
+\input{04_dark_matter_scaling.tex}
+\input{05_discussion_and_limitations.tex}
+\bibliography{zipmix_refs}
+
+\end{document}

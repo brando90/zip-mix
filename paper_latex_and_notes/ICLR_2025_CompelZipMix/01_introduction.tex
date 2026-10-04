@@ -1,0 +1,44 @@
+% !TEX root = main.tex
+\section{Introduction}\label{sec:intro}
+
+The quality of a pre-training \emph{mixture} is as influential as token count and parameter size.
+When high-entropy crawl dominates, large language models (LLMs) devote compute to memorising noise, and downstream performance stalls.
+
+\textsc{DoReMi} tackles mixture design with distributionally robust optimisation (Group-DRO).
+While its original study reported speed-ups, independent attempts often observe that DoReMi funnels probability mass into noisy domains and can reduce accuracy \citep{fan2023doge}.
+We trace this outcome to two linked assumptions:
+
+\textbf{H\textsubscript{prior}} — \emph{No task prior.} DoReMi starts from a uniform weighting of coarse domains (\emph{Wikipedia}, \emph{Books}, …).
+By the No-Free-Lunch theorem \citep{wolpert1997no}, a learner with no prior preference is free to prefer entropy; the optimiser thus boosts whichever bucket maximises loss—often noise.
+
+\textbf{H\textsubscript{max}} — \emph{Over-pessimistic objective.} The inner maximisation always targets the highest excess-loss domain, conflating ``hard because useful'' with ``hard because irreducible'' and systematically over-weighting diversity.
+
+\medskip
+\textbf{Compel-ZipMix.} To test and remedy these hypotheses we introduce two steps:
+
+1.
+\emph{Compression buckets} let the corpus self-partition by compression ratio, a model-free proxy for information density.
+
+2.
+\emph{Alignment prior} assigns each bucket a weight $\alpha^{(0)}_m\propto\sum_{d\in B_m}s(d)+\tau$ with $s(d)=\max_{v\in\cV}[1-\text{NCD}_{\text{zip}}(d,v)]$ and $\tau=10^{-3}$, where $\cV$ is a small validation suite (MMLU, GSM8K, MiniF2F, …).
+
+\emph{ZipMix-Static} samples directly from $\boldsymbol{\alpha}^{(0)}$ (addressing H\textsubscript{prior}); \emph{ZipMix-DRO} adds one Group-DRO refinement (tempering H\textsubscript{max}).
+We cap model size jumps to $10^{3}$ to avoid the empirical ``dark-matter'' deviation of scaling laws \citep{gpt4report,schaeffer2024predictive}.
+
+\medskip
+\textbf{Empirical preview.} On \textsc{The Pile} and \textsc{FineWeb} a proxy of X parameters trained with ZipMix-Static exceeds the uniform baseline by +Y\,pp on an AGI suite; ZipMix-DRO adds Y\,pp and reaches baseline accuracy X× faster.
+The mixture transfers unchanged to models $\times10$ and $\times100$ larger.
+
+\medskip
+\textbf{Free, task-conditioned checkpoints.} Because $\boldsymbol{\alpha}^{(0)}$ depends only on the validation corpus, re-scoring the data with a new suite—say \textsc{MMLU+MiniF2F} for maths or \textsc{MMLU+FineWeb+ProofNet+MATH+Putnam-AXIOM} for formal reasoning— requires a single ZIP-FIT sweep and an optional short proxy refresh, giving any lab the ability to mint \emph{domain-specialised yet broadly capable} foundation models on commodity hardware.
+
+\medskip
+\textbf{Contributions.}
+\begin{itemize}[leftmargin=1.15em,topsep=0pt,itemsep=0pt]
+\item We convert DoReMi's rumoured failure into two explicit hypotheses and validate them empirically.
+\item We introduce compression buckets plus alignment priors, yielding ZipMix-Static and ZipMix-DRO—cheap, robust, and task-aware.
+\item We demonstrate X× faster convergence and +Y\,pp accuracy gains, and release code, bucket assignments, and scoring scripts for reproducibility.
+\end{itemize}
+
+
+%-------------------------------------------------------------
