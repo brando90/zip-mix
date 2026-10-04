@@ -4,9 +4,15 @@
 
 **TLDR:** Bin-only weights cannot select better examples within a bin. Test alignment within fixed source×compression groups using fresh held-out questions; compare against direct scoring later to establish whether bins add value.
 
-10-04-2026. Design only; no execution is authorized by this note. It uses completed Experiment 04 evidence and frozen training/development diagnostics, without reading Experiment 05 or Experiment 06 outcomes. Existing runs and sources remain unchanged.
+10-04-2026. Design only; no execution is authorized by this note. The original proposal used completed Experiment 04 evidence and frozen training/development diagnostics before Experiment 05 or Experiment 06 outcomes were read. The dated execution-order update below uses completed Experiment 06 results; Experiment 05 outcomes remain unread. Existing runs and sources remain unchanged.
 
 **Recommendation:** test whether target alignment ranks useful examples *within* fixed source×compression strata. Match the full joint source/bin distribution across methods. Increasing the number of independently weighted strata alone would relax the exposure constraint, but would not identify useful within-stratum selection.
+
+## Execution-order update: 10-04-2026
+
+The [completed Experiment 06](../06_contrastive_validation_zipmix/results.md) produced nine fine-tuned models, all below the unchanged base on both target and retention accuracy: the base scored 404/500 = 80.8% and 285/500 = 57.0%, respectively. Contrastive minus source-matched target accuracy was −1.733 percentage points [95% interval −10.625, 7.159], raw/Holm p-val=1.0 (paired-seed Student-t interval; two-sided exact sign test of equal probabilities of higher accuracy among non-ties). These observations warrant training calibration before another selector is admitted; they do not identify the cause of the regression or establish contamination.
+
+First allocate a new training/validation tuning partition, separate from all reused benchmark test sets, and verify fine-tuning calibration against an unchanged-base control using only that validation partition. Predeclare its tuning allowance and acceptance criteria; choose no learning rate or other training setting from Experiment 05/06 test outcomes. The transform, nine-cell recipe and advance thresholds below remain a proposal, not authorization to repeat the setup despite its observed benchmark regression. Any training change supported by the new calibration must be frozen as a separate prospective version before selector admission, with fresh held-out evaluation and no silent changes to existing experiments.
 
 ## What the current evidence establishes
 
