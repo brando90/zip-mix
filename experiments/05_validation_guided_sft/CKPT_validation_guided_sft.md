@@ -2,6 +2,8 @@
 
 **Doc link:** <https://github.com/brando90/zip-mix/blob/main/experiments/05_validation_guided_sft/CKPT_validation_guided_sft.md>
 
+**TLDR:** Keep the healthy 21-cell version 2 run unchanged through completion. The base evaluation is complete; final comparisons require all frozen cells and audited prediction artifacts.
+
 Updated 10-04-2026 after actual launch at 12:08 PDT. The full 21-cell run is active and its unchanged-base evaluation is complete; this is not yet full-matrix completion.
 
 The parent coordinator authorized the initial public-data Qwen2.5-0.5B multiple-choice screen. One requested Opus 5.5 maximum-effort review identified a major short-string length confound before any training/evaluation. Version 1 remains preserved and untrained. The parent then authorized version 2's fixed-byte pack design and true/wrong-target control, with no additional model-review round.

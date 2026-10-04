@@ -2,13 +2,15 @@
 
 **Doc link:** <https://github.com/brando90/zip-mix/blob/main/experiments/05_validation_guided_sft/results.md>
 
+**TLDR:** The fixed-byte fine-tuning study is running: 7 of 21 training cells and the base evaluation are complete, with zero failures as of 10-04-2026 12:50 PDT. Benchmark comparisons remain pending until the full matrix is available.
+
 Updated 10-04-2026. Active condition: version 2, using fixed-byte compression packs and true/wrong-target controls. The full 21-cell run started at 12:08 PDT on a dedicated A100. The unchanged-base evaluation has completed and training is active; final paired comparisons remain pending.
 
 Version 1 is preserved as an untrained calibration after the requested single Opus 5.5 maximum-effort review identified length confounding. The coordinator authorized version 2 prospectively before benchmark evaluation; the review was not repeated.
 
 | Stage | Verified status |
 |---|---|
-| Immutable source/model revisions | Preserved from version 1 |
+| Immutable model/data revisions | Pinned; revised scoring/training source frozen at `611423b` |
 | Candidate pool | 9,797 examples; 351 disjoint source-specific packs |
 | Development targets | Eight true and eight wrong-target views, exactly 4,096 real bytes each |
 | Reserve and tails | 256 CommonsenseQA records reserved outside training; 63 underfilled-tail examples excluded from every arm |
@@ -16,8 +18,8 @@ Version 1 is preserved as an untrained calibration after the requested single Op
 | Split audit | Zero exact or declared 13-word overlap hits between candidates and protected true/wrong/evaluation records |
 | Deterministic validation | 38/38 tests passed; input/source hashes and all scoring views reproduced |
 | Method support | All seven methods available; Compel support 9,722/9,797 |
-| Base evaluation | Not run by implementation worker |
-| Training | 0/21 measured cells completed by implementation worker |
+| Base evaluation | Complete, verified by the execution supervisor |
+| Training | 7/21 complete, 0 failed as of 10-04-2026 12:50 PDT; outcomes uninspected |
 
 Public [version 2 manifest](expt_v2/data_manifest.json) identity: `0d6dec93e7d7ccffd87f95e7ebd19e78c84ec72a546007b122888789aba5cb44`. The scientific procedure is [expt_v2/PROTOCOL.md](expt_v2/PROTOCOL.md).
 
