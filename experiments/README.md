@@ -11,6 +11,6 @@
 | [02_alignment_prior_analysis](02_alignment_prior_analysis/README.md) | Public corpus compression distributions and priors | Existing 20,000-document corpus pilots; full prior analysis incomplete |
 | [03_zipmix_fixes_doremi_proxy_mixtures](https://github.com/brando90/zip-mix/blob/main/experiments/03_zipmix_doremi_fix/README.md) | Earlier robust-optimization proxy-mixture proposal | Designed, not run |
 | [04_validation_guided_zipmix](04_validation_guided_zipmix/README.md) | Nine methods × three seeds; from-scratch target/broad held-out language-model loss | Full 27-cell run active; [live results](04_validation_guided_zipmix/results.md) |
-| [05_validation_guided_sft](05_validation_guided_sft/README.md) | Seven methods × three seeds; Qwen2.5-0.5B supervised multiple-choice fine-tuning | Revised fixed-byte v2 prepared; [live results](05_validation_guided_sft/results.md) |
+| [05_validation_guided_sft](05_validation_guided_sft/README.md) | Seven methods × three seeds; Qwen2.5-0.5B supervised multiple-choice fine-tuning | Full 21-cell fixed-byte v2 run active; [live results](05_validation_guided_sft/results.md) |
 
 Every active experiment keeps its code, versioned protocol, data manifest, resumable checkpoint and results in its canonical folder. Raw data/model files are ignored. Updates describe actual completion separately from a successful launch. Numerical evidence and complete denominators determine claims.

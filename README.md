@@ -17,7 +17,7 @@ A small validation set describes a chosen target distribution. Success on that d
 | Experiment | Purpose | Latest status |
 |---|---|---|
 | [04: validation-guided pretraining](experiments/04_validation_guided_zipmix/README.md) | From-scratch mechanism screen: nine methods, three paired seeds, held-out target and broad loss | Full 27-cell run active; results pending |
-| [05: validation-guided supervised fine-tuning](experiments/05_validation_guided_sft/README.md) | Pretrained-model benchmark accuracy with fixed labeled-token budgets | Revised 21-cell fixed-byte experiment prepared; results pending |
+| [05: validation-guided supervised fine-tuning](experiments/05_validation_guided_sft/README.md) | Pretrained-model benchmark accuracy with fixed labeled-token budgets | Full 21-cell fixed-byte run active; results pending |
 | [02: prior analysis](experiments/02_alignment_prior_analysis/README.md) | Compression distributions from public corpus pilots | Existing cached pilot reused with its limitations recorded |
 | [03: proxy-mixture proposal](https://github.com/brando90/zip-mix/blob/main/experiments/03_zipmix_doremi_fix/README.md) | Earlier larger pretraining design | Preserved proposal, not executed by the new screen |
 
@@ -28,6 +28,20 @@ A small validation set describes a chosen target distribution. Success on that d
 For document `d`, compression ratio is compressed bytes divided by raw bytes. Compression bins partition the corpus. A bucket prior sums nonnegative development-alignment scores and then normalizes across nonempty buckets. A hierarchical sampler selects a bucket and then training data within it.
 
 The historical Zip-Mix draft uses maximum similarity over development examples. The published ZIP-FIT algorithm uses mean similarity; experiments label these separately. The runnable pretraining screen uses equal-length token blocks and weights by their mass, a documented extension of the draft's document-level sampler.
+
+```mermaid
+flowchart LR
+    T[Candidate training data] --> B[Compression bins]
+    T --> A[Compression similarity]
+    D[Separate development target] --> A
+    A --> W[Sampling weights per bin]
+    B --> W
+    W --> M[Train a fresh model]
+    C[Population and learned-mixture controls] --> M
+    M --> E[Evaluate unused target and retention examples]
+```
+
+**Development targeting must improve outcomes on unused examples.** Evaluation scores never feed back into the frozen mixture, training budget, or stopping decision. Fixed training seeds pair methods; separate costs account for preprocessing and learned-mixture reference/proxy training.
 
 When alignment scores are nearly constant, the sum-of-scores prior is almost the population prior. A concentrated histogram alone therefore cannot demonstrate useful targeting. Comparisons include population sampling, uniform buckets, Compel, direct compression alignment, and a shuffled-alignment control.
 

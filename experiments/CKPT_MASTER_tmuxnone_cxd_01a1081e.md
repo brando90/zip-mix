@@ -2,7 +2,7 @@
 
 **Doc link:** <https://github.com/brando90/zip-mix/blob/main/experiments/CKPT_MASTER_tmuxnone_cxd_01a1081e.md>
 
-**TLDR:** The reviewed 27-cell pretraining experiment is running. A prospective 21-cell fine-tuning version fixes the short-string scoring problem and adds a wrong-target control; its results remain pending.
+**TLDR:** The reviewed 27-cell pretraining experiment is running. The revised 21-cell fine-tuning run is active on a second A100, with fixed-byte scoring and a wrong-target control. Both final comparisons remain pending.
 
 Updated: 10-04-2026 12:00 PDT
 
@@ -12,12 +12,12 @@ Local Codex coordinator for Zip-Mix. Exact host, process, terminal-session and r
 
 ## Ownership
 
-Preserve pre-existing staged deletions, Experiment 03 rename/edits, paper edits and Experiment 02 materials. Only explicit task-owned paths are committed. Initialization commit `14c4d4f` is pushed. Raw data, model weights, checkpoints and host receipts remain ignored/private.
+Preserve pre-existing staged deletions, Experiment 03 rename/edits, paper edits and Experiment 02 materials. Only explicit task-owned paths are committed. Initialization commit `14c4d4f` and prospective repair commit `611423b` are pushed. Raw data, model weights, checkpoints and host receipts remain ignored/private.
 
 ## Scientific state
 
 - [Experiment 04](04_validation_guided_zipmix/results.md): frozen nine-method × three-seed from-scratch screen, 27 cells. Started 10-04-2026 11:58 PDT on one A100. Bound live process and monitor verified; first cell passed 896/2,048 steps with no failure. Deadline 12 hours, ample relative to measured pace. Five transferred data hashes and 23 remote tests passed.
-- [Experiment 05](05_validation_guided_sft/results.md): retain short-string v1 as **untrained calibration**. Prospective v2 uses 351 real 4,096-byte training packs, 8 matched true-target and 8 wrong-target development views, seven methods × three seeds (21 cells), and one unchanged-base evaluation. A separate idle A100 may run this concurrently after final source/data checks. Deadline 6 hours. No settings selected from test outcomes.
+- [Experiment 05](05_validation_guided_sft/results.md): retain short-string v1 as **untrained calibration**. Prospective v2 uses 351 real 4,096-byte training packs, 8 matched true-target and 8 wrong-target development views, seven methods × three seeds (21 cells), and one unchanged-base evaluation. Started at 12:08 PDT on a separately verified idle A100 after 38 remote tests and all 15 data hashes passed. The unchanged-base evaluation completed. Deadline 6 hours. No settings selected from test outcomes.
 - Requested review: six implementation/documentation fixes, no critical issue, one major scientific concern. The concern motivated v2; deterministic checks verify the correction. No second review is authorized or needed under the requested one-round procedure.
 
 ## Completion contract
@@ -28,4 +28,4 @@ Three seeds provide a descriptive mechanism screen: the smallest two-sided exact
 
 ## Next actions
 
-Finish fine-tuning source checks, commit only owned changes, transfer verified v2 data and launch its full 21 cells. Keep pretraining healthy. Analyze complete artifacts, publish compact numerical receipts/figures and update the root index. No human decision is waiting.
+Both full runs are admitted and healthy. Pretraining has reached 15/27 cells with no failures; fine-tuning base evaluation completed and training started. Keep both healthy. Analyze complete artifacts, publish compact numerical receipts/figures and update the root index. No human decision is waiting.

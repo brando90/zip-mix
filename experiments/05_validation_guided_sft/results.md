@@ -2,7 +2,7 @@
 
 **Doc link:** <https://github.com/brando90/zip-mix/blob/main/experiments/05_validation_guided_sft/results.md>
 
-Updated 10-04-2026. Active condition: version 2, using fixed-byte compression packs and true/wrong-target controls. Model training and benchmark performance remain unmeasured by the implementation worker.
+Updated 10-04-2026. Active condition: version 2, using fixed-byte compression packs and true/wrong-target controls. The full 21-cell run started at 12:08 PDT on a dedicated A100. The unchanged-base evaluation has completed and training is active; final paired comparisons remain pending.
 
 Version 1 is preserved as an untrained calibration after the requested single Opus 5.5 maximum-effort review identified length confounding. The coordinator authorized version 2 prospectively before benchmark evaluation; the review was not repeated.
 
@@ -27,9 +27,9 @@ Public [version 2 manifest](expt_v2/data_manifest.json) identity: `0d6dec93e7d7c
 
 **Changing the development target changes the frozen training mixture.** All scoring views contain 4,096 real bytes; values are exact finite-pool probabilities, not performance estimates. Source and pack-density confounds remain.
 
-The implementation agent did not launch graphics-processing-unit training. The parent coordinator owns the durable full-manifest launch and will update these records with run identity and measured receipts. A completed calibration or changed prior is not a completed scientific experiment.
+Source revision `611423b` was verified in a separate execution checkout. All 15 input-file hashes and both preparation-source hashes matched; 38 remote tests passed. A persistent session and task-owned supervisor run the entire 21-cell manifest, check the separate base evaluation and emit bound progress receipts. Private host details remain outside this repository.
 
-**TLDR-end:** [zip-mix: SFT v2] The prospective length-controlled inputs and distinct target controls are ready; all 21 model-training cells and the base evaluation remain pending in this implementation checkpoint.
+**TLDR-end:** [zip-mix: SFT v2] The full 21-cell experiment is running with its base evaluation complete. Final paired accuracy comparisons remain pending.
 
 **Snapshot:**
 ```text

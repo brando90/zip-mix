@@ -2,7 +2,7 @@
 
 **Doc link:** <https://github.com/brando90/zip-mix/blob/main/experiments/05_validation_guided_sft/README.md>
 
-Version 2 is the active prospective experiment. Updated 10-04-2026: its inputs are frozen and deterministic validation is complete; measured training and benchmark outcomes are pending.
+Version 2 is the active prospective experiment. Updated 10-04-2026: the full 21-cell run started at 12:08 PDT on a dedicated A100 after 38 remote tests and all input/source hash checks passed. The unchanged-base evaluation completed; final paired outcomes remain pending.
 
 The user-requested single Opus 5.5 maximum-effort quality-assurance review found that version 1's short-string compression scores mostly tracked length. [Version 1 remains an untrained calibration](expt_v1/STATUS.md). Version 2 repairs the scoring unit before training: every candidate and development view contains exactly 4,096 real bytes, with a matched wrong-target control. No artificial padding or repetition fills views.
 
