@@ -1,0 +1,36 @@
+{
+  "expected_training_cells": 9,
+  "experiment05_benchmark_metrics_inspected": false,
+  "manifest_id": "242d063db24573adc525b7fb523cc72bc0b6a01cb7b4f36248b823f93bccc1a8",
+  "prospective_design_frozen_at": "2026-10-04T19:35:34.168239+00:00",
+  "recorded_at": "2026-10-04T19:44:54.505908+00:00",
+  "required_base_evaluations": 1,
+  "sha256": {
+    "../CKPT_contrastive_validation.md": "8a6d23fe6c3cfc42895d7ba8febfc6988dd9d12f755fb1a2cce1dc2358e930d9",
+    "../INDEX_ENTRY.md": "06defe15ec3b1f64a57348b6f6596485ae811cf1c6c5de647f4139b3b65c52d4",
+    "../README.md": "6c57fbdeb4e20be8009e7545bacebb54f8cf9d2f8b024ea652306bc6fdc3f6dc",
+    "../results.md": "9c1cbc01820a8a6fbc2873c66df309c18bc99206702dd0e5c3f2b838868ffefb",
+    "PROTOCOL.md": "bb693ccc7e0393f52abdb34dd2439df1dfd41fcdfa7875a19cb7e676b2ef7b0d",
+    "analyze_sft.py": "0d1a121596055c9b1ff164945488b6123f8fb3b415c627b358ad2a1b382e90db",
+    "cc.md": "cc84b53d30947ae6c5be098bd0af2285462c6bde6df35df28b6f55e7d361670e",
+    "common.py": "b727795c638d4316460826800b327bd8dd5fb5ef423113d8b581bf82c6d4d241",
+    "data_manifest.json": "9d5e369847df0be3b5b464dc1f7f6a505e35b28e27ddc1f0e86ffce3064781c9",
+    "prepare_selection.py": "0a4d0d73d114eac719d89c7142c25c6d0af75f489f64305cf5cbdad9b6f166df",
+    "test_analysis.py": "a99a376a2911861d575598e3b88dff1f029da4eaecb8d53e2ba823175f6b89de",
+    "test_selection.py": "e704fbec9c1f87cd9062ddc9ac945c34251e8ee5a3d252f80806f9f84af5736d",
+    "test_trainer.py": "5a6d155efe87277e8748cdd53e709fefdc0f5a795d7297920bd4d15d04dd64a7",
+    "train_sft.py": "d5ec9f607bc5f5d4d7c8f480e9893056532f73b30f689975df8cece5223f2d1e"
+  },
+  "tests": {
+    "all_12_input_file_hashes_verified": true,
+    "all_source_masses_matched_within": 1e-12,
+    "compile_passed": true,
+    "failed": 0,
+    "independent_selector_reconstruction_bit_identical": true,
+    "passed": 35,
+    "seconds": 5.46,
+    "whitespace_check_passed": true
+  },
+  "trainer_byte_identical_to_parent": true,
+  "training_launched": false
+}

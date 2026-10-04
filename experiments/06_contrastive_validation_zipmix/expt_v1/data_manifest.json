@@ -1,0 +1,247 @@
+{
+  "available_training_cells": 9,
+  "bucket_boundaries": [
+    0.73095703125,
+    0.75537109375,
+    0.772705078125,
+    0.78369140625
+  ],
+  "budget": {
+    "checkpoint_interval_operational_change": "64 steps instead of parent16; learning and optimizer settings unchanged; wall-time comparisons confounded by less checkpoint I/O",
+    "maximum_device_hours": 2,
+    "supervised_tokens_per_cell": 2048,
+    "training_cells": 9
+  },
+  "config": {
+    "alignment_views": 8,
+    "batch_size": 16,
+    "checkpoint_every": 64,
+    "compression_bins": 5,
+    "direct_selection_fraction": 0.25,
+    "evaluation_cap_per_split": 500,
+    "gradient_clip": 1.0,
+    "gzip_level": 6,
+    "learning_rate": 2e-05,
+    "max_infrastructure_resumes_per_cell": 1,
+    "max_input_length": 256,
+    "minimum_matched_target_views": 2,
+    "score_byte_window": 4096,
+    "selector_permutation_seed": 1606,
+    "steps": 128,
+    "training_cap_per_domain": 3000,
+    "warmup_steps": 8,
+    "weight_decay": 0.01,
+    "wrongtarget_reserved_records": 256
+  },
+  "counts": {
+    "retention": 500,
+    "target": 500,
+    "trailing_training_examples_discarded": 63,
+    "train": 9797,
+    "training_packs": 351,
+    "true_views": 8,
+    "wrong_target_reserved": 256,
+    "wrong_views": 8
+  },
+  "created_at": "2026-10-04T19:35:34.168239+00:00",
+  "domains": [
+    "arc_challenge",
+    "commonsense_qa",
+    "openbookqa",
+    "sciq"
+  ],
+  "expected_training_cells": 9,
+  "experiment": "06_contrastive_validation_zipmix",
+  "files": {
+    "pack_scores.npz": "336a255ee06e6e8692ad19de6aa39c973605589cc99ca3b92572ebfe209b4893",
+    "retention.npz": "ad6adaa593b0cf99301d439c60aa2fa6b3a97dd37b96f48c0c4e4eb846db75e3",
+    "selection.npz": "77ee13d924724bf8d13007ae80d28e2f673d182036731812b574997a57dfb073",
+    "target.npz": "f6d40bb392c5ad0e93d2de26a82ef95be99043f7caf9b10d9af3a1f81dd2cf77",
+    "tokenizer/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+    "tokenizer/chat_template.jinja": "44d5f08f3f72b837eaad09f13a54c1f9f4eb58d75240334548b7fd52a5437fa5",
+    "tokenizer/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+    "tokenizer/special_tokens_map.json": "6676f091c8bc4d1b50146427cfde92073402866b87b6e39223227931b70083e9",
+    "tokenizer/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+    "tokenizer/tokenizer_config.json": "60f6e7bc948cedd377a20f01d022ef664d026fbc93d72e0a9bdac233f8632181",
+    "tokenizer/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "train.npz": "e1aef754847620f3554bb501b6b506fa364919a6f6ea9ea08a0af67913d4da18"
+  },
+  "label_tokens": [
+    362,
+    425,
+    356,
+    422,
+    468
+  ],
+  "leakage_provenance": {
+    "heldout_arrays_loaded_by_preparation": false,
+    "new_examples": 0,
+    "new_scoring_views": 0,
+    "parent_13gram_postfilter_hits": 0,
+    "parent_exact_postfilter_hits": 0
+  },
+  "limitations": [
+    "exploratory three-seed follow-up and unadjusted descriptive intervals",
+    "same public benchmark pools as parent; no new independent held-out replication",
+    "input-token compute varies at fixed supervised answer-token budget",
+    "source redundancy, pack density, overflow inheritance and wrong-target choice remain confounders",
+    "cross-experiment comparisons deferred until both full matrices complete and labeled exploratory"
+  ],
+  "manifest_id": "242d063db24573adc525b7fb523cc72bc0b6a01cb7b4f36248b823f93bccc1a8",
+  "method_status": {
+    "contrastive_shuffled": "available",
+    "contrastive_zipmix": "available",
+    "source_matched": "available"
+  },
+  "methods": [
+    "contrastive_zipmix",
+    "source_matched",
+    "contrastive_shuffled"
+  ],
+  "mixtures": {
+    "contrastive_shuffled": {
+      "bucket_mass": [
+        0.12174602910620905,
+        0.20540849293748498,
+        0.2570550633696421,
+        0.20139627451011435,
+        0.21439414007656335
+      ],
+      "effective_examples": 9723.662971422556,
+      "expected_input_tokens_per_example": 48.49258836243722,
+      "nonzero_examples": 9797,
+      "source_mass": {
+        "arc_challenge": 0.10892682419834593,
+        "commonsense_qa": 0.26974986153268077,
+        "openbookqa": 0.30744047765688653,
+        "sciq": 0.3138828366120867
+      }
+    },
+    "contrastive_zipmix": {
+      "bucket_mass": [
+        0.21387335534999993,
+        0.5073238121457452,
+        0.2382385110201544,
+        0.028591605575828776,
+        0.011972715908266655
+      ],
+      "effective_examples": 5308.486854438111,
+      "expected_input_tokens_per_example": 49.82747627685566,
+      "nonzero_examples": 9797,
+      "source_mass": {
+        "arc_challenge": 0.19908172363944887,
+        "commonsense_qa": 0.06393951518485927,
+        "openbookqa": 0.1537688972190902,
+        "sciq": 0.5832098639566017
+      }
+    },
+    "source_matched": {
+      "bucket_mass": [
+        0.2259567270663909,
+        0.3799363770187855,
+        0.22721150745070695,
+        0.08927518194106529,
+        0.0776202065230732
+      ],
+      "effective_examples": 6282.627502845933,
+      "expected_input_tokens_per_example": 49.72029253726508,
+      "nonzero_examples": 9797,
+      "source_mass": {
+        "arc_challenge": 0.19908172363944884,
+        "commonsense_qa": 0.06393951518485927,
+        "openbookqa": 0.1537688972190902,
+        "sciq": 0.5832098639566018
+      }
+    }
+  },
+  "model": "Qwen/Qwen2.5-0.5B",
+  "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "pad_token_id": 151643,
+  "parent": {
+    "experiment": "05_validation_guided_sft/expt_v2",
+    "input_sha256": {
+      "pack_scores.npz": "336a255ee06e6e8692ad19de6aa39c973605589cc99ca3b92572ebfe209b4893",
+      "retention.npz": "ad6adaa593b0cf99301d439c60aa2fa6b3a97dd37b96f48c0c4e4eb846db75e3",
+      "selection.npz": "d5e5a2f83702dd1f862d7c035a851a775c0d57f4659293da10deba1e17d71dc4",
+      "target.npz": "f6d40bb392c5ad0e93d2de26a82ef95be99043f7caf9b10d9af3a1f81dd2cf77",
+      "tokenizer/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+      "tokenizer/chat_template.jinja": "44d5f08f3f72b837eaad09f13a54c1f9f4eb58d75240334548b7fd52a5437fa5",
+      "tokenizer/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+      "tokenizer/special_tokens_map.json": "6676f091c8bc4d1b50146427cfde92073402866b87b6e39223227931b70083e9",
+      "tokenizer/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+      "tokenizer/tokenizer_config.json": "60f6e7bc948cedd377a20f01d022ef664d026fbc93d72e0a9bdac233f8632181",
+      "tokenizer/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "train.npz": "e1aef754847620f3554bb501b6b506fa364919a6f6ea9ea08a0af67913d4da18"
+    },
+    "manifest_id": "0d6dec93e7d7ccffd87f95e7ebd19e78c84ec72a546007b122888789aba5cb44",
+    "public_manifest": "../../05_validation_guided_sft/expt_v2/data_manifest.json",
+    "reused_data_files": [
+      "train.npz",
+      "target.npz",
+      "retention.npz",
+      "pack_scores.npz",
+      "tokenizer/added_tokens.json",
+      "tokenizer/chat_template.jinja",
+      "tokenizer/merges.txt",
+      "tokenizer/special_tokens_map.json",
+      "tokenizer/tokenizer.json",
+      "tokenizer/tokenizer_config.json",
+      "tokenizer/vocab.json"
+    ],
+    "storage": "byte-identical local snapshot of necessary parent arrays/tokenizer; no raw question text copied"
+  },
+  "preparation_code": {
+    "common.py": "b727795c638d4316460826800b327bd8dd5fb5ef423113d8b581bf82c6d4d241",
+    "prepare_selection.py": "0a4d0d73d114eac719d89c7142c25c6d0af75f489f64305cf5cbdad9b6f166df"
+  },
+  "prospective_design": {
+    "basis": "training/development finite-pool scores and completed Experiment04 diagnostics only",
+    "experiment05_benchmark_metrics_inspected": false,
+    "timestamp_meaning": "New selector vectors and protocol frozen before this preparation read any Experiment05 benchmark outcomes"
+  },
+  "required_base_evaluation": true,
+  "reused_trainer_sha256": "d5ec9f607bc5f5d4d7c8f480e9893056532f73b30f689975df8cece5223f2d1e",
+  "schema": 3,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "selector": {
+    "permutation_seed": 1606,
+    "positive_examples": 5512,
+    "positive_packs": 210,
+    "primary": "per-pack max(true_max-wrong_max,0), inherited by each example, summed per bin, uniform within bin",
+    "shuffled": "one fixed permutation of positive pack contrast scores before inheritance and bucket aggregation",
+    "source_matched": "same exact primary source masses, uniform within each source",
+    "zero_mass": "explicit unavailable; no substituted prior"
+  },
+  "source_revisions": {
+    "arc_challenge": {
+      "config": "ARC-Challenge",
+      "repository": "allenai/ai2_arc",
+      "revision": "210d026faf9955653af8916fad021475a3f00453"
+    },
+    "commonsense_qa": {
+      "config": null,
+      "repository": "tau/commonsense_qa",
+      "revision": "94630fe30dad47192a8546eb75f094926d47e155"
+    },
+    "openbookqa": {
+      "config": "main",
+      "repository": "allenai/openbookqa",
+      "revision": "388097ea7776314e93a529163e0fea805b8a6454"
+    },
+    "sciq": {
+      "config": null,
+      "repository": "allenai/sciq",
+      "revision": "2c94ad3e1aafab77146f384e23536f97a4849815"
+    }
+  },
+  "total_variation": {
+    "contrastive_zipmix_vs_contrastive_shuffled": 0.3940426454520602,
+    "contrastive_zipmix_vs_source_matched": 0.21356165055663617,
+    "source_matched_vs_contrastive_shuffled": 0.35948192678561786
+  },
+  "version": "contrastive_v1"
+}
