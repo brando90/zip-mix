@@ -1,0 +1,42 @@
+{
+  "scope": "deterministic frozen-pool sampler description; no training outcomes",
+  "seed": 0,
+  "rows": [
+    {
+      "method": "token_proportional",
+      "biomedical_token_mass": 0.14828893651270808,
+      "effective_blocks": 103123.0,
+      "nonzero_blocks": 103123
+    },
+    {
+      "method": "zipmix_static",
+      "biomedical_token_mass": 0.1520324955271787,
+      "effective_blocks": 102715.13695972928,
+      "nonzero_blocks": 103123
+    },
+    {
+      "method": "shuffled_zipmix",
+      "biomedical_token_mass": 0.1482776309460555,
+      "effective_blocks": 103122.71422666269,
+      "nonzero_blocks": 103123
+    },
+    {
+      "method": "direct_zipfit",
+      "biomedical_token_mass": 0.18170267140161242,
+      "effective_blocks": 99011.19552890491,
+      "nonzero_blocks": 103123
+    },
+    {
+      "method": "compel_filter",
+      "biomedical_token_mass": 0.13907083939835033,
+      "effective_blocks": 49464.00000000001,
+      "nonzero_blocks": 49464
+    },
+    {
+      "method": "uniform_bucket",
+      "biomedical_token_mass": 0.1076984557493271,
+      "effective_blocks": 3942.0270847483775,
+      "nonzero_blocks": 103123
+    }
+  ]
+}

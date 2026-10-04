@@ -1,0 +1,9 @@
+expt_v*/data/
+expt_v*/runs/
+expt_v*/smoke_runs/
+expt_v*/timing_runs/
+*.pt
+*.bin
+*.safetensors
+private/
+

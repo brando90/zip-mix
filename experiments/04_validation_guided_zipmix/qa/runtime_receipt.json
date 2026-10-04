@@ -1,0 +1,14 @@
+{
+  "review_model": "claude-opus-5-5",
+  "effort_requested_and_cli_flag": "max",
+  "permission_flag": "--dangerously-skip-permissions",
+  "auth_route": "existing subscription; provider key variables removed",
+  "actual_model_verified": "native session and final modelUsage both claude-opus-5-5",
+  "single_review_round": true,
+  "verdict": "FIXED",
+  "remaining_critical": 0,
+  "remaining_major": 1,
+  "major_resolution": "Prospective Experiment05 v2 uses fixed4096-byte packed scoring and mismatched-target control; original v1 retained untrained. No broad validation-alignment claim from v1.",
+  "tests_at_review": 50,
+  "recorded_at": "10-04-2026 11:50 PDT"
+}

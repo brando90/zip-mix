@@ -1,0 +1,65 @@
+{
+  "source_sha256": "9c7f882d25684858ab3194b26e93d5916fa7840724434962aa4494e870e640e8",
+  "source": "Experiment 02 cached monology/pile-uncopyrighted streaming pilot; 20000 source documents",
+  "source_hub_revision": "unavailable in inherited pilot; frozen local source hash recorded",
+  "target_domains": [
+    "PubMed Abstracts",
+    "PubMed Central"
+  ],
+  "domains": {
+    "ArXiv": 0,
+    "DM Mathematics": 1,
+    "FreeLaw": 2,
+    "Github": 3,
+    "Pile-CC": 4,
+    "PubMed Abstracts": 5,
+    "PubMed Central": 6,
+    "StackExchange": 7,
+    "USPTO Backgrounds": 8,
+    "Wikipedia (en)": 9
+  },
+  "train_documents": 14341,
+  "duplicate_documents": 2,
+  "decontamination_removed_documents": 623,
+  "train_blocks": 103123,
+  "target_eval_blocks": 128,
+  "broad_eval_blocks": 512,
+  "dev_blocks": 64,
+  "vocab_size": 8192,
+  "seq_len": 128,
+  "train_token_capacity": 13199744,
+  "score_definition": "original max(1-NCD); mean_score is published ZIP-FIT aggregation; gzip level6 fixed1024-byte prefix windows",
+  "score_scale": "raw similarities can be negative; sampling clips to zero explicitly",
+  "raw_negative_max_scores": 13,
+  "raw_negative_mean_scores": 40,
+  "compression": "lz4.frame default on first8192-byte document prefix; upper bucket open-ended",
+  "sampling_unit": "128-token within-document block; alpha sums block scores; token-proportional extension of document formula",
+  "decontamination": "normalized exact full-document dedup plus any shared13-word-gram in retained8192-byte prefixes; train vs dev/test",
+  "baseline_bucket_mass": [
+    0.11437797581528854,
+    0.17521794362072476,
+    0.2660900090183567,
+    0.24597810381777102,
+    0.15845155784839463,
+    0.03906984862736732,
+    0.0008145612520970104
+  ],
+  "zipmix_bucket_mass": [
+    0.09649888243633732,
+    0.1740145805562514,
+    0.2814200109353665,
+    0.2501453621020328,
+    0.15966135092938036,
+    0.037810940203494285,
+    0.0004488728371373816
+  ],
+  "total_variation_from_token_proportional": 0.020707053282257273,
+  "seconds": 54.9831600189209,
+  "files": {
+    "train.npz": "df2e5044cc01e825c351c4432f44c89a27477e867f7c531923be776fd43e6ddd",
+    "eval.npz": "5f335a2be09d0b7bfa6262f1c0cdac2ed7c80c7ab36b528bc96e449978103f96",
+    "tokenizer.json": "c2850028ba5cf1016fceed878da3ec55aa183f87714eaf6b56b314199158a5c9",
+    "dev.npz": "fa1c72ba24ffde01c3996699d2cb05d8059bdc58e661ee9f355ff6f3986bbd39",
+    "split_manifest.json": "b7e46f4cec0eff981a483cffdcfb933ef50e5bbe5d008b2575af1371c2ea3dbe"
+  }
+}

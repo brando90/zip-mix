@@ -1,0 +1,312 @@
+{
+  "bucket_boundaries": [
+    1.0596026490066226,
+    1.1346153846153846,
+    1.1754385964912282,
+    1.2169811320754718
+  ],
+  "bucket_counts": [
+    2022,
+    2023,
+    2024,
+    2001,
+    2046
+  ],
+  "config": {
+    "alignment_views": 64,
+    "batch_size": 16,
+    "checkpoint_every": 16,
+    "compression_bins": 5,
+    "direct_selection_fraction": 0.25,
+    "evaluation_cap_per_split": 500,
+    "gradient_clip": 1.0,
+    "gzip_level": 6,
+    "learning_rate": 2e-05,
+    "max_infrastructure_resumes_per_cell": 1,
+    "max_input_length": 256,
+    "score_byte_window": 1024,
+    "steps": 128,
+    "training_cap_per_domain": 3000,
+    "warmup_steps": 8,
+    "weight_decay": 0.01
+  },
+  "conversion_rejections": {
+    "alignment": {
+      "Duplicate answer options": 3
+    },
+    "arc_challenge:train": {
+      "Duplicate answer options": 2
+    },
+    "commonsense_qa:train": {
+      "Duplicate answer options": 122
+    },
+    "openbookqa:train": {
+      "Duplicate answer options": 3
+    },
+    "retention": {
+      "Duplicate answer options": 24
+    },
+    "sciq:train": {
+      "Duplicate answer options": 36
+    },
+    "target": {
+      "Duplicate answer options": 9
+    }
+  },
+  "counts": {
+    "alignment": 64,
+    "retention": 500,
+    "target": 500,
+    "train": 10116
+  },
+  "created_at": "2026-10-04T18:31:42.340946+00:00",
+  "domain_stats": {
+    "arc_challenge": {
+      "chosen": 1116,
+      "eligible": 1116,
+      "exclusions": {
+        "training_duplicate_question": 1
+      },
+      "raw_valid_records": 1117
+    },
+    "commonsense_qa": {
+      "chosen": 3000,
+      "eligible": 9618,
+      "exclusions": {
+        "training_duplicate_question": 1
+      },
+      "raw_valid_records": 9619
+    },
+    "openbookqa": {
+      "chosen": 3000,
+      "eligible": 4828,
+      "exclusions": {
+        "training_duplicate_question": 126
+      },
+      "raw_valid_records": 4954
+    },
+    "sciq": {
+      "chosen": 3000,
+      "eligible": 11540,
+      "exclusions": {
+        "heldout_content_13gram": 14,
+        "heldout_exact": 19,
+        "training_duplicate_question": 70
+      },
+      "raw_valid_records": 11643
+    }
+  },
+  "domains": [
+    "arc_challenge",
+    "commonsense_qa",
+    "openbookqa",
+    "sciq"
+  ],
+  "elapsed_seconds": 34.45772683300311,
+  "expected_training_cells": 18,
+  "files": {
+    "identities.json": "1885e8d38a132d62a84adc9e262a401c738a6e0308fb72a1c257f9ae1933f536",
+    "records.jsonl": "fb49a9da841beb9f828189a0eedc7319ce332818816e7aa80860ffc1ccfa0ade",
+    "removed_records.json": "5f6882a9de06d610481b0a80e1aab4e8f007169615120810c33d5b537fc1bc24",
+    "retention.npz": "ad6adaa593b0cf99301d439c60aa2fa6b3a97dd37b96f48c0c4e4eb846db75e3",
+    "selection.npz": "41b19368fc7c0f6c71057d13bf30535b97e969da2a8cb3e53432162a359bc1a5",
+    "target.npz": "f6d40bb392c5ad0e93d2de26a82ef95be99043f7caf9b10d9af3a1f81dd2cf77",
+    "tokenizer/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+    "tokenizer/chat_template.jinja": "44d5f08f3f72b837eaad09f13a54c1f9f4eb58d75240334548b7fd52a5437fa5",
+    "tokenizer/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+    "tokenizer/special_tokens_map.json": "6676f091c8bc4d1b50146427cfde92073402866b87b6e39223227931b70083e9",
+    "tokenizer/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+    "tokenizer/tokenizer_config.json": "60f6e7bc948cedd377a20f01d022ef664d026fbc93d72e0a9bdac233f8632181",
+    "tokenizer/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "train.npz": "8404db6c16d381dc0ec0261b7adb29b06d2ee2d4c7b4fd08011e51d5c136949b"
+  },
+  "heldout_exclusions": {
+    "alignment": {},
+    "retention": {},
+    "target": {
+      "cross_role_content_13gram": 1
+    }
+  },
+  "label_tokens": [
+    362,
+    425,
+    356,
+    422,
+    468
+  ],
+  "leakage_rule": "Remove equal normalized questions/content and any shared 13-word contiguous content segment; scan question and choices separately, excluding wrappers. Protect full official heldout splits.",
+  "manifest_id": "d133f1242f8edb9827ddcd1c3ad404bac8b56f688943c0d943ff3063ce5e097a",
+  "methods": [
+    "sample_proportional",
+    "uniform_domain",
+    "compel_filter",
+    "zipmix_static",
+    "direct_zipfit",
+    "shuffled_zipmix"
+  ],
+  "mixtures": {
+    "compel_filter": {
+      "bucket_mass": [
+        1.0000000000000024,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "domain_mass": {
+        "arc_challenge": 0.7533333333333334,
+        "commonsense_qa": 0.0,
+        "openbookqa": 0.18,
+        "sciq": 0.06666666666666667
+      },
+      "effective_examples": 149.99999999999997,
+      "positive_examples": 150
+    },
+    "direct_zipfit": {
+      "bucket_mass": [
+        0.06880189798339266,
+        0.12297350731514353,
+        0.13681296955318248,
+        0.34321866350335806,
+        0.32819296164491674
+      ],
+      "domain_mass": {
+        "arc_challenge": 0.03637801502570186,
+        "commonsense_qa": 0.23448003163305653,
+        "openbookqa": 0.16963226571767498,
+        "sciq": 0.5595096876235667
+      },
+      "effective_examples": 2529.0,
+      "positive_examples": 2529
+    },
+    "sample_proportional": {
+      "bucket_mass": [
+        0.19988137603796374,
+        0.19998022933966403,
+        0.20007908264136431,
+        0.19780545670225774,
+        0.2022538552787706
+      ],
+      "domain_mass": {
+        "arc_challenge": 0.1103202846975089,
+        "commonsense_qa": 0.29655990510083047,
+        "openbookqa": 0.29655990510083047,
+        "sciq": 0.29655990510083047
+      },
+      "effective_examples": 10116.000000000002,
+      "positive_examples": 10116
+    },
+    "shuffled_zipmix": {
+      "bucket_mass": [
+        0.16878624677422807,
+        0.18901270598331066,
+        0.1995215847161762,
+        0.21397158193047033,
+        0.22870788059581648
+      ],
+      "domain_mass": {
+        "arc_challenge": 0.09892722577172608,
+        "commonsense_qa": 0.30351673280610275,
+        "openbookqa": 0.3009574123709695,
+        "sciq": 0.2965986290512016
+      },
+      "effective_examples": 10013.643042615737,
+      "positive_examples": 10116
+    },
+    "uniform_domain": {
+      "bucket_mass": [
+        0.27738709677418294,
+        0.18884139784945797,
+        0.17893637992831238,
+        0.1756129032258038,
+        0.17922222222221917
+      ],
+      "domain_mass": {
+        "arc_challenge": 0.25,
+        "commonsense_qa": 0.25000000000000006,
+        "openbookqa": 0.25000000000000006,
+        "sciq": 0.25000000000000006
+      },
+      "effective_examples": 8438.563327032138,
+      "positive_examples": 10116
+    },
+    "zipmix_static": {
+      "bucket_mass": [
+        0.16979143441853803,
+        0.18878668181245664,
+        0.19825015531326326,
+        0.21301793251643358,
+        0.23015379593931987
+      ],
+      "domain_mass": {
+        "arc_challenge": 0.09926384592591513,
+        "commonsense_qa": 0.3027341183711363,
+        "openbookqa": 0.3014389562616502,
+        "sciq": 0.29656307944129856
+      },
+      "effective_examples": 10013.94227048859,
+      "positive_examples": 10116
+    }
+  },
+  "model": "Qwen/Qwen2.5-0.5B",
+  "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "pad_token_id": 151643,
+  "postfilter_train_heldout_13gram_hits": 0,
+  "postfilter_train_heldout_exact_hits": 0,
+  "preparation_code": {
+    "common.py": "2c67a93d01882c83f09a600702142e97b06ba38bf959b8ecd336d66f4b03bedc",
+    "prepare_sft.py": "4b65f6ad423b8ea71d86e6d64dd202aca09b9226619c47e461b2d38a24413129"
+  },
+  "protected_full_heldout_counts": {
+    "alignment": 997,
+    "retention": 1197,
+    "target": 991
+  },
+  "runtime": {
+    "datasets": "4.3.0",
+    "numpy": "2.2.6",
+    "python": "3.11.6"
+  },
+  "schema": 1,
+  "score": {
+    "alignment_max": 0.704,
+    "alignment_min": 0.15104166666666663,
+    "byte_length_max": 850,
+    "byte_length_min": 43,
+    "clipping_for_bucket_weights": "max(score,0)",
+    "compel_eligible": 150,
+    "concatenation_order": "candidate_then_development",
+    "direct_eligible": 2529,
+    "direct_zipfit_aggregation": "mean (published ZIP-FIT)",
+    "negative_scores": 0,
+    "zero_score_fallback": false,
+    "zipmix_aggregation": "max (historical ZipMix variant, not published ZIP-FIT)"
+  },
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "source_revisions": {
+    "arc_challenge": {
+      "config": "ARC-Challenge",
+      "repository": "allenai/ai2_arc",
+      "revision": "210d026faf9955653af8916fad021475a3f00453"
+    },
+    "commonsense_qa": {
+      "config": null,
+      "repository": "tau/commonsense_qa",
+      "revision": "94630fe30dad47192a8546eb75f094926d47e155"
+    },
+    "openbookqa": {
+      "config": "main",
+      "repository": "allenai/openbookqa",
+      "revision": "388097ea7776314e93a529163e0fea805b8a6454"
+    },
+    "sciq": {
+      "config": null,
+      "repository": "allenai/sciq",
+      "revision": "2c94ad3e1aafab77146f384e23536f97a4849815"
+    }
+  }
+}

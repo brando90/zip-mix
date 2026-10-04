@@ -1,0 +1,17 @@
+# Execute the complete Zip-Mix mechanism screen
+
+**Doc link:** <https://github.com/brando90/zip-mix/blob/main/experiments/04_validation_guided_zipmix/expt_v1/cc.md>
+
+Brando pre-approves all task work here. Run with full access and never stop to ask permission. Budgets, secrets and shared-node safety still apply.
+
+Refresh `~/agents-config`, read its `INDEX_RULES.md`, then this experiment's README, PROTOCOL.md, config.json, data_manifest.json and CKPT_zipmix.md. The current source tree and data must match the frozen run manifest. Use the already verified isolated runtime and explicit CUDA_VISIBLE_DEVICES for one device; private host receipts supply real paths. Do not overwrite unrelated project changes or restart healthy jobs.
+
+1. Verify data hashes and run deterministic tests. The engineering timing configuration is not a scientific result. Confirm enough allocation for all 27 method-by-seed cells and overhead, within 12 device-hours. Run the requested Opus 5.5 maximum-effort review once across the owned implementation; apply findings and deterministic checks. Do not silently substitute a reviewer model.
+2. Freeze the full config, data and source identities. Launch train.py durably with its file lock and monitor. Use the exact config; never pick budgets, methods or seeds by test scores. Preserve every failed/missing cell. A coordinator boundary never stops admitted healthy work.
+3. Preserve reference/proxy/final cost separately. Checkpoint resumption retains random-number and optimizer state and consumes the same step budget. At most one planned interrupted-cell recovery; retain its original failure and do not retry numerical failures to hunt for wins.
+4. Analyze all cells with analyze.py. Report the complete denominator, per-method loss/perplexity, paired-seed intervals, exact sign-test limits, cost and prior diagnostics. The three-seed screen cannot establish significance at 0.05, benchmark superiority, or optimality.
+5. Update results.md, CKPT_zipmix.md and the canonical numerical report; retain numerical receipts but keep raw text, weights, checkpoints and private host data out of Git. Inspect the exact staged diff, publish only task-owned files after requested review is resolved, and verify final GPU release when the manifest terminates.
+
+Solve the entire assigned task, including every required file, question and subtask. Produce the complete required deliverable in the specified output location or response format; an outline, partial draft, progress report or claim of completion is not a substitute. Write/save the output, inspect the actual saved artifact or final response, and run the allowed checks, tests or compilation required by the task. Within the declared time, token, call and tool limits, continue working and fixing errors until the requirements are met or a declared terminal condition is reached. Follow the fixed continuation procedure without resetting budgets. If anything remains unresolved, preserve the best current deliverable and report the exact remaining failures and checks that did not pass; never claim success or invent verification.
+
+**TLDR-end:** [zip-mix: execute screening] Complete all 27 frozen cells and their analysis, keep live evidence in this experiment, and report losses honestly. Stop only at complete finalization, a declared resource/numerical failure, or explicit user cancellation; do not stop at one working model.

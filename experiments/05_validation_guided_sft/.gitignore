@@ -1,0 +1,8 @@
+expt_v1/data/
+expt_v1/runs/
+expt_v1/cache/
+__pycache__/
+*.pyc
+*.pt
+*.safetensors
+

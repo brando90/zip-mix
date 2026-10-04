@@ -1,6 +1,6 @@
 # Zip-Mix agent instructions
 
-**Doc link:** <https://github.com/brando90/zip-mix/blob/main/CLAUDE.md>
+**Doc link:** <https://github.com/brando90/zip-mix/blob/main/AGENTS.md>
 
 **TLDR:** Refresh and follow the shared agent rules. Zip-Mix is an experimental validation-guided training-data mixture project; distinguish hypotheses from measured generalization.
 

@@ -1,89 +1,54 @@
-# Compel-ZipMix: Compression-Aligned Mixtures for Efficient Task-Aware Language-Model Pre-training
+# Zip-Mix: validation-guided training-data mixtures
 
-Mixture composition is a pivotal yet under-explored axis of large-language-model pre-training. **Compel-ZipMix** partitions the corpus into compression-ratio buckets and assigns each bucket a weight derived from a ZIP-based similarity to a small validation suite, enabling *practically free, domain-conditioned* foundation checkpoints.
+**Doc link:** <https://github.com/brando90/zip-mix/blob/main/README.md>
 
-## Overview
+**TLDR:** Zip-Mix groups training text by compression ratio and chooses sampling weights using similarity to a separate development set. We are testing whether this improves held-out language modeling and supervised fine-tuning; superiority over established baselines remains an open hypothesis.
 
-DoReMi learns domain weights via Group-DRO, but empirical replications report accuracy losses: its coarse, hand-defined domains blur signal and noise, and its worst-case objective begins from an uninformative uniform prior. We trace this to two hypotheses:
+Zip-Mix builds on [Compel](https://openreview.net/forum?id=KFafeqE5fe), which filters pretraining data using compression ratios, and [ZIP-FIT](https://arxiv.org/abs/2410.18194), which estimates target alignment using compression distance. The intended benefit is inexpensive, target-aware data selection before expensive model training.
 
-- **H_prior (No task prior):** DoReMi starts from uniform weighting of coarse domains. By No-Free-Lunch, a learner with no prior preference is free to prefer entropy.
-- **H_max (Over-pessimistic objective):** The inner maximisation conflates "hard because useful" with "hard because irreducible."
+## Research question
 
-**ZipMix** addresses both:
-1. **Compression buckets** partition the corpus by `CR(d) = bytes_zip(d) / bytes_raw(d)`, a model-free proxy for information density.
-2. **Alignment prior** assigns each bucket a weight proportional to ZIP-FIT similarity to a validation suite (MMLU, GSM8K, MiniF2F, ...).
+Can validation-aligned compression buckets improve generalization over token-proportional sampling, Domain Reweighting with Minimax Optimization (DoReMi), Domain Reweighting with Generalization Estimation (DoGE), and strong modern data-selection methods at competitive total cost?
 
-Two variants:
-- **ZipMix-Static** samples directly from the alignment prior (addresses H_prior)
-- **ZipMix-DRO** refines with one Group-DRO pass (tempers H_max)
+A small validation set describes a chosen target distribution. Success on that distribution does not establish universal optimality or artificial general intelligence. We separate unseen examples of the same target, retention on other domains, and genuinely new task-family transfer.
 
-## Key Links
+## Current work
 
-| Resource | Link |
-|---|---|
-| Paper (Overleaf) | https://www.overleaf.com/project/6861da6f7c236a3466d7e749 |
-| Slides | https://docs.google.com/presentation/d/1XoQ24_KofQUOeSxLE_lNVjYAw0lMtsm9spF6ertwL7s/edit |
-| Research Journal | https://docs.google.com/presentation/d/1cI569bcyQpxB66MUnflvBBXJKxe26GDodLig1xQ1iEI/edit |
-| Compel (predecessor, ICLR 2026 submission) | https://openreview.net/forum?id=KFafeqE5fe |
-| ZIP-FIT (compression-based alignment) | https://arxiv.org/abs/2410.18194 |
-| Alignment Coefficient | https://arxiv.org/abs/2501.08496 |
-
-## Repository Structure
-
-```
-zip-mix/
-  paper_latex_and_notes/
-    ICLR_2025_CompelZipMix/  # ICLR 2025 submission (Compel-ZipMix paper)
-    DMLR_2026_CompelZipMix/  # DMLR 2026 submission
-  experiments/
-    00_related_work/         # Comprehensive literature review
-    01_compression_threshold_buckets/  # Core experiment: CR buckets + alignment prior
-    02_alignment_prior_analysis/       # CPU-only: CR distributions, priors, bucket sensitivity
-    03_zipmix_doremi_fix/              # Core experiment: ZipMix fixing DoReMi via validation priors
-  src/                       # Source code (scripts and tools)
-```
-
-## Method Summary
-
-### Step 1: Compression Buckets
-For each document `d` in corpus D, compute:
-```
-CR(d) = bytes_zip(d) / bytes_raw(d)
-```
-Partition into buckets `B_m = {d : CR(d) in [c_{m-1}, c_m)}` using thresholds calibrated from high-quality reference datasets (FineWeb-EDU quartiles: Q1=0.67, Median=0.73, Q3=0.78).
-
-### Step 2: Alignment Prior
-Compute ZIP-FIT similarity `s(d) = 1 - NCD_zip(d, V)` to validation suite V. Bucket weight:
-```
-alpha^(0)_m = (sum_{d in B_m} s(d) + tau) / (sum_j sum_{d in B_j} s(d) + M * tau)
-```
-
-### Step 3: Training
-- **ZipMix-Static:** Sample `m ~ Categorical(alpha^(0))`, then `x ~ Uniform(B_m)`
-- **ZipMix-DRO:** Refine `alpha^(0)` with one Group-DRO pass, then sample as above
-
-## Related Work
-
-Key papers and positioning:
-
-| Method | Type | Key Limitation (vs ZipMix) |
+| Experiment | Purpose | Latest status |
 |---|---|---|
-| DoReMi (Xie et al., NeurIPS 2023) | Group-DRO on hand-defined domains | Uniform prior, over-pessimistic objective, known failures |
-| DoGE (Fan et al., 2023) | Gradient-alignment reweighting | Fails to beat uniform on 5/6 datasets (per Aioli) |
-| Aioli (Chen et al., ICLR 2025) | Online mixing-law estimation | Very small models (160M primary); consistent but modest gains |
-| BETR (Mizrahi et al., 2025) | Neural embedding hard-filter | GPU-dependent, model-dependent, binary keep/discard |
-| Compel (Obbad, Miranda et al., 2025) | CR hard-filter [0.65, 0.80] | Hard threshold, no task alignment, modest gains (+0.5-1.1pp) |
+| [04: validation-guided pretraining](experiments/04_validation_guided_zipmix/README.md) | From-scratch mechanism screen: nine methods, three paired seeds, held-out target and broad loss | Implementation and preflight; no training conclusion yet |
+| [05: validation-guided supervised fine-tuning](experiments/05_validation_guided_sft/README.md) | Pretrained-model benchmark accuracy with fixed labeled-token budgets | Implementation; no accuracy conclusion yet |
+| [02: prior analysis](experiments/02_alignment_prior_analysis/README.md) | Compression distributions from public corpus pilots | Existing cached pilot reused with its limitations recorded |
+| [03: proxy-mixture proposal](https://github.com/brando90/zip-mix/blob/main/experiments/03_zipmix_doremi_fix/README.md) | Earlier larger pretraining design | Preserved proposal, not executed by the new screen |
 
-See `experiments/00_related_work/literature_review.md` for the full review (30+ papers).
+[Experiment index](experiments/README.md) · [Research plan and current literature](experiments/04_validation_guided_zipmix/research_design.md) · [Live pretraining results](experiments/04_validation_guided_zipmix/results.md)
 
-## Team
+## Method and important distinctions
 
-- **Brando Miranda** (Stanford) — brando9@stanford.edu
-- **Elyas Obbad** (Stanford) — eobbad@stanford.edu
-- **Sanmi Koyejo** (Stanford) — sanmi@stanford.edu
+For document `d`, compression ratio is compressed bytes divided by raw bytes. Compression bins partition the corpus. A bucket prior sums nonnegative development-alignment scores and then normalizes across nonempty buckets. A hierarchical sampler selects a bucket and then training data within it.
 
-## Builds on
+The historical Zip-Mix draft uses maximum similarity over development examples. The published ZIP-FIT algorithm uses mean similarity; experiments label these separately. The runnable pretraining screen uses equal-length token blocks and weights by their mass, a documented extension of the draft's document-level sampler.
 
-- [Compel](https://openreview.net/forum?id=KFafeqE5fe) — Compression-ratio filtering for pre-training data
-- [ZIP-FIT](https://arxiv.org/abs/2410.18194) — Embedding-free data selection via compression-based alignment
-- [Diversity Coefficient](https://arxiv.org/abs/2306.13840) — Data quality metric for variability in NL data
+When alignment scores are nearly constant, the sum-of-scores prior is almost the population prior. A concentrated histogram alone therefore cannot demonstrate useful targeting. Comparisons include population sampling, uniform buckets, Compel, direct compression alignment, and a shuffled-alignment control.
+
+DoReMi uses a trained reference and **excess loss**, not simply raw loss on difficult data. DoGE uses gradient alignment with a target development distribution. Compact local adaptations are labeled explicitly; paper-scale reproductions and competitive tuning remain necessary for claims against those methods. Equal final-training tokens are reported separately from total cost, including reference/proxy models, scoring and tuning.
+
+## Layout and execution
+
+```text
+experiments/             # plans, experiment-specific code, manifests, reports
+paper_latex_and_notes/   # historical paper drafts and research notes
+AGENTS.md, CLAUDE.md     # synchronized project instructions
+```
+
+Each active experiment owns its runnable commands, frozen configuration, data provenance, deterministic checks and live results. Large corpora, checkpoints and private host receipts stay outside Git. Follow the experiment runbook rather than launching an unconstrained corpus-scale run from this overview.
+
+## References and project materials
+
+- [DoReMi paper](https://arxiv.org/abs/2305.10429) and [official implementation](https://github.com/sangmichaelxie/doremi)
+- [DoGE paper](https://arxiv.org/abs/2310.15393) and [official implementation](https://github.com/Olivia-fsm/DoGE)
+- [Aioli implementation](https://github.com/HazyResearch/aioli), [Olmix](https://arxiv.org/abs/2602.12237), [On-Policy Mix](https://arxiv.org/abs/2605.15220): relevant modern comparisons, currently researched rather than reproduced
+- [Earlier literature notes](experiments/00_related_work/README.md), containing historical claims that require source verification
+- [Paper workspace](https://www.overleaf.com/project/6861da6f7c236a3466d7e749), [slides](https://docs.google.com/presentation/d/1XoQ24_KofQUOeSxLE_lNVjYAw0lMtsm9spF6ertwL7s/edit), [research journal](https://docs.google.com/presentation/d/1cI569bcyQpxB66MUnflvBBXJKxe26GDodLig1xQ1iEI/edit)
+
+Project contributors: Brando Miranda, Elyas Obbad and Sanmi Koyejo.
