@@ -1,0 +1,18 @@
+{
+  "corpus": "pile",
+  "hf": {
+    "path": "monology/pile-uncopyrighted",
+    "name": null,
+    "split": "train"
+  },
+  "n_kept": 20000,
+  "n_seen": 22584,
+  "n_short_dropped": 2584,
+  "min_bytes": 512,
+  "seed": 42,
+  "shuffle_buffer": 10000,
+  "sampling": "HF streaming .shuffle(seed, buffer_size) then first N docs passing the >=512-byte filter",
+  "wall_seconds": 24.9657621383667,
+  "lz4_cr_seconds": 1.2678613956086338,
+  "lz4_docs_per_sec": 15774.5949748703
+}
