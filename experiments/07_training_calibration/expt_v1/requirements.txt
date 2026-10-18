@@ -1,0 +1,10 @@
+# Compatible ranges; each ledger records exact runtime versions.
+# On a GPU host, keep the cluster's CUDA-compatible PyTorch when present.
+torch>=2.2,<3
+transformers>=4.45,<5
+datasets>=2.20,<5
+huggingface_hub>=0.24,<2
+numpy>=1.24,<3
+scipy>=1.10,<2
+lz4>=4,<5
+pytest>=7,<10
