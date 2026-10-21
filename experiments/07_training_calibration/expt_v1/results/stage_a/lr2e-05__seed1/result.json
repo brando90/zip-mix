@@ -1,0 +1,34 @@
+{
+  "cell": "lr2e-05__seed1",
+  "completed_at": "2026-10-21T08:39:48.582560+00:00",
+  "evaluation_seconds": 1.155261314008385,
+  "infrastructure_resumes": [],
+  "learning_rate": 2e-05,
+  "manifest_id": "8348461b853c9d11e6aea8cb1c6c6a8194eeafdc07c14284dc13c7f6c0ce07dc",
+  "mean_training_loss": 1.0393490076530725,
+  "method": "uniform",
+  "metrics": {
+    "calibration_retention": {
+      "accuracy": 0.55,
+      "correct": 275,
+      "count": 500,
+      "label_nll": 1.1971763194277882
+    },
+    "calibration_target": {
+      "accuracy": 0.738,
+      "correct": 369,
+      "count": 500,
+      "label_nll": 0.7526659551244229
+    }
+  },
+  "padded_input_tokens": 144496,
+  "peak_allocated_bytes": 11132060160,
+  "processed_input_tokens": 96387,
+  "run_id": "389f5e10e95625196078b09bea38f5afb1acc7b78d23b1c2505adf064880d7fa",
+  "seed": 1,
+  "steps": 128,
+  "supervised_tokens": 2048,
+  "this_process_cell_seconds": 30.82157039095182,
+  "training_seconds": 29.105908378958702,
+  "unique_training_examples": 1826
+}
