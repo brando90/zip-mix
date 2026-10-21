@@ -1,0 +1,643 @@
+{
+  "base": {
+    "completed_at": "2026-10-21T15:39:46.708036+00:00",
+    "metrics": {
+      "cal_retention": {
+        "accuracy": 0.548,
+        "correct": 274,
+        "count": 500,
+        "label_nll": 1.1864687450230123
+      },
+      "cal_target": {
+        "accuracy": 0.798,
+        "correct": 399,
+        "count": 500,
+        "label_nll": 0.5573824712159112
+      }
+    },
+    "started_at": "2026-10-21T15:39:42.902543+00:00",
+    "status": "complete"
+  },
+  "cells": [
+    {
+      "availability": "available",
+      "completed_at": "2026-10-21T15:40:19.160497+00:00",
+      "elapsed_training_seconds": 26.00470478273928,
+      "failure_kind": null,
+      "id": "conditional_aligned__seed0",
+      "last_training_loss": 1.121661901473999,
+      "learning_rate": 5e-06,
+      "method": "conditional_aligned",
+      "metrics": {
+        "cal_retention": {
+          "accuracy": 0.56,
+          "correct": 280,
+          "count": 500,
+          "label_nll": 1.1252847278267146
+        },
+        "cal_target": {
+          "accuracy": 0.804,
+          "correct": 402,
+          "count": 500,
+          "label_nll": 0.5153000638503581
+        }
+      },
+      "padded_input_tokens": 168368,
+      "process_id": 10592,
+      "processed_input_tokens": 100402,
+      "result_file": "conditional_aligned__seed0/result.json",
+      "seed": 0,
+      "selector_name": "conditional_aligned",
+      "started_at": "2026-10-21T15:39:47.005453+00:00",
+      "status": "complete",
+      "step": 128,
+      "supervised_tokens": 2048,
+      "unique_training_examples": 1824,
+      "updated_at": "2026-10-21T15:40:13.955763+00:00"
+    },
+    {
+      "availability": "available",
+      "completed_at": "2026-10-21T15:40:52.180214+00:00",
+      "elapsed_training_seconds": 26.620845863595605,
+      "failure_kind": null,
+      "id": "conditional_aligned__seed1",
+      "last_training_loss": 0.9776518940925598,
+      "learning_rate": 5e-06,
+      "method": "conditional_aligned",
+      "metrics": {
+        "cal_retention": {
+          "accuracy": 0.556,
+          "correct": 278,
+          "count": 500,
+          "label_nll": 1.1388420392721892
+        },
+        "cal_target": {
+          "accuracy": 0.82,
+          "correct": 410,
+          "count": 500,
+          "label_nll": 0.5401755854440853
+        }
+      },
+      "padded_input_tokens": 164400,
+      "process_id": 10592,
+      "processed_input_tokens": 99085,
+      "result_file": "conditional_aligned__seed1/result.json",
+      "seed": 1,
+      "selector_name": "conditional_aligned",
+      "started_at": "2026-10-21T15:40:20.184518+00:00",
+      "status": "complete",
+      "step": 128,
+      "supervised_tokens": 2048,
+      "unique_training_examples": 1840,
+      "updated_at": "2026-10-21T15:40:47.865709+00:00"
+    },
+    {
+      "availability": "available",
+      "completed_at": "2026-10-21T15:41:29.335590+00:00",
+      "elapsed_training_seconds": 29.90180806070566,
+      "failure_kind": null,
+      "id": "conditional_aligned__seed2",
+      "last_training_loss": 0.5180293917655945,
+      "learning_rate": 5e-06,
+      "method": "conditional_aligned",
+      "metrics": {
+        "cal_retention": {
+          "accuracy": 0.584,
+          "correct": 292,
+          "count": 500,
+          "label_nll": 1.1003114511743188
+        },
+        "cal_target": {
+          "accuracy": 0.82,
+          "correct": 410,
+          "count": 500,
+          "label_nll": 0.5008206471195444
+        }
+      },
+      "padded_input_tokens": 159776,
+      "process_id": 10592,
+      "processed_input_tokens": 99357,
+      "result_file": "conditional_aligned__seed2/result.json",
+      "seed": 2,
+      "selector_name": "conditional_aligned",
+      "started_at": "2026-10-21T15:40:53.212697+00:00",
+      "status": "complete",
+      "step": 128,
+      "supervised_tokens": 2048,
+      "unique_training_examples": 1827,
+      "updated_at": "2026-10-21T15:41:23.867321+00:00"
+    },
+    {
+      "availability": "available",
+      "completed_at": "2026-10-21T15:42:05.274004+00:00",
+      "elapsed_training_seconds": 28.434740794822574,
+      "failure_kind": null,
+      "id": "conditional_aligned__seed3",
+      "last_training_loss": 0.9861449003219604,
+      "learning_rate": 5e-06,
+      "method": "conditional_aligned",
+      "metrics": {
+        "cal_retention": {
+          "accuracy": 0.586,
+          "correct": 293,
+          "count": 500,
+          "label_nll": 1.0933132562693209
+        },
+        "cal_target": {
+          "accuracy": 0.812,
+          "correct": 406,
+          "count": 500,
+          "label_nll": 0.5487706096139736
+        }
+      },
+      "padded_input_tokens": 163136,
+      "process_id": 10592,
+      "processed_input_tokens": 99484,
+      "result_file": "conditional_aligned__seed3/result.json",
+      "seed": 3,
+      "selector_name": "conditional_aligned",
+      "started_at": "2026-10-21T15:41:30.589287+00:00",
+      "status": "complete",
+      "step": 128,
+      "supervised_tokens": 2048,
+      "unique_training_examples": 1804,
+      "updated_at": "2026-10-21T15:42:00.053295+00:00"
+    },
+    {
+      "availability": "available",
+      "completed_at": "2026-10-21T15:42:38.571869+00:00",
+      "elapsed_training_seconds": 27.567943278700113,
+      "failure_kind": null,
+      "id": "conditional_aligned__seed4",
+      "last_training_loss": 0.7954111099243164,
+      "learning_rate": 5e-06,
+      "method": "conditional_aligned",
+      "metrics": {
+        "cal_retention": {
+          "accuracy": 0.574,
+          "correct": 287,
+          "count": 500,
+          "label_nll": 1.0909107641130686
+        },
+        "cal_target": {
+          "accuracy": 0.802,
+          "correct": 401,
+          "count": 500,
+          "label_nll": 0.5416941302453634
+        }
+      },
+      "padded_input_tokens": 162768,
+      "process_id": 10592,
+      "processed_input_tokens": 99281,
+      "result_file": "conditional_aligned__seed4/result.json",
+      "seed": 4,
+      "selector_name": "conditional_aligned",
+      "started_at": "2026-10-21T15:42:06.659203+00:00",
+      "status": "complete",
+      "step": 128,
+      "supervised_tokens": 2048,
+      "unique_training_examples": 1820,
+      "updated_at": "2026-10-21T15:42:35.053698+00:00"
+    },
+    {
+      "availability": "available",
+      "completed_at": "2026-10-21T15:43:07.304564+00:00",
+      "elapsed_training_seconds": 23.79266706854105,
+      "failure_kind": null,
+      "id": "stratum_uniform__seed0",
+      "last_training_loss": 1.6574300527572632,
+      "learning_rate": 5e-06,
+      "method": "stratum_uniform",
+      "metrics": {
+        "cal_retention": {
+          "accuracy": 0.574,
+          "correct": 287,
+          "count": 500,
+          "label_nll": 1.099670007193461
+        },
+        "cal_target": {
+          "accuracy": 0.792,
+          "correct": 396,
+          "count": 500,
+          "label_nll": 0.5628761529065669
+        }
+      },
+      "padded_input_tokens": 163264,
+      "process_id": 10592,
+      "processed_input_tokens": 99228,
+      "result_file": "stratum_uniform__seed0/result.json",
+      "seed": 0,
+      "selector_name": "stratum_uniform",
+      "started_at": "2026-10-21T15:42:39.467517+00:00",
+      "status": "complete",
+      "step": 128,
+      "supervised_tokens": 2048,
+      "unique_training_examples": 1859,
+      "updated_at": "2026-10-21T15:43:03.867580+00:00"
+    },
+    {
+      "availability": "available",
+      "completed_at": "2026-10-21T15:43:36.955791+00:00",
+      "elapsed_training_seconds": 24.468546891584992,
+      "failure_kind": null,
+      "id": "stratum_uniform__seed1",
+      "last_training_loss": 0.4949367940425873,
+      "learning_rate": 5e-06,
+      "method": "stratum_uniform",
+      "metrics": {
+        "cal_retention": {
+          "accuracy": 0.58,
+          "correct": 290,
+          "count": 500,
+          "label_nll": 1.1063226613253354
+        },
+        "cal_target": {
+          "accuracy": 0.812,
+          "correct": 406,
+          "count": 500,
+          "label_nll": 0.5215082755153999
+        }
+      },
+      "padded_input_tokens": 165760,
+      "process_id": 10592,
+      "processed_input_tokens": 100069,
+      "result_file": "stratum_uniform__seed1/result.json",
+      "seed": 1,
+      "selector_name": "stratum_uniform",
+      "started_at": "2026-10-21T15:43:08.173535+00:00",
+      "status": "complete",
+      "step": 128,
+      "supervised_tokens": 2048,
+      "unique_training_examples": 1867,
+      "updated_at": "2026-10-21T15:43:33.283131+00:00"
+    },
+    {
+      "availability": "available",
+      "completed_at": "2026-10-21T15:44:05.558630+00:00",
+      "elapsed_training_seconds": 23.716134378686547,
+      "failure_kind": null,
+      "id": "stratum_uniform__seed2",
+      "last_training_loss": 1.2319245338439941,
+      "learning_rate": 5e-06,
+      "method": "stratum_uniform",
+      "metrics": {
+        "cal_retention": {
+          "accuracy": 0.584,
+          "correct": 292,
+          "count": 500,
+          "label_nll": 1.1609401451051236
+        },
+        "cal_target": {
+          "accuracy": 0.804,
+          "correct": 402,
+          "count": 500,
+          "label_nll": 0.5513970091119409
+        }
+      },
+      "padded_input_tokens": 170304,
+      "process_id": 10592,
+      "processed_input_tokens": 99313,
+      "result_file": "stratum_uniform__seed2/result.json",
+      "seed": 2,
+      "selector_name": "stratum_uniform",
+      "started_at": "2026-10-21T15:43:37.824976+00:00",
+      "status": "complete",
+      "step": 128,
+      "supervised_tokens": 2048,
+      "unique_training_examples": 1848,
+      "updated_at": "2026-10-21T15:44:02.131041+00:00"
+    },
+    {
+      "availability": "available",
+      "completed_at": "2026-10-21T15:44:36.506954+00:00",
+      "elapsed_training_seconds": 24.99899966828525,
+      "failure_kind": null,
+      "id": "stratum_uniform__seed3",
+      "last_training_loss": 0.8809080123901367,
+      "learning_rate": 5e-06,
+      "method": "stratum_uniform",
+      "metrics": {
+        "cal_retention": {
+          "accuracy": 0.57,
+          "correct": 285,
+          "count": 500,
+          "label_nll": 1.1294148301556706
+        },
+        "cal_target": {
+          "accuracy": 0.782,
+          "correct": 391,
+          "count": 500,
+          "label_nll": 0.5755639851402957
+        }
+      },
+      "padded_input_tokens": 167568,
+      "process_id": 10592,
+      "processed_input_tokens": 100659,
+      "result_file": "stratum_uniform__seed3/result.json",
+      "seed": 3,
+      "selector_name": "stratum_uniform",
+      "started_at": "2026-10-21T15:44:06.461186+00:00",
+      "status": "complete",
+      "step": 128,
+      "supervised_tokens": 2048,
+      "unique_training_examples": 1828,
+      "updated_at": "2026-10-21T15:44:32.038997+00:00"
+    },
+    {
+      "availability": "available",
+      "completed_at": "2026-10-21T15:45:02.820418+00:00",
+      "elapsed_training_seconds": 21.225617472082376,
+      "failure_kind": null,
+      "id": "stratum_uniform__seed4",
+      "last_training_loss": 0.9716410040855408,
+      "learning_rate": 5e-06,
+      "method": "stratum_uniform",
+      "metrics": {
+        "cal_retention": {
+          "accuracy": 0.552,
+          "correct": 276,
+          "count": 500,
+          "label_nll": 1.1485830933526158
+        },
+        "cal_target": {
+          "accuracy": 0.816,
+          "correct": 408,
+          "count": 500,
+          "label_nll": 0.5311192654874176
+        }
+      },
+      "padded_input_tokens": 160864,
+      "process_id": 10592,
+      "processed_input_tokens": 99231,
+      "result_file": "stratum_uniform__seed4/result.json",
+      "seed": 4,
+      "selector_name": "stratum_uniform",
+      "started_at": "2026-10-21T15:44:37.387776+00:00",
+      "status": "complete",
+      "step": 128,
+      "supervised_tokens": 2048,
+      "unique_training_examples": 1854,
+      "updated_at": "2026-10-21T15:44:59.210760+00:00"
+    },
+    {
+      "availability": "available",
+      "completed_at": "2026-10-21T15:45:33.777784+00:00",
+      "elapsed_training_seconds": 25.406998608261347,
+      "failure_kind": null,
+      "id": "conditional_shuffled__seed0",
+      "last_training_loss": 0.8096449971199036,
+      "learning_rate": 5e-06,
+      "method": "conditional_shuffled",
+      "metrics": {
+        "cal_retention": {
+          "accuracy": 0.554,
+          "correct": 277,
+          "count": 500,
+          "label_nll": 1.1209837418105453
+        },
+        "cal_target": {
+          "accuracy": 0.782,
+          "correct": 391,
+          "count": 500,
+          "label_nll": 0.5846303861541674
+        }
+      },
+      "padded_input_tokens": 168464,
+      "process_id": 10592,
+      "processed_input_tokens": 100176,
+      "result_file": "conditional_shuffled__seed0/result.json",
+      "seed": 0,
+      "selector_name": "conditional_shuffled",
+      "started_at": "2026-10-21T15:45:04.187700+00:00",
+      "status": "complete",
+      "step": 128,
+      "supervised_tokens": 2048,
+      "unique_training_examples": 1809,
+      "updated_at": "2026-10-21T15:45:30.246824+00:00"
+    },
+    {
+      "availability": "available",
+      "completed_at": "2026-10-21T15:46:03.248069+00:00",
+      "elapsed_training_seconds": 24.64649074524641,
+      "failure_kind": null,
+      "id": "conditional_shuffled__seed1",
+      "last_training_loss": 1.0650944709777832,
+      "learning_rate": 5e-06,
+      "method": "conditional_shuffled",
+      "metrics": {
+        "cal_retention": {
+          "accuracy": 0.548,
+          "correct": 274,
+          "count": 500,
+          "label_nll": 1.151327603943646
+        },
+        "cal_target": {
+          "accuracy": 0.778,
+          "correct": 389,
+          "count": 500,
+          "label_nll": 0.5503100900761783
+        }
+      },
+      "padded_input_tokens": 162112,
+      "process_id": 10592,
+      "processed_input_tokens": 99694,
+      "result_file": "conditional_shuffled__seed1/result.json",
+      "seed": 1,
+      "selector_name": "conditional_shuffled",
+      "started_at": "2026-10-21T15:45:34.647966+00:00",
+      "status": "complete",
+      "step": 128,
+      "supervised_tokens": 2048,
+      "unique_training_examples": 1841,
+      "updated_at": "2026-10-21T15:45:59.819653+00:00"
+    },
+    {
+      "availability": "available",
+      "completed_at": "2026-10-21T15:46:32.622295+00:00",
+      "elapsed_training_seconds": 24.59251512773335,
+      "failure_kind": null,
+      "id": "conditional_shuffled__seed2",
+      "last_training_loss": 0.6896365880966187,
+      "learning_rate": 5e-06,
+      "method": "conditional_shuffled",
+      "metrics": {
+        "cal_retention": {
+          "accuracy": 0.564,
+          "correct": 282,
+          "count": 500,
+          "label_nll": 1.1774721353463828
+        },
+        "cal_target": {
+          "accuracy": 0.802,
+          "correct": 401,
+          "count": 500,
+          "label_nll": 0.5417464857907034
+        }
+      },
+      "padded_input_tokens": 169744,
+      "process_id": 10592,
+      "processed_input_tokens": 100209,
+      "result_file": "conditional_shuffled__seed2/result.json",
+      "seed": 2,
+      "selector_name": "conditional_shuffled",
+      "started_at": "2026-10-21T15:46:04.211888+00:00",
+      "status": "complete",
+      "step": 128,
+      "supervised_tokens": 2048,
+      "unique_training_examples": 1811,
+      "updated_at": "2026-10-21T15:46:29.304732+00:00"
+    },
+    {
+      "availability": "available",
+      "completed_at": "2026-10-21T15:47:00.226602+00:00",
+      "elapsed_training_seconds": 22.92973791062832,
+      "failure_kind": null,
+      "id": "conditional_shuffled__seed3",
+      "last_training_loss": 0.6260798573493958,
+      "learning_rate": 5e-06,
+      "method": "conditional_shuffled",
+      "metrics": {
+        "cal_retention": {
+          "accuracy": 0.566,
+          "correct": 283,
+          "count": 500,
+          "label_nll": 1.1193342252075673
+        },
+        "cal_target": {
+          "accuracy": 0.834,
+          "correct": 417,
+          "count": 500,
+          "label_nll": 0.5124492567265406
+        }
+      },
+      "padded_input_tokens": 168144,
+      "process_id": 10592,
+      "processed_input_tokens": 100191,
+      "result_file": "conditional_shuffled__seed3/result.json",
+      "seed": 3,
+      "selector_name": "conditional_shuffled",
+      "started_at": "2026-10-21T15:46:33.457932+00:00",
+      "status": "complete",
+      "step": 128,
+      "supervised_tokens": 2048,
+      "unique_training_examples": 1809,
+      "updated_at": "2026-10-21T15:46:56.865986+00:00"
+    },
+    {
+      "availability": "available",
+      "completed_at": "2026-10-21T15:47:28.156572+00:00",
+      "elapsed_training_seconds": 23.080039286985993,
+      "failure_kind": null,
+      "id": "conditional_shuffled__seed4",
+      "last_training_loss": 0.7004615068435669,
+      "learning_rate": 5e-06,
+      "method": "conditional_shuffled",
+      "metrics": {
+        "cal_retention": {
+          "accuracy": 0.562,
+          "correct": 281,
+          "count": 500,
+          "label_nll": 1.1600503247715532
+        },
+        "cal_target": {
+          "accuracy": 0.798,
+          "correct": 399,
+          "count": 500,
+          "label_nll": 0.549313359242864
+        }
+      },
+      "padded_input_tokens": 165168,
+      "process_id": 10592,
+      "processed_input_tokens": 99708,
+      "result_file": "conditional_shuffled__seed4/result.json",
+      "seed": 4,
+      "selector_name": "conditional_shuffled",
+      "started_at": "2026-10-21T15:47:01.161250+00:00",
+      "status": "complete",
+      "step": 128,
+      "supervised_tokens": 2048,
+      "unique_training_examples": 1827,
+      "updated_at": "2026-10-21T15:47:24.779145+00:00"
+    }
+  ],
+  "created_at": "2026-10-21T15:39:42.839244+00:00",
+  "eval_splits": [
+    "cal_target",
+    "cal_retention"
+  ],
+  "expected_training_cells": 15,
+  "identity": {
+    "calibration": {
+      "decision_sha256": null,
+      "selected_learning_rate": 5e-06,
+      "selected_method": "diagnostic_explicit",
+      "selection_reason": "prospective diagnostic; learning rate fixed by the recorded rule, not by outcomes",
+      "stage1_run_id": null
+    },
+    "code": {
+      "analyze_exp07.py": "missing",
+      "common.py": "5d3a8b7230af6b70c456cff668127e145ea9e53b989d19ce9d1ac5cb83ee4b56",
+      "train_exp07.py": "645f22611024ec1ab125194e971ebdfe2f4a70cb526a2a1cd419a2254a9053b3"
+    },
+    "config": {
+      "alignment_views": 8,
+      "batch_size": 16,
+      "calibration_retention_drop_tolerance": 0.01,
+      "checkpoint_every": 64,
+      "compression_bins": 5,
+      "conditional_permutation_seed": 1707,
+      "contrastive_permutation_seed": 1606,
+      "direct_selection_fraction": 0.25,
+      "evaluation_cap_per_split": 500,
+      "gradient_clip": 1.0,
+      "gzip_level": 6,
+      "max_infrastructure_resumes_per_cell": 1,
+      "max_input_length": 256,
+      "minimum_matched_target_views": 2,
+      "score_byte_window": 4096,
+      "steps": 128,
+      "test_holdout2_count": 490,
+      "training_cap_per_domain": 3000,
+      "warmup_steps": 8,
+      "weight_decay": 0.01,
+      "wrongtarget_reserved_records": 256
+    },
+    "diagnostic": {
+      "eval_splits": [
+        "cal_target",
+        "cal_retention"
+      ],
+      "methods": [
+        "conditional_aligned",
+        "stratum_uniform",
+        "conditional_shuffled"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "eval_batch_size": 16,
+    "manifest_id": "c01070d759aecb131d8d669c831c0e5491940f9825f5b35fc15fbfb4cdfff0b6",
+    "mode": "diagnostic",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+  },
+  "mode": "diagnostic",
+  "run_id": "a4add617336742bd9d645f56b34fc65244c0616e88907d554c1040a32c8cb648",
+  "runtime": {
+    "cuda": "12.4",
+    "device": "NVIDIA H200",
+    "forward_dtype": "bfloat16_autocast",
+    "full_finetuning": true,
+    "master_parameter_dtype": "float32",
+    "torch": "2.5.1+cu124",
+    "transformers": "4.51.1",
+    "visible_devices": 1
+  },
+  "status": "complete",
+  "updated_at": "2026-10-21T15:47:29.010450+00:00"
+}

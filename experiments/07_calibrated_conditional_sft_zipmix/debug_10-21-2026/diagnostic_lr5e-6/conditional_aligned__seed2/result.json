@@ -1,0 +1,38 @@
+{
+  "cell": "conditional_aligned__seed2",
+  "completed_at": "2026-10-21T15:41:29.334555+00:00",
+  "evaluation_seconds": 5.464732650667429,
+  "infrastructure_resumes": [],
+  "learning_rate": 5e-06,
+  "manifest_id": "c01070d759aecb131d8d669c831c0e5491940f9825f5b35fc15fbfb4cdfff0b6",
+  "mean_training_loss": 0.8606621427461505,
+  "method": "conditional_aligned",
+  "metrics": {
+    "cal_retention": {
+      "accuracy": 0.584,
+      "correct": 292,
+      "count": 500,
+      "label_nll": 1.1003114511743188
+    },
+    "cal_target": {
+      "accuracy": 0.82,
+      "correct": 410,
+      "count": 500,
+      "label_nll": 0.5008206471195444
+    }
+  },
+  "mode": "diagnostic",
+  "model_file": null,
+  "model_sha256": "96fb7fc10833ce696a7f4f14cbd5a4d01a20c8c81dd4f3eee86e5e50ebb9d29b",
+  "padded_input_tokens": 159776,
+  "peak_allocated_bytes": 11268631040,
+  "processed_input_tokens": 99357,
+  "run_id": "a4add617336742bd9d645f56b34fc65244c0616e88907d554c1040a32c8cb648",
+  "seed": 2,
+  "selector_name": "conditional_aligned",
+  "steps": 128,
+  "supervised_tokens": 2048,
+  "this_process_cell_seconds": 36.121087500825524,
+  "training_seconds": 29.904492052271962,
+  "unique_training_examples": 1827
+}

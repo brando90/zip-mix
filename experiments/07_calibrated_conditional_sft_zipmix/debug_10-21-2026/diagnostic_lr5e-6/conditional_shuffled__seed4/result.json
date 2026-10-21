@@ -1,0 +1,38 @@
+{
+  "cell": "conditional_shuffled__seed4",
+  "completed_at": "2026-10-21T15:47:28.156054+00:00",
+  "evaluation_seconds": 3.376002497971058,
+  "infrastructure_resumes": [],
+  "learning_rate": 5e-06,
+  "manifest_id": "c01070d759aecb131d8d669c831c0e5491940f9825f5b35fc15fbfb4cdfff0b6",
+  "mean_training_loss": 0.8270813620183617,
+  "method": "conditional_shuffled",
+  "metrics": {
+    "cal_retention": {
+      "accuracy": 0.562,
+      "correct": 281,
+      "count": 500,
+      "label_nll": 1.1600503247715532
+    },
+    "cal_target": {
+      "accuracy": 0.798,
+      "correct": 399,
+      "count": 500,
+      "label_nll": 0.549313359242864
+    }
+  },
+  "mode": "diagnostic",
+  "model_file": null,
+  "model_sha256": "7dad26120f9d6858086ce38621e74bbbc40609f434e3cba9c4fccc03e8fad0af",
+  "padded_input_tokens": 165168,
+  "peak_allocated_bytes": 12739937280,
+  "processed_input_tokens": 99708,
+  "run_id": "a4add617336742bd9d645f56b34fc65244c0616e88907d554c1040a32c8cb648",
+  "seed": 4,
+  "selector_name": "conditional_shuffled",
+  "steps": 128,
+  "supervised_tokens": 2048,
+  "this_process_cell_seconds": 26.993300510570407,
+  "training_seconds": 23.080989331007004,
+  "unique_training_examples": 1827
+}
