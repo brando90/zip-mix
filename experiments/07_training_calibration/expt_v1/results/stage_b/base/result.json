@@ -1,0 +1,33 @@
+{
+  "completed_at": "2026-10-21T11:37:04.572420+00:00",
+  "elapsed_seconds": 12.529479785007425,
+  "metrics": {
+    "calibration_retention": {
+      "accuracy": 0.52,
+      "correct": 260,
+      "count": 500,
+      "label_nll": 1.1483184814453125
+    },
+    "calibration_target": {
+      "accuracy": 0.8,
+      "correct": 400,
+      "count": 500,
+      "label_nll": 0.5595152500243857
+    },
+    "holdout_retention": {
+      "accuracy": 0.546,
+      "correct": 273,
+      "count": 500,
+      "label_nll": 1.2155024039596318
+    },
+    "holdout_target": {
+      "accuracy": 0.788,
+      "correct": 394,
+      "count": 500,
+      "label_nll": 0.5611602263310924
+    }
+  },
+  "model": "Qwen/Qwen2.5-0.5B",
+  "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "run_id": "85f1f26223c2ce3b0afcff50fb5bc351b2e06c9405d90ea428216e673be0a1e2"
+}

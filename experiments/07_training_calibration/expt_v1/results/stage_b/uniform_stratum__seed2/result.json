@@ -1,0 +1,46 @@
+{
+  "cell": "uniform_stratum__seed2",
+  "completed_at": "2026-10-21T11:41:32.315226+00:00",
+  "evaluation_seconds": 2.24436253902968,
+  "infrastructure_resumes": [],
+  "learning_rate": 2e-06,
+  "manifest_id": "f54b0237acc487345dd42c12460f6e0487d14ab44d554803af1ed8d84340c5ce",
+  "mean_training_loss": 0.8231340041384101,
+  "method": "uniform_stratum",
+  "metrics": {
+    "calibration_retention": {
+      "accuracy": 0.576,
+      "correct": 288,
+      "count": 500,
+      "label_nll": 1.0595746758012101
+    },
+    "calibration_target": {
+      "accuracy": 0.804,
+      "correct": 402,
+      "count": 500,
+      "label_nll": 0.5223136331948918
+    },
+    "holdout_retention": {
+      "accuracy": 0.57,
+      "correct": 285,
+      "count": 500,
+      "label_nll": 1.1640798295922576
+    },
+    "holdout_target": {
+      "accuracy": 0.79,
+      "correct": 395,
+      "count": 500,
+      "label_nll": 0.5133046724474989
+    }
+  },
+  "padded_input_tokens": 170304,
+  "peak_allocated_bytes": 12117176832,
+  "processed_input_tokens": 99313,
+  "run_id": "85f1f26223c2ce3b0afcff50fb5bc351b2e06c9405d90ea428216e673be0a1e2",
+  "seed": 2,
+  "steps": 128,
+  "supervised_tokens": 2048,
+  "this_process_cell_seconds": 33.84782033797819,
+  "training_seconds": 31.054178718011826,
+  "unique_training_examples": 1848
+}

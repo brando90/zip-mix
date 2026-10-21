@@ -1,0 +1,720 @@
+{
+  "base": {
+    "completed_at": "2026-10-21T11:37:04.574317+00:00",
+    "metrics": {
+      "calibration_retention": {
+        "accuracy": 0.52,
+        "correct": 260,
+        "count": 500,
+        "label_nll": 1.1483184814453125
+      },
+      "calibration_target": {
+        "accuracy": 0.8,
+        "correct": 400,
+        "count": 500,
+        "label_nll": 0.5595152500243857
+      },
+      "holdout_retention": {
+        "accuracy": 0.546,
+        "correct": 273,
+        "count": 500,
+        "label_nll": 1.2155024039596318
+      },
+      "holdout_target": {
+        "accuracy": 0.788,
+        "correct": 394,
+        "count": 500,
+        "label_nll": 0.5611602263310924
+      }
+    },
+    "status": "complete"
+  },
+  "cells": [
+    {
+      "completed_at": "2026-10-21T11:37:34.902879+00:00",
+      "elapsed_training_seconds": 27.554844920989126,
+      "id": "conditional_signed_rank__seed0",
+      "last_training_loss": 1.0625407695770264,
+      "learning_rate": 2e-06,
+      "method": "conditional_signed_rank",
+      "metrics": {
+        "calibration_retention": {
+          "accuracy": 0.564,
+          "correct": 282,
+          "count": 500,
+          "label_nll": 1.0555180932246149
+        },
+        "calibration_target": {
+          "accuracy": 0.796,
+          "correct": 398,
+          "count": 500,
+          "label_nll": 0.5196930145467632
+        },
+        "holdout_retention": {
+          "accuracy": 0.574,
+          "correct": 287,
+          "count": 500,
+          "label_nll": 1.1194166315719485
+        },
+        "holdout_target": {
+          "accuracy": 0.812,
+          "correct": 406,
+          "count": 500,
+          "label_nll": 0.518423866271507
+        }
+      },
+      "padded_input_tokens": 168368,
+      "process_id": 74578,
+      "processed_input_tokens": 100402,
+      "result_file": "conditional_signed_rank__seed0/result.json",
+      "seed": 0,
+      "started_at": "2026-10-21T11:37:04.577684+00:00",
+      "status": "complete",
+      "step": 128,
+      "updated_at": "2026-10-21T11:37:32.645996+00:00"
+    },
+    {
+      "completed_at": "2026-10-21T11:38:09.973805+00:00",
+      "elapsed_training_seconds": 31.774652049993165,
+      "id": "conditional_signed_rank__seed1",
+      "last_training_loss": 1.0266863107681274,
+      "learning_rate": 2e-06,
+      "method": "conditional_signed_rank",
+      "metrics": {
+        "calibration_retention": {
+          "accuracy": 0.576,
+          "correct": 288,
+          "count": 500,
+          "label_nll": 1.0551864059232174
+        },
+        "calibration_target": {
+          "accuracy": 0.804,
+          "correct": 402,
+          "count": 500,
+          "label_nll": 0.5346675169053487
+        },
+        "holdout_retention": {
+          "accuracy": 0.564,
+          "correct": 282,
+          "count": 500,
+          "label_nll": 1.1334418610427528
+        },
+        "holdout_target": {
+          "accuracy": 0.812,
+          "correct": 406,
+          "count": 500,
+          "label_nll": 0.5168817046741023
+        }
+      },
+      "padded_input_tokens": 164400,
+      "process_id": 74578,
+      "processed_input_tokens": 99085,
+      "result_file": "conditional_signed_rank__seed1/result.json",
+      "seed": 1,
+      "started_at": "2026-10-21T11:37:35.384413+00:00",
+      "status": "complete",
+      "step": 128,
+      "updated_at": "2026-10-21T11:38:07.712415+00:00"
+    },
+    {
+      "completed_at": "2026-10-21T11:38:43.499870+00:00",
+      "elapsed_training_seconds": 30.23950187000446,
+      "id": "conditional_signed_rank__seed2",
+      "last_training_loss": 0.7034105062484741,
+      "learning_rate": 2e-06,
+      "method": "conditional_signed_rank",
+      "metrics": {
+        "calibration_retention": {
+          "accuracy": 0.566,
+          "correct": 283,
+          "count": 500,
+          "label_nll": 1.0805225027278065
+        },
+        "calibration_target": {
+          "accuracy": 0.796,
+          "correct": 398,
+          "count": 500,
+          "label_nll": 0.525381347260438
+        },
+        "holdout_retention": {
+          "accuracy": 0.572,
+          "correct": 286,
+          "count": 500,
+          "label_nll": 1.131060245849192
+        },
+        "holdout_target": {
+          "accuracy": 0.808,
+          "correct": 404,
+          "count": 500,
+          "label_nll": 0.5185672506121919
+        }
+      },
+      "padded_input_tokens": 159776,
+      "process_id": 74578,
+      "processed_input_tokens": 99357,
+      "result_file": "conditional_signed_rank__seed2/result.json",
+      "seed": 2,
+      "started_at": "2026-10-21T11:38:10.451527+00:00",
+      "status": "complete",
+      "step": 128,
+      "updated_at": "2026-10-21T11:38:41.234221+00:00"
+    },
+    {
+      "completed_at": "2026-10-21T11:39:16.874193+00:00",
+      "elapsed_training_seconds": 30.108623691019602,
+      "id": "conditional_signed_rank__seed3",
+      "last_training_loss": 0.7811599373817444,
+      "learning_rate": 2e-06,
+      "method": "conditional_signed_rank",
+      "metrics": {
+        "calibration_retention": {
+          "accuracy": 0.572,
+          "correct": 286,
+          "count": 500,
+          "label_nll": 1.0692506429813802
+        },
+        "calibration_target": {
+          "accuracy": 0.808,
+          "correct": 404,
+          "count": 500,
+          "label_nll": 0.5301445754515007
+        },
+        "holdout_retention": {
+          "accuracy": 0.558,
+          "correct": 279,
+          "count": 500,
+          "label_nll": 1.1512206066399813
+        },
+        "holdout_target": {
+          "accuracy": 0.81,
+          "correct": 405,
+          "count": 500,
+          "label_nll": 0.5094941703905351
+        }
+      },
+      "padded_input_tokens": 163136,
+      "process_id": 74578,
+      "processed_input_tokens": 99484,
+      "result_file": "conditional_signed_rank__seed3/result.json",
+      "seed": 3,
+      "started_at": "2026-10-21T11:38:43.924748+00:00",
+      "status": "complete",
+      "step": 128,
+      "updated_at": "2026-10-21T11:39:14.582707+00:00"
+    },
+    {
+      "completed_at": "2026-10-21T11:39:50.310357+00:00",
+      "elapsed_training_seconds": 30.182080336031504,
+      "id": "conditional_signed_rank__seed4",
+      "last_training_loss": 0.6914596557617188,
+      "learning_rate": 2e-06,
+      "method": "conditional_signed_rank",
+      "metrics": {
+        "calibration_retention": {
+          "accuracy": 0.582,
+          "correct": 291,
+          "count": 500,
+          "label_nll": 1.0411268740817905
+        },
+        "calibration_target": {
+          "accuracy": 0.802,
+          "correct": 401,
+          "count": 500,
+          "label_nll": 0.5231237072655931
+        },
+        "holdout_retention": {
+          "accuracy": 0.556,
+          "correct": 278,
+          "count": 500,
+          "label_nll": 1.1317140427529813
+        },
+        "holdout_target": {
+          "accuracy": 0.796,
+          "correct": 398,
+          "count": 500,
+          "label_nll": 0.5349892114602263
+        }
+      },
+      "padded_input_tokens": 162768,
+      "process_id": 74578,
+      "processed_input_tokens": 99281,
+      "result_file": "conditional_signed_rank__seed4/result.json",
+      "seed": 4,
+      "started_at": "2026-10-21T11:39:17.299796+00:00",
+      "status": "complete",
+      "step": 128,
+      "updated_at": "2026-10-21T11:39:48.036682+00:00"
+    },
+    {
+      "completed_at": "2026-10-21T11:40:24.297121+00:00",
+      "elapsed_training_seconds": 30.738640181021765,
+      "id": "uniform_stratum__seed0",
+      "last_training_loss": 1.8261992931365967,
+      "learning_rate": 2e-06,
+      "method": "uniform_stratum",
+      "metrics": {
+        "calibration_retention": {
+          "accuracy": 0.572,
+          "correct": 286,
+          "count": 500,
+          "label_nll": 1.0475452735889703
+        },
+        "calibration_target": {
+          "accuracy": 0.8,
+          "correct": 400,
+          "count": 500,
+          "label_nll": 0.5207897391368169
+        },
+        "holdout_retention": {
+          "accuracy": 0.57,
+          "correct": 285,
+          "count": 500,
+          "label_nll": 1.1151665285155177
+        },
+        "holdout_target": {
+          "accuracy": 0.818,
+          "correct": 409,
+          "count": 500,
+          "label_nll": 0.5082172021393199
+        }
+      },
+      "padded_input_tokens": 163264,
+      "process_id": 74578,
+      "processed_input_tokens": 99228,
+      "result_file": "uniform_stratum__seed0/result.json",
+      "seed": 0,
+      "started_at": "2026-10-21T11:39:50.743680+00:00",
+      "status": "complete",
+      "step": 128,
+      "updated_at": "2026-10-21T11:40:22.034338+00:00"
+    },
+    {
+      "completed_at": "2026-10-21T11:40:58.028950+00:00",
+      "elapsed_training_seconds": 30.44999504100997,
+      "id": "uniform_stratum__seed1",
+      "last_training_loss": 0.5138356685638428,
+      "learning_rate": 2e-06,
+      "method": "uniform_stratum",
+      "metrics": {
+        "calibration_retention": {
+          "accuracy": 0.564,
+          "correct": 282,
+          "count": 500,
+          "label_nll": 1.0261583520509303
+        },
+        "calibration_target": {
+          "accuracy": 0.806,
+          "correct": 403,
+          "count": 500,
+          "label_nll": 0.5098080443986691
+        },
+        "holdout_retention": {
+          "accuracy": 0.564,
+          "correct": 282,
+          "count": 500,
+          "label_nll": 1.1226301181726157
+        },
+        "holdout_target": {
+          "accuracy": 0.8,
+          "correct": 400,
+          "count": 500,
+          "label_nll": 0.4993420762855094
+        }
+      },
+      "padded_input_tokens": 165760,
+      "process_id": 74578,
+      "processed_input_tokens": 100069,
+      "result_file": "uniform_stratum__seed1/result.json",
+      "seed": 1,
+      "started_at": "2026-10-21T11:40:24.737948+00:00",
+      "status": "complete",
+      "step": 128,
+      "updated_at": "2026-10-21T11:40:55.752272+00:00"
+    },
+    {
+      "completed_at": "2026-10-21T11:41:32.318889+00:00",
+      "elapsed_training_seconds": 31.054178718011826,
+      "id": "uniform_stratum__seed2",
+      "last_training_loss": 1.0711746215820312,
+      "learning_rate": 2e-06,
+      "method": "uniform_stratum",
+      "metrics": {
+        "calibration_retention": {
+          "accuracy": 0.576,
+          "correct": 288,
+          "count": 500,
+          "label_nll": 1.0595746758012101
+        },
+        "calibration_target": {
+          "accuracy": 0.804,
+          "correct": 402,
+          "count": 500,
+          "label_nll": 0.5223136331948918
+        },
+        "holdout_retention": {
+          "accuracy": 0.57,
+          "correct": 285,
+          "count": 500,
+          "label_nll": 1.1640798295922576
+        },
+        "holdout_target": {
+          "accuracy": 0.79,
+          "correct": 395,
+          "count": 500,
+          "label_nll": 0.5133046724474989
+        }
+      },
+      "padded_input_tokens": 170304,
+      "process_id": 74578,
+      "processed_input_tokens": 99313,
+      "result_file": "uniform_stratum__seed2/result.json",
+      "seed": 2,
+      "started_at": "2026-10-21T11:40:58.464414+00:00",
+      "status": "complete",
+      "step": 128,
+      "updated_at": "2026-10-21T11:41:30.068358+00:00"
+    },
+    {
+      "completed_at": "2026-10-21T11:42:05.451933+00:00",
+      "elapsed_training_seconds": 29.863518733996898,
+      "id": "uniform_stratum__seed3",
+      "last_training_loss": 0.9690014123916626,
+      "learning_rate": 2e-06,
+      "method": "uniform_stratum",
+      "metrics": {
+        "calibration_retention": {
+          "accuracy": 0.57,
+          "correct": 285,
+          "count": 500,
+          "label_nll": 1.0578984437454493
+        },
+        "calibration_target": {
+          "accuracy": 0.796,
+          "correct": 398,
+          "count": 500,
+          "label_nll": 0.5196600959016942
+        },
+        "holdout_retention": {
+          "accuracy": 0.568,
+          "correct": 284,
+          "count": 500,
+          "label_nll": 1.1561814329195768
+        },
+        "holdout_target": {
+          "accuracy": 0.792,
+          "correct": 396,
+          "count": 500,
+          "label_nll": 0.5311641683632042
+        }
+      },
+      "padded_input_tokens": 167568,
+      "process_id": 74578,
+      "processed_input_tokens": 100659,
+      "result_file": "uniform_stratum__seed3/result.json",
+      "seed": 3,
+      "started_at": "2026-10-21T11:41:32.734504+00:00",
+      "status": "complete",
+      "step": 128,
+      "updated_at": "2026-10-21T11:42:03.138847+00:00"
+    },
+    {
+      "completed_at": "2026-10-21T11:42:39.372175+00:00",
+      "elapsed_training_seconds": 30.806439082953148,
+      "id": "uniform_stratum__seed4",
+      "last_training_loss": 1.0997201204299927,
+      "learning_rate": 2e-06,
+      "method": "uniform_stratum",
+      "metrics": {
+        "calibration_retention": {
+          "accuracy": 0.564,
+          "correct": 282,
+          "count": 500,
+          "label_nll": 1.0543881693631412
+        },
+        "calibration_target": {
+          "accuracy": 0.798,
+          "correct": 399,
+          "count": 500,
+          "label_nll": 0.5048896681535989
+        },
+        "holdout_retention": {
+          "accuracy": 0.568,
+          "correct": 284,
+          "count": 500,
+          "label_nll": 1.142413327941671
+        },
+        "holdout_target": {
+          "accuracy": 0.8,
+          "correct": 400,
+          "count": 500,
+          "label_nll": 0.5121614479757846
+        }
+      },
+      "padded_input_tokens": 160864,
+      "process_id": 74578,
+      "processed_input_tokens": 99231,
+      "result_file": "uniform_stratum__seed4/result.json",
+      "seed": 4,
+      "started_at": "2026-10-21T11:42:05.744342+00:00",
+      "status": "complete",
+      "step": 128,
+      "updated_at": "2026-10-21T11:42:37.104127+00:00"
+    },
+    {
+      "completed_at": "2026-10-21T11:43:10.518791+00:00",
+      "elapsed_training_seconds": 28.11036031600088,
+      "id": "permuted_stratum_rank__seed0",
+      "last_training_loss": 0.6985081434249878,
+      "learning_rate": 2e-06,
+      "method": "permuted_stratum_rank",
+      "metrics": {
+        "calibration_retention": {
+          "accuracy": 0.582,
+          "correct": 291,
+          "count": 500,
+          "label_nll": 1.0438074699845166
+        },
+        "calibration_target": {
+          "accuracy": 0.794,
+          "correct": 397,
+          "count": 500,
+          "label_nll": 0.5384130542129278
+        },
+        "holdout_retention": {
+          "accuracy": 0.574,
+          "correct": 287,
+          "count": 500,
+          "label_nll": 1.12486268158257
+        },
+        "holdout_target": {
+          "accuracy": 0.792,
+          "correct": 396,
+          "count": 500,
+          "label_nll": 0.5439528406986501
+        }
+      },
+      "padded_input_tokens": 168464,
+      "process_id": 74578,
+      "processed_input_tokens": 100176,
+      "result_file": "permuted_stratum_rank__seed0/result.json",
+      "seed": 0,
+      "started_at": "2026-10-21T11:42:39.595401+00:00",
+      "status": "complete",
+      "step": 128,
+      "updated_at": "2026-10-21T11:43:08.259856+00:00"
+    },
+    {
+      "completed_at": "2026-10-21T11:43:45.925765+00:00",
+      "elapsed_training_seconds": 32.30839953501709,
+      "id": "permuted_stratum_rank__seed1",
+      "last_training_loss": 1.0768587589263916,
+      "learning_rate": 2e-06,
+      "method": "permuted_stratum_rank",
+      "metrics": {
+        "calibration_retention": {
+          "accuracy": 0.574,
+          "correct": 287,
+          "count": 500,
+          "label_nll": 1.0526523604504765
+        },
+        "calibration_target": {
+          "accuracy": 0.798,
+          "correct": 399,
+          "count": 500,
+          "label_nll": 0.514262424448505
+        },
+        "holdout_retention": {
+          "accuracy": 0.578,
+          "correct": 289,
+          "count": 500,
+          "label_nll": 1.112542224947363
+        },
+        "holdout_target": {
+          "accuracy": 0.812,
+          "correct": 406,
+          "count": 500,
+          "label_nll": 0.5006441312374081
+        }
+      },
+      "padded_input_tokens": 162112,
+      "process_id": 74578,
+      "processed_input_tokens": 99694,
+      "result_file": "permuted_stratum_rank__seed1/result.json",
+      "seed": 1,
+      "started_at": "2026-10-21T11:43:10.788434+00:00",
+      "status": "complete",
+      "step": 128,
+      "updated_at": "2026-10-21T11:43:43.653595+00:00"
+    },
+    {
+      "completed_at": "2026-10-21T11:44:17.288100+00:00",
+      "elapsed_training_seconds": 28.25226684997324,
+      "id": "permuted_stratum_rank__seed2",
+      "last_training_loss": 0.6608085632324219,
+      "learning_rate": 2e-06,
+      "method": "permuted_stratum_rank",
+      "metrics": {
+        "calibration_retention": {
+          "accuracy": 0.576,
+          "correct": 288,
+          "count": 500,
+          "label_nll": 1.0805888582337648
+        },
+        "calibration_target": {
+          "accuracy": 0.79,
+          "correct": 395,
+          "count": 500,
+          "label_nll": 0.52879300378263
+        },
+        "holdout_retention": {
+          "accuracy": 0.578,
+          "correct": 289,
+          "count": 500,
+          "label_nll": 1.1441711356211455
+        },
+        "holdout_target": {
+          "accuracy": 0.796,
+          "correct": 398,
+          "count": 500,
+          "label_nll": 0.5419373709503561
+        }
+      },
+      "padded_input_tokens": 169744,
+      "process_id": 74578,
+      "processed_input_tokens": 100209,
+      "result_file": "permuted_stratum_rank__seed2/result.json",
+      "seed": 2,
+      "started_at": "2026-10-21T11:43:46.204916+00:00",
+      "status": "complete",
+      "step": 128,
+      "updated_at": "2026-10-21T11:44:14.995679+00:00"
+    },
+    {
+      "completed_at": "2026-10-21T11:44:50.723605+00:00",
+      "elapsed_training_seconds": 30.305112089030445,
+      "id": "permuted_stratum_rank__seed3",
+      "last_training_loss": 0.5733075141906738,
+      "learning_rate": 2e-06,
+      "method": "permuted_stratum_rank",
+      "metrics": {
+        "calibration_retention": {
+          "accuracy": 0.562,
+          "correct": 281,
+          "count": 500,
+          "label_nll": 1.057936090974137
+        },
+        "calibration_target": {
+          "accuracy": 0.804,
+          "correct": 402,
+          "count": 500,
+          "label_nll": 0.5309566501919181
+        },
+        "holdout_retention": {
+          "accuracy": 0.562,
+          "correct": 281,
+          "count": 500,
+          "label_nll": 1.129210036866367
+        },
+        "holdout_target": {
+          "accuracy": 0.812,
+          "correct": 406,
+          "count": 500,
+          "label_nll": 0.5239440064176452
+        }
+      },
+      "padded_input_tokens": 168144,
+      "process_id": 74578,
+      "processed_input_tokens": 100191,
+      "result_file": "permuted_stratum_rank__seed3/result.json",
+      "seed": 3,
+      "started_at": "2026-10-21T11:44:17.554699+00:00",
+      "status": "complete",
+      "step": 128,
+      "updated_at": "2026-10-21T11:44:48.397605+00:00"
+    },
+    {
+      "completed_at": "2026-10-21T11:45:21.648483+00:00",
+      "elapsed_training_seconds": 27.8596667899983,
+      "id": "permuted_stratum_rank__seed4",
+      "last_training_loss": 0.7651717662811279,
+      "learning_rate": 2e-06,
+      "method": "permuted_stratum_rank",
+      "metrics": {
+        "calibration_retention": {
+          "accuracy": 0.574,
+          "correct": 287,
+          "count": 500,
+          "label_nll": 1.0565862352475524
+        },
+        "calibration_target": {
+          "accuracy": 0.798,
+          "correct": 399,
+          "count": 500,
+          "label_nll": 0.5355551502257585
+        },
+        "holdout_retention": {
+          "accuracy": 0.57,
+          "correct": 285,
+          "count": 500,
+          "label_nll": 1.1358611946888268
+        },
+        "holdout_target": {
+          "accuracy": 0.786,
+          "correct": 393,
+          "count": 500,
+          "label_nll": 0.5251919779661112
+        }
+      },
+      "padded_input_tokens": 165168,
+      "process_id": 74578,
+      "processed_input_tokens": 99708,
+      "result_file": "permuted_stratum_rank__seed4/result.json",
+      "seed": 4,
+      "started_at": "2026-10-21T11:44:50.953683+00:00",
+      "status": "complete",
+      "step": 128,
+      "updated_at": "2026-10-21T11:45:19.361863+00:00"
+    }
+  ],
+  "created_at": "2026-10-21T11:36:51.977861+00:00",
+  "expected_training_cells": 15,
+  "identity": {
+    "code": {
+      "analyze_calibration.py": "d7152909ee98a4ff792296508995e40c3afdd7a60df5b9c4a05fe9e966ec42b0",
+      "calib_common.py": "faaed08a9b62f55a6ad1767b969a934d03e7257899514352744e212fd2e49433",
+      "train_calibration.py": "531718aec5829d3129dc537f4160d9cc6e35ccc0dbb6956c2c41deb72e60b63b"
+    },
+    "decision_id": "b9323dbc5b2c7049ec72b13c593b3079dffb0a304a2e963e38aadf31bef66523",
+    "eval_batch_size": 16,
+    "manifest_id": "f54b0237acc487345dd42c12460f6e0487d14ab44d554803af1ed8d84340c5ce",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+    "smoke": false,
+    "train": {
+      "batch_size": 16,
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "checkpoint_every": 64,
+      "eps": 1e-08,
+      "gradient_clip": 1.0,
+      "max_infrastructure_resumes_per_cell": 1,
+      "max_input_length": 256,
+      "steps": 128,
+      "warmup_steps": 8,
+      "weight_decay": 0.01
+    }
+  },
+  "run_id": "85f1f26223c2ce3b0afcff50fb5bc351b2e06c9405d90ea428216e673be0a1e2",
+  "runtime": {
+    "cuda": "13.0",
+    "device": "NVIDIA L40S",
+    "torch": "2.13.0+cu130",
+    "transformers": "4.57.6"
+  },
+  "smoke": false,
+  "stage": "stage_b",
+  "status": "complete",
+  "updated_at": "2026-10-21T11:45:21.956884+00:00"
+}
