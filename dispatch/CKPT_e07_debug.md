@@ -1,7 +1,7 @@
 # CKPT: Exp 07 null-result debug (worker cc-zipmix-e07-debug-10-21-2026)
 
 Created: 10-21-2026 08:36 PDT
-Last updated: 10-21-2026 08:49 PDT
+Last updated: 10-21-2026 08:50 PDT
 
 ## Goal
 - Why does Experiment 07 (calibrated conditional SFT Zip-Mix) give a null result; fix genuine bugs on branch `codex-zipmix-e07-debug-10-21-2026`; run one smallest prospective diagnostic (≤30 GPU-min); preserve the original run and main.
@@ -10,6 +10,7 @@ Last updated: 10-21-2026 08:49 PDT
 - 10-21-2026 15:19Z attempt 3 started (Claude `claude-fable-5-1`, effort max, `--dangerously-skip-permissions`); ACK.md written 15:21Z.
 - Discovered the actual Exp 07 run on GitHub branch `calib/exp07-fresh-calibration` (`experiments/07_training_calibration`, commits 965bb9e..447e8a5, FarmShare L40S jobs 1861877/1862429). Extracted read-only copy to `../orig_branch_ro/` (outside the repo). The locally transferred folder `experiments/07_calibrated_conditional_sft_zipmix` is a different, never-run implementation.
 - Deterministic checks on local frozen data: 18/18 file hashes, manifest id, selection vectors reproduce (max abs diff 2.7e-20); zero id/question overlaps across 8 splits.
+- Commit `7c8885f` pushed to `origin/codex-zipmix-e07-debug-10-21-2026` 10-21-2026 15:50Z; main untouched (449a98f).
 - Patched local trainer: (1) missing-file hash crash, (2) missing `method_status` KeyError, (3) selection.npz metadata arrays validated as weights → abort; added diagnostic mode and `test_exp07.py` (13 tests pass on CPU).
 
 ## Results
@@ -27,7 +28,7 @@ Last updated: 10-21-2026 08:49 PDT
 - nothing
 
 ## Next steps
-1. Commit the branch (`git add experiments/07_calibrated_conditional_sft_zipmix dispatch && git commit`), push `codex-zipmix-e07-debug-10-21-2026` only; write `dispatch/COMPLETE.md`.
+1. DONE: committed `7c8885f` and pushed branch `codex-zipmix-e07-debug-10-21-2026` (remote head verified); `dispatch/COMPLETE.md` written.
 2. Coordinator: review `DEBUG_REPORT.md`; decide whether a separately frozen prospective version with a calibration rule that trades a bounded target drop for more movement is worth running (not authorized here).
 3. Cleanup owner: coordinator (parent chat) removes `/lfs/skampere2/0/brando9/snap_jobs/codex-zipmix-e07-debug-10-21-2026/` after the branch is verified on GitHub; `orig_branch_ro/` and `expt_v1/runs_diag/` are regenerable.
 
@@ -38,3 +39,4 @@ Last updated: 10-21-2026 08:49 PDT
 - 10-21-2026 08:36 PDT -- checkpoint created; original run located on branch calib/exp07-fresh-calibration; trainer patched; diagnostic pre-registered, launching next.
 - 10-21-2026 08:40 PDT -- bug 3 found by the first diagnostic launch (no GPU time consumed beyond model load); fixed + regression test; diagnostic relaunched (15 cells + base, lr 5e-6, GPU 1, timeout 1800 s). Per-item analysis of original run: arms differ (5.1–5.6% same-seed disagreement) about as much as seeds within an arm (5.3–5.6%); pooled discordant items favour aligned 61/42 vs uniform, 69/49 vs permuted (binomial p≈0.08).
 - 10-21-2026 08:49 PDT -- diagnostic complete 15/15 (exit 0, GPU released); results, report §7, results.md updated; next: commit + push branch, completion marker.
+- 10-21-2026 08:50 PDT -- deliverables committed (7c8885f) and pushed; COMPLETE.md written; session ending.
