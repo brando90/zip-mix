@@ -1,0 +1,26 @@
+{
+ "uniform": {
+  "arc_challenge": 0.11227926916402983,
+  "commonsense_qa": 0.2775339389609064,
+  "openbookqa": 0.30488925181177906,
+  "sciq": 0.30529754006328463
+ },
+ "global_tilt": {
+  "arc_challenge": 0.11932809657988606,
+  "commonsense_qa": 0.0197835706118938,
+  "openbookqa": 0.1271719476457306,
+  "sciq": 0.7337163851624895
+ },
+ "oracle_sciq": {
+  "arc_challenge": 3.6776997659525143e-13,
+  "commonsense_qa": 9.090605148749896e-13,
+  "openbookqa": 9.986626546272871e-13,
+  "sciq": 0.9999999999977248
+ },
+ "anti_sciq": {
+  "arc_challenge": 0.16162209814862127,
+  "commonsense_qa": 0.3995004407873648,
+  "openbookqa": 0.4388774610635744,
+  "sciq": 4.394651777836754e-13
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "arm": "anti_sciq",
+ "lr": 2e-05,
+ "seed": 4,
+ "metrics": {
+  "holdout_target": {
+   "correct": 351,
+   "count": 500,
+   "accuracy": 0.702,
+   "label_nll": 0.7561876381374896
+  },
+  "holdout_retention": {
+   "correct": 237,
+   "count": 500,
+   "accuracy": 0.474,
+   "label_nll": 1.3913069847896695
+  },
+  "calibration_target": {
+   "correct": 330,
+   "count": 500,
+   "accuracy": 0.66,
+   "label_nll": 0.8603538765832782
+  },
+  "calibration_retention": {
+   "correct": 262,
+   "count": 500,
+   "accuracy": 0.524,
+   "label_nll": 1.284381029754877
+  }
+ },
+ "mean_train_loss": 1.1687775859609246,
+ "sciq_share_drawn": 0.0,
+ "unique_drawn": 1779,
+ "seconds": 20.94566535949707
+}
