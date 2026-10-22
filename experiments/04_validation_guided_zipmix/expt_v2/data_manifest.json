@@ -1,0 +1,223 @@
+{
+  "broad_eval_blocks": 512,
+  "created_at": "2026-10-17T01:21:25.798381+00:00",
+  "dev_blocks": 64,
+  "domains": {
+    "ArXiv": 0,
+    "DM Mathematics": 1,
+    "FreeLaw": 2,
+    "Github": 3,
+    "Pile-CC": 4,
+    "PubMed Abstracts": 5,
+    "PubMed Central": 6,
+    "StackExchange": 7,
+    "USPTO Backgrounds": 8,
+    "Wikipedia (en)": 9
+  },
+  "files": {
+    "dev.npz": "fa1c72ba24ffde01c3996699d2cb05d8059bdc58e661ee9f355ff6f3986bbd39",
+    "eval.npz": "5f335a2be09d0b7bfa6262f1c0cdac2ed7c80c7ab36b528bc96e449978103f96",
+    "eval_window2.npz": "4707158c3d7a465e25d372cc53f2ab8e25a5333092d57d5c0a313d6035ac57ee",
+    "split_manifest.json": "b7e46f4cec0eff981a483cffdcfb933ef50e5bbe5d008b2575af1371c2ea3dbe",
+    "tokenizer.json": "c2850028ba5cf1016fceed878da3ec55aa183f87714eaf6b56b314199158a5c9",
+    "train.npz": "df2e5044cc01e825c351c4432f44c89a27477e867f7c531923be776fd43e6ddd"
+  },
+  "fresh_window2_broad_eval_blocks": 508,
+  "fresh_window2_target_eval_blocks": 122,
+  "fresh_window2_token_slice": [
+    129,
+    258
+  ],
+  "parent_v1_files": {
+    "dev.npz": "fa1c72ba24ffde01c3996699d2cb05d8059bdc58e661ee9f355ff6f3986bbd39",
+    "eval.npz": "5f335a2be09d0b7bfa6262f1c0cdac2ed7c80c7ab36b528bc96e449978103f96",
+    "split_manifest.json": "b7e46f4cec0eff981a483cffdcfb933ef50e5bbe5d008b2575af1371c2ea3dbe",
+    "tokenizer.json": "c2850028ba5cf1016fceed878da3ec55aa183f87714eaf6b56b314199158a5c9",
+    "train.npz": "df2e5044cc01e825c351c4432f44c89a27477e867f7c531923be776fd43e6ddd"
+  },
+  "schema": 2,
+  "seconds": 3.1540088653564453,
+  "selector_diagnostics": {
+    "max_domain_matched_discrepancy": 5.551115123125783e-17,
+    "max_within_domain_conditional_joint_discrepancy": 6.938893903907228e-18,
+    "nonempty_domain_bin_cells": 62,
+    "static_arms": {
+      "domain_matched_zipmix": {
+        "bucket_mass": [
+          0.06508399173495628,
+          0.18945272090120427,
+          0.3331900312010942,
+          0.23076582256511818,
+          0.1477355047253443,
+          0.0332751722001205,
+          0.000496756672162655
+        ],
+        "domain_mass": {
+          "ArXiv": 0.03484836524303518,
+          "DM Mathematics": 0.00285893030882413,
+          "FreeLaw": 0.021313142731745734,
+          "Github": 0.029411368972871076,
+          "Pile-CC": 0.26042701083079217,
+          "PubMed Abstracts": 0.13951481618949568,
+          "PubMed Central": 0.24818600791127557,
+          "StackExchange": 0.0863083751142508,
+          "USPTO Backgrounds": 0.10092026315185972,
+          "Wikipedia (en)": 0.07621171954585026
+        },
+        "effective_block_fraction": 0.6414063014327405,
+        "effective_blocks": 66143.7420226485,
+        "target_pubmed_mass": 0.3877008241007713,
+        "total_variation_from_token_proportional": 0.2716633568622962
+      },
+      "shuffled_domain_bin_seed0": {
+        "bucket_mass": [
+          0.08898243040552967,
+          0.17978453675264452,
+          0.23272631386543777,
+          0.2290231781837972,
+          0.23281048469811735,
+          0.03557904441322921,
+          0.0010940116812440054
+        ],
+        "domain_mass": {
+          "ArXiv": 0.010939360451759104,
+          "DM Mathematics": 0.04829336155343149,
+          "FreeLaw": 0.059747115824002175,
+          "Github": 0.04852615430069946,
+          "Pile-CC": 0.23102357006289354,
+          "PubMed Abstracts": 0.1362794067386373,
+          "PubMed Central": 0.1473511438760976,
+          "StackExchange": 0.14880332313962785,
+          "USPTO Backgrounds": 0.06663083717223367,
+          "Wikipedia (en)": 0.10240572688061755
+        },
+        "effective_block_fraction": 0.6350470068425851,
+        "effective_blocks": 65487.9524866279,
+        "target_pubmed_mass": 0.2836305506147349,
+        "total_variation_from_token_proportional": 0.3046956272850602
+      },
+      "token_proportional": {
+        "bucket_mass": [
+          0.11437797581528851,
+          0.1752179436207247,
+          0.26609000901835667,
+          0.24597810381777094,
+          0.1584515578483946,
+          0.0390698486273673,
+          0.0008145612520970105
+        ],
+        "domain_mass": {
+          "ArXiv": 0.030904841790871086,
+          "DM Mathematics": 0.024359260300805832,
+          "FreeLaw": 0.047331827041494134,
+          "Github": 0.08538347410374017,
+          "Pile-CC": 0.3406417579007592,
+          "PubMed Abstracts": 0.06734676066444922,
+          "PubMed Central": 0.08094217584825884,
+          "StackExchange": 0.15899459868312593,
+          "USPTO Backgrounds": 0.07261231732979062,
+          "Wikipedia (en)": 0.09148298633670468
+        },
+        "effective_block_fraction": 1.0000000000000877,
+        "effective_blocks": 103123.00000000904,
+        "target_pubmed_mass": 0.14828893651270808,
+        "total_variation_from_token_proportional": 0.0
+      },
+      "within_domain_conditional": {
+        "bucket_mass": [
+          0.11437797581528854,
+          0.17521794362072474,
+          0.2660900090183567,
+          0.24597810381777102,
+          0.15845155784839463,
+          0.039069848627367315,
+          0.0008145612520970105
+        ],
+        "domain_mass": {
+          "ArXiv": 0.030904841790871097,
+          "DM Mathematics": 0.024359260300805832,
+          "FreeLaw": 0.04733182704149414,
+          "Github": 0.08538347410374018,
+          "Pile-CC": 0.34064175790075923,
+          "PubMed Abstracts": 0.06734676066444925,
+          "PubMed Central": 0.08094217584825887,
+          "StackExchange": 0.15899459868312596,
+          "USPTO Backgrounds": 0.07261231732979063,
+          "Wikipedia (en)": 0.0914829863367047
+        },
+        "effective_block_fraction": 0.8656969828031498,
+        "effective_blocks": 89273.26995760921,
+        "target_pubmed_mass": 0.14828893651270814,
+        "total_variation_from_token_proportional": 0.16878741981377676
+      },
+      "zipmix_domain_bin": {
+        "bucket_mass": [
+          0.05888649695955465,
+          0.19071774587617432,
+          0.34931612972403003,
+          0.229484421988197,
+          0.142128420143208,
+          0.029214848349901682,
+          0.00025193695893448685
+        ],
+        "domain_mass": {
+          "ArXiv": 0.03484836524303518,
+          "DM Mathematics": 0.0028589303088241294,
+          "FreeLaw": 0.021313142731745734,
+          "Github": 0.029411368972871065,
+          "Pile-CC": 0.2604270108307921,
+          "PubMed Abstracts": 0.13951481618949568,
+          "PubMed Central": 0.24818600791127557,
+          "StackExchange": 0.0863083751142508,
+          "USPTO Backgrounds": 0.10092026315185967,
+          "Wikipedia (en)": 0.07621171954585028
+        },
+        "effective_block_fraction": 0.6373831711482617,
+        "effective_blocks": 65728.86475832219,
+        "target_pubmed_mass": 0.3877008241007712,
+        "total_variation_from_token_proportional": 0.2717720087553707
+      },
+      "zipmix_static": {
+        "bucket_mass": [
+          0.0964988824543169,
+          0.17401458070955494,
+          0.2814200109616785,
+          0.2501453621008596,
+          0.15966135080493166,
+          0.03781094013130472,
+          0.0004488728373536369
+        ],
+        "domain_mass": {
+          "ArXiv": 0.03174211292415638,
+          "DM Mathematics": 0.02402129009459906,
+          "FreeLaw": 0.048759687579902025,
+          "Github": 0.07746726527119843,
+          "Pile-CC": 0.3438525841815848,
+          "PubMed Abstracts": 0.06854907913405522,
+          "PubMed Central": 0.08348341639312351,
+          "StackExchange": 0.1562568983974849,
+          "USPTO Backgrounds": 0.07245952217337653,
+          "Wikipedia (en)": 0.09340814385051913
+        },
+        "effective_block_fraction": 0.9960448877526924,
+        "effective_blocks": 102715.1369597209,
+        "target_pubmed_mass": 0.1520324955271787,
+        "total_variation_from_token_proportional": 0.020707053182947372
+      }
+    },
+    "tv_within_domain_conditional_vs_token_proportional": 0.16878741981377676,
+    "tv_zipmix_domain_bin_vs_domain_matched": 0.028005019842824393,
+    "tv_zipmix_domain_bin_vs_zipmix_static": 0.2673635237023593
+  },
+  "seq_len": 128,
+  "source_sha256": "9c7f882d25684858ab3194b26e93d5916fa7840724434962aa4494e870e640e8",
+  "target_domains": [
+    "PubMed Abstracts",
+    "PubMed Central"
+  ],
+  "target_eval_blocks": 128,
+  "train_blocks": 103123,
+  "train_documents": 14341,
+  "version": "expt_v2",
+  "vocab_size": 8192
+}
