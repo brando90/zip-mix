@@ -33,7 +33,7 @@ bash ~/zipmix_exp07/repo/experiments/07_training_calibration/expt_v1/launch/slur
 - `prep` (CPU, about 10 minutes): builds the experiment's own venv (FarmShare: the torch build of `~/venvs/fs_hf`; Sherlock: `python/3.12.1`, wheel-only `torch<=2.6.0`), checks that the data manifests are byte-identical to the committed ones and every file hash matches, downloads the pinned model, runs the CPU tests and writes `<work>/env_ok.json`. On Sherlock it runs in the foreground on `dev`, which refuses sbatch.
 - `calibration`: one GPU job (10-hour limit) runs base plus all 20 cells in order, then writes `runs/calibration/decision.json`. Not a job array: the trainer keeps one ledger under an exclusive lock and the analysis reads that ledger.
 - `stage_b`: submitted only when `decision.json` verifies and passed; the job and the trainer check again. 8-hour limit.
-- Every job mails END,FAIL to brandojazz@gmail.com and brando.science@gmail.com. A failed or timed-out stage resumes by submitting it again (each cell resumes at most once).
+- Every job mails END,FAIL to the submitting account's Slurm address (set `ZM_MAIL_USER=a@x,b@y` in the shell to send elsewhere; addresses are not stored in the repo). A failed or timed-out stage resumes by submitting it again (each cell resumes at most once).
 - `launch/slurm_collect.sh calibration|stage_b` writes `<work>/exp07_<stage>_results.tgz` (no checkpoints or weights) and prints its OnDemand `?download=1` link.
 
 **TLDR-end:** [zip-mix: exp07 launch] Same two stages on SNAP, a 1× A100 cloud box, Modal or Slurm (FarmShare/Sherlock); Stage A first, Stage B only after a passed decision.

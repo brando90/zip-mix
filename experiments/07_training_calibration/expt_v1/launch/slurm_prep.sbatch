@@ -7,7 +7,6 @@
 #SBATCH --mem=16G
 #SBATCH --time=01:00:00
 #SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=brandojazz@gmail.com,brando.science@gmail.com
 set -euo pipefail
 : "${ZIPMIX_CODE:?submit through launch/slurm_submit.sh}"
 source "$ZIPMIX_CODE/launch/slurm_common.sh"

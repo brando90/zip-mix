@@ -32,7 +32,9 @@ case $ZIPMIX_CLUSTER in
 esac
 export ZIPMIX_CLUSTER ZIPMIX_WORK ZIPMIX_VENV ZIPMIX_CODE
 PY=$ZIPMIX_VENV/bin/python
-ZM_MAIL=(--mail-type=END,FAIL --mail-user=brandojazz@gmail.com,brando.science@gmail.com)
+# Slurm mails the submitting account by default; set ZM_MAIL_USER=a@x,b@y to send elsewhere (kept out of the repo).
+ZM_MAIL=(--mail-type=END,FAIL)
+[[ -n ${ZM_MAIL_USER:-} ]] && ZM_MAIL+=(--mail-user="$ZM_MAIL_USER")
 
 zm_die() { echo "ERROR: $*" >&2; exit 1; }
 

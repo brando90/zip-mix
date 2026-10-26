@@ -10,7 +10,6 @@
 #SBATCH --mem=32G
 #SBATCH --time=10:00:00
 #SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=brandojazz@gmail.com,brando.science@gmail.com
 set -euo pipefail
 stage=${1:?usage: slurm_stage.sbatch calibration|stage_b}
 [[ $stage == calibration || $stage == stage_b ]] || { echo "unknown stage: $stage" >&2; exit 64; }
