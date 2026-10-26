@@ -1,0 +1,18 @@
+{
+  "corpus": "fineweb_edu",
+  "hf": {
+    "path": "HuggingFaceFW/fineweb-edu",
+    "name": "sample-10BT",
+    "split": "train"
+  },
+  "n_kept": 20000,
+  "n_seen": 20261,
+  "n_short_dropped": 261,
+  "min_bytes": 512,
+  "seed": 42,
+  "shuffle_buffer": 10000,
+  "sampling": "HF streaming .shuffle(seed, buffer_size) then first N docs passing the >=512-byte filter",
+  "wall_seconds": 35.869937896728516,
+  "lz4_cr_seconds": 5.89393101024325,
+  "lz4_docs_per_sec": 3393.3210221228182
+}

@@ -1,0 +1,18 @@
+{
+  "corpus": "dclm",
+  "hf": {
+    "path": "mlfoundations/dclm-baseline-1.0",
+    "name": null,
+    "split": "train"
+  },
+  "n_kept": 20000,
+  "n_seen": 21236,
+  "n_short_dropped": 1236,
+  "min_bytes": 512,
+  "seed": 42,
+  "shuffle_buffer": 10000,
+  "sampling": "HF streaming .shuffle(seed, buffer_size) then first N docs passing the >=512-byte filter",
+  "wall_seconds": 46.51912307739258,
+  "lz4_cr_seconds": 0.8357602615433279,
+  "lz4_docs_per_sec": 23930.307434176982
+}

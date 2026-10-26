@@ -221,3 +221,11 @@ This experiment directly fills the following paper sections:
 - **Data:** HuggingFace Hub access (public datasets)
 - **Predecessor:** Experiment 01 (proposal — defines bucket boundaries and alignment prior formula)
 - **Successor:** Experiment 03 (proxy model training — consumes the α^(0) priors computed here)
+
+---
+
+## Run log: Phase 2 on the committed pilots (2026-10-24, AT-1211)
+
+- Command: `python scripts/02_cr_distribution.py` (CPU, seconds). Inputs: committed `results/cr_pilot_*.csv` (20,000 docs per corpus, seed 42, LZ4 frame default, docs < 512 B dropped; meta JSONs). Env: Python 3.12, pandas 3.1.0, scipy 1.18.1, matplotlib 3.11.2, numpy.
+- Outputs: `results/phase2_*.csv|png`, `results/phase2_report.md`. Pilot scale only (the 500K plan is not run); no ZIP-FIT scoring (Phase 3 not started; scripts 02-04 still unwritten).
+- Findings (pilot): FineWeb-EDU and DCLM quartiles match Compel's reported ones to within 0.02; share of docs inside Compel's [0.65, 0.80] band is 64.7% (FineWeb-EDU), 61.9% (DCLM), 50.0% (Pile). Pile is wider and left-skewed (IQR 0.160, skew -0.79). Pairwise KS D is 0.09-0.20 (Cohen's d 0.24-0.54), so corpora differ modestly; p-values are not informative at this n.
