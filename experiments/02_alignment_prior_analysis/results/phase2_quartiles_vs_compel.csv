@@ -1,0 +1,3 @@
+corpus,q1_ours,q1_compel,med_ours,med_compel,q3_ours,q3_compel
+fineweb_edu,0.6745,0.6700,0.7257,0.7300,0.7830,0.7800
+dclm,0.6904,0.6900,0.7445,0.7500,0.8040,0.8200

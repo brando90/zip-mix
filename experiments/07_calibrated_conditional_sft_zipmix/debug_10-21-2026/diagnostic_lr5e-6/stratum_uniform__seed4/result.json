@@ -1,0 +1,38 @@
+{
+  "cell": "stratum_uniform__seed4",
+  "completed_at": "2026-10-21T15:45:02.819647+00:00",
+  "evaluation_seconds": 3.6080821119248867,
+  "infrastructure_resumes": [],
+  "learning_rate": 5e-06,
+  "manifest_id": "c01070d759aecb131d8d669c831c0e5491940f9825f5b35fc15fbfb4cdfff0b6",
+  "mean_training_loss": 0.8224314555991441,
+  "method": "stratum_uniform",
+  "metrics": {
+    "cal_retention": {
+      "accuracy": 0.552,
+      "correct": 276,
+      "count": 500,
+      "label_nll": 1.1485830933526158
+    },
+    "cal_target": {
+      "accuracy": 0.816,
+      "correct": 408,
+      "count": 500,
+      "label_nll": 0.5311192654874176
+    }
+  },
+  "mode": "diagnostic",
+  "model_file": null,
+  "model_sha256": "7c553ef47856529d8d6f486f43b1a9380a40825fbf7466b34401af6528e2ef0f",
+  "padded_input_tokens": 160864,
+  "peak_allocated_bytes": 11677455872,
+  "processed_input_tokens": 99231,
+  "run_id": "a4add617336742bd9d645f56b34fc65244c0616e88907d554c1040a32c8cb648",
+  "seed": 4,
+  "selector_name": "stratum_uniform",
+  "steps": 128,
+  "supervised_tokens": 2048,
+  "this_process_cell_seconds": 25.430808305740356,
+  "training_seconds": 21.22648472338915,
+  "unique_training_examples": 1854
+}
