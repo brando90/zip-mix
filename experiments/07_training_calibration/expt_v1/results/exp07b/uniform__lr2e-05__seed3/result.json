@@ -1,0 +1,35 @@
+{
+ "arm": "uniform",
+ "lr": 2e-05,
+ "seed": 3,
+ "metrics": {
+  "holdout_target": {
+   "correct": 367,
+   "count": 500,
+   "accuracy": 0.734,
+   "label_nll": 0.7183489876221866
+  },
+  "holdout_retention": {
+   "correct": 234,
+   "count": 500,
+   "accuracy": 0.468,
+   "label_nll": 1.283410574361682
+  },
+  "calibration_target": {
+   "correct": 367,
+   "count": 500,
+   "accuracy": 0.734,
+   "label_nll": 0.6893656424824148
+  },
+  "calibration_retention": {
+   "correct": 262,
+   "count": 500,
+   "accuracy": 0.524,
+   "label_nll": 1.252741032630205
+  }
+ },
+ "mean_train_loss": 1.0689530582167208,
+ "sciq_share_drawn": 0.3037109375,
+ "unique_drawn": 1828,
+ "seconds": 20.992645978927612
+}

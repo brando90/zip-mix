@@ -1,0 +1,271 @@
+{
+  "admission": {
+    "effective_fraction": {
+      "conditional_signed_rank": 0.8664348377039351,
+      "permuted_stratum_rank": 0.8656638733330213,
+      "uniform_stratum": 1.000000000000009
+    },
+    "joint_mass_max_error": 5.551115123125783e-17,
+    "passed": true,
+    "total_variation": {
+      "conditional_signed_rank_vs_permuted_stratum_rank": 0.22494221906868883,
+      "conditional_signed_rank_vs_uniform_stratum": 0.1685217943127122,
+      "uniform_stratum_vs_permuted_stratum_rank": 0.16909182183047947
+    }
+  },
+  "allocation_exclusions": {
+    "calibration_dev_views": {
+      "overlap_rejected": 2
+    },
+    "calibration_retention": {
+      "overlap_rejected": 0
+    },
+    "calibration_target": {
+      "overlap_rejected": 2
+    },
+    "calibration_train": {
+      "arc_challenge": {
+        "chosen": 297,
+        "overlap_rejected": 1
+      },
+      "commonsense_qa": {
+        "chosen": 3000,
+        "overlap_rejected": 1
+      },
+      "openbookqa": {
+        "chosen": 1824,
+        "overlap_rejected": 4
+      },
+      "sciq": {
+        "chosen": 3000,
+        "overlap_rejected": 5
+      }
+    },
+    "holdout_retention": {
+      "overlap_rejected": 1
+    },
+    "holdout_target": {
+      "overlap_rejected": 0
+    }
+  },
+  "arc_fresh_split": "validation",
+  "counts": {
+    "calibration_retention": 500,
+    "calibration_target": 500,
+    "holdout_retention": 500,
+    "holdout_target": 500,
+    "train": 9797
+  },
+  "created_at": "2026-10-18T17:48:41.016230+00:00",
+  "domains": [
+    "arc_challenge",
+    "commonsense_qa",
+    "openbookqa",
+    "sciq"
+  ],
+  "evaluation_sets": [
+    "holdout_target",
+    "holdout_retention",
+    "calibration_target",
+    "calibration_retention"
+  ],
+  "experiment": "07_training_calibration/expt_v1",
+  "files": {
+    "calibration_retention.npz": "fa65f050e2e7c92af1bd500182b97cec8950e129899998961729c45b4f8dd5be",
+    "calibration_target.npz": "abdee0f9acf824798538abf9da366874b6cbf930616775be16ce4b67077f0068",
+    "holdout_retention.npz": "705493b68201cb5f4816b78b1b3dcd828648de09b90e71282fce0c1b01ead8f2",
+    "holdout_target.npz": "8d40d21d0a4acf769193b6ba0800a9def085deaea7d758eb0e1393d1b8fe694f",
+    "identities.json": "7dd5f7215ce61d1270d76c46670b7d49c532718bbc28245016111ec12aeb4ce6",
+    "pack_scores.npz": "d6ceb7e3313af9287d408becb87759ca4aa76b4c17a59ef959a7bc55e9e94f17",
+    "records.jsonl": "15a36e695cd25b2caa5614dc8218309ab54e64c65d4d2a030c15364047876221",
+    "selection.npz": "d87ca69050d1104936d04e734cdf53d8b2ab8be0ec820a35fafd9f520daf2403",
+    "tokenizer/added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+    "tokenizer/chat_template.jinja": "44d5f08f3f72b837eaad09f13a54c1f9f4eb58d75240334548b7fd52a5437fa5",
+    "tokenizer/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+    "tokenizer/special_tokens_map.json": "6676f091c8bc4d1b50146427cfde92073402866b87b6e39223227931b70083e9",
+    "tokenizer/tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+    "tokenizer/tokenizer_config.json": "60f6e7bc948cedd377a20f01d022ef664d026fbc93d72e0a9bdac233f8632181",
+    "tokenizer/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "train.npz": "e1aef754847620f3554bb501b6b506fa364919a6f6ea9ea08a0af67913d4da18"
+  },
+  "fresh_evaluation_vs_stage_b_training_hits": {
+    "calibration_retention": 0,
+    "calibration_target": 0,
+    "holdout_retention": 0,
+    "holdout_target": 0
+  },
+  "fresh_pool_sizes": {
+    "arc_challenge": 298,
+    "commonsense_qa": 6618,
+    "openbookqa": 1828,
+    "sciq": 8540
+  },
+  "label_tokens": [
+    362,
+    425,
+    356,
+    422,
+    468
+  ],
+  "leakage_audit_pairwise_hits": {
+    "calibration_dev_views|calibration_train": 0,
+    "calibration_dev_views|experiment05_06_inputs": 0,
+    "calibration_retention|calibration_dev_views": 0,
+    "calibration_retention|calibration_train": 0,
+    "calibration_retention|experiment05_06_inputs": 0,
+    "calibration_target|calibration_dev_views": 0,
+    "calibration_target|calibration_retention": 0,
+    "calibration_target|calibration_train": 0,
+    "calibration_target|experiment05_06_inputs": 0,
+    "calibration_train|experiment05_06_inputs": 0,
+    "holdout_retention|calibration_dev_views": 0,
+    "holdout_retention|calibration_retention": 0,
+    "holdout_retention|calibration_target": 0,
+    "holdout_retention|calibration_train": 0,
+    "holdout_retention|experiment05_06_inputs": 0,
+    "holdout_target|calibration_dev_views": 0,
+    "holdout_target|calibration_retention": 0,
+    "holdout_target|calibration_target": 0,
+    "holdout_target|calibration_train": 0,
+    "holdout_target|experiment05_06_inputs": 0,
+    "holdout_target|holdout_retention": 0
+  },
+  "leakage_rule": "exact normalized question/content identity or any shared 13-word contiguous question/choice segment; wrappers and answer labels never scanned",
+  "manifest_id": "f54b0237acc487345dd42c12460f6e0487d14ab44d554803af1ed8d84340c5ce",
+  "model": "Qwen/Qwen2.5-0.5B",
+  "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "pad_token_id": 151643,
+  "parents": {
+    "exp05_v1_identities_sha256": "1885e8d38a132d62a84adc9e262a401c738a6e0308fb72a1c257f9ae1933f536",
+    "exp05_v1_manifest_id": "d133f1242f8edb9827ddcd1c3ad404bac8b56f688943c0d943ff3063ce5e097a",
+    "exp05_v2_identities_sha256": "6e727c7668086f401cf8e543c77f7d63805597230026ffec05e7d6c41fa6e398",
+    "exp05_v2_manifest_id": "0d6dec93e7d7ccffd87f95e7ebd19e78c84ec72a546007b122888789aba5cb44",
+    "identities_reproduced": true,
+    "next_stage_diagnostics_reproduced": true
+  },
+  "preparation_code": {
+    "calib_common.py": "faaed08a9b62f55a6ad1767b969a934d03e7257899514352744e212fd2e49433",
+    "prepare_calibration.py": "cbfc946fd5cd0216abf6cc076dfcc20f17348e3034197a04a83eeb9077b06b7b"
+  },
+  "recipe_source": "Stage A decision.json; trainer refuses Stage B without a passed decision",
+  "runtime": {
+    "datasets": "5.0.1",
+    "numpy": "2.5.4",
+    "python": "3.12.3"
+  },
+  "schema": 1,
+  "source_revisions": {
+    "arc_challenge": {
+      "config": "ARC-Challenge",
+      "repository": "allenai/ai2_arc",
+      "revision": "210d026faf9955653af8916fad021475a3f00453"
+    },
+    "commonsense_qa": {
+      "config": null,
+      "repository": "tau/commonsense_qa",
+      "revision": "94630fe30dad47192a8546eb75f094926d47e155"
+    },
+    "openbookqa": {
+      "config": "main",
+      "repository": "allenai/openbookqa",
+      "revision": "388097ea7776314e93a529163e0fea805b8a6454"
+    },
+    "sciq": {
+      "config": null,
+      "repository": "allenai/sciq",
+      "revision": "2c94ad3e1aafab77146f384e23536f97a4849815"
+    }
+  },
+  "split_config": {
+    "calibration_dev_views": [
+      "sciq",
+      400
+    ],
+    "calibration_retention": [
+      "commonsense_qa",
+      500
+    ],
+    "calibration_target": [
+      "sciq",
+      500
+    ],
+    "calibration_train_cap_per_domain": 3000,
+    "holdout_retention": [
+      "commonsense_qa",
+      500
+    ],
+    "holdout_target": [
+      "sciq",
+      500
+    ]
+  },
+  "stage": "stage_b",
+  "stage_a": {
+    "learning_rates": [
+      2e-05,
+      1e-05,
+      5e-06,
+      2e-06
+    ],
+    "minimum_prediction_change": 0.02,
+    "minimum_seeds_at_or_above_base": 3,
+    "reference_learning_rate": 2e-05,
+    "retention_tolerance": 0.01,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "tie_tolerance": 0.002
+  },
+  "stage_b": {
+    "admission": {
+      "joint_mass_tolerance": 1e-12,
+      "minimum_effective_fraction": 0.8,
+      "minimum_total_variation": 0.05
+    },
+    "advance_gain": 0.02,
+    "methods": [
+      "conditional_signed_rank",
+      "uniform_stratum",
+      "permuted_stratum_rank"
+    ],
+    "minimum_positive_pairs": 4,
+    "permutation_seed": 1707,
+    "primary_seeds": [
+      0,
+      1,
+      2
+    ],
+    "recipe_transfer_tolerance": 0.01,
+    "retention_tolerance": 0.01,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "tilt_log": 1.3862943611198906
+  },
+  "strata": 13,
+  "train_config": {
+    "batch_size": 16,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "checkpoint_every": 64,
+    "eps": 1e-08,
+    "gradient_clip": 1.0,
+    "max_infrastructure_resumes_per_cell": 1,
+    "max_input_length": 256,
+    "steps": 128,
+    "warmup_steps": 8,
+    "weight_decay": 0.01
+  },
+  "training_packs": 351,
+  "training_pool": "Experiment 05 v2 pool rebuilt from pinned sources; identities verified against the committed manifest"
+}

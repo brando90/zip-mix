@@ -1,0 +1,35 @@
+{
+ "arm": "oracle_sciq",
+ "lr": 2e-05,
+ "seed": 4,
+ "metrics": {
+  "holdout_target": {
+   "correct": 371,
+   "count": 500,
+   "accuracy": 0.742,
+   "label_nll": 0.713240937769413
+  },
+  "holdout_retention": {
+   "correct": 222,
+   "count": 500,
+   "accuracy": 0.444,
+   "label_nll": 2.0948770547658206
+  },
+  "calibration_target": {
+   "correct": 370,
+   "count": 500,
+   "accuracy": 0.74,
+   "label_nll": 0.6950038809478283
+  },
+  "calibration_retention": {
+   "correct": 233,
+   "count": 500,
+   "accuracy": 0.466,
+   "label_nll": 2.025480649806559
+  }
+ },
+ "mean_train_loss": 0.7225146470009349,
+ "sciq_share_drawn": 1.0,
+ "unique_drawn": 1478,
+ "seconds": 20.895774126052856
+}
